@@ -1,5 +1,5 @@
 # brbinstall
-The brbinstall purpose is to install everything I need for a fresh install of a Linux Distribution, without the hassle of doing it manually each time. It can help for : installing software, depedencies, theming, ricing, etc... This repository is in developpment therefore it can be largely improved and is destined to changed while not following a specific Roadmap.  
+The brbinstall purpose is to install everything I need for a fresh install of a Linux Distribution, without the hassle of doing it manually each time. It can help for : installing software, dependencies, theming, ricing, etc... This repository is in developpment, therefore it can be largely improved and is destined to changed while not following a specific Roadmap.  
 
 ## Installation
 ```
