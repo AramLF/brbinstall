@@ -1,10 +1,12 @@
 # brbinstall Linux Mint
 Linux Mint 20.3 xfce
 
-## In construction
 Add gnome to xfce  
 Add some theming  
 Add some packages  
+
+## In construction
+does not remove gnome-software at startup
 
 ## Remaining Installation
 
