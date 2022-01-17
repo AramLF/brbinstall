@@ -45,7 +45,7 @@ Vimix installation
 "
 git clone https://github.com/vinceliuice/vimix-gtk-themes ~/Documents/gigs/vimix-gtk-themes
 cd ~/Documents/gigs/vimix-gtk-themes
-sudo ./install.sh -s compact --all
+sudo ./install.sh -c dark -s compact --all
 #sudo to install theme as root
 
 echo -ne "
