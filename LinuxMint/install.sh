@@ -47,7 +47,7 @@ Vimix installation
 ------------------------------------------------------------------------------
 "
 git clone https://github.com/vinceliuice/vimix-gtk-themes
-cd vimix-gtk-theme
+cd ~/Documents/gigs/vimix-gtk-theme
 ./install.sh -s compact --all
 
 #Gnome installation
