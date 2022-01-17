@@ -23,7 +23,7 @@ Linux Mint 20.3 xfce
 #git added just in case
 echo -ne "
 ------------------------------------------------------------------------------
-Installation beginning
+Start of installation
 ------------------------------------------------------------------------------
 "
 sudo apt install htop ncdu synaptic git gcc grub-customizer baobab
@@ -40,17 +40,24 @@ sudo add-apt-repository ppa:papirus/papirus
 sudo apt-get update
 sudo apt-get install papirus-icon-theme
 
-#vimix installation
 echo -ne "
 ------------------------------------------------------------------------------
 Vimix installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/vimix-gtk-themes
+git clone https://github.com/vinceliuice/vimix-gtk-themes ~/Documents/gigs/vimix-gtk-themes
 cd ~/Documents/gigs/vimix-gtk-themes
 ./install.sh -s compact --all
 
-#Gnome installation
+echo -ne "
+------------------------------------------------------------------------------
+Graphite installation
+------------------------------------------------------------------------------
+"
+git clone https://github.com/vinceliuice/Graphite-gtk-theme ~/Documents/gigs/Graphite-gtk-theme
+cd ~/Documents/gigs/Graphite-gtk-theme
+./install.sh --theme all --tweaks rimless --size compact --color dark
+
 echo -ne "
 ------------------------------------------------------------------------------
 Gnome installation
@@ -60,7 +67,6 @@ sudo apt-get install gnome-shell gnome-control-center gnome-session
 sudo apt-get install gnome-disk-utility gnome-power-manager gnome-shell-extensions gnome-software gnome-terminal
 sudo apt-get install gnome-themes-extra network-manager-gnome chrome-gnome-shell gnome-tweaks gnome-shell-extensions
 
-#remove gnome-software at startup
 echo -ne "
 ------------------------------------------------------------------------------
 Removing gnome-software at startup
