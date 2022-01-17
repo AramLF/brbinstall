@@ -5,7 +5,7 @@ Add gnome to xfce
 Add some theming  
 Add some packages  
 
-## In construction
+## Under construction
 does not remove gnome-software at startup
 
 ## Remaining Installation
