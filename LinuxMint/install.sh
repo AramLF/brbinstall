@@ -36,9 +36,7 @@ echo -ne "
 papirus-icon-theme installation
 ------------------------------------------------------------------------------
 "
-sudo add-apt-repository ppa:papirus/papirus
-sudo apt-get update
-sudo apt-get install papirus-icon-theme
+sudo wget -qO- https://git.io/papirus-icon-theme-install | sh
 
 echo -ne "
 ------------------------------------------------------------------------------
@@ -47,7 +45,8 @@ Vimix installation
 "
 git clone https://github.com/vinceliuice/vimix-gtk-themes ~/Documents/gigs/vimix-gtk-themes
 cd ~/Documents/gigs/vimix-gtk-themes
-./install.sh -s compact --all
+sudo ./install.sh -s compact --all
+#sudo to install theme as root
 
 echo -ne "
 ------------------------------------------------------------------------------
@@ -56,7 +55,8 @@ Graphite installation
 "
 git clone https://github.com/vinceliuice/Graphite-gtk-theme ~/Documents/gigs/Graphite-gtk-theme
 cd ~/Documents/gigs/Graphite-gtk-theme
-./install.sh --theme all --tweaks rimless --size compact --color dark
+sudo ./install.sh --theme all --tweaks rimless --size compact --color dark
+#sudo to install theme as root
 
 echo -ne "
 ------------------------------------------------------------------------------
@@ -77,6 +77,16 @@ echo "X-GNOME-Autostart-enabled=false" >> ~/.config/autostart/gnome-software-ser
 dconf write /org/gnome/desktop/search-providers/disabled "['org.gnome.Software.desktop']"
 dconf write /org/gnome/software/allow-updates false
 dconf write /org/gnome/software/download-updates false
+
+echo -ne "
+------------------------------------------------------------------------------
+gdm-tools installation
+------------------------------------------------------------------------------
+"
+git clone --depth=1 https://github.com/realmazharhussain/gdm-tools.git ~/Documents/gigs/gdm-tools
+cd ~/Documents/gigs/gdm-tools
+./install.sh
+set-gdm-theme -s Graphite-green-dark-compact
 
 echo -ne "
 ------------------------------------------------------------------------------
