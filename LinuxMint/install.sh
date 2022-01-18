@@ -26,7 +26,7 @@ echo -ne "
 Start of installation
 ------------------------------------------------------------------------------
 "
-sudo apt install htop ncdu synaptic git gcc grub-customizer baobab
+sudo apt-get install -y htop ncdu synaptic git gcc grub-customizer baobab
 
 mkdir ~/Documents/gigs
 cd ~/Documents/gigs
@@ -63,9 +63,9 @@ echo -ne "
 Gnome installation
 ------------------------------------------------------------------------------
 "
-sudo apt-get install gnome-shell gnome-control-center gnome-session
-sudo apt-get install gnome-disk-utility gnome-power-manager gnome-shell-extensions gnome-software gnome-terminal
-sudo apt-get install gnome-themes-extra network-manager-gnome chrome-gnome-shell gnome-tweaks gnome-shell-extensions
+sudo apt-get install -y gnome-shell gnome-control-center gnome-session
+sudo apt-get install -y gnome-disk-utility gnome-power-manager gnome-shell-extensions gnome-software gnome-terminal
+sudo apt-get install -y gnome-themes-extra network-manager-gnome chrome-gnome-shell gnome-tweaks gnome-shell-extensions
 
 echo -ne "
 ------------------------------------------------------------------------------
@@ -77,6 +77,7 @@ echo "X-GNOME-Autostart-enabled=false" >> ~/.config/autostart/gnome-software-ser
 dconf write /org/gnome/desktop/search-providers/disabled "['org.gnome.Software.desktop']"
 dconf write /org/gnome/software/allow-updates false
 dconf write /org/gnome/software/download-updates false
+#might change allow-updates
 
 echo -ne "
 ------------------------------------------------------------------------------
