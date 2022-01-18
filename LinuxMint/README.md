@@ -6,7 +6,7 @@ Add some theming
 Add some packages  
 
 ## Under construction
-does not remove gnome-software at startup
+remove gnome-software at startup but can't update anymore  
 
 ## Remaining Installation
 
