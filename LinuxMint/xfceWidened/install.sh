@@ -37,6 +37,18 @@ papirus-icon-theme installation
 ------------------------------------------------------------------------------
 "
 sudo wget -qO- https://git.io/papirus-icon-theme-install | sh
+sudo wget -qO- https://git.io/papirus-folders-install | sh
+sudo papirus-folders -C paleorange --theme Papirus-Dark
+
+echo -ne "
+------------------------------------------------------------------------------
+Qogir installation
+------------------------------------------------------------------------------
+"
+git clone https://github.com/vinceliuice/Qogir-theme ~/Documents/gigs/Qogir-theme
+cd ~/Documents/gigs/Qogir-theme
+sudo ./install.sh
+#sudo to install theme as root
 
 echo -ne "
 ------------------------------------------------------------------------------
