@@ -5,7 +5,7 @@ Linux Mint 20.3 xfce
 
 Add some packages  
 Add dockbarlike  
-Change some settings with dotiles
+Change some settings with dotiles  
 Change some theming  
 
 ## Under construction
