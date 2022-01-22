@@ -61,7 +61,7 @@ echo -ne "
 dockbarlike installation
 ------------------------------------------------------------------------------
 "
-sudo add-apt-repository ppa:xubuntu-dev/extras
+sudo add-apt-repository -y ppa:xubuntu-dev/extras
 sudo apt update
 sudo apt install -y xfce4-docklike-plugin
 
@@ -72,7 +72,7 @@ dotfiles replacement
 "
 #cp docklike-2.rc
 cp ~/.config/xfce4/panel/docklike-2.rc ~/.config/xfce4/panel/backup-docklike-2.rc -v
-cp ~/Documents/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/panel/docklike-2.rc ~/.config/xfce4/panel/docklike-2.rc -v
+cp ~/Documents/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/xfce4/panel/docklike-2.rc ~/.config/xfce4/panel/docklike-2.rc -v
 #cp whiskermenu-1.rc
 cp ~/.config/xfce4/panel/whiskermenu-1.rc ~/.config/xfce4/panel/backup-whiskermenu-1.rc -v
 cp ~/Documents/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/xfce4/panel/whiskermenu-1.rc ~/.config/xfce4/panel/whiskermenu-1.rc -v
