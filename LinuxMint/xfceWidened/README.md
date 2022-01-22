@@ -6,17 +6,18 @@ Linux Mint 20.3 xfce
 Add some packages  
 Add dockbarlike  
 Change some settings with dotiles  
-Change some theming  
+Change some theming (mint-y-dark-blue) & (papirus-dark paleorange)  
 
 ## Under construction
 
-download dockbarlike  
-export panel settings (dotfiles)  
+ask the path in params and ask for delete later  
 merge title bar in firefox  
-install icons (orange icons ?)  
-set the right theme  
-restart panel  
+
+export dotfiles :  
+favorites & color & lang for dockbarlike #4ca6e6 #4d5f9c  
+favorites & settings for whiskermenu  
+desktop icons  
 
 ## Remaining Installation
 
-Change theme (mint-dark-y-blue) & Icon theme (dark-papirus) & params & remove firefox title bar 
+Params & remove firefox title bar  
