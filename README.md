@@ -8,7 +8,7 @@ git clone https://github.com/AramLF/brbinstall
 ```
 Then change to the directory corresponding to the distribution and execute the install.sh
 ```
-sudo ./install.sh
+./install.sh
 ```
 
 ## Potential improvements
