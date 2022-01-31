@@ -25,7 +25,7 @@ echo -ne "
 Start of installation
 ------------------------------------------------------------------------------
 "
-sudo apt-get install -y htop neofetch ncdu git gcc synaptic wget curl unzip dconf
+sudo apt-get install -y htop neofetch ncdu git gcc synaptic wget curl unzip
 
 mkdir ~/Documents/gigs -v
 
@@ -80,7 +80,7 @@ read -r -p "Not implemented yet pls create a new profile and press Enter " respo
 #esac
 git clone https://github.com/catppuccin/gnome-terminal ~/Documents/gigs/gnome-terminal
 cd ~/Documents/gigs/gnome-terminal
-./install.sh
+./install.sh "catppucin"
 
 echo -ne "
 ------------------------------------------------------------------------------
