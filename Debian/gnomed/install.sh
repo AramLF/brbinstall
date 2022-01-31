@@ -19,5 +19,94 @@ echo -ne "
 Debian gnomed
 ------------------------------------------------------------------------------
 "
+#Debian gnomed
+echo -ne "
+------------------------------------------------------------------------------
+Start of installation
+------------------------------------------------------------------------------
+"
+sudo apt-get install -y htop neofetch ncdu git gcc synaptic wget curl unzip dconf
 
+mkdir ~/Documents/gigs -v
+
+echo -ne "
+------------------------------------------------------------------------------
+papirus-icon-theme installation
+------------------------------------------------------------------------------
+"
+sudo wget -qO- https://git.io/papirus-icon-theme-install | sh
+
+echo -ne "
+------------------------------------------------------------------------------
+Catppucin-gtk-theme installation
+------------------------------------------------------------------------------
+"
+cd ~/Documents/gigs
+
+wget https://github.com/catppuccin/gtk/releases/download/update_27_01_22/Catppuccin-dark-compact-hdpi.zip
+wget https://github.com/catppuccin/gtk/releases/download/update_27_01_22/Catppuccin-dark-compact-xhdpi.zip
+wget https://github.com/catppuccin/gtk/releases/download/update_27_01_22/Catppuccin-dark-compact.zip
+
+unzip Catppuccin-dark-compact-hdpi.zip
+unzip Catppuccin-dark-compact-xhdpi.zip
+unzip Catppuccin-dark-compact.zip
+
+sudo mv Catppuccin-dark-compact-hdpi /usr/share/themes/Catppuccin-dark-compact-hdpi
+sudo mv Catppuccin-dark-compact-xhdpi /usr/share/themes/Catppuccin-dark-compact-xhdpi
+sudo mv Catppuccin-dark-compact /usr/share/themes/Catppuccin-dark-compact
+
+rm -rf Catppuccin-dark-compact-hdpi.zip
+rm -rf Catppuccin-dark-compact-xhdpi.zip
+rm -rf Catppuccin-dark-compact.zip
+
+echo -ne "
+------------------------------------------------------------------------------
+Catppucin-gnome-terminal installation
+------------------------------------------------------------------------------
+"
+echo -ne "
+Do you want a personnal theme for gnome-terminal ?
+Yes ? - then please create a new profile named catppucin and press Enter
+No ? - then press n and Enter 
+"
+read -r -p "Not implemented yet pls create a new profile and press Enter " response
+#case "$response" in
+#    [yY][eE][sS]|[yY]) 
+#        do_something
+#        ;;
+#    *)
+#        do_something_else
+#        ;;
+#esac
+git clone https://github.com/catppuccin/gnome-terminal ~/Documents/gigs/gnome-terminal
+cd ~/Documents/gigs/gnome-terminal
+./install.sh
+
+echo -ne "
+------------------------------------------------------------------------------
+Removing gnome-software at startup
+------------------------------------------------------------------------------
+"
+mkdir -pv ~/.config/autostart && cp /etc/xdg/autostart/gnome-software-service.desktop ~/.config/autostart/
+echo "X-GNOME-Autostart-enabled=false" >> ~/.config/autostart/gnome-software-service.desktop
+dconf write /org/gnome/desktop/search-providers/disabled "['org.gnome.Software.desktop']"
+dconf write /org/gnome/software/allow-updates false
+dconf write /org/gnome/software/download-updates false
+#might change allow-updates
+
+echo -ne "
+------------------------------------------------------------------------------
+gdm-tools installation
+------------------------------------------------------------------------------
+"
+git clone --depth=1 https://github.com/realmazharhussain/gdm-tools.git ~/Documents/gigs/gdm-tools
+cd ~/Documents/gigs/gdm-tools
+./install.sh
+set-gdm-theme -s Catppuccin-dark-compact
+
+echo -ne "
+------------------------------------------------------------------------------
+Installation finished, reboot recommended !
+------------------------------------------------------------------------------
+"
 
