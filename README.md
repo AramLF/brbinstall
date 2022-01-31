@@ -6,7 +6,7 @@ The installation and the execution is at your own risk, do it only if you know w
 ```
 git clone https://github.com/AramLF/brbinstall
 ```
-Then change to the directory corresponding to the distribution and execute the install.sh
+Then change to the folder corresponding to the flavor and execute the install.sh
 ```
 ./install.sh
 ```
