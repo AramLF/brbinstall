@@ -35,13 +35,17 @@ papirus-icon-theme installation
 ------------------------------------------------------------------------------
 "
 sudo wget -qO- https://git.io/papirus-icon-theme-install | sh
+sudo wget -qO- https://git.io/papirus-folders-install | sh
 
 echo -ne "
 ------------------------------------------------------------------------------
-Catppucin-gtk-theme installation
+Catppuccin-gtk-theme installation
 ------------------------------------------------------------------------------
 "
 cd ~/Documents/gigs
+
+wget https://raw.githubusercontent.com/catppuccin/wallpapers/main/landscapes/evening-sky.png
+sudo mv evening-sky.png /usr/share/backgrounds/evening-sky.png
 
 wget https://github.com/catppuccin/gtk/releases/download/update_27_01_22/Catppuccin-dark-compact-hdpi.zip
 wget https://github.com/catppuccin/gtk/releases/download/update_27_01_22/Catppuccin-dark-compact-xhdpi.zip
@@ -61,12 +65,12 @@ rm -rf Catppuccin-dark-compact.zip
 
 echo -ne "
 ------------------------------------------------------------------------------
-Catppucin-gnome-terminal installation
+Catppuccin-gnome-terminal installation
 ------------------------------------------------------------------------------
 "
 echo -ne "
 Do you want a personnal theme for gnome-terminal ?
-Yes ? - then please create a new profile named catppucin and press Enter
+Yes ? - then please create a new profile named catppuccin and press Enter
 No ? - then press n and Enter 
 "
 read -r -p "Not implemented yet pls create a new profile and press Enter " response
@@ -80,7 +84,7 @@ read -r -p "Not implemented yet pls create a new profile and press Enter " respo
 #esac
 git clone https://github.com/catppuccin/gnome-terminal ~/Documents/gigs/gnome-terminal
 cd ~/Documents/gigs/gnome-terminal
-./install.sh "catppucin"
+./install.sh "catppuccin"
 
 echo -ne "
 ------------------------------------------------------------------------------
@@ -103,6 +107,17 @@ git clone --depth=1 https://github.com/realmazharhussain/gdm-tools.git ~/Documen
 cd ~/Documents/gigs/gdm-tools
 ./install.sh
 set-gdm-theme -s Catppuccin-dark-compact
+
+echo -ne "
+------------------------------------------------------------------------------
+Changing theme
+------------------------------------------------------------------------------
+"
+gsettings set org.gnome.desktop.interface gtk-theme "Catppuccin-dark-compact"
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+gsettings set org.gnome.desktop.wm.preferences theme "Catppuccin-dark-compact"
+gsettings set org.gnome.shell.extensions.user-theme name "Catppuccin-dark-compact"
+gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/evening-sky.png
 
 echo -ne "
 ------------------------------------------------------------------------------
