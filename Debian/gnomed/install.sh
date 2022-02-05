@@ -29,7 +29,7 @@ sudo apt-get install -y htop neofetch ncdu git gcc synaptic wget curl unzip
 sudo apt-get install -y plymouth
 #maybe add plymouth-themes
 sudo apt-get install -y command-not-found
-
+shopt -s expand_aliases
 
 mkdir ~/Documents/gigs -v
 
