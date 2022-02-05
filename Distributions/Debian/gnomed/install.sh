@@ -73,11 +73,10 @@ Catppuccin-gnome-terminal installation
 ------------------------------------------------------------------------------
 "
 echo -ne "
-Do you want a personnal theme for gnome-terminal ?
-Yes ? - then please create a new profile named catppuccin and press Enter
-No ? - then press n and Enter 
+If you want a personnal theme for gnome-terminal, create a new profile named
+'catppuccin' and then press enter 
 "
-read -r -p "Not implemented yet please create a new profile and press Enter " response
+read -r -p "Press Enter " response
 #case "$response" in
 #    [yY][eE][sS]|[yY]) 
 #        do_something
