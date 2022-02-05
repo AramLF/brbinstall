@@ -1,5 +1,5 @@
 #!/bin/bash
+cd ../../ #mmmmhhh
+source ./brbinstall.sh
 
-source ./../../Theming/icons.sh
-#./test1.sh
-Papirus
+tp1ver

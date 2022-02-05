@@ -6,14 +6,13 @@ The installation and the execution is at your own risk, do it only if you know w
 ```
 git clone https://github.com/AramLF/brbinstall
 ```
-Then change to the folder corresponding to the flavor and execute the install.sh
+Then change to the folder corresponding to the flavor and execute the install.sh (it is important to be in the current directory of the flavor, do not execute if from somewhere else)
 ```
 ./install.sh
 ```
 
 ## Potential improvements
-- The script could be executed from the main directory 
+- The script could be executed from the main directory
 - Options could be added when doing ./install.sh
 - User input while the installation
 - make some flavors independent from distribs
-
