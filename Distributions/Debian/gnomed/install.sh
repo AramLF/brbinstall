@@ -3,6 +3,8 @@
 cd ../../../
 source ./brbinstall.sh
 
+tp1top
+
 tpDebver
 
 tp1start
