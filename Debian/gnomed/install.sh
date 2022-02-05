@@ -29,7 +29,7 @@ sudo apt-get install -y htop neofetch ncdu git gcc synaptic wget curl unzip
 sudo apt-get install -y plymouth
 #maybe add plymouth-themes
 sudo apt-get install -y command-not-found
-shopt -s expand_aliases
+#shopt -s expand_aliases
 
 mkdir ~/Documents/gigs -v
 
@@ -59,9 +59,9 @@ unzip Catppuccin-dark-compact-hdpi.zip
 unzip Catppuccin-dark-compact-xhdpi.zip
 unzip Catppuccin-dark-compact.zip
 
-sudo mv Catppuccin-dark-compact-hdpi /usr/share/themes/Catppuccin-dark-compact-hdpi
-sudo mv Catppuccin-dark-compact-xhdpi /usr/share/themes/Catppuccin-dark-compact-xhdpi
-sudo mv Catppuccin-dark-compact /usr/share/themes/Catppuccin-dark-compact
+sudo mv Catppuccin-dark-compact-hdpi /usr/share/themes/Catppuccin-dark-compact-hdpi --backup
+sudo mv Catppuccin-dark-compact-xhdpi /usr/share/themes/Catppuccin-dark-compact-xhdpi --backup
+sudo mv Catppuccin-dark-compact /usr/share/themes/Catppuccin-dark-compact --backup
 
 rm -rf Catppuccin-dark-compact-hdpi.zip
 rm -rf Catppuccin-dark-compact-xhdpi.zip
@@ -77,7 +77,7 @@ Do you want a personnal theme for gnome-terminal ?
 Yes ? - then please create a new profile named catppuccin and press Enter
 No ? - then press n and Enter 
 "
-read -r -p "Not implemented yet pls create a new profile and press Enter " response
+read -r -p "Not implemented yet please create a new profile and press Enter " response
 #case "$response" in
 #    [yY][eE][sS]|[yY]) 
 #        do_something
@@ -131,6 +131,7 @@ Changing PS1 Prompt and adding plymouth
 "
 #sed over cp because I can (and avoid too many dotfiles)
 sed -i 's#\${debian_chroot:+(\$debian_chroot)}\\\[\\033\[01;32m\\]\\u@\\h\\\[\\033\[00m\\]:\\\[\\033\[01;34m\\]\\w\\\[\\033\[00m\\]\\\$ #\\\[\\033\[01;37m\\]┌─\[\\\[\\033\[01;32m\\]\\u\\\[\\033\[01;37m\\]]-\[\\\[\\033\[01;36m\\]\\h\\\[\\033\[01;37m\\]]-\[\\\[\\033\[01;33m\\]\\w\\\[\\033\[00;37m\\]\\\[\\033\[01;37m\\]]\\n\\\[\\033\[01;37m\\]└─\[\\\[\\033\[01;33m\\]\$\\\[\\033\[00;37m\\]\\\[\\033\[01;37m\\]]\\\[\\033\[00;37m\\] #g' ~/.bashrc
+
 sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/g' /etc/default/grub
 sudo update-grub
 
@@ -139,7 +140,8 @@ echo -ne "
 Updating a few more things...
 ------------------------------------------------------------------------------
 "
-alias cnf='command-not-found'
+#alias cnf='command-not-found'
+echo "alias cnf='command-not-found'" >> ~/.bash_aliases
 sudo apt-get update
 
 echo -ne "
