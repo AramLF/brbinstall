@@ -1,7 +1,7 @@
 #!/bin/bash
 #Debian 11
 cd ../../../
-source ./brbinstall.sh
+source ./scriptSource.sh
 
 tp1top
 
