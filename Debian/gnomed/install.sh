@@ -26,6 +26,10 @@ Start of installation
 ------------------------------------------------------------------------------
 "
 sudo apt-get install -y htop neofetch ncdu git gcc synaptic wget curl unzip
+sudo apt-get install plymouth
+#maybe add plymouth-themes
+sudo apt-get install command-not-found
+alias cnf='command-not-found'
 
 mkdir ~/Documents/gigs -v
 
@@ -118,6 +122,17 @@ gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 gsettings set org.gnome.desktop.wm.preferences theme "Catppuccin-dark-compact"
 gsettings set org.gnome.shell.extensions.user-theme name "Catppuccin-dark-compact"
 gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/evening-sky.png
+
+echo -ne "
+------------------------------------------------------------------------------
+Changing PS1 Prompt and adding plymouth
+------------------------------------------------------------------------------
+"
+#sed over cp because I can (and avoid too many dotfiles)
+sed -i 's#\${debian_chroot:+(\$debian_chroot)}\\\[\\033\[01;32m\\]\\u@\\h\\\[\\033\[00m\\]:\\\[\\033\[01;34m\\]\\w\\\[\\033\[00m\\]\\\$ #\\\[\\033\[01;37m\\]┌─\[\\\[\\033\[01;32m\\]\\u\\\[\\033\[01;37m\\]]-\[\\\[\\033\[01;36m\\]\\h\\\[\\033\[01;37m\\]]-\[\\\[\\033\[01;33m\\]\\w\\\[\\033\[00;37m\\]\\\[\\033\[01;37m\\]]\\n\\\[\\033\[01;37m\\]└─\[\\\[\\033\[01;33m\\]\$\\\[\\033\[00;37m\\]\\\[\\033\[01;37m\\]]\\\[\\033\[00;37m\\] #g' ~/.bashrc
+sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/g' /etc/default/grub
+sudo update-grub
+
 
 echo -ne "
 ------------------------------------------------------------------------------
