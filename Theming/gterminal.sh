@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gterminal-catppuccin () {
+gnomed-terminal-set-catppuccin () {
 echo -ne "
 ------------------------------------------------------------------------------
 Catppuccin-gnome-terminal installation

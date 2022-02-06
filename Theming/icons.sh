@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Papirus () {
+theming-icons-papirus () {
 echo -ne "
 ------------------------------------------------------------------------------
 papirus-icon-theme installation

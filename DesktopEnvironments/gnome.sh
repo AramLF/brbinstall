@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gs-startup () {
+gnomed-remove-gnome-software-startup () {
 echo -ne "
 ------------------------------------------------------------------------------
 Removing gnome-software at startup
@@ -14,7 +14,7 @@ dconf write /org/gnome/software/download-updates false
 #allow-updates
 }
 
-makegdm () {
+gnomed-set-gdm-tools () {
 echo -ne "
 ------------------------------------------------------------------------------
 gdm-tools installation
@@ -27,7 +27,7 @@ echo y|./install.sh
 set-gdm-theme -s Catppuccin-dark-compact
 }
 
-gchangegtk () {
+gnomed-set-gtk-theme () {
 echo -ne "
 ------------------------------------------------------------------------------
 Changing gtk-theme
@@ -39,7 +39,7 @@ gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 gsettings set org.gnome.shell.extensions.user-theme name "Catppuccin-dark-compact"
 }
 
-gchangeicons () {
+gnomed-set-icons-theme () {
 echo -ne "
 ------------------------------------------------------------------------------
 Changing icons-theme
@@ -48,7 +48,7 @@ Changing icons-theme
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 }
 
-gchangewall () {
+gnomed-set-wallpaper () {
 echo -ne "
 ------------------------------------------------------------------------------
 Changing wallpaper

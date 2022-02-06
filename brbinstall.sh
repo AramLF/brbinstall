@@ -10,6 +10,6 @@
 #need to be in this directory
 source ./scriptSource.sh
 
-tp1top
+template-1-title
 
 #mkdir ~/Documents/gigs -v

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-evening () {
+theming-wall-evening () {
 echo -ne "
 ------------------------------------------------------------------------------
 evening-sky wallpaper download

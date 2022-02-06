@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Qogir () {
+theming-gtk-qogir () {
 echo -ne "
 ------------------------------------------------------------------------------
 Qogir installation
@@ -12,7 +12,7 @@ sudo ./install.sh
 #sudo to install theme as root
 }
 
-Vimix () {
+theming-gtk-vimix () {
 echo -ne "
 ------------------------------------------------------------------------------
 Vimix installation
@@ -24,7 +24,7 @@ sudo ./install.sh -c dark -s compact --all
 #sudo to install theme as root
 }
 
-Graphite () {
+theming-gtk-graphite () {
 echo -ne "
 ------------------------------------------------------------------------------
 Graphite installation
@@ -36,7 +36,7 @@ sudo ./install.sh --theme all --tweaks rimless --size compact --color dark
 #sudo to install theme as root
 }
 
-Matcha () {
+theming-gtk-matcha () {
 echo -ne "
 ------------------------------------------------------------------------------
 Matcha installation
@@ -48,7 +48,7 @@ sudo ./install.sh --color dark
 #sudo to install theme as root
 }
 
-Catppuccin () {
+theming-gtk-catppuccin () {
 echo -ne "
 ------------------------------------------------------------------------------
 Catppuccin-gtk-theme installation

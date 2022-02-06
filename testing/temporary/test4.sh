@@ -2,4 +2,4 @@
 cd ../../ #mmmmhhh
 source ./brbinstall.sh
 
-tp1ver
+template-1-version

@@ -12,3 +12,4 @@ source ./DesktopEnvironments/gnome.sh
 source ./DesktopEnvironments/xfce.sh
 
 source ./Distributions/Debian/tpDebian.sh
+source ./Distributions/Fedora/tpFedora.sh

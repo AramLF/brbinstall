@@ -1,18 +1,18 @@
 #!/bin/bash
 
-tpDebver () {
+template-debian-version () {
 echo -ne "Debian 11
 ------------------------------------------------------------------------------
 "
 }
 
-tpDebianInstalls () {
+template-debian-installs () {
 sudo apt-get install -y htop neofetch ncdu git gcc synaptic wget curl unzip command-not-found
 sudo apt-get install -y plymouth
 #maybe add plymouth-themes
 }
 
-tpprompt () {
+template-debian-prompt () {
 echo -ne "
 ------------------------------------------------------------------------------
 Changing PS1 Prompt
@@ -22,7 +22,7 @@ Changing PS1 Prompt
 sed -i 's#\${debian_chroot:+(\$debian_chroot)}\\\[\\033\[01;32m\\]\\u@\\h\\\[\\033\[00m\\]:\\\[\\033\[01;34m\\]\\w\\\[\\033\[00m\\]\\\$ #\\\[\\033\[01;37m\\]┌─\[\\\[\\033\[01;32m\\]\\u\\\[\\033\[01;37m\\]]-\[\\\[\\033\[01;36m\\]\\h\\\[\\033\[01;37m\\]]-\[\\\[\\033\[01;33m\\]\\w\\\[\\033\[00;37m\\]\\\[\\033\[01;37m\\]]\\n\\\[\\033\[01;37m\\]└─\[\\\[\\033\[01;33m\\]\$\\\[\\033\[00;37m\\]\\\[\\033\[01;37m\\]]\\\[\\033\[00;37m\\] #g' ~/.bashrc
 }
 
-tpplymouth() {
+template-debian-plymouth () {
 echo -ne "
 ------------------------------------------------------------------------------
 Adding plymouth
@@ -32,7 +32,7 @@ sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT="qu
 sudo update-grub
 }
 
-tpaliascnf (){
+template-debian-cnf (){
 echo -ne "
 ------------------------------------------------------------------------------
 Adding alias cnf

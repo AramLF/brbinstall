@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tp1top () {
+template-1-title () {
 echo -ne "
 ------------------------------------------------------------------------------
 ██████╗ ██████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗ █████╗ ██╗     ██╗
@@ -13,7 +13,7 @@ echo -ne "
 "
 }
 
-tp1ver () {
+template-1-version () {
 echo -ne "
 ------------------------------------------------------------------------------
 Distrib ver
@@ -22,7 +22,7 @@ Distrib ver
 #Distrib ver
 }
 
-tp1start () {
+template-1-start () {
 echo -ne "
 ------------------------------------------------------------------------------
 Start of installation
@@ -30,7 +30,7 @@ Start of installation
 "
 }
 
-tp1end () {
+template-1-end () {
 echo -ne "
 ------------------------------------------------------------------------------
 Installation finished, reboot recommended !

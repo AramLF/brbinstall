@@ -3,36 +3,36 @@
 cd ../../../
 source ./scriptSource.sh
 
-tp1top
+template-1-title
 
-tpDebver
+template-debian-version
 
-tp1start
+template-1-start
 
-tpDebianInstalls
+template-debian-installs
 
-Papirus
+theming-icons-papirus
 
-evening
+theming-wall-evening
 
-Catppuccin
+theming-gtk-catppuccin
 
-gterminal-catppuccin
+gnomed-terminal-set-catppuccin
 
-gs-startup
+gnomed-remove-gnome-software-startup
 
-makegdm
+gnomed-set-gdm-tools
 
-gchangeicons
+gnomed-set-icons-theme
 
-gchangegtk
+gnomed-set-gtk-theme
 
-gchangewall
+gnomed-set-wallpaper
 
-tpprompt
+template-debian-prompt
 
-tpplymouth
+template-debian-plymouth
 
-tpaliascnf
+template-debian-cnf
 
-tp1end
+template-1-end
