@@ -1,6 +1,6 @@
 #!/bin/bash
 #Fedora 35
-cd ../../../
+cd ../../
 source ./scriptSource.sh
 
 template-1-title
