@@ -6,8 +6,8 @@ echo -ne "
 Qogir installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Qogir-theme ~/Documents/gigs/Qogir-theme
-cd ~/Documents/gigs/Qogir-theme/
+git clone https://github.com/vinceliuice/Qogir-theme ~/gigs/Qogir-theme
+cd ~/gigs/Qogir-theme/
 sudo ./install.sh
 #sudo to install theme as root
 }
@@ -18,8 +18,8 @@ echo -ne "
 Vimix installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/vimix-gtk-themes ~/Documents/gigs/vimix-gtk-themes
-cd ~/Documents/gigs/vimix-gtk-themes
+git clone https://github.com/vinceliuice/vimix-gtk-themes ~/gigs/vimix-gtk-themes
+cd ~/gigs/vimix-gtk-themes
 sudo ./install.sh -c dark -s compact --all
 #sudo to install theme as root
 }
@@ -30,8 +30,8 @@ echo -ne "
 Graphite installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Graphite-gtk-theme ~/Documents/gigs/Graphite-gtk-theme
-cd ~/Documents/gigs/Graphite-gtk-theme
+git clone https://github.com/vinceliuice/Graphite-gtk-theme ~/gigs/Graphite-gtk-theme
+cd ~/gigs/Graphite-gtk-theme
 sudo ./install.sh --theme all --tweaks rimless --size compact --color dark
 #sudo to install theme as root
 }
@@ -42,8 +42,8 @@ echo -ne "
 Matcha installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Matcha-gtk-theme ~/Documents/gigs/Matcha-gtk-theme
-cd ~/Documents/gigs/Matcha-gtk-theme
+git clone https://github.com/vinceliuice/Matcha-gtk-theme ~/gigs/Matcha-gtk-theme
+cd ~/gigs/Matcha-gtk-theme
 sudo ./install.sh --color dark
 #sudo to install theme as root
 }
@@ -54,7 +54,7 @@ echo -ne "
 Catppuccin-gtk-theme installation
 ------------------------------------------------------------------------------
 "
-cd ~/Documents/gigs
+cd ~/gigs
 
 wget https://github.com/catppuccin/gtk/releases/download/update_27_01_22/Catppuccin-dark-compact-hdpi.zip
 wget https://github.com/catppuccin/gtk/releases/download/update_27_01_22/Catppuccin-dark-compact-xhdpi.zip

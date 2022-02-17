@@ -20,8 +20,8 @@ Start of installation
 "
 sudo apt-get install -y htop ncdu synaptic git gcc grub-customizer baobab
 
-mkdir ~/Documents/gigs
-cd ~/Documents/gigs
+mkdir ~/gigs
+cd ~/gigs
 
 echo -ne "
 ------------------------------------------------------------------------------
@@ -35,8 +35,8 @@ echo -ne "
 Vimix installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/vimix-gtk-themes ~/Documents/gigs/vimix-gtk-themes
-cd ~/Documents/gigs/vimix-gtk-themes
+git clone https://github.com/vinceliuice/vimix-gtk-themes ~/gigs/vimix-gtk-themes
+cd ~/gigs/vimix-gtk-themes
 sudo ./install.sh -c dark -s compact --all
 #sudo to install theme as root
 
@@ -45,8 +45,8 @@ echo -ne "
 Graphite installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Graphite-gtk-theme ~/Documents/gigs/Graphite-gtk-theme
-cd ~/Documents/gigs/Graphite-gtk-theme
+git clone https://github.com/vinceliuice/Graphite-gtk-theme ~/gigs/Graphite-gtk-theme
+cd ~/gigs/Graphite-gtk-theme
 sudo ./install.sh --theme all --tweaks rimless --size compact --color dark
 #sudo to install theme as root
 
@@ -76,8 +76,8 @@ echo -ne "
 gdm-tools installation
 ------------------------------------------------------------------------------
 "
-git clone --depth=1 https://github.com/realmazharhussain/gdm-tools.git ~/Documents/gigs/gdm-tools
-cd ~/Documents/gigs/gdm-tools
+git clone --depth=1 https://github.com/realmazharhussain/gdm-tools.git ~/gigs/gdm-tools
+cd ~/gigs/gdm-tools
 ./install.sh
 set-gdm-theme -s Graphite-green-dark-compact
 

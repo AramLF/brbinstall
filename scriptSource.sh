@@ -4,6 +4,7 @@ source ./Templates/tp1.sh
 source ./Templates/tpRandom.sh
 
 source ./Theming/gtk.sh
+source ./Theming/kde.sh
 source ./Theming/icons.sh
 source ./Theming/wall.sh
 source ./Theming/gterminal.sh

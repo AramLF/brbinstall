@@ -20,14 +20,14 @@ Start of installation
 "
 sudo apt-get install -y htop neofetch ncdu git gcc grub-customizer baobab
 
-mkdir ~/Documents/gigs -v
+mkdir ~/gigs -v
 
 echo -ne "
 ------------------------------------------------------------------------------
 duplicate brbinstall for dotfiles
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/AramLF/brbinstall ~/Documents/gigs/brbinstall
+git clone https://github.com/AramLF/brbinstall ~/gigs/brbinstall
 #duplicate so the folder path can be hardened (so the install.sh can be exe from everywhere)
 
 echo -ne "
@@ -44,8 +44,8 @@ echo -ne "
 Qogir installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Qogir-theme ~/Documents/gigs/Qogir-theme
-sudo ~/Documents/gigs/Qogir-theme/./install.sh
+git clone https://github.com/vinceliuice/Qogir-theme ~/gigs/Qogir-theme
+sudo ~/gigs/Qogir-theme/./install.sh
 #sudo to install theme as root
 
 echo -ne "
@@ -64,19 +64,19 @@ dotfiles replacement
 "
 #cp docklike-2.rc
 cp ~/.config/xfce4/panel/docklike-2.rc ~/.config/xfce4/panel/backup-docklike-2.rc -v
-cp ~/Documents/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/xfce4/panel/docklike-2.rc ~/.config/xfce4/panel/docklike-2.rc -v
+cp ~/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/xfce4/panel/docklike-2.rc ~/.config/xfce4/panel/docklike-2.rc -v
 #cp whiskermenu-1.rc
 cp ~/.config/xfce4/panel/whiskermenu-1.rc ~/.config/xfce4/panel/backup-whiskermenu-1.rc -v
-cp ~/Documents/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/xfce4/panel/whiskermenu-1.rc ~/.config/xfce4/panel/whiskermenu-1.rc -v
+cp ~/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/xfce4/panel/whiskermenu-1.rc ~/.config/xfce4/panel/whiskermenu-1.rc -v
 #cp xfce4-panel.xml
 cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backtup-xfce4-panel.xml -v
-cp ~/Documents/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml -v
+cp ~/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml -v
 #cp icons.screen.latest.rc
 cp ~/.config/xfce4/desktop/icons.screen.latest.rc ~/.config/xfce4/desktop/backup-icons.screen.latest.rc -v
-cp ~/Documents/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/xfce4/desktop/icons.screen.latest.rc ~/.config/xfce4/desktop/icons.screen.latest.rc -v
+cp ~/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/xfce4/desktop/icons.screen.latest.rc ~/.config/xfce4/desktop/icons.screen.latest.rc -v
 #cp xfce4-desktop.xml
 cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup-xfce4-desktop.xml -v
-cp ~/Documents/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml -v
+cp ~/gigs/brbinstall/LinuxMint/xfceWidened/dotfiles/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml -v
 #temp for now
 
 echo -ne "

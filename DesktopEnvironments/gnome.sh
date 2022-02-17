@@ -20,8 +20,8 @@ echo -ne "
 gdm-tools installation
 ------------------------------------------------------------------------------
 "
-git clone --depth=1 https://github.com/realmazharhussain/gdm-tools.git ~/Documents/gigs/gdm-tools
-cd ~/Documents/gigs/gdm-tools
+git clone --depth=1 https://github.com/realmazharhussain/gdm-tools.git ~/gigs/gdm-tools
+cd ~/gigs/gdm-tools
 echo y|./install.sh
 #set-gdm-theme -s Graphite-green-dark-compact
 set-gdm-theme -s Catppuccin-dark-compact

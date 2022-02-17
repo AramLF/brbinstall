@@ -12,4 +12,4 @@ source ./scriptSource.sh
 
 template-1-title
 
-#mkdir ~/Documents/gigs -v
+#mkdir ~/gigs -v

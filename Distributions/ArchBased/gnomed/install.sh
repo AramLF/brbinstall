@@ -20,7 +20,7 @@ Start of installation
 "
 sudo pacman -Sy htop neofetch ncdu git gcc --noconfirm
 
-mkdir ~/Documents/gigs -v
+mkdir ~/gigs -v
 
 echo -ne "
 ------------------------------------------------------------------------------
