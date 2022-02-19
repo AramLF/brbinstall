@@ -8,9 +8,14 @@ source ./Theming/kde.sh
 source ./Theming/icons.sh
 source ./Theming/wall.sh
 source ./Theming/gterminal.sh
+source ./Theming/konsole.sh
 
 source ./DesktopEnvironments/gnome.sh
 source ./DesktopEnvironments/xfce.sh
 
 source ./Distributions/Debian/tpDebian.sh
 source ./Distributions/Fedora/tpFedora.sh
+
+#var
+initialPath=$(pwd)
+initialPlaceHolder=$initialPath/placeholder

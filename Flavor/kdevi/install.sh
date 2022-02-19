@@ -21,4 +21,6 @@ theming-icons-tela-circle
 
 theming-wall-graphite
 
+konsole-add-wave
+
 template-1-end
