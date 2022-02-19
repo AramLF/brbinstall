@@ -10,7 +10,6 @@ Then change to the folder corresponding to the flavor and execute the install.sh
 ```
 ./install.sh
 ```
-
 ### Flavors
 - ArchBased [gnomed](https://github.com/AramLF/brbinstall/tree/main/Distributions/ArchBased/gnomed)
 - Debian [gnomed](https://github.com/AramLF/brbinstall/tree/main/Distributions/Debian/gnomed)
