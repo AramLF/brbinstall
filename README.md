@@ -11,8 +11,15 @@ Then change to the folder corresponding to the flavor and execute the install.sh
 ./install.sh
 ```
 
+### Flavors
+- ArchBased [gnomed](https://github.com/AramLF/brbinstall/tree/main/Distributions/ArchBased/gnomed)
+- Debian [gnomed](https://github.com/AramLF/brbinstall/tree/main/Distributions/Debian/gnomed)
+- [Fedora](https://github.com/AramLF/brbinstall/tree/main/Distributions/Fedora)
+- LinuxMint [gnomeOver](https://github.com/AramLF/brbinstall/tree/main/Distributions/LinuxMint/gnomeOver) & [xfceWidened](https://github.com/AramLF/brbinstall/tree/main/Distributions/LinuxMint/xfceWidened) (both deprecated)
+- [kdevi](https://github.com/AramLF/brbinstall/tree/main/Flavor/kdevi)
+
 ## Potential improvements
 - The script could be executed from the main directory
 - Options could be added when doing ./install.sh
-- User input while the installation
-- make some flavors independent from distribs
+- User input while the installation   
+- Rearrange the whole structure
