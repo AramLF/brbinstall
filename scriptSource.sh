@@ -15,7 +15,11 @@ source ./DesktopEnvironments/xfce.sh
 
 source ./Distributions/Debian/tpDebian.sh
 source ./Distributions/Fedora/tpFedora.sh
+source ./Distributions/packages.sh
 
 #var
 initialPath=$(pwd)
 initialPlaceHolder=$initialPath/placeholder
+initialPlacement=$initialPath/..
+
+manage-package-installer

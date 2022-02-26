@@ -9,6 +9,8 @@ template-1-start
 
 theming-kde-vimix
 
+theming-gtk-dependencies
+
 theming-gtk-vimix
 
 theming-kde-materia

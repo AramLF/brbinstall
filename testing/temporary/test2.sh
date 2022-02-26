@@ -21,3 +21,6 @@ echo $PWD
 echo $initialPath
 echo $initialPlaceHolder
 echo $initialPath/Dotfiles/konsole/OceanWaves.colorscheme
+echo $initialPlacement
+
+echo $auto_pkg_installer
