@@ -3,6 +3,8 @@ ArchBased
 
 Flavors  :
 - gnomed (gnome with extensions and theming)
+Arch ready  
+gnome with extensions and theming  
 
 ## Needs
 
@@ -13,3 +15,10 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 ```
+
+## Under construction
+
+
+## Remaining Installation
+
+Change theme & Icon theme & extensions params  

@@ -1,5 +1,15 @@
 #!/bin/bash
 
+gnomed-add-dependencies(){
+echo -ne "
+------------------------------------------------------------------------------
+Add dependencies for gnomed
+------------------------------------------------------------------------------
+"
+sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip
+sudo $auto_pkg_installer gnome-tweaks
+}
+
 gnomed-remove-gnome-software-startup () {
 echo -ne "
 ------------------------------------------------------------------------------
@@ -23,8 +33,10 @@ gdm-tools installation
 git clone --depth=1 https://github.com/realmazharhussain/gdm-tools.git ~/gigs/gdm-tools
 cd ~/gigs/gdm-tools
 echo y|./install.sh
-#set-gdm-theme -s Graphite-green-dark-compact
-set-gdm-theme -s Catppuccin-dark-compact
+#set-gdm-theme -s Graphite-dark-compact
+#set-gdm-theme -s Catppuccin-dark-compact
+echo 'Set theme for gdm'
+set-gdm-theme -l
 }
 
 gnomed-set-gtk-theme () {
@@ -55,4 +67,15 @@ Changing wallpaper
 ------------------------------------------------------------------------------
 "
 gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/evening-sky.png
+}
+
+gnomed-gnome-over-ubuntu(){
+echo -ne "
+------------------------------------------------------------------------------
+Gnome-over installation
+------------------------------------------------------------------------------
+"
+sudo $auto_pkg_installer gnome-shell gnome-control-center gnome-session
+sudo $auto_pkg_installer gnome-disk-utility gnome-power-manager gnome-shell-extensions gnome-software gnome-terminal
+sudo $auto_pkg_installer gnome-themes-extra network-manager-gnome chrome-gnome-shell gnome-tweaks gnome-shell-extensions
 }

@@ -11,5 +11,3 @@
 source ./scriptSource.sh
 
 template-1-title
-
-#mkdir ~/gigs -v

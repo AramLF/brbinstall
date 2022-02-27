@@ -31,3 +31,21 @@ git clone https://github.com/vinceliuice/Tela-circle-icon-theme ~/gigs/Tela-circ
 cd ~/gigs/Tela-circle-icon-theme
 ./install.sh
 }
+
+theming-icons-numix-circle () {
+echo -ne "
+------------------------------------------------------------------------------
+numix-icon-theme-circle installation
+------------------------------------------------------------------------------
+"
+sudo $auto_pkg_installer numix-icon-theme-circle
+}
+
+theming-icons-numix () {
+echo -ne "
+------------------------------------------------------------------------------
+numix-icon-theme installation
+------------------------------------------------------------------------------
+"
+sudo $auto_pkg_installer numix-icon-theme
+}

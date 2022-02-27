@@ -33,6 +33,18 @@ sudo ./install.sh -c dark -s compact --all
 #sudo to install theme as root
 }
 
+theming-gtk-orchis () {
+echo -ne "
+------------------------------------------------------------------------------
+Orchis installation
+------------------------------------------------------------------------------
+"
+git clone https://github.com/vinceliuice/Orchis-theme ~/gigs/Orchis-theme
+cd ~/gigs/Orchis-theme
+sudo ./install.sh --theme all --tweaks rimless --size compact --color dark
+#sudo to install theme as root
+}
+
 theming-gtk-graphite () {
 echo -ne "
 ------------------------------------------------------------------------------

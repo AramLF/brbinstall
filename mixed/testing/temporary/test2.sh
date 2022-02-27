@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ../../
+cd ../../../
 source ./scriptSource.sh
 
 #template-1-version

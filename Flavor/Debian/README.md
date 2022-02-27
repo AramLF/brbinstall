@@ -6,6 +6,8 @@ Debian
 Debian ready  
 gnome with extensions and theming  
 
+install.sh & remove.sh
+
 ## Under construction
 
 

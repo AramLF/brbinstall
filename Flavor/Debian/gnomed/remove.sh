@@ -1,5 +1,4 @@
 #!/bin/bash
-#sudo apt purge -y 
 
 sudo apt purge -y gnome-2048
 sudo apt purge -y gnome-chess

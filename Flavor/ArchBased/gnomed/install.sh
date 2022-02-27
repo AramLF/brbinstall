@@ -20,8 +20,6 @@ Start of installation
 "
 sudo pacman -Sy htop neofetch ncdu git gcc --noconfirm
 
-mkdir ~/gigs -v
-
 echo -ne "
 ------------------------------------------------------------------------------
 icon-theme installation

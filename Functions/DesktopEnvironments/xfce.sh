@@ -1,39 +1,15 @@
 #!/bin/bash
-#Linux Mint 20.3 xfce
-cd ../../../
-source ./scriptSource.sh
 
-template-1-title
-
-echo -ne "
-Linux Mint 20.3 xfce into xfceWidened
-------------------------------------------------------------------------------
-"
-
-#git added just in case
+xfced-add-dependencies(){
 echo -ne "
 ------------------------------------------------------------------------------
-Start of installation
+Add dependencies for xfced
 ------------------------------------------------------------------------------
 "
-sudo apt-get install -y htop neofetch ncdu git gcc grub-customizer baobab
+sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip
+}
 
-mkdir ~/gigs -v
-
-echo -ne "
-------------------------------------------------------------------------------
-duplicate brbinstall for dotfiles
-------------------------------------------------------------------------------
-"
-git clone https://github.com/AramLF/brbinstall ~/gigs/brbinstall
-#duplicate so the folder path can be hardened (so the install.sh can be exe from everywhere)
-
-theming-icons-papirus
-
-sudo papirus-folders -C paleorange --theme Papirus-Dark
-
-theming-gtk-qogir
-
+xfced-dockbarlike-ubuntu(){
 echo -ne "
 ------------------------------------------------------------------------------
 dockbarlike installation
@@ -42,7 +18,33 @@ dockbarlike installation
 sudo add-apt-repository -y ppa:xubuntu-dev/extras
 sudo apt update
 sudo apt install -y xfce4-docklike-plugin
+}
 
+xfced-restart-panel(){
+echo -ne "
+------------------------------------------------------------------------------
+restart xfce panel
+------------------------------------------------------------------------------
+"
+xfce4-panel --restart
+}
+
+xfced-change-theme-mint(){
+echo -ne "
+------------------------------------------------------------------------------
+Changing theme
+------------------------------------------------------------------------------
+"
+xfconf-query -c xsettings -p /Net/ThemeName -s "Mint-Y-Dark-Blue"
+xfconf-query -c xfwm4 -p /general/theme -s Mint-Y-Dark-Blue
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
+}
+
+xfced-change-folders-color(){
+sudo papirus-folders -C paleorange --theme Papirus-Dark
+}
+
+xfced-dotfiles-replacement(){
 echo -ne "
 ------------------------------------------------------------------------------
 dotfiles replacement
@@ -64,21 +66,4 @@ cp ~/gigs/brbinstall/Dotfiles/xfce4/desktop/icons.screen.latest.rc ~/.config/xfc
 cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup-xfce4-desktop.xml -v
 cp ~/gigs/brbinstall/Dotfiles/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml -v
 #temp for now
-
-echo -ne "
-------------------------------------------------------------------------------
-restart xfce panel
-------------------------------------------------------------------------------
-"
-xfce4-panel --restart
-
-echo -ne "
-------------------------------------------------------------------------------
-Changing theme
-------------------------------------------------------------------------------
-"
-xfconf-query -c xsettings -p /Net/ThemeName -s "Mint-Y-Dark-Blue"
-xfconf-query -c xfwm4 -p /general/theme -s Mint-Y-Dark-Blue
-xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
-
-template-1-end
+}

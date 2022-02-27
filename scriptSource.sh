@@ -1,21 +1,23 @@
 #!/bin/bash
 #need to be in this directory
-source ./Templates/tp1.sh
-source ./Templates/tpRandom.sh
+source ./Functions/Templates/tp1.sh
+source ./Functions/Templates/tpRandom.sh
 
-source ./Theming/gtk.sh
-source ./Theming/kde.sh
-source ./Theming/icons.sh
-source ./Theming/wall.sh
-source ./Theming/gterminal.sh
-source ./Theming/konsole.sh
+source ./Functions/Theming/gtk.sh
+source ./Functions/Theming/kde.sh
+source ./Functions/Theming/icons.sh
+source ./Functions/Theming/wall.sh
+source ./Functions/Theming/gterminal.sh
+source ./Functions/Theming/konsole.sh
 
-source ./DesktopEnvironments/gnome.sh
-source ./DesktopEnvironments/xfce.sh
+source ./Functions/DesktopEnvironments/gnome.sh
+source ./Functions/DesktopEnvironments/xfce.sh
 
-source ./Distributions/Debian/tpDebian.sh
-source ./Distributions/Fedora/tpFedora.sh
-source ./Distributions/packages.sh
+source ./Functions/Distributions/Debian/tpDebian.sh
+source ./Functions/Distributions/Fedora/tpFedora.sh
+source ./Functions/Distributions/ArchBased/tpArch.sh
+source ./Functions/Distributions/Void/tpVoid.sh
+source ./Functions/Distributions/packages.sh
 
 #var
 initialPath=$(pwd)
