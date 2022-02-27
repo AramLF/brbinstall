@@ -41,7 +41,7 @@ Orchis installation
 "
 git clone https://github.com/vinceliuice/Orchis-theme ~/gigs/Orchis-theme
 cd ~/gigs/Orchis-theme
-sudo ./install.sh --theme all --tweaks rimless --size compact --color dark
+sudo ./install.sh --theme all --color dark
 #sudo to install theme as root
 }
 
