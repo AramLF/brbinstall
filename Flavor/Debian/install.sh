@@ -1,6 +1,6 @@
 #!/bin/bash
 #Debian 11
-cd ../../../
+cd ../../
 source ./scriptSource.sh
 
 template-1-title

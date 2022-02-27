@@ -11,11 +11,13 @@ Then change to the folder corresponding to the flavor and execute the install.sh
 ./install.sh
 ```
 ### Flavors
-- [ArchBased](https://github.com/AramLF/brbinstall/tree/main/Distributions/ArchBased/gnomed) gnomed
-- [Debian](https://github.com/AramLF/brbinstall/tree/main/Distributions/Debian/gnomed) gnomed
-- [Fedora](https://github.com/AramLF/brbinstall/tree/main/Distributions/Fedora)
-- [LinuxMint](https://github.com/AramLF/brbinstall/tree/main/Distributions/LinuxMint) gnomeOver & xfceWidened (both need to be updated but they work)
+- [ArchBased](https://github.com/AramLF/brbinstall/tree/main/Flavor/ArchBased)
+- [Debian](https://github.com/AramLF/brbinstall/tree/main/Flavor/Debian)
+- [gnomeOver](https://github.com/AramLF/brbinstall/tree/main/Flavor/gnomeOver)
+- [gnomed](https://github.com/AramLF/brbinstall/tree/main/Flavor/gnomed)
 - [kdevi](https://github.com/AramLF/brbinstall/tree/main/Flavor/kdevi)
+- [xfceDock](https://github.com/AramLF/brbinstall/tree/main/Flavor/xfceDock)
+- [xfceWidened](https://github.com/AramLF/brbinstall/tree/main/Flavor/xfceWidened)
 
 ## Potential improvements
 - The script could be executed from the main directory
