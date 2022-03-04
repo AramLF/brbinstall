@@ -52,18 +52,18 @@ dotfiles replacement
 "
 #cp docklike-2.rc
 cp ~/.config/xfce4/panel/docklike-2.rc ~/.config/xfce4/panel/backup-docklike-2.rc -v
-cp ~/gigs/brbinstall/Dotfiles/xfce4/panel/docklike-2.rc ~/.config/xfce4/panel/docklike-2.rc -v
+cp $initialPath/Dotfiles/xfce4/panel/docklike-2.rc ~/.config/xfce4/panel/docklike-2.rc -v
 #cp whiskermenu-1.rc
 cp ~/.config/xfce4/panel/whiskermenu-1.rc ~/.config/xfce4/panel/backup-whiskermenu-1.rc -v
-cp ~/gigs/brbinstall/Dotfiles/xfce4/panel/whiskermenu-1.rc ~/.config/xfce4/panel/whiskermenu-1.rc -v
+cp $initialPath/Dotfiles/xfce4/panel/whiskermenu-1.rc ~/.config/xfce4/panel/whiskermenu-1.rc -v
 #cp xfce4-panel.xml
 cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backtup-xfce4-panel.xml -v
-cp ~/gigs/brbinstall/Dotfiles/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml -v
+cp $initialPath/Dotfiles/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml -v
 #cp icons.screen.latest.rc
 cp ~/.config/xfce4/desktop/icons.screen.latest.rc ~/.config/xfce4/desktop/backup-icons.screen.latest.rc -v
-cp ~/gigs/brbinstall/Dotfiles/xfce4/desktop/icons.screen.latest.rc ~/.config/xfce4/desktop/icons.screen.latest.rc -v
+cp $initialPath/Dotfiles/xfce4/desktop/icons.screen.latest.rc ~/.config/xfce4/desktop/icons.screen.latest.rc -v
 #cp xfce4-desktop.xml
 cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/backup-xfce4-desktop.xml -v
-cp ~/gigs/brbinstall/Dotfiles/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml -v
+cp $initialPath/Dotfiles/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml -v
 #temp for now
 }

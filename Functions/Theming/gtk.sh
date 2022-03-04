@@ -15,8 +15,8 @@ echo -ne "
 Qogir installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Qogir-theme ~/gigs/Qogir-theme
-cd ~/gigs/Qogir-theme/
+git clone https://github.com/vinceliuice/Qogir-theme $initialPlacement/Qogir-theme
+cd $initialPlacement/Qogir-theme/
 sudo ./install.sh
 #sudo to install theme as root
 }
@@ -27,8 +27,8 @@ echo -ne "
 Vimix installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/vimix-gtk-themes ~/gigs/vimix-gtk-themes
-cd ~/gigs/vimix-gtk-themes
+git clone https://github.com/vinceliuice/vimix-gtk-themes $initialPlacement/vimix-gtk-themes
+cd $initialPlacement/vimix-gtk-themes
 sudo ./install.sh -c dark -s compact --all
 #sudo to install theme as root
 }
@@ -39,8 +39,8 @@ echo -ne "
 Orchis installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Orchis-theme ~/gigs/Orchis-theme
-cd ~/gigs/Orchis-theme
+git clone https://github.com/vinceliuice/Orchis-theme $initialPlacement/Orchis-theme
+cd $initialPlacement/Orchis-theme
 sudo ./install.sh --theme all --color dark
 #sudo to install theme as root
 }
@@ -51,8 +51,8 @@ echo -ne "
 Graphite installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Graphite-gtk-theme ~/gigs/Graphite-gtk-theme
-cd ~/gigs/Graphite-gtk-theme
+git clone https://github.com/vinceliuice/Graphite-gtk-theme $initialPlacement/Graphite-gtk-theme
+cd $initialPlacement/Graphite-gtk-theme
 sudo ./install.sh --theme all --tweaks rimless --size compact --color dark
 #sudo to install theme as root
 }
@@ -63,8 +63,8 @@ echo -ne "
 Matcha installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Matcha-gtk-theme ~/gigs/Matcha-gtk-theme
-cd ~/gigs/Matcha-gtk-theme
+git clone https://github.com/vinceliuice/Matcha-gtk-theme $initialPlacement/Matcha-gtk-theme
+cd $initialPlacement/Matcha-gtk-theme
 sudo ./install.sh --color dark
 #sudo to install theme as root
 }
@@ -75,7 +75,7 @@ echo -ne "
 Catppuccin-gtk-theme installation
 ------------------------------------------------------------------------------
 "
-cd ~/gigs
+cd $initialPlacement
 
 wget https://github.com/catppuccin/gtk/releases/download/update_27_01_22/Catppuccin-dark-compact-hdpi.zip
 wget https://github.com/catppuccin/gtk/releases/download/update_27_01_22/Catppuccin-dark-compact-xhdpi.zip

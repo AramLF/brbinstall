@@ -16,8 +16,8 @@ echo -ne "
 tela-icon-theme installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Tela-icon-theme ~/gigs/Tela-icon-theme
-cd ~/gigs/Tela-icon-theme
+git clone https://github.com/vinceliuice/Tela-icon-theme $initialPlacement/Tela-icon-theme
+cd $initialPlacement/Tela-icon-theme
 ./install.sh
 }
 
@@ -27,8 +27,8 @@ echo -ne "
 tela-circle-icon-theme installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Tela-circle-icon-theme ~/gigs/Tela-circle-icon-theme
-cd ~/gigs/Tela-circle-icon-theme
+git clone https://github.com/vinceliuice/Tela-circle-icon-theme $initialPlacement/Tela-circle-icon-theme
+cd $initialPlacement/Tela-circle-icon-theme
 ./install.sh
 }
 

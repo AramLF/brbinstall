@@ -1,5 +1,4 @@
 #!/bin/bash
-#Debian 11
 cd ../../
 source ./scriptSource.sh
 

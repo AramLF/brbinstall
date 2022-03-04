@@ -1,5 +1,16 @@
 #!/bin/bash
 
+konsole-appearance-all (){
+echo -ne "
+------------------------------------------------------------------------------
+All konsole appearances installation
+------------------------------------------------------------------------------
+"
+konsole-appearance-oceanwaves
+konsole-appearance-oceanpop
+konsole-appearance-oceanend
+}
+
 konsole-appearance-oceanwaves () {
 echo -ne "
 ------------------------------------------------------------------------------

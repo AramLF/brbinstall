@@ -6,8 +6,8 @@ echo -ne "
 Vimix-kde installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/vimix-kde ~/gigs/vimix-kde
-cd ~/gigs/vimix-kde
+git clone https://github.com/vinceliuice/vimix-kde $initialPlacement/vimix-kde
+cd $initialPlacement/vimix-kde
 ./install.sh
 #sudo to install theme as root
 }
@@ -27,8 +27,8 @@ echo -ne "
 Fluent-kde installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Fluent-kde ~/gigs/Fluent-kde
-cd ~/gigs/Fluent-kde
+git clone https://github.com/vinceliuice/Fluent-kde $initialPlacement/Fluent-kde
+cd $initialPlacement/Fluent-kde
 ./install.sh
 #sudo to install theme as root
 }

@@ -1,5 +1,4 @@
 #!/bin/bash
-#kdevi
 cd ../../
 source ./scriptSource.sh
 
@@ -23,6 +22,6 @@ theming-icons-tela-circle
 
 theming-wall-graphite
 
-konsole-appearance-oceanwaves
+konsole-appearance-all
 
 template-1-end

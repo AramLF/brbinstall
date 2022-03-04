@@ -24,4 +24,4 @@ Then change to the folder corresponding to the flavor and execute the install.sh
 - Options could be added when doing ./install.sh
 - User input while the installation   
 - Rearrange the whole structure
-- add comments for functions & maybe better naming
+- add comments for functions & maybe better naming (_ instead of -)
