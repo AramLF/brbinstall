@@ -2,19 +2,21 @@
 cd ../../
 source ./scriptSource.sh
 
-template-1-title
+templace_tp1_title
 
-template-1-start
+templace_tp1_start
 
-gnomed-add-dependencies
+de_gnome_add_dependencies
+
+theming_gtk_dependencies
 
 distrib_arch_dependencies
 
 distrib_arch_yay
 
-theming-icons-papirus
+theming_icon_papirus
 
-theming-gtk-matcha
+theming_gtk_matcha
 
 distrib_arch_icons_numix
 
@@ -22,4 +24,4 @@ distrib_arch_gdm-tools
 
 distrib_arch_gnome-extensions
 
-template-1-end
+templace_tp1_end

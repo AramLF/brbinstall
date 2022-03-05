@@ -2,7 +2,7 @@
 cd ../../../
 source ./scriptSource.sh
 
-#template-1-version
+#templace_tp1_version
 
 testVar=$(pwd)
 

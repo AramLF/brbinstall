@@ -13,11 +13,13 @@ Then change to the folder corresponding to the flavor and execute the install.sh
 ### Flavors
 - [ArchBased](https://github.com/AramLF/brbinstall/tree/main/Flavor/ArchBased)
 - [Debian](https://github.com/AramLF/brbinstall/tree/main/Flavor/Debian)
+- [Void](https://github.com/AramLF/brbinstall/tree/main/Flavor/Void)
 - [gnomeOver](https://github.com/AramLF/brbinstall/tree/main/Flavor/gnomeOver)
 - [gnomed](https://github.com/AramLF/brbinstall/tree/main/Flavor/gnomed)
 - [kdevi](https://github.com/AramLF/brbinstall/tree/main/Flavor/kdevi)
 - [xfceDock](https://github.com/AramLF/brbinstall/tree/main/Flavor/xfceDock)
 - [xfceWidened](https://github.com/AramLF/brbinstall/tree/main/Flavor/xfceWidened)
+
 
 ## Potential improvements
 - The script could be executed from the main directory

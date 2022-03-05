@@ -2,36 +2,36 @@
 cd ../../
 source ./scriptSource.sh
 
-template-1-title
+templace_tp1_title
 
-template-debian-version
+distrib_debian_version
 
-template-1-start
+templace_tp1_start
 
-template-debian-installs
+distrib_debian_dependencies
 
-theming-icons-papirus
+theming_icon_papirus
 
-theming-wall-evening
+theming_wallpaper_evening
 
-theming-gtk-catppuccin
+theming_gtk_catppuccin
 
-gnomed-terminal-set-catppuccin
+theming_gterminal_set_catppuccin
 
-gnomed-remove-gnome-software-startup
+de_gnome_del_gnome_software_startup
 
-gnomed-set-gdm-tools
+de_gnome_set_gdm_tools
 
-gnomed-set-icons-theme
+de_gnome_set_icon_theme
 
-gnomed-set-gtk-theme
+de_gnome_set_gtk_theme
 
-gnomed-set-wallpaper
+de_gnome_set_wallpaper
 
-template-debian-prompt
+distrib_debian_prompt
 
-template-debian-plymouth
+distrib_debian_plymouth
 
-template-debian-cnf
+distrib_debian_cnf
 
-template-1-end
+templace_tp1_end

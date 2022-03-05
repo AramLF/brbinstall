@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theming-icons-papirus () {
+theming_icon_papirus () {
 echo -ne "
 ------------------------------------------------------------------------------
 papirus-icon-theme installation
@@ -10,7 +10,7 @@ sudo wget -qO- https://git.io/papirus-icon-theme-install | sh
 sudo wget -qO- https://git.io/papirus-folders-install | sh
 }
 
-theming-icons-tela () {
+theming_icon_tela () {
 echo -ne "
 ------------------------------------------------------------------------------
 tela-icon-theme installation
@@ -21,7 +21,7 @@ cd $initialPlacement/Tela-icon-theme
 ./install.sh
 }
 
-theming-icons-tela-circle () {
+theming_icon_tela_circle () {
 echo -ne "
 ------------------------------------------------------------------------------
 tela-circle-icon-theme installation
@@ -32,7 +32,7 @@ cd $initialPlacement/Tela-circle-icon-theme
 ./install.sh
 }
 
-theming-icons-numix-circle () {
+theming_icon_numix_circle () {
 echo -ne "
 ------------------------------------------------------------------------------
 numix-icon-theme-circle installation
@@ -41,7 +41,7 @@ numix-icon-theme-circle installation
 sudo $auto_pkg_installer numix-icon-theme-circle
 }
 
-theming-icons-numix () {
+theming_icon_numix () {
 echo -ne "
 ------------------------------------------------------------------------------
 numix-icon-theme installation

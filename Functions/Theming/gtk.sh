@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theming-gtk-dependencies () {
+theming_gtk_dependencies () {
 echo -ne "
 ------------------------------------------------------------------------------
 Some dependencies for gtk installation
@@ -9,7 +9,7 @@ Some dependencies for gtk installation
 sudo $auto_pkg_installer sassc
 }
 
-theming-gtk-qogir () {
+theming_gtk_qogir () {
 echo -ne "
 ------------------------------------------------------------------------------
 Qogir installation
@@ -21,7 +21,7 @@ sudo ./install.sh
 #sudo to install theme as root
 }
 
-theming-gtk-vimix () {
+theming_gtk_vimix () {
 echo -ne "
 ------------------------------------------------------------------------------
 Vimix installation
@@ -33,7 +33,7 @@ sudo ./install.sh -c dark -s compact --all
 #sudo to install theme as root
 }
 
-theming-gtk-orchis () {
+theming_gtk_orchis () {
 echo -ne "
 ------------------------------------------------------------------------------
 Orchis installation
@@ -45,7 +45,7 @@ sudo ./install.sh --theme all --color dark
 #sudo to install theme as root
 }
 
-theming-gtk-graphite () {
+theming_gtk_graphite () {
 echo -ne "
 ------------------------------------------------------------------------------
 Graphite installation
@@ -57,7 +57,7 @@ sudo ./install.sh --theme all --tweaks rimless --size compact --color dark
 #sudo to install theme as root
 }
 
-theming-gtk-matcha () {
+theming_gtk_matcha () {
 echo -ne "
 ------------------------------------------------------------------------------
 Matcha installation
@@ -69,7 +69,7 @@ sudo ./install.sh --color dark
 #sudo to install theme as root
 }
 
-theming-gtk-catppuccin () {
+theming_gtk_catppuccin () {
 echo -ne "
 ------------------------------------------------------------------------------
 Catppuccin-gtk-theme installation

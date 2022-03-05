@@ -5,8 +5,8 @@ source ./Functions/Templates/tpRandom.sh
 
 source ./Functions/Theming/gtk.sh
 source ./Functions/Theming/kde.sh
-source ./Functions/Theming/icons.sh
-source ./Functions/Theming/wall.sh
+source ./Functions/Theming/icon.sh
+source ./Functions/Theming/wallpaper.sh
 source ./Functions/Theming/gterminal.sh
 source ./Functions/Theming/konsole.sh
 
@@ -24,4 +24,4 @@ initialPath=$(pwd)
 initialPlaceHolder=$initialPath/placeholder
 initialPlacement=$initialPath/..
 
-manage-package-installer
+distrib_package_manager

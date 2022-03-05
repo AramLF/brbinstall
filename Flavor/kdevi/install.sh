@@ -2,26 +2,26 @@
 cd ../../
 source ./scriptSource.sh
 
-template-1-title
+templace_tp1_title
 
-template-1-start
+templace_tp1_start
 
-theming-kde-vimix
+theming_kde_vimix
 
-theming-gtk-dependencies
+theming_gtk_dependencies
 
-theming-gtk-vimix
+theming_gtk_vimix
 
-theming-kde-materia
+theming_kde_materia
 
-theming-icons-papirus
+theming_icon_papirus
 
-theming-icons-tela
+theming_icon_tela
 
-theming-icons-tela-circle
+theming_icon_tela_circle
 
-theming-wall-graphite
+theming_wallpaper_graphite
 
-konsole-appearance-all
+theming_konsole_all
 
-template-1-end
+templace_tp1_end

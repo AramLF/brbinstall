@@ -15,7 +15,7 @@ echo -ne "
 yay installation
 ------------------------------------------------------------------------------
 "
-if check-command yay; then
+if check_command yay; then
   echo 'yay is already installed'
 else
   sudo $auto_pkg_installer --needed git base-devel

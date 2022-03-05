@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theming-wall-evening () {
+theming_wallpaper_evening () {
 echo -ne "
 ------------------------------------------------------------------------------
 evening-sky wallpaper download
@@ -11,7 +11,7 @@ wget https://raw.githubusercontent.com/catppuccin/wallpapers/main/landscapes/eve
 sudo mv evening-sky.png /usr/share/backgrounds/evening-sky.png
 }
 
-theming-wall-graphite () {
+theming_wallpaper_graphite () {
 echo -ne "
 ------------------------------------------------------------------------------
 graphite wallpaper download

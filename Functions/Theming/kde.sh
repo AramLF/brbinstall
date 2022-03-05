@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theming-kde-vimix () {
+theming_kde_vimix () {
 echo -ne "
 ------------------------------------------------------------------------------
 Vimix-kde installation
@@ -12,7 +12,7 @@ cd $initialPlacement/vimix-kde
 #sudo to install theme as root
 }
 
-theming-kde-materia () {
+theming_kde_materia () {
 echo -ne "
 ------------------------------------------------------------------------------
 Materia-kde installation
@@ -21,7 +21,7 @@ Materia-kde installation
 sudo wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/materia-kde/master/install.sh | sh
 }
 
-theming-kde-fluent () {
+theming_kde_fluent () {
 echo -ne "
 ------------------------------------------------------------------------------
 Fluent-kde installation

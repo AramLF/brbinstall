@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gnomed-add-dependencies(){
+de_gnome_add_dependencies(){
 echo -ne "
 ------------------------------------------------------------------------------
 Add dependencies for gnomed
@@ -10,7 +10,7 @@ sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip
 sudo $auto_pkg_installer gnome-tweaks
 }
 
-gnomed-remove-gnome-software-startup () {
+de_gnome_del_gnome_software_startup () {
 echo -ne "
 ------------------------------------------------------------------------------
 Removing gnome-software at startup
@@ -24,7 +24,7 @@ dconf write /org/gnome/software/download-updates false
 #allow-updates
 }
 
-gnomed-set-gdm-tools () {
+de_gnome_set_gdm_tools () {
 echo -ne "
 ------------------------------------------------------------------------------
 gdm-tools installation
@@ -35,11 +35,11 @@ cd $initialPlacement/gdm-tools
 echo y|./install.sh
 #set-gdm-theme -s Graphite-dark-compact
 #set-gdm-theme -s Catppuccin-dark-compact
-echo 'Set theme for gdm'
+echo 'Set theme for gdm with set-gdm-theme '
 set-gdm-theme -l
 }
 
-gnomed-set-gtk-theme () {
+de_gnome_set_gtk_theme () {
 echo -ne "
 ------------------------------------------------------------------------------
 Changing gtk-theme
@@ -51,7 +51,7 @@ gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 gsettings set org.gnome.shell.extensions.user-theme name "Catppuccin-dark-compact"
 }
 
-gnomed-set-icons-theme () {
+de_gnome_set_icon_theme () {
 echo -ne "
 ------------------------------------------------------------------------------
 Changing icons-theme
@@ -60,7 +60,7 @@ Changing icons-theme
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 }
 
-gnomed-set-wallpaper () {
+de_gnome_set_wallpaper () {
 echo -ne "
 ------------------------------------------------------------------------------
 Changing wallpaper
@@ -69,7 +69,7 @@ Changing wallpaper
 gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/evening-sky.png
 }
 
-gnomed-gnome-over-ubuntu(){
+de_gnome_gnomeover_ubuntu(){
 echo -ne "
 ------------------------------------------------------------------------------
 Gnome-over installation

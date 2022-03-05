@@ -2,22 +2,22 @@
 cd ../../
 source ./scriptSource.sh
 
-template-1-title
+templace_tp1_title
 
-template-1-start
+templace_tp1_start
 
-theming-icons-papirus
+theming_icon_papirus
 
-xfced-change-folders-color
+de_xfce_change_folder_color
 
-theming-gtk-qogir
+theming_gtk_qogir
 
-xfced-dockbarlike-ubuntu
+de_xfce_dockbarlike
 
-xfced-dotfiles-replacement
+de_xfce_dotfiles_replacement
 
-xfced-restart-panel
+de_xfce_restart_panel
 
-xfced-change-theme-mint
+de_xfce_change_theme
 
-template-1-end
+templace_tp1_end

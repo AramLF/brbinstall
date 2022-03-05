@@ -10,4 +10,4 @@
 #need to be in this directory
 source ./scriptSource.sh
 
-template-1-title
+templace_tp1_title

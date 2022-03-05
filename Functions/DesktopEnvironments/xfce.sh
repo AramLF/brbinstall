@@ -1,6 +1,6 @@
 #!/bin/bash
 
-xfced-add-dependencies(){
+de_xfce_add_dependencies(){
 echo -ne "
 ------------------------------------------------------------------------------
 Add dependencies for xfced
@@ -9,7 +9,7 @@ Add dependencies for xfced
 sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip
 }
 
-xfced-dockbarlike-ubuntu(){
+de_xfce_dockbarlike(){
 echo -ne "
 ------------------------------------------------------------------------------
 dockbarlike installation
@@ -20,7 +20,7 @@ sudo apt update
 sudo apt install -y xfce4-docklike-plugin
 }
 
-xfced-restart-panel(){
+de_xfce_restart_panel(){
 echo -ne "
 ------------------------------------------------------------------------------
 restart xfce panel
@@ -29,7 +29,7 @@ restart xfce panel
 xfce4-panel --restart
 }
 
-xfced-change-theme-mint(){
+de_xfce_change_theme(){
 echo -ne "
 ------------------------------------------------------------------------------
 Changing theme
@@ -40,11 +40,11 @@ xfconf-query -c xfwm4 -p /general/theme -s Mint-Y-Dark-Blue
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
 }
 
-xfced-change-folders-color(){
+de_xfce_change_folder_color(){
 sudo papirus-folders -C paleorange --theme Papirus-Dark
 }
 
-xfced-dotfiles-replacement(){
+de_xfce_dotfiles_replacement(){
 echo -ne "
 ------------------------------------------------------------------------------
 dotfiles replacement

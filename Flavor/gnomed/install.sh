@@ -2,26 +2,26 @@
 cd ../../
 source ./scriptSource.sh
 
-template-1-title
+templace_tp1_title
 
-template-1-start
+templace_tp1_start
 
-gnomed-add-dependencies
+de_gnome_add_dependencies
 
-theming-gtk-dependencies
+theming_gtk_dependencies
 
-theming-icons-papirus
+theming_icon_papirus
 
-theming-icons-numix-circle
+theming_icon_numix_circle
 
-theming-gtk-graphite
+theming_gtk_graphite
 
-theming-gtk-orchis
+theming_gtk_orchis
 
-gnomed-remove-gnome-software-startup
+de_gnome_del_gnome_software_startup
 
-gnomed-set-gdm-tools
+de_gnome_set_gdm_tools
 
-gnomed-set-icons-theme
+de_gnome_set_icon_theme
 
-template-1-end
+templace_tp1_end

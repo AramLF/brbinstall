@@ -2,22 +2,22 @@
 cd ../../
 source ./scriptSource.sh
 
-template-1-title
+templace_tp1_title
 
-template-1-start
+templace_tp1_start
 
-gnomed-gnome-over-ubuntu
+de_gnome_gnomeover_ubuntu
 
-gnomed-add-dependencies
+de_gnome_add_dependencies
 
-theming-icons-papirus
+theming_icon_papirus
 
-theming-gtk-vimix
+theming_gtk_vimix
 
-theming-gtk-graphite
+theming_gtk_graphite
 
-gnomed-remove-gnome-software-startup
+de_gnome_del_gnome_software_startup
 
-gnomed-set-gdm-tools
+de_gnome_set_gdm_tools
 
-template-1-end
+templace_tp1_end
