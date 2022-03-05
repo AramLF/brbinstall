@@ -2,10 +2,10 @@
 cd ../../
 source ./scriptSource.sh
 
-templace_tp1_title
+template_tp1_title
 
-templace_tp1_start
+template_tp1_start
 
 distrib_void_dependencies
 
-templace_tp1_end
+template_tp1_end

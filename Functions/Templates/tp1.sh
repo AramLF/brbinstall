@@ -1,6 +1,6 @@
 #!/bin/bash
 
-templace_tp1_title () {
+template_tp1_title () {
 echo -ne "
 ------------------------------------------------------------------------------
 ██████╗ ██████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗ █████╗ ██╗     ██╗
@@ -13,7 +13,7 @@ echo -ne "
 "
 }
 
-templace_tp1_version () {
+template_tp1_version () {
 echo -ne "
 ------------------------------------------------------------------------------
 Distrib ver
@@ -22,7 +22,7 @@ Distrib ver
 #Distrib ver
 }
 
-templace_tp1_start () {
+template_tp1_start () {
 echo -ne "
 ------------------------------------------------------------------------------
 Start of installation
@@ -30,7 +30,7 @@ Start of installation
 "
 }
 
-templace_tp1_end () {
+template_tp1_end () {
 echo -ne "
 ------------------------------------------------------------------------------
 Installation finished, reboot recommended !

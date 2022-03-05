@@ -2,7 +2,7 @@
 cd ../../../
 source ./scriptSource.sh
 
-#templace_tp1_version
+#template_tp1_version
 
 kljmjlkdsqkdjslqf (){
   echo $testVar

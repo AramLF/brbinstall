@@ -2,9 +2,9 @@
 cd ../../
 source ./scriptSource.sh
 
-templace_tp1_title
+template_tp1_title
 
-templace_tp1_start
+template_tp1_start
 
 theming_kde_vimix
 
@@ -24,4 +24,4 @@ theming_wallpaper_graphite
 
 theming_konsole_all
 
-templace_tp1_end
+template_tp1_end

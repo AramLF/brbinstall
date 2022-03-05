@@ -2,11 +2,11 @@
 cd ../../
 source ./scriptSource.sh
 
-templace_tp1_title
+template_tp1_title
 
 distrib_debian_version
 
-templace_tp1_start
+template_tp1_start
 
 distrib_debian_dependencies
 
@@ -34,4 +34,4 @@ distrib_debian_plymouth
 
 distrib_debian_cnf
 
-templace_tp1_end
+template_tp1_end

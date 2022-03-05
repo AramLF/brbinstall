@@ -2,9 +2,9 @@
 cd ../../
 source ./scriptSource.sh
 
-templace_tp1_title
+template_tp1_title
 
-templace_tp1_start
+template_tp1_start
 
 de_gnome_add_dependencies
 
@@ -24,4 +24,4 @@ distrib_arch_gdm-tools
 
 distrib_arch_gnome-extensions
 
-templace_tp1_end
+template_tp1_end
