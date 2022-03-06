@@ -2,4 +2,4 @@
 cd ../
 source ./scriptSource.sh
 
-theming_terminal_ps1
+theming_icon_numix_both

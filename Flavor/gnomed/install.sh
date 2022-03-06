@@ -12,7 +12,7 @@ theming_gtk_dependencies
 
 theming_icon_papirus
 
-theming_icon_numix_circle
+theming_icon_numix_both
 
 theming_gtk_graphite
 
@@ -23,5 +23,7 @@ de_gnome_del_gnome_software_startup
 de_gnome_set_gdm_tools
 
 de_gnome_set_icon_theme
+
+theming_terminal_ps1
 
 template_tp1_end

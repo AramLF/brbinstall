@@ -32,20 +32,22 @@ cd $initialPlacement/Tela-circle-icon-theme
 ./install.sh
 }
 
-theming_icon_numix_circle () {
+theming_icon_numix_both () {
 echo -ne "
 ------------------------------------------------------------------------------
-numix-icon-theme-circle installation
+numix-icon-theme & circle installation
 ------------------------------------------------------------------------------
 "
-sudo $auto_pkg_installer numix-icon-theme-circle
-}
+#sudo $auto_pkg_installer numix-icon-theme
+#sudo $auto_pkg_installer numix-icon-theme-circle
 
-theming_icon_numix () {
-echo -ne "
-------------------------------------------------------------------------------
-numix-icon-theme installation
-------------------------------------------------------------------------------
-"
-sudo $auto_pkg_installer numix-icon-theme
+git clone https://github.com/numixproject/numix-icon-theme $initialPlacement/numix-icon-theme
+cd $initialPlacement/numix-icon-theme
+sudo cp -r Numix/ /usr/share/icons/Numix/
+sudo cp -r Numix-Light/ /usr/share/icons/Numix-Light/
+
+git clone https://github.com/numixproject/numix-icon-theme-circle $initialPlacement/numix-icon-theme-circle
+cd $initialPlacement/numix-icon-theme-circle
+sudo cp -r Numix-Circle/ /usr/share/icons/Numix-Circle/
+sudo cp -r Numix-Circle-Light/ /usr/share/icons/Numix-Circle-Light/
 }

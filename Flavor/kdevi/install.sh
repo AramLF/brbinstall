@@ -24,4 +24,6 @@ theming_wallpaper_graphite
 
 theming_konsole_all
 
+theming_terminal_ps1
+
 template_tp1_end
