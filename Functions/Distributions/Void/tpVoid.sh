@@ -2,7 +2,11 @@
 
 
 distrib_void_dependencies () {
-
+echo -ne "
+------------------------------------------------------------------------------
+Void add dependencies
+------------------------------------------------------------------------------
+"
   sudo $auto_pkg_installer git gcc wget curl unzip
 }
 
@@ -21,7 +25,7 @@ Void change mirror
 distrib_void_tweaks(){
 echo -ne "
 ------------------------------------------------------------------------------
-Void tweaks mirror
+Void add repositories
 ------------------------------------------------------------------------------
 "
   sudo xbps-install -Syu
@@ -30,6 +34,11 @@ Void tweaks mirror
 }
 
 distrib_void_more(){
+echo -ne "
+------------------------------------------------------------------------------
+Void more pkgs
+------------------------------------------------------------------------------
+"
   sudo $auto_pkg_installer firefox
   sudo $auto_pkg_installer open-vm-tools
   sudo $auto_pkg_installer wget perl sassc
@@ -87,6 +96,8 @@ Void enabling services
 distrib_void_flavor_gnome(){
 
   distrib_void_mirror
+
+  distrib_void_tweaks
 
   distrib_void_dependencies
 
