@@ -2,7 +2,7 @@
 
 
 distrib_void_dependencies () {
-  
+
   sudo $auto_pkg_installer git gcc wget curl unzip
 }
 
@@ -19,6 +19,11 @@ Void change mirror
 }
 
 distrib_void_tweaks(){
+echo -ne "
+------------------------------------------------------------------------------
+Void tweaks mirror
+------------------------------------------------------------------------------
+"
   sudo xbps-install -Syu
   sudo $auto_pkg_installer void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
   sudo xbps-install -Sy
@@ -77,4 +82,17 @@ Void enabling services
   sudo ln -s /etc/sv/alsa /var/service/
   sudo ln -s /etc/sv/NetworkManager /var/service/
   sudo sv status /var/service/*
+}
+
+distrib_void_flavor_gnome(){
+
+  distrib_void_mirror
+
+  distrib_void_dependencies
+
+  distrib_void_more
+
+  distrib_void_gnome
+
+
 }

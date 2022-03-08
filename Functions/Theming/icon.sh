@@ -18,7 +18,7 @@ tela-icon-theme installation
 "
 git clone https://github.com/vinceliuice/Tela-icon-theme $initialPlacement/Tela-icon-theme
 cd $initialPlacement/Tela-icon-theme
-./install.sh
+sudo ./install.sh
 }
 
 theming_icon_tela_circle () {
@@ -29,7 +29,7 @@ tela-circle-icon-theme installation
 "
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme $initialPlacement/Tela-circle-icon-theme
 cd $initialPlacement/Tela-circle-icon-theme
-./install.sh
+sudo ./install.sh
 }
 
 theming_icon_numix_both () {
