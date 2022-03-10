@@ -8,7 +8,7 @@ template_tp1_start
 
 de_gnome_add_dependencies
 
-theming_gtk_dependencies
+theming_dependencies_global
 
 distrib_arch_dependencies
 

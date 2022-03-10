@@ -51,9 +51,8 @@ Void gnome installation
 ------------------------------------------------------------------------------
 "
   sudo $auto_pkg_installer gnome gnome-apps mesa-dri xdg-user-dirs
-  sudo ln -s /etc/sv/NetworkManager /var/service/
+
   sudo ln -s /etc/sv/gdm /var/service/
-  sudo ln -s /etc/sv/dbus /var/service/
 }
 
 distrib_void_kde(){
@@ -63,11 +62,10 @@ Void kde installation
 ------------------------------------------------------------------------------
 "
   sudo $auto_pkg_installer kde5 kde5-baseapps kdegraphics-thumbnailers ffmpegthumbs falkon
-  sudo $auto_pkg_installer lxdm
-  sudo $auto_pkg_installer lightdm gdm
+  sudo $auto_pkg_installer mesa-dri xdg-user-dirs
+  sudo $auto_pkg_installer sddm xorg
 
-  sudo $auto_pkg_installer alsa-utils
-  sudo $auto_pkg_installer NetworkManager
+  sudo ln -s /etc/sv/sddm /var/service/
 }
 
 distrib_void_xfce(){
@@ -77,6 +75,14 @@ Void xfce installation
 ------------------------------------------------------------------------------
 "
   sudo $auto_pkg_installer xfce4
+
+  sudo $auto_pkg_installer lxdm
+  sudo $auto_pkg_installer lightdm gdm
+
+  sudo $auto_pkg_installer alsa-utils
+  sudo $auto_pkg_installer NetworkManager
+
+  sudo $auto_pkg_installer xfce4-pulseaudio-plugin xfce4-xkb-plugin
 }
 
 distrib_void_enable_services(){
@@ -87,9 +93,11 @@ Void enabling services
 "
   #sudo vmtoolsd
   sudo sv status /var/service/*
-  sudo ln -s /etc/sv/dbus /var/service/
-  sudo ln -s /etc/sv/alsa /var/service/
+
   sudo ln -s /etc/sv/NetworkManager /var/service/
+  sudo ln -s /etc/sv/dbus /var/service/
+  #sudo ln -s /etc/sv/alsa /var/service/
+
   sudo sv status /var/service/*
 }
 
@@ -105,5 +113,22 @@ distrib_void_flavor_gnome(){
 
   distrib_void_gnome
 
+  distrib_void_enable_services
+
+}
+
+distrib_void_flavor_kde(){
+
+  distrib_void_mirror
+
+  distrib_void_tweaks
+
+  distrib_void_dependencies
+
+  distrib_void_more
+
+  distrib_void_kde
+
+  distrib_void_enable_services
 
 }

@@ -6,9 +6,9 @@ template_tp1_title
 
 template_tp1_start
 
-theming_kde_vimix
+theming_dependencies_global
 
-theming_gtk_dependencies
+theming_kde_vimix
 
 theming_gtk_vimix
 
