@@ -106,6 +106,8 @@ distrib_void_flavor_gnome(){
   distrib_void_mirror
 
   distrib_void_tweaks
+  
+  distrib_void_mirror
 
   distrib_void_dependencies
 
@@ -119,9 +121,11 @@ distrib_void_flavor_gnome(){
 
 distrib_void_flavor_kde(){
 
-  distrib_void_mirror
+  distrib_void_mirror 
 
   distrib_void_tweaks
+  
+  distrib_void_mirror
 
   distrib_void_dependencies
 
