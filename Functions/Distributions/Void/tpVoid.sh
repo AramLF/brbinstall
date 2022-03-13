@@ -61,7 +61,8 @@ echo -ne "
 Void kde installation
 ------------------------------------------------------------------------------
 "
-  sudo $auto_pkg_installer kde5 kde5-baseapps kdegraphics-thumbnailers ffmpegthumbs falkon
+  sudo $auto_pkg_installer kde5 kde5-baseapps kdegraphics-thumbnailers ffmpegthumbs
+  sudo $auto_pkg_installer falkon pulseaudio gwenview
   sudo $auto_pkg_installer mesa-dri xdg-user-dirs
   sudo $auto_pkg_installer sddm xorg
 
@@ -106,7 +107,7 @@ distrib_void_flavor_gnome(){
   distrib_void_mirror
 
   distrib_void_tweaks
-  
+
   distrib_void_mirror
 
   distrib_void_dependencies
@@ -121,10 +122,10 @@ distrib_void_flavor_gnome(){
 
 distrib_void_flavor_kde(){
 
-  distrib_void_mirror 
+  distrib_void_mirror
 
   distrib_void_tweaks
-  
+
   distrib_void_mirror
 
   distrib_void_dependencies

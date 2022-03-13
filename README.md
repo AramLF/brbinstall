@@ -23,7 +23,8 @@ Then change to the folder corresponding to the flavor and execute the install.sh
 
 ## Potential improvements
 - The script could be executed from the main directory
-- Options could be added when doing ./install.sh
+- Options could be added when doing ./install.sh (void for example)
 - User input while the installation   
 - Rearrange the whole structure
 - add comments for functions & maybe better naming (_ instead of -)
+- add pics

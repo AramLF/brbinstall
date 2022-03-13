@@ -9,7 +9,7 @@ Find 'PS1'
 ```
 grep 'PS1' ~/.bashrc
 ```
-Find 'PS1=''
+Find 'PS1='
 ```
 grep 'PS1=' ~/.bashrc
 ```

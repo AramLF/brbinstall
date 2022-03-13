@@ -9,6 +9,15 @@ Add dependencies for xfced
 sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip
 }
 
+de_xfce_panel_size(){
+echo -ne "
+------------------------------------------------------------------------------
+Change panel size
+------------------------------------------------------------------------------
+"
+xfconf-query --channel 'xfce4-panel' --property '/panels/panel-1/size' --type int --set 44
+}
+
 de_xfce_dockbarlike(){
 echo -ne "
 ------------------------------------------------------------------------------
