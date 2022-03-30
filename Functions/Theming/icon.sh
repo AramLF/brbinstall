@@ -60,5 +60,6 @@ Yaru++ Installation
 "
 #root directory
 #main alternative --> yaru++ Color
+#https://github.com/Bonandry/yaru-plus
 wget -qO- https://raw.githubusercontent.com/Bonandry/yaru-plus/master/install.sh | sh
 }
