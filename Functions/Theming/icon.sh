@@ -51,3 +51,16 @@ cd $initialPlacement/numix-icon-theme-circle
 sudo cp -r Numix-Circle/ /usr/share/icons/Numix-Circle/
 sudo cp -r Numix-Circle-Light/ /usr/share/icons/Numix-Circle-Light/
 }
+
+theming_icon_yaruextended () {
+echo -ne "
+------------------------------------------------------------------------------
+YaruExtended Installation
+------------------------------------------------------------------------------
+"
+#later idk
+#cd $initialPlacement
+#wget https://raw.githubusercontent.com/catppuccin/wallpapers/main/landscapes/evening-sky.png
+#extract etc...
+#sudo cp -r evening-sky.png /usr/share/backgrounds/evening-sky.png
+}
