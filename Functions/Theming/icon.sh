@@ -59,7 +59,7 @@ colloid-icon-theme installation
 ------------------------------------------------------------------------------
 "
 git clone https://github.com/vinceliuice/Colloid-icon-theme $initialPlacement/Colloid-icon-theme
-cd $initialPlacement/Colloid-icon-theme 
+cd $initialPlacement/Colloid-icon-theme
 sudo ./install.sh
 }
 
@@ -69,6 +69,8 @@ echo -ne "
 Yaru++-icon-theme Installation
 ------------------------------------------------------------------------------
 "
-#root directory; main alternative --> yaru++ Color
+#root directory
+#yaru++ Color
+#https://github.com/Bonandry/yaru-plus
 wget -qO- https://raw.githubusercontent.com/Bonandry/yaru-plus/master/install.sh | sh
 }
