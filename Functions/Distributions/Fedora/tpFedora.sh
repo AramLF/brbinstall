@@ -55,6 +55,23 @@ sudo dnf install -y lame\* --exclude=lame-devel
 sudo dnf group upgrade -y --with-optional Multimedia
 }
 
+distrib_fedora_raw () {
+echo -ne "
+------------------------------------------------------------------------------
+rawhide
+------------------------------------------------------------------------------
+"
+#use with care
+#to fedora rawhide
+cat /etc/os-release
+sudo dnf upgrade --refresh
+sudo dnf install dnf-plugin-system-upgrade
+sudo dnf system-upgrade download --releasever=36
+sudo dnf system-upgrade download --releasever=36 --allowerasing
+sudo dnf system-upgrade reboot
+cat /etc/os-release
+}
+
 distrib_fedora_run () {
   #later
   #distrib_fedora_dnf_tweaks
