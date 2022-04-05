@@ -60,6 +60,18 @@ sudo ./install.sh --color dark
 #sudo to install theme as root
 }
 
+theming_gtk_colloid () {
+echo -ne "
+------------------------------------------------------------------------------
+Colloid installation
+------------------------------------------------------------------------------
+"
+git clone https://github.com/vinceliuice/Colloid-gtk-theme $initialPlacement/Colloid-gtk-theme
+cd $initialPlacement/Colloid-gtk-theme
+sudo ./install.sh --color dark --size compact 
+#sudo to install theme as root
+}
+
 theming_gtk_catppuccin () {
 echo -ne "
 ------------------------------------------------------------------------------

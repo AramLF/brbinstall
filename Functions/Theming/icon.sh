@@ -52,13 +52,23 @@ sudo cp -r Numix-Circle/ /usr/share/icons/Numix-Circle/
 sudo cp -r Numix-Circle-Light/ /usr/share/icons/Numix-Circle-Light/
 }
 
+theming_icon_colloid () {
+echo -ne "
+------------------------------------------------------------------------------
+colloid-icon-theme installation
+------------------------------------------------------------------------------
+"
+git clone https://github.com/vinceliuice/Colloid-icon-theme $initialPlacement/Colloid-icon-theme
+cd $initialPlacement/Colloid-icon-theme 
+sudo ./install.sh
+}
+
 theming_icon_yarupp () {
 echo -ne "
 ------------------------------------------------------------------------------
-Yaru++ Installation
+Yaru++-icon-theme Installation
 ------------------------------------------------------------------------------
 "
-#root directory
-#main alternative --> yaru++ Color
+#root directory; main alternative --> yaru++ Color
 wget -qO- https://raw.githubusercontent.com/Bonandry/yaru-plus/master/install.sh | sh
 }

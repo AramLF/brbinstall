@@ -32,3 +32,15 @@ cd $initialPlacement/Fluent-kde
 ./install.sh
 #sudo to install theme as root
 }
+
+theming_kde_colloid () {
+echo -ne "
+------------------------------------------------------------------------------
+Colloid-kde installation
+------------------------------------------------------------------------------
+"
+git clone https://github.com/vinceliuice/Colloid-kde $initialPlacement/Colloid-kde
+cd $initialPlacement/Colloid-kde
+./install.sh
+#sudo to install theme as root
+}
