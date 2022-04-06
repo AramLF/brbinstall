@@ -63,6 +63,17 @@ cd $initialPlacement/Colloid-icon-theme
 sudo ./install.sh
 }
 
+theming_icon_fluent () {
+echo -ne "
+------------------------------------------------------------------------------
+fluent-icon-theme installation
+------------------------------------------------------------------------------
+"
+git clone https://github.com/vinceliuice/Fluent-icon-theme $initialPlacement/Fluent-icon-theme
+cd $initialPlacement/Fluent-icon-theme
+sudo ./install.sh
+}
+
 theming_icon_yarupp () {
 echo -ne "
 ------------------------------------------------------------------------------

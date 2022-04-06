@@ -102,25 +102,38 @@ Void enabling services
   sudo sv status /var/service/*
 }
 
-distrib_void_flavor_gnome(){
+distrib_void_choices(){
+  echo "What Desktop Environnment do you want ?"
+  echo "1 for KDE"
+  echo "2 for Gnome"
+  read -r -p "Press the number then press Enter " voidDE
 
-  distrib_void_mirror
-
-  distrib_void_tweaks
-
-  distrib_void_mirror
-
-  distrib_void_dependencies
-
-  distrib_void_more
-
-  distrib_void_gnome
-
-  distrib_void_enable_services
+  if [ $voidDE = "1" ]
+  then
+    echo "Kde selected"
+  elif [ $voidDE = "2" ]
+  then
+    echo "Gnome selected"
+  else
+    echo "exiting please choose a DE";
+    exit 1;
+  fi
 
 }
 
-distrib_void_flavor_kde(){
+distrib_void_de_choice(){
+  if [ $voidDE = "1" ]
+  then
+    distrib_void_kde;
+  elif [ $voidDE = "2" ]
+  then
+    distrib_void_gnome;
+  fi
+}
+
+distrib_void_flavor(){
+
+  distrib_void_choices
 
   distrib_void_mirror
 
@@ -132,7 +145,7 @@ distrib_void_flavor_kde(){
 
   distrib_void_more
 
-  distrib_void_kde
+  distrib_void_de_choice
 
   distrib_void_enable_services
 

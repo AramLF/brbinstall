@@ -73,6 +73,7 @@ cat /etc/os-release
 }
 
 distrib_fedora_run () {
+  ls -l
   #later
   #distrib_fedora_dnf_tweaks
   #distrib_fedora_rpm_fusion
