@@ -25,15 +25,6 @@ else
 fi
 }
 
-distrib_arch_icons_numix(){
-echo -ne "
-------------------------------------------------------------------------------
-numix-circle-icon installation
-------------------------------------------------------------------------------
-"
-yay -S numix-circle-icon-theme-git --noconfirm
-}
-
 distrib_arch_gdm-tools () {
 echo -ne "
 ------------------------------------------------------------------------------
@@ -41,7 +32,7 @@ gdm-tools installation
 ------------------------------------------------------------------------------
 "
 yay -S gdm-tools-git --noconfirm
-set-gdm-theme -s Matcha-dark-azul
+set-gdm-theme -s
 }
 
 distrib_arch_gnome-extensions (){

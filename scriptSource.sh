@@ -15,6 +15,13 @@ source ./Functions/Theming/terminal.sh
 source ./Functions/DesktopEnvironments/gnome.sh
 source ./Functions/DesktopEnvironments/xfce.sh
 
+source ./Functions/Flavoring/matte.sh
+source ./Functions/Flavoring/vimi.sh
+source ./Functions/Flavoring/wind.sh
+source ./Functions/Flavoring/coll.sh
+source ./Functions/Flavoring/grey.sh
+source ./Functions/Flavoring/catp.sh
+
 source ./Functions/Distributions/Debian/tpDebian.sh
 source ./Functions/Distributions/Fedora/tpFedora.sh
 source ./Functions/Distributions/ArchBased/tpArch.sh

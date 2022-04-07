@@ -68,7 +68,19 @@ Colloid installation
 "
 git clone https://github.com/vinceliuice/Colloid-gtk-theme $initialPlacement/Colloid-gtk-theme
 cd $initialPlacement/Colloid-gtk-theme
-sudo ./install.sh --color dark --size compact 
+sudo ./install.sh --color dark --size compact
+#sudo to install theme as root
+}
+
+theming_gtk_fluent () {
+echo -ne "
+------------------------------------------------------------------------------
+Fluent installation
+------------------------------------------------------------------------------
+"
+git clone https://github.com/vinceliuice/Fluent-gtk-theme $initialPlacement/Fluent-gtk-theme
+cd $initialPlacement/Fluent-gtk-theme
+sudo ./install.sh --size compact 
 #sudo to install theme as root
 }
 

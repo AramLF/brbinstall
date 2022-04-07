@@ -20,3 +20,13 @@ graphite wallpaper download
 git clone https://github.com/vinceliuice/Graphite-gtk-theme $initialPlacement/Graphite-gtk-theme
 cd $initialPlacement/Graphite-gtk-theme
 }
+
+theming_wallpaper_spacenord () {
+echo -ne "
+------------------------------------------------------------------------------
+spacenord wallpaper download
+------------------------------------------------------------------------------
+"
+#/usr/share/endeavouros/backgrounds
+sudo cp $initialPath/Dotfiles/walls/spacenord.png /usr/share/backgrounds/walls/spacenord.png
+}

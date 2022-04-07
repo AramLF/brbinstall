@@ -16,7 +16,12 @@ Then change to the folder corresponding to the flavor and execute the install.sh
 - [Void](https://github.com/AramLF/brbinstall/tree/main/Flavor/Void)
 - [gnomeOver](https://github.com/AramLF/brbinstall/tree/main/Flavor/gnomeOver)
 - [gnomed](https://github.com/AramLF/brbinstall/tree/main/Flavor/gnomed)
-- [kdevi](https://github.com/AramLF/brbinstall/tree/main/Flavor/kdevi)
+- [matte](https://github.com/AramLF/brbinstall/tree/main/Flavor/matte)
+- [vimi](https://github.com/AramLF/brbinstall/tree/main/Flavor/vimi)
+- [wind](https://github.com/AramLF/brbinstall/tree/main/Flavor/wind)
+- [coll](https://github.com/AramLF/brbinstall/tree/main/Flavor/coll)
+- [grey](https://github.com/AramLF/brbinstall/tree/main/Flavor/grey)
+- [catp](https://github.com/AramLF/brbinstall/tree/main/Flavor/catp)
 - [xfceDock](https://github.com/AramLF/brbinstall/tree/main/Flavor/xfceDock)
 - [xfceWidened](https://github.com/AramLF/brbinstall/tree/main/Flavor/xfceWidened)
 
