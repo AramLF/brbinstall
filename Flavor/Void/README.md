@@ -21,5 +21,3 @@ sudo xbps-install -Syu
 sudo xbps-query -L
 sudo xbps-query -Rs lolcat
 ```
-
-## Under construction

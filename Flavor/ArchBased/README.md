@@ -16,8 +16,11 @@ cd yay
 makepkg -si
 ```
 
-## Under construction
-
+## Misc
+```
+sudo paccache -r
+yay -Sc
+```
 
 ## Remaining Installation
 
