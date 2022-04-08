@@ -44,3 +44,14 @@ cd $initialPlacement/Colloid-kde
 ./install.sh
 #sudo to install theme as root
 }
+
+theming_kde_catppuccin () {
+echo -ne "
+------------------------------------------------------------------------------
+Catppuccin-kde installation
+------------------------------------------------------------------------------
+"
+git clone https://github.com/catppuccin/kde $initialPlacement/kde
+cd $initialPlacement/kde
+kpackagetool5 -i catppuccin.tar.gz
+}
