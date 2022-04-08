@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ../../
+cd ../../../
 source ./scriptSource.sh
 
 template_tp1_title
