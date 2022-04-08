@@ -14,16 +14,9 @@ Then change to the folder corresponding to the flavor and execute the install.sh
 - [ArchBased](https://github.com/AramLF/brbinstall/tree/main/Flavor/ArchBased)
 - [Debian](https://github.com/AramLF/brbinstall/tree/main/Flavor/Debian)
 - [Void](https://github.com/AramLF/brbinstall/tree/main/Flavor/Void)
-- [gnomeOver](https://github.com/AramLF/brbinstall/tree/main/Flavor/gnomeOver)
-- [gnomed](https://github.com/AramLF/brbinstall/tree/main/Flavor/gnomed)
-- [matte](https://github.com/AramLF/brbinstall/tree/main/Flavor/matte)
-- [vimi](https://github.com/AramLF/brbinstall/tree/main/Flavor/vimi)
-- [wind](https://github.com/AramLF/brbinstall/tree/main/Flavor/wind)
-- [coll](https://github.com/AramLF/brbinstall/tree/main/Flavor/coll)
-- [grey](https://github.com/AramLF/brbinstall/tree/main/Flavor/grey)
-- [catp](https://github.com/AramLF/brbinstall/tree/main/Flavor/catp)
-- [xfceDock](https://github.com/AramLF/brbinstall/tree/main/Flavor/xfceDock)
-- [xfceWidened](https://github.com/AramLF/brbinstall/tree/main/Flavor/xfceWidened)
+- [gnomeChanges](https://github.com/AramLF/brbinstall/tree/main/Flavor/gnomeChanges)
+- [xfceChanges](https://github.com/AramLF/brbinstall/tree/main/Flavor/xfceChanges)
+- [flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/flavoring)
 
 
 ## Potential improvements

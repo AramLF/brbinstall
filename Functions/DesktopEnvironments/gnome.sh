@@ -79,3 +79,7 @@ sudo $auto_pkg_installer gnome-shell gnome-control-center gnome-session
 sudo $auto_pkg_installer gnome-disk-utility gnome-power-manager gnome-shell-extensions gnome-software gnome-terminal
 sudo $auto_pkg_installer gnome-themes-extra network-manager-gnome chrome-gnome-shell gnome-tweaks gnome-shell-extensions
 }
+
+de_gnome_gnomeover(){
+  ls -l
+}

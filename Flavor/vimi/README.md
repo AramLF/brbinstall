@@ -1,2 +1,0 @@
-# brbinstall vimi
-vimi

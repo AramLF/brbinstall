@@ -13,8 +13,6 @@ theming_gtk_vimix
 
 flavoring_vimi_de
 
-theming_icon_papirus
-
 theming_icon_tela
 
 theming_icon_tela_circle

@@ -1,11 +1,12 @@
-# brbinstall gnomeOver
+# brbinstall gnomed
+gnomed
+
+## gnomeOver
 gnomeOver
 
 Add gnome to xfce  
 Add some theming  
 Add some packages
-
-### Under construction
 
 ### Remaining Installation  
 

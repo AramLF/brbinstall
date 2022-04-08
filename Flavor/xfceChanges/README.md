@@ -1,10 +1,17 @@
-# brbinstall xfceWidened
+# brbinstall xfceChanges
 xfceWidened
+xfceDock
 
 Add some packages  
 Add dockbarlike  
 Change some settings with dotiles  
 Change some theming (mint-y-dark-blue) & (papirus-dark paleorange)  
+
+
+##xfceDock
+plank  
+
+##xfceWidened
 
 ### Under construction
 
