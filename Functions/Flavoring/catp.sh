@@ -22,7 +22,7 @@ theming_terminal_ps1
 }
 
 flavoring_catp_de(){
-  if check_command plasma-desktop; then
+  if check_command plasmashell; then
     theming_konsole_all
   elif check_command gnome-terminal; then
     theming_gterminal_set_catppuccin

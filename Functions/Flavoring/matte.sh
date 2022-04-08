@@ -24,7 +24,7 @@ theming_terminal_ps1
 }
 
 flavoring_matte_de(){
-  if check_command plasma-desktop; then
+  if check_command plasmashell; then
     #not ready
 
     #theming_kde_vimix

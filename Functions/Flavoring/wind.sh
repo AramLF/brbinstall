@@ -20,7 +20,7 @@ theming_terminal_ps1
 }
 
 flavoring_wind_de(){
-  if check_command plasma-desktop; then
+  if check_command plasmashell; then
     theming_kde_fluent
 
     theming_konsole_all

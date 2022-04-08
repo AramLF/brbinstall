@@ -24,7 +24,7 @@ theming_terminal_ps1
 }
 
 flavoring_vimi_de(){
-  if check_command plasma-desktop; then
+  if check_command plasmashell; then
     theming_kde_vimix
 
     theming_kde_materia

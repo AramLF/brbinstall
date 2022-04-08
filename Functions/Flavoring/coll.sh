@@ -20,7 +20,7 @@ theming_terminal_ps1
 }
 
 flavoring_coll_de(){
-  if check_command plasma-desktop; then
+  if check_command plasmashell; then
     theming_kde_colloid
 
     theming_konsole_all
