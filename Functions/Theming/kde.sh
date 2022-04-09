@@ -52,6 +52,6 @@ Catppuccin-kde installation
 ------------------------------------------------------------------------------
 "
 git clone https://github.com/catppuccin/kde $initialPlacement/kde
-cd $initialPlacement/kde
+cd $initialPlacement/KDE/kde-store-archives/global-theme
 kpackagetool5 -i catppuccin.tar.gz
 }

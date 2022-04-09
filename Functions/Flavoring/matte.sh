@@ -23,6 +23,8 @@ theming_terminal_ps1
 
 flavoring_matte_de(){
   if check_command plasmashell; then
+    theming_gtk_catppuccin
+
     theming_kde_materia
 
     theming_kde_catppuccin
