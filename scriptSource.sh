@@ -11,6 +11,7 @@ source ./Functions/Theming/wallpaper.sh
 source ./Functions/Theming/gterminal.sh
 source ./Functions/Theming/konsole.sh
 source ./Functions/Theming/terminal.sh
+source ./Functions/Theming/color-schemes.sh
 
 source ./Functions/DesktopEnvironments/gnome.sh
 source ./Functions/DesktopEnvironments/xfce.sh

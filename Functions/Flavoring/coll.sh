@@ -23,6 +23,8 @@ flavoring_coll_de(){
   if check_command plasmashell; then
     theming_kde_colloid
 
+    theming_color-schemes_all
+
     theming_konsole_all
   fi
 
