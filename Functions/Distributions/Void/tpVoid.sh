@@ -44,6 +44,16 @@ Void more pkgs
   sudo $auto_pkg_installer wget perl sassc
 }
 
+distrib_void_local-host-resolution(){
+echo -ne "
+------------------------------------------------------------------------------
+Void Local Hostname Resolution
+------------------------------------------------------------------------------
+"
+#https://wiki.archlinux.org/title/Network_configuration#Local_hostname_resolution
+sed -i '/^# End of file/i 127.0.1.1		'"$theHostname"'' /etc/hosts
+}
+
 distrib_void_gnome(){
 echo -ne "
 ------------------------------------------------------------------------------
@@ -103,6 +113,11 @@ Void enabling services
 }
 
 distrib_void_choices(){
+echo -ne "
+------------------------------------------------------------------------------
+Void choices
+------------------------------------------------------------------------------
+"
   echo "What Desktop Environnment do you want ?"
   echo "1 for KDE"
   echo "2 for Gnome"
@@ -140,6 +155,8 @@ distrib_void_flavor(){
   distrib_void_tweaks
 
   distrib_void_mirror
+
+  distrib_void_local-host-resolution
 
   distrib_void_dependencies
 

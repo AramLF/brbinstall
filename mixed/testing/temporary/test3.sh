@@ -17,3 +17,5 @@ echo "start"
 kljmjlkdsqkdjslqf
 
 echo "end"
+
+echo $theHostname
