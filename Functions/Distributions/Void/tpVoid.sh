@@ -119,12 +119,14 @@ echo -ne "
 Void enabling services
 ------------------------------------------------------------------------------
 "
-  #sudo vmtoolsd
   sudo sv status /var/service/*
 
   sudo ln -s /etc/sv/NetworkManager /var/service/
   sudo ln -s /etc/sv/dbus /var/service/
   #sudo ln -s /etc/sv/alsa /var/service/
+  
+  #sudo vmtoolsd
+  sudo ln -s /etc/sv/vmtoolsd /var/service/
 
   sudo sv status /var/service/*
 }
