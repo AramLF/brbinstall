@@ -54,6 +54,19 @@ Void Local Hostname Resolution
 sed -i '/^# End of file/i 127.0.1.1		'"$theHostname"'' /etc/hosts
 }
 
+distrib_void_set-x-key-layout(){
+echo -ne "
+------------------------------------------------------------------------------
+Void Set keyboard layout for Display Manager using xorg
+------------------------------------------------------------------------------
+"
+#https://www.reddit.com/r/voidlinux/comments/e547cl/login_manager_keyboard_layout_always_in_qwerty/
+#https://forums.archlinux.fr/viewtopic.php?t=21445
+#lightdm sddm lxdm
+sudo mkdir -p /usr/share/X11/xorg.conf.d/ -v
+sudo cp $initialPath/Dotfiles/void/00-keyboard.conf /usr/share/X11/xorg.conf.d/00-keyboard.conf -v
+}
+
 distrib_void_gnome(){
 echo -ne "
 ------------------------------------------------------------------------------
@@ -76,6 +89,8 @@ Void kde installation
   sudo $auto_pkg_installer mesa-dri xdg-user-dirs
   sudo $auto_pkg_installer sddm xorg
 
+  distrib_void_set-x-key-layout
+
   sudo ln -s /etc/sv/sddm /var/service/
 }
 
@@ -94,6 +109,8 @@ Void xfce installation
   sudo $auto_pkg_installer NetworkManager
 
   sudo $auto_pkg_installer xfce4-pulseaudio-plugin xfce4-xkb-plugin
+
+  distrib_void_set-x-key-layout
 }
 
 distrib_void_enable_services(){
