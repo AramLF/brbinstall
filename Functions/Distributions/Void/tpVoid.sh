@@ -51,7 +51,7 @@ Void Local Hostname Resolution
 ------------------------------------------------------------------------------
 "
 #https://wiki.archlinux.org/title/Network_configuration#Local_hostname_resolution
-sed -i '/^# End of file/i 127.0.1.1		'"$theHostname"'' /etc/hosts
+sudo sed -i '/^# End of file/i 127.0.1.1		'"$theHostname"'' /etc/hosts
 }
 
 distrib_void_set-x-key-layout(){
