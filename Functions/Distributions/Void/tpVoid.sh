@@ -124,8 +124,8 @@ Void enabling services
   sudo ln -s /etc/sv/NetworkManager /var/service/
   sudo ln -s /etc/sv/dbus /var/service/
   #sudo ln -s /etc/sv/alsa /var/service/
-  
-  #sudo vmtoolsd
+
+  #vmtoolsd just in case : https://gist.github.com/takase1121/57bfa9ca3fffff33408dde08b0e6269a
   sudo ln -s /etc/sv/vmtoolsd /var/service/
 
   sudo sv status /var/service/*
