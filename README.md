@@ -6,7 +6,7 @@ The installation and the execution is at your own risk, do it only if you know w
 ```
 git clone https://github.com/AramLF/brbinstall
 ```
-Then change to the folder corresponding to the flavor and execute the install.sh (it is important to be in the current directory of the flavor, do not execute if from somewhere else)
+Then change to the folder corresponding to the flavor and execute the install.sh (it is important to be in the current directory of the flavor, do not execute if from somewhere else and do not execute it as a superuser)
 ```
 ./install.sh
 ```
@@ -18,6 +18,12 @@ Then change to the folder corresponding to the flavor and execute the install.sh
 - [xfceChanges](https://github.com/AramLF/brbinstall/tree/main/Flavor/xfceChanges)
 - [flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/flavoring)
 
+### Use Commands Independently
+If you want to use the commands directly you can also do this :
+```
+source ./scriptsource.sh
+```
+And then use the commands from your terminal.
 
 ## Potential improvements
 - The script could be executed from the main directory
