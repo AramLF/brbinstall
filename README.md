@@ -6,7 +6,11 @@ The installation and the execution is at your own risk, do it only if you know w
 ```
 git clone https://github.com/AramLF/brbinstall
 ```
-Then change to the folder corresponding to the flavor and execute the install.sh (it is important to be in the current directory of the flavor, do not execute if from somewhere else and do not execute it as a superuser)
+Then change to the folder corresponding to the flavor (flavoring for example)  
+```
+cd brbinstall/Flavor/flavoring/
+```
+And execute the install.sh (it is important to be in the current directory of the flavor, do not execute if from somewhere else and do not execute it as a superuser)  
 ```
 ./install.sh
 ```
@@ -19,16 +23,14 @@ Then change to the folder corresponding to the flavor and execute the install.sh
 - [flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/flavoring)
 
 ### Use Commands Independently
-If you want to use the commands directly you can also do this (it will only be available during the current terminal session) :
+If you want to use the commands directly you can also do this (you need to be in the brbinstall folder) :
 ```
 source ./scriptSource.sh
 ```
-And then use the commands from your terminal.
+And then use the commands from your terminal (it will only be available during the current terminal session).
 
 ## Potential improvements
-- The script could be executed from the main directory
-- Options could be added when doing ./install.sh (void for example)
-- User input while the installation   
+- The script could be executed from the main directory  
 - Rearrange the whole structure
-- add comments for functions & maybe better naming (_ instead of -)
+- add comments & maybe better naming
 - add pics
