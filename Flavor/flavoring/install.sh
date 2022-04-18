@@ -6,6 +6,6 @@ template_tp1_title
 
 template_tp1_start
 
-flavoring_coll_script
+flavoring_all_choice
 
 template_tp1_end

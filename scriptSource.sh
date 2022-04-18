@@ -16,6 +16,7 @@ source ./Functions/Theming/color-schemes.sh
 source ./Functions/DesktopEnvironments/gnome.sh
 source ./Functions/DesktopEnvironments/xfce.sh
 
+source ./Functions/Flavoring/all.sh
 source ./Functions/Flavoring/matte.sh
 source ./Functions/Flavoring/vimi.sh
 source ./Functions/Flavoring/wind.sh
