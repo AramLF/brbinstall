@@ -19,9 +19,9 @@ Then change to the folder corresponding to the flavor and execute the install.sh
 - [flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/flavoring)
 
 ### Use Commands Independently
-If you want to use the commands directly you can also do this :
+If you want to use the commands directly you can also do this (it will only be available during the current terminal session) :
 ```
-source ./scriptsource.sh
+source ./scriptSource.sh
 ```
 And then use the commands from your terminal.
 
