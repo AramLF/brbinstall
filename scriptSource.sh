@@ -13,7 +13,9 @@ source ./Functions/Theming/konsole.sh
 source ./Functions/Theming/terminal.sh
 source ./Functions/Theming/color-schemes.sh
 
+source ./Functions/DesktopEnvironments/cinnamon.sh
 source ./Functions/DesktopEnvironments/gnome.sh
+source ./Functions/DesktopEnvironments/kde.sh
 source ./Functions/DesktopEnvironments/xfce.sh
 
 source ./Functions/Flavoring/all.sh
@@ -29,7 +31,11 @@ source ./Functions/Distributions/Debian/tpDebian.sh
 source ./Functions/Distributions/Fedora/tpFedora.sh
 source ./Functions/Distributions/ArchBased/tpArch.sh
 source ./Functions/Distributions/Void/tpVoid.sh
+source ./Functions/Distributions/LinuxMint/tpLinuxMint.sh
 source ./Functions/Distributions/packages.sh
+
+source ./Functions/Setup/miscsetup.sh
+source ./Functions/Setup/start.sh
 
 #var
 initialPath=$(pwd)

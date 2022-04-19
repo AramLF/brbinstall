@@ -6,7 +6,6 @@ echo -ne "
 Add dependencies for gnomed
 ------------------------------------------------------------------------------
 "
-sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip
 sudo $auto_pkg_installer gnome-tweaks
 }
 
@@ -45,10 +44,15 @@ echo -ne "
 Changing gtk-theme
 ------------------------------------------------------------------------------
 "
-gsettings set org.gnome.desktop.interface gtk-theme "Catppuccin-dark-compact"
-gsettings set org.gnome.desktop.wm.preferences theme "Catppuccin-dark-compact"
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
-gsettings set org.gnome.shell.extensions.user-theme name "Catppuccin-dark-compact"
+
+#gsettings set org.gnome.desktop.interface gtk-theme "Catppuccin-dark-compact"
+#gsettings set org.gnome.desktop.wm.preferences theme "Catppuccin-dark-compact"
+#gsettings set org.gnome.shell.extensions.user-theme name "Catppuccin-dark-compact"
+
+gsettings set org.gnome.desktop.interface gtk-theme $1
+gsettings set org.gnome.desktop.wm.preferences theme $1
+gsettings set org.gnome.shell.extensions.user-theme name $1
 }
 
 de_gnome_set_icon_theme () {
@@ -57,7 +61,8 @@ echo -ne "
 Changing icons-theme
 ------------------------------------------------------------------------------
 "
-gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+#gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+gsettings set org.gnome.desktop.interface icon-theme $1
 }
 
 de_gnome_set_wallpaper () {

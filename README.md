@@ -18,9 +18,8 @@ And execute the install.sh (it is important to be in the current directory of th
 - [ArchBased](https://github.com/AramLF/brbinstall/tree/main/Flavor/ArchBased)
 - [Debian](https://github.com/AramLF/brbinstall/tree/main/Flavor/Debian)
 - [Void](https://github.com/AramLF/brbinstall/tree/main/Flavor/Void)
-- [gnomeChanges](https://github.com/AramLF/brbinstall/tree/main/Flavor/gnomeChanges)
-- [xfceChanges](https://github.com/AramLF/brbinstall/tree/main/Flavor/xfceChanges)
-- [flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/flavoring)
+- [LinuxMint](https://github.com/AramLF/brbinstall/tree/main/Flavor/LinuxMint)
+- [Flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/Flavoring)
 
 ### Use Commands Independently
 If you want to use the commands directly you can also do this (you need to be in the brbinstall folder) :

@@ -6,7 +6,7 @@ echo -ne "
 Add dependencies for xfced
 ------------------------------------------------------------------------------
 "
-sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip
+#none for now
 }
 
 de_xfce_panel_size(){
@@ -38,17 +38,24 @@ restart xfce panel
 xfce4-panel --restart
 }
 
-de_xfce_change_theme(){
+de_xfce_set_gtk_theme(){
 echo -ne "
 ------------------------------------------------------------------------------
-Changing theme
+Changing gtk-theme
 ------------------------------------------------------------------------------
 "
-xfconf-query -c xsettings -p /Net/ThemeName -s "Mint-Y-Dark-Blue"
-xfconf-query -c xfwm4 -p /general/theme -s Mint-Y-Dark-Blue
-xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
+#xfconf-query -c xsettings -p /Net/ThemeName -s "Mint-Y-Dark-Blue"
+#xfconf-query -c xfwm4 -p /general/theme -s Mint-Y-Dark-Blue
+xfconf-query -c xsettings -p /Net/ThemeName -s $1
+xfconf-query -c xfwm4 -p /general/theme -s $1
 }
 
-de_xfce_change_folder_color(){
-sudo papirus-folders -C paleorange --theme Papirus-Dark
+de_xfce_set_icon_theme(){
+echo -ne "
+------------------------------------------------------------------------------
+Changing icon theme
+------------------------------------------------------------------------------
+"
+#xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
+xfconf-query -c xsettings -p /Net/IconThemeName -s $1
 }

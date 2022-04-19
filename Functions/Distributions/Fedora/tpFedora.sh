@@ -6,8 +6,7 @@ echo -ne "
 Dependencies Fedora installation
 ------------------------------------------------------------------------------
 "
-sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip
-sudo $auto_pkg_installer gnome-tweaks
+#none for now
 }
 
 distrib_fedora_dnf_tweaks () {

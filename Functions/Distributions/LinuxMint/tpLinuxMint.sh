@@ -1,19 +1,29 @@
 #!/bin/bash
 
-setup_miscsetup_flathub () {
+distrib_linux-mint_start () {
 echo -ne "
 ------------------------------------------------------------------------------
-Set flathub
+LM
 ------------------------------------------------------------------------------
 "
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+#none for now
 }
 
-setup_miscsetup_nixpkg () {
+
+distrib_linux-mint_neo () {
 echo -ne "
 ------------------------------------------------------------------------------
-Set nixpkg
+Linux Mint neo flavor
 ------------------------------------------------------------------------------
 "
-#later
+  setup_start_basic_apps
+
+  de_cinnamon_sound
+
+}
+
+distrib_linux-mint_run () {
+  ls -l
+
+  #distrib_linux-mint_neo
 }
