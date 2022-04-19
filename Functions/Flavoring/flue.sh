@@ -1,9 +1,9 @@
 #!/bin/bash
 
-flavoring_wind_script () {
+flavoring_flue_script () {
 echo -ne "
 ------------------------------------------------------------------------------
-Flavor Wind
+Flavor Flue
 ------------------------------------------------------------------------------
 "
 
@@ -11,7 +11,7 @@ theming_dependencies_global
 
 theming_gtk_fluent
 
-flavoring_wind_de
+flavoring_flue_de
 
 theming_icon_fluent
 
@@ -19,7 +19,7 @@ theming_terminal_ps1
 
 }
 
-flavoring_wind_de(){
+flavoring_flue_de(){
   if check_command plasmashell; then
     theming_kde_fluent
 

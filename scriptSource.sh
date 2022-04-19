@@ -19,7 +19,8 @@ source ./Functions/DesktopEnvironments/xfce.sh
 source ./Functions/Flavoring/all.sh
 source ./Functions/Flavoring/matte.sh
 source ./Functions/Flavoring/vimi.sh
-source ./Functions/Flavoring/wind.sh
+source ./Functions/Flavoring/flue.sh
+source ./Functions/Flavoring/roll.sh
 source ./Functions/Flavoring/coll.sh
 source ./Functions/Flavoring/grey.sh
 source ./Functions/Flavoring/catp.sh
