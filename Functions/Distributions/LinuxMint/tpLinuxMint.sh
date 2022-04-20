@@ -18,8 +18,19 @@ Linux Mint pkgs
 sudo $auto_pkg_installer libc6-dev
 }
 
+distrib_linux-mint_fluent_local () {
+echo -ne "
+------------------------------------------------------------------------------
+Fluent theme in local
+------------------------------------------------------------------------------
+"
+#flue flavor should be installed first
+cd $initialPlacement/Fluent-gtk-theme
+./install.sh --tweaks round
+}
 
-distrib_linux-mint_neo () {
+
+distrib_linux-mint_neomint () {
 echo -ne "
 ------------------------------------------------------------------------------
 Linux Mint neo flavor
@@ -33,8 +44,7 @@ Linux Mint neo flavor
 
   flavoring_flue_script
 
-  cd $initialPlacement/Fluent-gtk-theme
-  ./install.sh --tweaks round
+  distrib_linux-mint_fluent_local
 
   de_cinnamon_set_desktop_theme "Fluent-round-dark-compact"
 
@@ -52,5 +62,5 @@ Linux Mint neo flavor
 
 distrib_linux-mint_run () {
   #stay like this for now
-  distrib_linux-mint_neo
+  distrib_linux-mint_neomint
 }
