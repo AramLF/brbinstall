@@ -35,18 +35,35 @@ Cinnamon set background
 
 }
 
-de_cinnamon_set_gtk_theme(){
+de_cinnamon_set_desktop_theme(){
 echo -ne "
 ------------------------------------------------------------------------------
 Cinnamon set gtk theme
 ------------------------------------------------------------------------------
 "
-#gsettings set org.cinnamon.theme name Colloid-dark-compact
-#gsettings set org.cinnamon.desktop.interface gtk-theme Colloid-dark-compact
-#gsettings set org.cinnamon.desktop.wm.preferences theme Colloid-dark-compact
+#gsettings set org.cinnamon.theme name Fluent-round-dark-compact
 gsettings set org.cinnamon.theme name $1
-gsettings set org.cinnamon.desktop.interface gtk-theme $1
-gsettings set org.cinnamon.desktop.wm.preferences theme $1
+}
+
+de_cinnamon_set_gtk_theme(){
+echo -ne "
+------------------------------------------------------------------------------
+Cinnamon set wm theme
+------------------------------------------------------------------------------
+"
+  #gsettings set org.cinnamon.desktop.interface gtk-theme Fluent-round-dark-compact
+  gsettings set org.cinnamon.desktop.interface gtk-theme $1
+}
+
+de_cinnamon_set_wm_theme(){
+echo -ne "
+------------------------------------------------------------------------------
+Cinnamon set wm theme
+------------------------------------------------------------------------------
+"
+  #gsettings set org.cinnamon.desktop.wm.preferences theme Fluent-round-dark
+  gsettings set org.cinnamon.desktop.wm.preferences theme $1
+
 }
 
 de_cinnamon_set_icon_theme(){

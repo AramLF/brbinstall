@@ -31,7 +31,16 @@ Linux Mint neo flavor
 
   de_cinnamon_sound
 
-  de_cinnamon_set_gtk_theme "Fluent-dark-compact-round"
+  flavoring_flue_script
+
+  cd $initialPlacement/Fluent-gtk-theme
+  ./install.sh --tweaks round
+
+  de_cinnamon_set_desktop_theme "Fluent-round-dark-compact"
+
+  de_cinnamon_set_gtk_theme "Fluent-round-dark-compact"
+
+  de_cinnamon_set_wm_theme "Fluent-round-dark"
 
   de_cinnamon_set_icon_theme "Fluent-dark"
 
@@ -42,7 +51,6 @@ Linux Mint neo flavor
 }
 
 distrib_linux-mint_run () {
-  ls -l
-
-  #distrib_linux-mint_neo
+  #stay like this for now
+  distrib_linux-mint_neo
 }
