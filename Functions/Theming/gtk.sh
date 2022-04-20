@@ -80,7 +80,7 @@ Fluent installation
 "
 git clone https://github.com/vinceliuice/Fluent-gtk-theme $initialPlacement/Fluent-gtk-theme
 cd $initialPlacement/Fluent-gtk-theme
-sudo ./install.sh --size compact 
+sudo ./install.sh --tweaks round
 #sudo to install theme as root
 }
 
