@@ -38,3 +38,15 @@ git clone https://github.com/odziom91/libadwaita-theme-changer $initialPlacement
 cd $initialPlacement/libadwaita-theme-changer
 ./libadwaita-tc.py
 }
+
+setup_miscsetup_unimatrix () {
+echo -ne "
+------------------------------------------------------------------------------
+Getting unimatrix
+------------------------------------------------------------------------------
+"
+#unimatrix -n -s 96 -l 'o'
+sudo $auto_pkg_installer wget
+sudo wget https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -O /usr/local/bin/unimatrix
+sudo chmod a+rx /usr/local/bin/unimatrix
+}
