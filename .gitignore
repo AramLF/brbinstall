@@ -1,0 +1,5 @@
+#excluded
+placeholder/*
+
+#exception
+!placeholder/README.md
