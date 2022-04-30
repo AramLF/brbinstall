@@ -12,6 +12,7 @@ source ./Functions/Theming/gterminal.sh
 source ./Functions/Theming/konsole.sh
 source ./Functions/Theming/terminal.sh
 source ./Functions/Theming/color-schemes.sh
+source ./Functions/Theming/xfce4-terminal.sh
 
 source ./Functions/DesktopEnvironments/cinnamon.sh
 source ./Functions/DesktopEnvironments/gnome.sh

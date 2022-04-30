@@ -85,3 +85,14 @@ Yaru++-icon-theme Installation
 #https://github.com/Bonandry/yaru-plus
 wget -qO- https://raw.githubusercontent.com/Bonandry/yaru-plus/master/install.sh | sh
 }
+
+theming_icon_zafiro () {
+echo -ne "
+------------------------------------------------------------------------------
+Zafiro-icons installation
+------------------------------------------------------------------------------
+"
+git clone https://github.com/zayronxio/Zafiro-icons $initialPlacement/Zafiro-icons
+cd $initialPlacement
+sudo cp -r Zafiro-icons/ /usr/share/icons/Zafiro-icons/
+}
