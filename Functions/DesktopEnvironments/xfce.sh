@@ -21,7 +21,7 @@ xfconf-query --channel 'xfce4-panel' --property '/panels/panel-1/size' --type in
 de_xfce_dockbarlike(){
 echo -ne "
 ------------------------------------------------------------------------------
-dockbarlike installation
+dockbarlike for ubuntu based installation
 ------------------------------------------------------------------------------
 "
 sudo add-apt-repository -y ppa:xubuntu-dev/extras
