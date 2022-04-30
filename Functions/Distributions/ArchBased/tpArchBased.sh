@@ -19,8 +19,8 @@ if check_command yay; then
   echo 'yay is already installed'
 else
   sudo $auto_pkg_installer --needed git base-devel
-  git clone https://aur.archlinux.org/yay.git $initialPlaceHolder/yay
-  cd $initialPlaceHolder/yay
+  git clone https://aur.archlinux.org/yay.git $initialCacheFolder/yay
+  cd $initialCacheFolder/yay
   makepkg -si
 fi
 }

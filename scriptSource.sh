@@ -41,7 +41,7 @@ source ./Functions/Setup/start.sh
 
 #var
 initialPath=$(pwd)
-initialPlaceHolder=$initialPath/placeholder
+initialCacheFolder=$initialPath/cachefolder
 initialPlacement=$initialPath/..
 
 brbinstall_distrib_package_manager

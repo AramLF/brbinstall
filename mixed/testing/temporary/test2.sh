@@ -14,13 +14,13 @@ testVar=$(pwd)
 
 kljmjlkdsqkdjslqf
 
-cd $testVar/placeholder
+cd $testVar/cachefolder
 
 echo $PWD
 
 echo $initialPath
-echo $initialPlaceHolder
+echo $initialCacheFolder
 echo $initialPath/Dotfiles/konsole/OceanWaves.colorscheme
-echo $initialPlaceHolder
+echo $initialCacheFolder
 
 echo $auto_pkg_installer

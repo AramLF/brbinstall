@@ -1,5 +1,5 @@
 #excluded
-placeholder/*
+cachefolder/*
 
 #exception
-!placeholder/README.md
+!cachefolder/README.md

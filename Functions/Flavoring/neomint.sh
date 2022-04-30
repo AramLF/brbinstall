@@ -16,7 +16,7 @@ Fluent theme in local
 ------------------------------------------------------------------------------
 "
 #flue flavor should be installed first
-cd $initialPlaceHolder/Fluent-gtk-theme
+cd $initialCacheFolder/Fluent-gtk-theme
 ./install.sh --tweaks round
 }
 
