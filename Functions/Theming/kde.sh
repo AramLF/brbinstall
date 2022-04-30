@@ -6,8 +6,8 @@ echo -ne "
 Vimix-kde installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/vimix-kde $initialPlacement/vimix-kde
-cd $initialPlacement/vimix-kde
+git clone https://github.com/vinceliuice/vimix-kde $initialPlaceHolder/vimix-kde
+cd $initialPlaceHolder/vimix-kde
 ./install.sh
 #sudo to install theme as root
 }
@@ -27,8 +27,8 @@ echo -ne "
 Fluent-kde installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Fluent-kde $initialPlacement/Fluent-kde
-cd $initialPlacement/Fluent-kde
+git clone https://github.com/vinceliuice/Fluent-kde $initialPlaceHolder/Fluent-kde
+cd $initialPlaceHolder/Fluent-kde
 ./install.sh
 #sudo to install theme as root
 }
@@ -39,8 +39,8 @@ echo -ne "
 Colloid-kde installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Colloid-kde $initialPlacement/Colloid-kde
-cd $initialPlacement/Colloid-kde
+git clone https://github.com/vinceliuice/Colloid-kde $initialPlaceHolder/Colloid-kde
+cd $initialPlaceHolder/Colloid-kde
 ./install.sh
 #sudo to install theme as root
 }
@@ -51,7 +51,7 @@ echo -ne "
 Catppuccin-kde installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/catppuccin/kde $initialPlacement/kde
-cd $initialPlacement/KDE/kde-store-archives/global-theme
+git clone https://github.com/catppuccin/kde $initialPlaceHolder/kde
+cd $initialPlaceHolder/KDE/kde-store-archives/global-theme
 kpackagetool5 -i catppuccin.tar.gz
 }

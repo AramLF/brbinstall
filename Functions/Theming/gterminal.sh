@@ -19,7 +19,7 @@ read -r -p "Press Enter " response
 #        do_something_else
 #        ;;
 #esac
-git clone https://github.com/catppuccin/gnome-terminal $initialPlacement/gnome-terminal
-cd $initialPlacement/gnome-terminal
+git clone https://github.com/catppuccin/gnome-terminal $initialPlaceHolder/gnome-terminal
+cd $initialPlaceHolder/gnome-terminal
 echo YES |./install.sh "catppuccin"
 }

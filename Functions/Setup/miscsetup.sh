@@ -34,8 +34,8 @@ Script for theming libadwaita
 ------------------------------------------------------------------------------
 "
 #only work on python 3.10 (needs to be modified to be used on older python)
-git clone https://github.com/odziom91/libadwaita-theme-changer $initialPlacement/libadwaita-theme-changer
-cd $initialPlacement/libadwaita-theme-changer
+git clone https://github.com/odziom91/libadwaita-theme-changer $initialPlaceHolder/libadwaita-theme-changer
+cd $initialPlaceHolder/libadwaita-theme-changer
 ./libadwaita-tc.py
 }
 

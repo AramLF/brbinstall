@@ -6,8 +6,8 @@ echo -ne "
 Qogir installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Qogir-theme $initialPlacement/Qogir-theme
-cd $initialPlacement/Qogir-theme/
+git clone https://github.com/vinceliuice/Qogir-theme $initialPlaceHolder/Qogir-theme
+cd $initialPlaceHolder/Qogir-theme/
 sudo ./install.sh
 #sudo to install theme as root
 }
@@ -18,8 +18,8 @@ echo -ne "
 Vimix installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/vimix-gtk-themes $initialPlacement/vimix-gtk-themes
-cd $initialPlacement/vimix-gtk-themes
+git clone https://github.com/vinceliuice/vimix-gtk-themes $initialPlaceHolder/vimix-gtk-themes
+cd $initialPlaceHolder/vimix-gtk-themes
 sudo ./install.sh -c dark -s compact --all
 #sudo to install theme as root
 }
@@ -30,8 +30,8 @@ echo -ne "
 Orchis installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Orchis-theme $initialPlacement/Orchis-theme
-cd $initialPlacement/Orchis-theme
+git clone https://github.com/vinceliuice/Orchis-theme $initialPlaceHolder/Orchis-theme
+cd $initialPlaceHolder/Orchis-theme
 sudo ./install.sh --theme all --color dark
 #sudo to install theme as root
 }
@@ -42,8 +42,8 @@ echo -ne "
 Graphite installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Graphite-gtk-theme $initialPlacement/Graphite-gtk-theme
-cd $initialPlacement/Graphite-gtk-theme
+git clone https://github.com/vinceliuice/Graphite-gtk-theme $initialPlaceHolder/Graphite-gtk-theme
+cd $initialPlaceHolder/Graphite-gtk-theme
 sudo ./install.sh --theme all --tweaks rimless --size compact --color dark
 #sudo to install theme as root
 }
@@ -54,8 +54,8 @@ echo -ne "
 Matcha installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Matcha-gtk-theme $initialPlacement/Matcha-gtk-theme
-cd $initialPlacement/Matcha-gtk-theme
+git clone https://github.com/vinceliuice/Matcha-gtk-theme $initialPlaceHolder/Matcha-gtk-theme
+cd $initialPlaceHolder/Matcha-gtk-theme
 sudo ./install.sh --color dark
 #sudo to install theme as root
 }
@@ -66,8 +66,8 @@ echo -ne "
 Colloid installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Colloid-gtk-theme $initialPlacement/Colloid-gtk-theme
-cd $initialPlacement/Colloid-gtk-theme
+git clone https://github.com/vinceliuice/Colloid-gtk-theme $initialPlaceHolder/Colloid-gtk-theme
+cd $initialPlaceHolder/Colloid-gtk-theme
 sudo ./install.sh --color dark --size compact
 #sudo to install theme as root
 }
@@ -78,8 +78,8 @@ echo -ne "
 Fluent installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Fluent-gtk-theme $initialPlacement/Fluent-gtk-theme
-cd $initialPlacement/Fluent-gtk-theme
+git clone https://github.com/vinceliuice/Fluent-gtk-theme $initialPlaceHolder/Fluent-gtk-theme
+cd $initialPlaceHolder/Fluent-gtk-theme
 sudo ./install.sh --tweaks round
 #sudo to install theme as root
 }
@@ -90,7 +90,7 @@ echo -ne "
 Catppuccin-gtk-theme installation
 ------------------------------------------------------------------------------
 "
-cd $initialPlacement
+cd $initialPlaceHolder
 
 wget https://github.com/catppuccin/gtk/releases/download/update_27_01_22/Catppuccin-dark-compact-hdpi.zip
 wget https://github.com/catppuccin/gtk/releases/download/update_27_01_22/Catppuccin-dark-compact-xhdpi.zip

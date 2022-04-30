@@ -16,8 +16,8 @@ echo -ne "
 tela-icon-theme installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Tela-icon-theme $initialPlacement/Tela-icon-theme
-cd $initialPlacement/Tela-icon-theme
+git clone https://github.com/vinceliuice/Tela-icon-theme $initialPlaceHolder/Tela-icon-theme
+cd $initialPlaceHolder/Tela-icon-theme
 sudo ./install.sh
 }
 
@@ -27,8 +27,8 @@ echo -ne "
 tela-circle-icon-theme installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Tela-circle-icon-theme $initialPlacement/Tela-circle-icon-theme
-cd $initialPlacement/Tela-circle-icon-theme
+git clone https://github.com/vinceliuice/Tela-circle-icon-theme $initialPlaceHolder/Tela-circle-icon-theme
+cd $initialPlaceHolder/Tela-circle-icon-theme
 sudo ./install.sh
 }
 
@@ -41,13 +41,13 @@ numix-icon-theme & circle installation
 #sudo $auto_pkg_installer numix-icon-theme
 #sudo $auto_pkg_installer numix-icon-theme-circle
 
-git clone https://github.com/numixproject/numix-icon-theme $initialPlacement/numix-icon-theme
-cd $initialPlacement/numix-icon-theme
+git clone https://github.com/numixproject/numix-icon-theme $initialPlaceHolder/numix-icon-theme
+cd $initialPlaceHolder/numix-icon-theme
 sudo cp -r Numix/ /usr/share/icons/Numix/
 sudo cp -r Numix-Light/ /usr/share/icons/Numix-Light/
 
-git clone https://github.com/numixproject/numix-icon-theme-circle $initialPlacement/numix-icon-theme-circle
-cd $initialPlacement/numix-icon-theme-circle
+git clone https://github.com/numixproject/numix-icon-theme-circle $initialPlaceHolder/numix-icon-theme-circle
+cd $initialPlaceHolder/numix-icon-theme-circle
 sudo cp -r Numix-Circle/ /usr/share/icons/Numix-Circle/
 sudo cp -r Numix-Circle-Light/ /usr/share/icons/Numix-Circle-Light/
 }
@@ -58,8 +58,8 @@ echo -ne "
 colloid-icon-theme installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Colloid-icon-theme $initialPlacement/Colloid-icon-theme
-cd $initialPlacement/Colloid-icon-theme
+git clone https://github.com/vinceliuice/Colloid-icon-theme $initialPlaceHolder/Colloid-icon-theme
+cd $initialPlaceHolder/Colloid-icon-theme
 sudo ./install.sh
 }
 
@@ -69,8 +69,8 @@ echo -ne "
 fluent-icon-theme installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/vinceliuice/Fluent-icon-theme $initialPlacement/Fluent-icon-theme
-cd $initialPlacement/Fluent-icon-theme
+git clone https://github.com/vinceliuice/Fluent-icon-theme $initialPlaceHolder/Fluent-icon-theme
+cd $initialPlaceHolder/Fluent-icon-theme
 sudo ./install.sh
 }
 
@@ -92,7 +92,7 @@ echo -ne "
 Zafiro-icons installation
 ------------------------------------------------------------------------------
 "
-git clone https://github.com/zayronxio/Zafiro-icons $initialPlacement/Zafiro-icons
-cd $initialPlacement
+git clone https://github.com/zayronxio/Zafiro-icons $initialPlaceHolder/Zafiro-icons
+cd $initialPlaceHolder
 sudo cp -r Zafiro-icons/ /usr/share/icons/Zafiro-icons/
 }
