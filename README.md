@@ -15,9 +15,9 @@ And execute the install.sh (it is important to be in the current directory of th
 ./install.sh
 ```
 ### Flavors
-- [ArchBased](https://github.com/AramLF/brbinstall/tree/main/Flavor/ArchBased)  
-- [Debian](https://github.com/AramLF/brbinstall/tree/main/Flavor/Debian)  
-- [Void](https://github.com/AramLF/brbinstall/tree/main/Flavor/Void) (A post install script to set up everything like the services the DE & more)  
+- [ArchBased](https://github.com/AramLF/brbinstall/tree/main/Flavor/ArchBased) (Only set yay for now)
+- [Debian](https://github.com/AramLF/brbinstall/tree/main/Flavor/Debian) (Does some theming and set it with more user friendliness)
+- [VoidLinux](https://github.com/AramLF/brbinstall/tree/main/Flavor/VoidLinux) (A post install script to set up everything like the services the DE & more)  
 - [Neomint](https://github.com/AramLF/brbinstall/tree/main/Flavor/Neomint) (Tweak Linux Mint Cinnamon 20.3 with some theming and set a few things up)  
 - [Flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/Flavoring) (Contain a script to install some theming)  
 
