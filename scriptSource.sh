@@ -27,6 +27,8 @@ source ./Functions/Flavoring/roll.sh
 source ./Functions/Flavoring/coll.sh
 source ./Functions/Flavoring/grey.sh
 source ./Functions/Flavoring/catp.sh
+source ./Functions/Flavoring/spice.sh
+source ./Functions/Flavoring/r3.sh
 source ./Functions/Flavoring/neomint.sh
 
 source ./Functions/Distributions/DebianBased/tpDebianBased.sh

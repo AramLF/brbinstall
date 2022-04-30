@@ -14,7 +14,8 @@ echo "3) flue"
 echo "4) grey"
 echo "5) matte"
 echo "6) roll"
-echo "7) vimi"
+echo "7) spice"
+echo "8) vimi"
 read -r -p "Press the number then press Enter : " flavChoice
 
 if [ $flavChoice = "1" ]
@@ -36,6 +37,9 @@ elif [ $flavChoice = "6" ]
 then
   brbinstall_flavoring_roll_script
 elif [ $flavChoice = "7" ]
+then
+  brbinstall_flavoring_spice_script
+elif [ $flavChoice = "8" ]
 then
   brbinstall_flavoring_vimi_script
 else
