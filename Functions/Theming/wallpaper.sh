@@ -21,6 +21,17 @@ git clone https://github.com/vinceliuice/Graphite-gtk-theme $initialCacheFolder/
 cd $initialCacheFolder/Graphite-gtk-theme
 }
 
+brbinstall_theming_wallpaper_spacemars-modified () {
+echo -ne "
+------------------------------------------------------------------------------
+spacemars-modified wallpaper download
+------------------------------------------------------------------------------
+"
+#/usr/share/endeavouros/backgrounds
+sudo mkdir -p /usr/share/backgrounds/walls/
+sudo cp $initialPath/Dotfiles/walls/space-mars-4480x2520-modified.jpg /usr/share/backgrounds/walls/space-mars-4480x2520-modified.jpg
+}
+
 brbinstall_theming_wallpaper_spacenord () {
 echo -ne "
 ------------------------------------------------------------------------------
@@ -28,5 +39,6 @@ spacenord wallpaper download
 ------------------------------------------------------------------------------
 "
 #/usr/share/endeavouros/backgrounds
+sudo mkdir -p /usr/share/backgrounds/walls/
 sudo cp $initialPath/Dotfiles/walls/spacenord.png /usr/share/backgrounds/walls/spacenord.png
 }
