@@ -1,4 +1,4 @@
-# brbinstall LinuxMint
+# brbinstall Neomint
 Add some packages  
 Change some theming
 

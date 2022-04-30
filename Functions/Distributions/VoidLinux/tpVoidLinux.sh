@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-brbinstall_distrib_void_dependencies () {
+brbinstall_distrib_void-linux_dependencies () {
 echo -ne "
 ------------------------------------------------------------------------------
 Void add dependencies
@@ -10,7 +10,7 @@ Void add dependencies
   sudo $auto_pkg_installer git gcc wget curl unzip
 }
 
-brbinstall_distrib_void_mirror(){
+brbinstall_distrib_void-linux_mirror(){
 echo -ne "
 ------------------------------------------------------------------------------
 Void change mirror
@@ -22,7 +22,7 @@ Void change mirror
   sudo xbps-install -Sy
 }
 
-brbinstall_distrib_void_tweaks(){
+brbinstall_distrib_void-linux_tweaks(){
 echo -ne "
 ------------------------------------------------------------------------------
 Void add repositories
@@ -33,7 +33,7 @@ Void add repositories
   sudo xbps-install -Sy
 }
 
-brbinstall_distrib_void_more(){
+brbinstall_distrib_void-linux_more(){
 echo -ne "
 ------------------------------------------------------------------------------
 Void more pkgs
@@ -44,7 +44,7 @@ Void more pkgs
   sudo $auto_pkg_installer wget perl sassc
 }
 
-brbinstall_distrib_void_local-host-resolution(){
+brbinstall_distrib_void-linux_local-host-resolution(){
 echo -ne "
 ------------------------------------------------------------------------------
 Void Local Hostname Resolution
@@ -54,7 +54,7 @@ Void Local Hostname Resolution
 sudo sed -i '/^# End of file/i 127.0.1.1		'"$theHostname"'' /etc/hosts
 }
 
-brbinstall_distrib_void_set-x-key-layout(){
+brbinstall_distrib_void-linux_set-x-key-layout(){
 echo -ne "
 ------------------------------------------------------------------------------
 Void Set keyboard layout for Display Manager using xorg
@@ -67,7 +67,7 @@ sudo mkdir -p /usr/share/X11/xorg.conf.d/ -v
 sudo cp $initialPath/Dotfiles/void/00-keyboard.conf /usr/share/X11/xorg.conf.d/00-keyboard.conf -v
 }
 
-brbinstall_distrib_void_gnome(){
+brbinstall_distrib_void-linux_gnome(){
 echo -ne "
 ------------------------------------------------------------------------------
 Void gnome installation
@@ -78,7 +78,7 @@ Void gnome installation
   sudo ln -s /etc/sv/gdm /var/service/
 }
 
-brbinstall_distrib_void_kde(){
+brbinstall_distrib_void-linux_kde(){
 echo -ne "
 ------------------------------------------------------------------------------
 Void kde installation
@@ -89,12 +89,12 @@ Void kde installation
   sudo $auto_pkg_installer mesa-dri xdg-user-dirs
   sudo $auto_pkg_installer sddm xorg
 
-  brbinstall_distrib_void_set-x-key-layout
+  brbinstall_distrib_void-linux_set-x-key-layout
 
   sudo ln -s /etc/sv/sddm /var/service/
 }
 
-brbinstall_distrib_void_xfce(){
+brbinstall_distrib_void-linux_xfce(){
 echo -ne "
 ------------------------------------------------------------------------------
 Void xfce installation
@@ -110,10 +110,10 @@ Void xfce installation
 
   sudo $auto_pkg_installer xfce4-pulseaudio-plugin xfce4-xkb-plugin
 
-  brbinstall_distrib_void_set-x-key-layout
+  brbinstall_distrib_void-linux_set-x-key-layout
 }
 
-brbinstall_distrib_void_enable_services(){
+brbinstall_distrib_void-linux_enable_services(){
 echo -ne "
 ------------------------------------------------------------------------------
 Void enabling services
@@ -131,7 +131,7 @@ Void enabling services
   sudo sv status /var/service/*
 }
 
-brbinstall_distrib_void_choices(){
+brbinstall_distrib_void-linux_choices(){
 echo -ne "
 ------------------------------------------------------------------------------
 Void choices
@@ -155,34 +155,34 @@ Void choices
 
 }
 
-brbinstall_distrib_void_de_choice(){
+brbinstall_distrib_void-linux_de_choice(){
   if [ $voidDE = "1" ]
   then
-    brbinstall_distrib_void_kde;
+    brbinstall_distrib_void-linux_kde;
   elif [ $voidDE = "2" ]
   then
-    brbinstall_distrib_void_gnome;
+    brbinstall_distrib_void-linux_gnome;
   fi
 }
 
-brbinstall_distrib_void_flavor(){
+brbinstall_distrib_void-linux_flavor(){
 
-  brbinstall_distrib_void_choices
+  brbinstall_distrib_void-linux_choices
 
-  brbinstall_distrib_void_mirror
+  brbinstall_distrib_void-linux_mirror
 
-  brbinstall_distrib_void_tweaks
+  brbinstall_distrib_void-linux_tweaks
 
-  brbinstall_distrib_void_mirror
+  brbinstall_distrib_void-linux_mirror
 
-  brbinstall_distrib_void_local-host-resolution
+  brbinstall_distrib_void-linux_local-host-resolution
 
-  brbinstall_distrib_void_dependencies
+  brbinstall_distrib_void-linux_dependencies
 
-  brbinstall_distrib_void_more
+  brbinstall_distrib_void-linux_more
 
-  brbinstall_distrib_void_de_choice
+  brbinstall_distrib_void-linux_de_choice
 
-  brbinstall_distrib_void_enable_services
+  brbinstall_distrib_void-linux_enable_services
 
 }

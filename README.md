@@ -15,11 +15,11 @@ And execute the install.sh (it is important to be in the current directory of th
 ./install.sh
 ```
 ### Flavors
-- [ArchBased](https://github.com/AramLF/brbinstall/tree/main/Flavor/ArchBased)
-- [Debian](https://github.com/AramLF/brbinstall/tree/main/Flavor/Debian)
-- [Void](https://github.com/AramLF/brbinstall/tree/main/Flavor/Void)
-- [LinuxMint](https://github.com/AramLF/brbinstall/tree/main/Flavor/LinuxMint)
-- [Flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/Flavoring)
+- [ArchBased](https://github.com/AramLF/brbinstall/tree/main/Flavor/ArchBased)  
+- [Debian](https://github.com/AramLF/brbinstall/tree/main/Flavor/Debian)  
+- [Void](https://github.com/AramLF/brbinstall/tree/main/Flavor/Void) (A post install script to set up everything like the services the DE & more)  
+- [Neomint](https://github.com/AramLF/brbinstall/tree/main/Flavor/Neomint) (Tweak Linux Mint Cinnamon 20.3 with some theming and set a few things up)  
+- [Flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/Flavoring) (Contain a script to install some theming)  
 
 ### Use Commands Independently
 If you want to use the commands directly you can also do this (you need to be in this directory) :
