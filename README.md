@@ -22,11 +22,21 @@ And execute the install.sh (it is important to be in the current directory of th
 - [Flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/Flavoring)
 
 ### Use Commands Independently
-If you want to use the commands directly you can also do this (you need to be in the brbinstall folder) :
+If you want to use the commands directly you can also do this (you need to be in this directory) :
 ```
 source ./scriptSource.sh
 ```
-And then use the commands from your terminal (it will only be available during the current terminal session).
+And then use the commands starting with "brbinstall_" (it will only be available during the current terminal session).
+
+
+#### Functions tree
+Functions  
+├─ DesktopEnvironments (related to DE functions : applying theme etc.)  
+├─ Distributions (related to Distribs oddness : setting up dnf, setting up Arch or Void etc.)  
+├─ Flavoring (related to unique running script : setting up special theme, setting up a flavor etc.)  
+├─ Setup (allow to set up scripts and programs quickly)  
+├─ Templates (display the informations during the script)  
+└─ Theming (allow to theme almost everything : terminal, colors, gtk, kde, icons etc.)  
 
 ## Potential improvements
 - The script could be executed from the main directory  

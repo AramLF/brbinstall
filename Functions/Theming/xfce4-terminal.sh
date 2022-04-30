@@ -19,7 +19,7 @@ echo -ne "
 catppuccin colorschemes xfce4-terminal installation
 ------------------------------------------------------------------------------
 "
-mkdir -p /usr/share/xfce4/terminal/colorschemes
+sudo mkdir -p /usr/share/xfce4/terminal/colorschemes
 cd /usr/share/xfce4/terminal/colorschemes
 sudo wget https://raw.githubusercontent.com/catppuccin/xfce4-terminal/master/Catppuccin.theme
 
@@ -32,7 +32,7 @@ echo -ne "
 endeavouros colorschemes xfce4-terminal installation
 ------------------------------------------------------------------------------
 "
-mkdir -p /usr/share/xfce4/terminal/colorschemes
+sudo mkdir -p /usr/share/xfce4/terminal/colorschemes
 cd /usr/share/xfce4/terminal/colorschemes
 sudo wget https://raw.githubusercontent.com/endeavouros-team/endeavouros-xfce4-terminal-colors/master/endeavouros.theme
 }
