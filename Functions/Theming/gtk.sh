@@ -9,6 +9,8 @@ Qogir installation
 if [ "$1" = "" ]
 then
   optionUsed=""
+else
+  optionUsed=$1
 fi
 git clone https://github.com/vinceliuice/Qogir-theme $initialCacheFolder/Qogir-theme
 cd $initialCacheFolder/Qogir-theme/
@@ -25,6 +27,8 @@ Vimix installation
 if [ "$1" = "" ]
 then
   optionUsed="-c dark -s compact --all"
+else
+  optionUsed=$1
 fi
 git clone https://github.com/vinceliuice/vimix-gtk-themes $initialCacheFolder/vimix-gtk-themes
 cd $initialCacheFolder/vimix-gtk-themes
@@ -41,6 +45,8 @@ Orchis installation
 if [ "$1" = "" ]
 then
   optionUsed="--theme all --color dark"
+else
+  optionUsed=$1
 fi
 git clone https://github.com/vinceliuice/Orchis-theme $initialCacheFolder/Orchis-theme
 cd $initialCacheFolder/Orchis-theme
@@ -57,6 +63,8 @@ Graphite installation
 if [ "$1" = "" ]
 then
   optionUsed="--theme all --tweaks rimless --size compact --color dark"
+else
+  optionUsed=$1
 fi
 git clone https://github.com/vinceliuice/Graphite-gtk-theme $initialCacheFolder/Graphite-gtk-theme
 cd $initialCacheFolder/Graphite-gtk-theme
@@ -73,6 +81,8 @@ Matcha installation
 if [ "$1" = "" ]
 then
   optionUsed="--color dark"
+else
+  optionUsed=$1
 fi
 git clone https://github.com/vinceliuice/Matcha-gtk-theme $initialCacheFolder/Matcha-gtk-theme
 cd $initialCacheFolder/Matcha-gtk-theme
@@ -89,6 +99,8 @@ Colloid installation
 if [ "$1" = "" ]
 then
   optionUsed="--color dark --size compact"
+else
+  optionUsed=$1
 fi
 git clone https://github.com/vinceliuice/Colloid-gtk-theme $initialCacheFolder/Colloid-gtk-theme
 cd $initialCacheFolder/Colloid-gtk-theme
@@ -105,6 +117,8 @@ Fluent installation
 if [ "$1" = "" ]
 then
   optionUsed="--tweaks round"
+else
+  optionUsed=$1
 fi
 git clone https://github.com/vinceliuice/Fluent-gtk-theme $initialCacheFolder/Fluent-gtk-theme
 cd $initialCacheFolder/Fluent-gtk-theme

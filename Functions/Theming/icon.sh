@@ -19,6 +19,8 @@ tela-icon-theme installation
 if [ "$1" = "" ]
 then
   optionUsed=""
+else
+  optionUsed=$1
 fi
 git clone https://github.com/vinceliuice/Tela-icon-theme $initialCacheFolder/Tela-icon-theme
 cd $initialCacheFolder/Tela-icon-theme
@@ -34,6 +36,8 @@ tela-circle-icon-theme installation
 if [ "$1" = "" ]
 then
   optionUsed=""
+else
+  optionUsed=$1
 fi
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme $initialCacheFolder/Tela-circle-icon-theme
 cd $initialCacheFolder/Tela-circle-icon-theme
@@ -69,6 +73,8 @@ colloid-icon-theme installation
 if [ "$1" = "" ]
 then
   optionUsed=""
+else
+  optionUsed=$1
 fi
 git clone https://github.com/vinceliuice/Colloid-icon-theme $initialCacheFolder/Colloid-icon-theme
 cd $initialCacheFolder/Colloid-icon-theme
@@ -84,6 +90,8 @@ fluent-icon-theme installation
 if [ "$1" = "" ]
 then
   optionUsed=""
+else
+  optionUsed=$1
 fi
 git clone https://github.com/vinceliuice/Fluent-icon-theme $initialCacheFolder/Fluent-icon-theme
 cd $initialCacheFolder/Fluent-icon-theme
