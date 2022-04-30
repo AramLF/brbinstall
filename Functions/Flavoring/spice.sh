@@ -15,6 +15,8 @@ brbinstall_flavoring_spice_de
 
 #brbinstall_theming_icon_numix_both
 
+brbinstall_theming_icon_fluent "--red --round"
+
 #brbinstall_theming_wallpaper_spacenord
 
 brbinstall_theming_terminal_ps1

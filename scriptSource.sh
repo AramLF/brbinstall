@@ -51,3 +51,5 @@ brbinstall_distrib_package_manager
 superUser='sudo' #not used for now
 
 theHostname=$HOSTNAME
+
+optionUsed=""

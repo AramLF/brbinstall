@@ -6,9 +6,13 @@ echo -ne "
 Qogir installation
 ------------------------------------------------------------------------------
 "
+if [ "$1" = "" ]
+then
+  optionUsed=""
+fi
 git clone https://github.com/vinceliuice/Qogir-theme $initialCacheFolder/Qogir-theme
 cd $initialCacheFolder/Qogir-theme/
-sudo ./install.sh
+sudo ./install.sh $optionUsed
 #sudo to install theme as root
 }
 
@@ -18,9 +22,13 @@ echo -ne "
 Vimix installation
 ------------------------------------------------------------------------------
 "
+if [ "$1" = "" ]
+then
+  optionUsed="-c dark -s compact --all"
+fi
 git clone https://github.com/vinceliuice/vimix-gtk-themes $initialCacheFolder/vimix-gtk-themes
 cd $initialCacheFolder/vimix-gtk-themes
-sudo ./install.sh -c dark -s compact --all
+sudo ./install.sh $optionUsed
 #sudo to install theme as root
 }
 
@@ -30,9 +38,13 @@ echo -ne "
 Orchis installation
 ------------------------------------------------------------------------------
 "
+if [ "$1" = "" ]
+then
+  optionUsed="--theme all --color dark"
+fi
 git clone https://github.com/vinceliuice/Orchis-theme $initialCacheFolder/Orchis-theme
 cd $initialCacheFolder/Orchis-theme
-sudo ./install.sh --theme all --color dark
+sudo ./install.sh $optionUsed
 #sudo to install theme as root
 }
 
@@ -42,9 +54,13 @@ echo -ne "
 Graphite installation
 ------------------------------------------------------------------------------
 "
+if [ "$1" = "" ]
+then
+  optionUsed="--theme all --tweaks rimless --size compact --color dark"
+fi
 git clone https://github.com/vinceliuice/Graphite-gtk-theme $initialCacheFolder/Graphite-gtk-theme
 cd $initialCacheFolder/Graphite-gtk-theme
-sudo ./install.sh --theme all --tweaks rimless --size compact --color dark
+sudo ./install.sh $optionUsed
 #sudo to install theme as root
 }
 
@@ -54,9 +70,13 @@ echo -ne "
 Matcha installation
 ------------------------------------------------------------------------------
 "
+if [ "$1" = "" ]
+then
+  optionUsed="--color dark"
+fi
 git clone https://github.com/vinceliuice/Matcha-gtk-theme $initialCacheFolder/Matcha-gtk-theme
 cd $initialCacheFolder/Matcha-gtk-theme
-sudo ./install.sh --color dark
+sudo ./install.sh $optionUsed
 #sudo to install theme as root
 }
 
@@ -66,9 +86,13 @@ echo -ne "
 Colloid installation
 ------------------------------------------------------------------------------
 "
+if [ "$1" = "" ]
+then
+  optionUsed="--color dark --size compact"
+fi
 git clone https://github.com/vinceliuice/Colloid-gtk-theme $initialCacheFolder/Colloid-gtk-theme
 cd $initialCacheFolder/Colloid-gtk-theme
-sudo ./install.sh --color dark --size compact
+sudo ./install.sh $optionUsed
 #sudo to install theme as root
 }
 
@@ -78,9 +102,13 @@ echo -ne "
 Fluent installation
 ------------------------------------------------------------------------------
 "
+if [ "$1" = "" ]
+then
+  optionUsed="--tweaks round"
+fi
 git clone https://github.com/vinceliuice/Fluent-gtk-theme $initialCacheFolder/Fluent-gtk-theme
 cd $initialCacheFolder/Fluent-gtk-theme
-sudo ./install.sh --tweaks round
+sudo ./install.sh $optionUsed
 #sudo to install theme as root
 }
 

@@ -16,9 +16,13 @@ echo -ne "
 tela-icon-theme installation
 ------------------------------------------------------------------------------
 "
+if [ "$1" = "" ]
+then
+  optionUsed=""
+fi
 git clone https://github.com/vinceliuice/Tela-icon-theme $initialCacheFolder/Tela-icon-theme
 cd $initialCacheFolder/Tela-icon-theme
-sudo ./install.sh
+sudo ./install.sh $optionUsed
 }
 
 brbinstall_theming_icon_tela_circle () {
@@ -27,9 +31,13 @@ echo -ne "
 tela-circle-icon-theme installation
 ------------------------------------------------------------------------------
 "
+if [ "$1" = "" ]
+then
+  optionUsed=""
+fi
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme $initialCacheFolder/Tela-circle-icon-theme
 cd $initialCacheFolder/Tela-circle-icon-theme
-sudo ./install.sh
+sudo ./install.sh $optionUsed
 }
 
 brbinstall_theming_icon_numix_both () {
@@ -58,9 +66,13 @@ echo -ne "
 colloid-icon-theme installation
 ------------------------------------------------------------------------------
 "
+if [ "$1" = "" ]
+then
+  optionUsed=""
+fi
 git clone https://github.com/vinceliuice/Colloid-icon-theme $initialCacheFolder/Colloid-icon-theme
 cd $initialCacheFolder/Colloid-icon-theme
-sudo ./install.sh
+sudo ./install.sh $optionUsed
 }
 
 brbinstall_theming_icon_fluent () {
@@ -69,9 +81,13 @@ echo -ne "
 fluent-icon-theme installation
 ------------------------------------------------------------------------------
 "
+if [ "$1" = "" ]
+then
+  optionUsed=""
+fi
 git clone https://github.com/vinceliuice/Fluent-icon-theme $initialCacheFolder/Fluent-icon-theme
 cd $initialCacheFolder/Fluent-icon-theme
-sudo ./install.sh
+sudo ./install.sh $optionUsed
 }
 
 brbinstall_theming_icon_yarupp () {
