@@ -29,6 +29,7 @@ echo -ne "
 gdm-tools installation
 ------------------------------------------------------------------------------
 "
+#yay for arch for example
 git clone --depth=1 https://github.com/realmazharhussain/gdm-tools.git $initialPlacement/gdm-tools
 cd $initialPlacement/gdm-tools
 echo y|./install.sh

@@ -31,7 +31,7 @@ source ./Functions/Flavoring/neomint.sh
 
 source ./Functions/Distributions/DebianBased/tpDebianBased.sh
 source ./Functions/Distributions/FedoraBased/tpFedoraBased.sh
-source ./Functions/Distributions/ArchBased/tpArch.sh
+source ./Functions/Distributions/ArchBased/tpArchBased.sh
 source ./Functions/Distributions/VoidLinux/tpVoidLinux.sh
 source ./Functions/Distributions/UbuntuBased/tpUbuntuBased.sh
 source ./Functions/Distributions/packages.sh

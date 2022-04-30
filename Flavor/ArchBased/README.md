@@ -1,11 +1,6 @@
 # brbinstall ArchBased
 ArchBased
 
-Flavors  :
-- gnomed (gnome with extensions and theming)
-Arch ready  
-gnome with extensions and theming  
-
 ## Needs
 
 If your distribution doesn't come with yay you might want to install it :  
