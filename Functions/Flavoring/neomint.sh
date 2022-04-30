@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brbinstall_distrib_linux-mint_start () {
+brbinstall_flavoring_neomint_start () {
 echo -ne "
 ------------------------------------------------------------------------------
 LM
@@ -9,16 +9,7 @@ LM
 #none for now
 }
 
-brbinstall_distrib_linux-mint_more () {
-echo -ne "
-------------------------------------------------------------------------------
-Linux Mint pkgs
-------------------------------------------------------------------------------
-"
-sudo $auto_pkg_installer libc6-dev
-}
-
-brbinstall_distrib_linux-mint_fluent_local () {
+brbinstall_flavoring_neomint_fluent_local () {
 echo -ne "
 ------------------------------------------------------------------------------
 Fluent theme in local
@@ -30,7 +21,7 @@ cd $initialPlacement/Fluent-gtk-theme
 }
 
 
-brbinstall_distrib_linux-mint_neomint () {
+brbinstall_flavoring_neomint_neomint () {
 echo -ne "
 ------------------------------------------------------------------------------
 Linux Mint neo flavor
@@ -38,13 +29,13 @@ Linux Mint neo flavor
 "
   brbinstall_setup_start_basic_apps
 
-  brbinstall_distrib_linux-mint_more
+  brbinstall_distrib_ubuntu-based_more
 
   brbinstall_de_cinnamon_sound
 
   brbinstall_flavoring_flue_script
 
-  brbinstall_distrib_linux-mint_fluent_local
+  brbinstall_flavoring_neomint_fluent_local
 
   brbinstall_de_cinnamon_set_desktop_theme "Fluent-round-dark-compact"
 
@@ -60,7 +51,7 @@ Linux Mint neo flavor
 
 }
 
-brbinstall_distrib_linux-mint_run () {
+brbinstall_flavoring_neomint_run () {
   #stay like this for now
-  brbinstall_distrib_linux-mint_neomint
+  brbinstall_flavoring_neomint_neomint
 }

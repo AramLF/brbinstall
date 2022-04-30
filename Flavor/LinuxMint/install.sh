@@ -6,6 +6,6 @@ brbinstall_template_tp1_title
 
 brbinstall_template_tp1_start
 
-brbinstall_distrib_linux-mint_run
+brbinstall_flavoring_neomint_run
 
 brbinstall_template_tp1_end

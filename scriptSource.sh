@@ -27,12 +27,13 @@ source ./Functions/Flavoring/roll.sh
 source ./Functions/Flavoring/coll.sh
 source ./Functions/Flavoring/grey.sh
 source ./Functions/Flavoring/catp.sh
+source ./Functions/Flavoring/neomint.sh
 
 source ./Functions/Distributions/Debian/tpDebian.sh
 source ./Functions/Distributions/Fedora/tpFedora.sh
 source ./Functions/Distributions/ArchBased/tpArch.sh
 source ./Functions/Distributions/Void/tpVoid.sh
-source ./Functions/Distributions/LinuxMint/tpLinuxMint.sh
+source ./Functions/Distributions/UbuntuBased/tpUbuntuBased.sh
 source ./Functions/Distributions/packages.sh
 
 source ./Functions/Setup/miscsetup.sh
