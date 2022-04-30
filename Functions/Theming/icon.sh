@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theming_icon_papirus () {
+brbinstall_theming_icon_papirus () {
 echo -ne "
 ------------------------------------------------------------------------------
 papirus-icon-theme installation
@@ -10,7 +10,7 @@ sudo wget -qO- https://git.io/papirus-icon-theme-install | sh
 sudo wget -qO- https://git.io/papirus-folders-install | sh
 }
 
-theming_icon_tela () {
+brbinstall_theming_icon_tela () {
 echo -ne "
 ------------------------------------------------------------------------------
 tela-icon-theme installation
@@ -21,7 +21,7 @@ cd $initialPlacement/Tela-icon-theme
 sudo ./install.sh
 }
 
-theming_icon_tela_circle () {
+brbinstall_theming_icon_tela_circle () {
 echo -ne "
 ------------------------------------------------------------------------------
 tela-circle-icon-theme installation
@@ -32,7 +32,7 @@ cd $initialPlacement/Tela-circle-icon-theme
 sudo ./install.sh
 }
 
-theming_icon_numix_both () {
+brbinstall_theming_icon_numix_both () {
 echo -ne "
 ------------------------------------------------------------------------------
 numix-icon-theme & circle installation
@@ -52,7 +52,7 @@ sudo cp -r Numix-Circle/ /usr/share/icons/Numix-Circle/
 sudo cp -r Numix-Circle-Light/ /usr/share/icons/Numix-Circle-Light/
 }
 
-theming_icon_colloid () {
+brbinstall_theming_icon_colloid () {
 echo -ne "
 ------------------------------------------------------------------------------
 colloid-icon-theme installation
@@ -63,7 +63,7 @@ cd $initialPlacement/Colloid-icon-theme
 sudo ./install.sh
 }
 
-theming_icon_fluent () {
+brbinstall_theming_icon_fluent () {
 echo -ne "
 ------------------------------------------------------------------------------
 fluent-icon-theme installation
@@ -74,7 +74,7 @@ cd $initialPlacement/Fluent-icon-theme
 sudo ./install.sh
 }
 
-theming_icon_yarupp () {
+brbinstall_theming_icon_yarupp () {
 echo -ne "
 ------------------------------------------------------------------------------
 Yaru++-icon-theme Installation
@@ -86,7 +86,7 @@ Yaru++-icon-theme Installation
 wget -qO- https://raw.githubusercontent.com/Bonandry/yaru-plus/master/install.sh | sh
 }
 
-theming_icon_zafiro () {
+brbinstall_theming_icon_zafiro () {
 echo -ne "
 ------------------------------------------------------------------------------
 Zafiro-icons installation

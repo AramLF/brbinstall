@@ -2,10 +2,10 @@
 cd ../../
 source ./scriptSource.sh
 
-template_tp1_title
+brbinstall_template_tp1_title
 
-template_tp1_start
+brbinstall_template_tp1_start
 
-flavoring_all_choice
+brbinstall_flavoring_all_choice
 
-template_tp1_end
+brbinstall_template_tp1_end

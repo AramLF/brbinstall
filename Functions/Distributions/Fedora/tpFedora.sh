@@ -1,6 +1,6 @@
 #!/bin/bash
 
-distrib_fedora_dependencies () {
+brbinstall_distrib_fedora_dependencies () {
 echo -ne "
 ------------------------------------------------------------------------------
 Dependencies Fedora installation
@@ -9,7 +9,7 @@ Dependencies Fedora installation
 #none for now
 }
 
-distrib_fedora_dnf_tweaks () {
+brbinstall_distrib_fedora_dnf_tweaks () {
 echo -ne "
 ------------------------------------------------------------------------------
 dnf.conf tweaks
@@ -29,7 +29,7 @@ sudo sh -c 'echo "keepcache=True" >> /etc/dnf/dnf.conf'
 cat /etc/dnf/dnf.conf
 }
 
-distrib_fedora_rpm_fusion () {
+brbinstall_distrib_fedora_rpm_fusion () {
 echo -ne "
 ------------------------------------------------------------------------------
 enable rpm fusion free & nonfree
@@ -43,7 +43,7 @@ sudo dnf install -y rpmfusion-free-appstream-data
 sudo dnf install -y rpmfusion-nonfree-appstream-data
 }
 
-distrib_fedora_codecs () {
+brbinstall_distrib_fedora_codecs () {
 echo -ne "
 ------------------------------------------------------------------------------
 enable rpm media codecs
@@ -54,7 +54,7 @@ sudo dnf install -y lame\* --exclude=lame-devel
 sudo dnf group upgrade -y --with-optional Multimedia
 }
 
-distrib_fedora_raw () {
+brbinstall_distrib_fedora_raw () {
 echo -ne "
 ------------------------------------------------------------------------------
 rawhide
@@ -71,10 +71,10 @@ sudo dnf system-upgrade reboot
 cat /etc/os-release
 }
 
-distrib_fedora_run () {
+brbinstall_distrib_fedora_run () {
   ls -l
   #later
-  #distrib_fedora_dnf_tweaks
-  #distrib_fedora_rpm_fusion
-  #distrib_fedora_codecs
+  #brbinstall_distrib_fedora_dnf_tweaks
+  #brbinstall_distrib_fedora_rpm_fusion
+  #brbinstall_distrib_fedora_codecs
 }

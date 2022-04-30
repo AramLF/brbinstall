@@ -1,6 +1,6 @@
 #!/bin/bash
 
-template_tp1_title () {
+brbinstall_template_tp1_title () {
 echo -ne "
 ------------------------------------------------------------------------------
 ██████╗ ██████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗ █████╗ ██╗     ██╗
@@ -13,7 +13,7 @@ echo -ne "
 "
 }
 
-template_tp1_version () {
+brbinstall_template_tp1_version () {
 echo -ne "
 ------------------------------------------------------------------------------
 Distrib ver
@@ -22,7 +22,7 @@ Distrib ver
 #Distrib ver
 }
 
-template_tp1_start () {
+brbinstall_template_tp1_start () {
 echo -ne "
 ------------------------------------------------------------------------------
 Start of installation
@@ -30,7 +30,7 @@ Start of installation
 "
 }
 
-template_tp1_end () {
+brbinstall_template_tp1_end () {
 echo -ne "
 ------------------------------------------------------------------------------
 Installation finished, reboot recommended !

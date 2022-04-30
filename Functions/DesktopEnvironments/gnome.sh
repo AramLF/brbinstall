@@ -1,6 +1,6 @@
 #!/bin/bash
 
-de_gnome_add_dependencies(){
+brbinstall_de_gnome_add_dependencies(){
 echo -ne "
 ------------------------------------------------------------------------------
 Add dependencies for gnomed
@@ -9,7 +9,7 @@ Add dependencies for gnomed
 sudo $auto_pkg_installer gnome-tweaks
 }
 
-de_gnome_del_gnome_software_startup () {
+brbinstall_de_gnome_del_gnome_software_startup () {
 echo -ne "
 ------------------------------------------------------------------------------
 Removing gnome-software at startup
@@ -23,7 +23,7 @@ dconf write /org/gnome/software/download-updates false
 #allow-updates
 }
 
-de_gnome_set_gdm_tools () {
+brbinstall_de_gnome_set_gdm_tools () {
 echo -ne "
 ------------------------------------------------------------------------------
 gdm-tools installation
@@ -38,7 +38,7 @@ echo 'Set theme for gdm with set-gdm-theme '
 set-gdm-theme -l
 }
 
-de_gnome_set_gtk_theme () {
+brbinstall_de_gnome_set_gtk_theme () {
 echo -ne "
 ------------------------------------------------------------------------------
 Changing gtk-theme
@@ -55,7 +55,7 @@ gsettings set org.gnome.desktop.wm.preferences theme $1
 gsettings set org.gnome.shell.extensions.user-theme name $1
 }
 
-de_gnome_set_icon_theme () {
+brbinstall_de_gnome_set_icon_theme () {
 echo -ne "
 ------------------------------------------------------------------------------
 Changing icons-theme
@@ -65,7 +65,7 @@ Changing icons-theme
 gsettings set org.gnome.desktop.interface icon-theme $1
 }
 
-de_gnome_set_wallpaper () {
+brbinstall_de_gnome_set_wallpaper () {
 echo -ne "
 ------------------------------------------------------------------------------
 Changing wallpaper
@@ -74,7 +74,7 @@ Changing wallpaper
 gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/evening-sky.png
 }
 
-de_gnome_gnomeover_ubuntu(){
+brbinstall_de_gnome_gnomeover_ubuntu(){
 echo -ne "
 ------------------------------------------------------------------------------
 Gnome-over installation
@@ -85,6 +85,6 @@ sudo $auto_pkg_installer gnome-disk-utility gnome-power-manager gnome-shell-exte
 sudo $auto_pkg_installer gnome-themes-extra network-manager-gnome chrome-gnome-shell gnome-tweaks gnome-shell-extensions
 }
 
-de_gnome_gnomeover(){
+brbinstall_de_gnome_gnomeover(){
   ls -l
 }

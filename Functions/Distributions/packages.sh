@@ -3,7 +3,7 @@ function check_command() {
   command -v $1 > /dev/null
 }
 
-distrib_package_manager() {
+brbinstall_distrib_package_manager() {
   #sudo $auto_pkg_installer htop
   if check_command apt-get; then
     auto_pkg_installer='apt-get install -y'

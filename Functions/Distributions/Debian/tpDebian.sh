@@ -1,12 +1,12 @@
 #!/bin/bash
 
-distrib_debian_version () {
+brbinstall_distrib_debian_version () {
 echo -ne "Debian 11
 ------------------------------------------------------------------------------
 "
 }
 
-distrib_debian_dependencies () {
+brbinstall_distrib_debian_dependencies () {
 echo -ne "
 ------------------------------------------------------------------------------
 Dependencies Debian installation
@@ -17,7 +17,7 @@ sudo $auto_pkg_installer plymouth
 #maybe add plymouth-themes
 }
 
-distrib_debian_prompt () {
+brbinstall_distrib_debian_prompt () {
 echo -ne "
 ------------------------------------------------------------------------------
 Changing PS1 Prompt
@@ -27,7 +27,7 @@ Changing PS1 Prompt
 sed -i 's#\${debian_chroot:+(\$debian_chroot)}\\\[\\033\[01;32m\\]\\u@\\h\\\[\\033\[00m\\]:\\\[\\033\[01;34m\\]\\w\\\[\\033\[00m\\]\\\$ #\\\[\\033\[01;37m\\]┌─\[\\\[\\033\[01;32m\\]\\u\\\[\\033\[01;37m\\]]-\[\\\[\\033\[01;36m\\]\\h\\\[\\033\[01;37m\\]]-\[\\\[\\033\[01;33m\\]\\w\\\[\\033\[00;37m\\]\\\[\\033\[01;37m\\]]\\n\\\[\\033\[01;37m\\]└─\[\\\[\\033\[01;33m\\]\$\\\[\\033\[00;37m\\]\\\[\\033\[01;37m\\]]\\\[\\033\[00;37m\\] #g' ~/.bashrc
 }
 
-distrib_debian_plymouth () {
+brbinstall_distrib_debian_plymouth () {
 echo -ne "
 ------------------------------------------------------------------------------
 Adding plymouth
@@ -37,7 +37,7 @@ sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT="qu
 sudo update-grub
 }
 
-distrib_debian_cnf (){
+brbinstall_distrib_debian_cnf (){
 echo -ne "
 ------------------------------------------------------------------------------
 Adding alias cnf

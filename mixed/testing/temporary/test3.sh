@@ -2,7 +2,7 @@
 cd ../../../
 source ./scriptSource.sh
 
-#template_tp1_version
+#brbinstall_template_tp1_version
 
 kljmjlkdsqkdjslqf (){
   if check_command plasmashell; then

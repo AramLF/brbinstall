@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theming_gterminal_set_catppuccin () {
+brbinstall_theming_gterminal_set_catppuccin () {
 echo -ne "
 ------------------------------------------------------------------------------
 Catppuccin-gnome-terminal installation

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theming_wallpaper_evening () {
+brbinstall_theming_wallpaper_evening () {
 echo -ne "
 ------------------------------------------------------------------------------
 evening-sky wallpaper download
@@ -11,7 +11,7 @@ wget https://raw.githubusercontent.com/catppuccin/wallpapers/main/landscapes/eve
 sudo mv evening-sky.png /usr/share/backgrounds/evening-sky.png
 }
 
-theming_wallpaper_graphite () {
+brbinstall_theming_wallpaper_graphite () {
 echo -ne "
 ------------------------------------------------------------------------------
 graphite wallpaper download
@@ -21,7 +21,7 @@ git clone https://github.com/vinceliuice/Graphite-gtk-theme $initialPlacement/Gr
 cd $initialPlacement/Graphite-gtk-theme
 }
 
-theming_wallpaper_spacenord () {
+brbinstall_theming_wallpaper_spacenord () {
 echo -ne "
 ------------------------------------------------------------------------------
 spacenord wallpaper download

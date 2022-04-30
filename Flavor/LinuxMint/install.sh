@@ -2,10 +2,10 @@
 cd ../../
 source ./scriptSource.sh
 
-template_tp1_title
+brbinstall_template_tp1_title
 
-template_tp1_start
+brbinstall_template_tp1_start
 
-distrib_linux-mint_run
+brbinstall_distrib_linux-mint_run
 
-template_tp1_end
+brbinstall_template_tp1_end

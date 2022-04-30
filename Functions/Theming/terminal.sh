@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theming_terminal_ps1 (){
+brbinstall_theming_terminal_ps1 (){
 echo -ne "
 ------------------------------------------------------------------------------
 Change terminal PS1 in ~/.bashrc
@@ -17,7 +17,7 @@ fi
 echo 'PS1 will be displayed in new terminals...'
 }
 
-theming_terminal_ps1_test(){
+brbinstall_theming_terminal_ps1_test(){
   if grep 'PS1' ~/.bashrc > /dev/null; then
     echo 'already there'
   else

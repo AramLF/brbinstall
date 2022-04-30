@@ -2,36 +2,36 @@
 cd ../../
 source ./scriptSource.sh
 
-template_tp1_title
+brbinstall_template_tp1_title
 
-distrib_debian_version
+brbinstall_distrib_debian_version
 
-template_tp1_start
+brbinstall_template_tp1_start
 
-distrib_debian_dependencies
+brbinstall_distrib_debian_dependencies
 
-theming_icon_papirus
+brbinstall_theming_icon_papirus
 
-theming_wallpaper_evening
+brbinstall_theming_wallpaper_evening
 
-theming_gtk_catppuccin
+brbinstall_theming_gtk_catppuccin
 
-theming_gterminal_set_catppuccin
+brbinstall_theming_gterminal_set_catppuccin
 
-de_gnome_del_gnome_software_startup
+brbinstall_de_gnome_del_gnome_software_startup
 
-de_gnome_set_gdm_tools
+brbinstall_de_gnome_set_gdm_tools
 
-de_gnome_set_icon_theme
+brbinstall_de_gnome_set_icon_theme
 
-de_gnome_set_gtk_theme
+brbinstall_de_gnome_set_gtk_theme
 
-de_gnome_set_wallpaper
+brbinstall_de_gnome_set_wallpaper
 
-distrib_debian_prompt
+brbinstall_distrib_debian_prompt
 
-distrib_debian_plymouth
+brbinstall_distrib_debian_plymouth
 
-distrib_debian_cnf
+brbinstall_distrib_debian_cnf
 
-template_tp1_end
+brbinstall_template_tp1_end

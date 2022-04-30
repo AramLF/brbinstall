@@ -1,15 +1,15 @@
 #!/bin/bash
 
-theming_color-schemes_all (){
+brbinstall_theming_color-schemes_all (){
 echo -ne "
 ------------------------------------------------------------------------------
 All color schemes installation
 ------------------------------------------------------------------------------
 "
-theming_color-schemes_colloid
+brbinstall_theming_color-schemes_colloid
 }
 
-theming_color-schemes_colloid () {
+brbinstall_theming_color-schemes_colloid () {
 echo -ne "
 ------------------------------------------------------------------------------
 Color schemes ColloidDark24 installation

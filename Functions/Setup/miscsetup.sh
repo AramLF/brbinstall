@@ -1,6 +1,6 @@
 #!/bin/bash
 
-setup_miscsetup_flathub () {
+brbinstall_setup_miscsetup_flathub () {
 echo -ne "
 ------------------------------------------------------------------------------
 Set flathub
@@ -9,7 +9,7 @@ Set flathub
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 }
 
-setup_miscsetup_flatpak_override () {
+brbinstall_setup_miscsetup_flatpak_override () {
 echo -ne "
 ------------------------------------------------------------------------------
 Flatpak override filesystem theme
@@ -18,7 +18,7 @@ Flatpak override filesystem theme
 sudo flatpak override --filesystem=~/.themes
 }
 
-setup_miscsetup_nixpkg () {
+brbinstall_setup_miscsetup_nixpkg () {
 echo -ne "
 ------------------------------------------------------------------------------
 Set nixpkg
@@ -27,7 +27,7 @@ Set nixpkg
 #later
 }
 
-setup_miscsetup_libadwaita_script () {
+brbinstall_setup_miscsetup_libadwaita_script () {
 echo -ne "
 ------------------------------------------------------------------------------
 Script for theming libadwaita
@@ -39,7 +39,7 @@ cd $initialPlacement/libadwaita-theme-changer
 ./libadwaita-tc.py
 }
 
-setup_miscsetup_unimatrix () {
+brbinstall_setup_miscsetup_unimatrix () {
 echo -ne "
 ------------------------------------------------------------------------------
 Getting unimatrix

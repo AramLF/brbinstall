@@ -1,31 +1,31 @@
 #!/bin/bash
 
-flavoring_catp_script () {
+brbinstall_flavoring_catp_script () {
 echo -ne "
 ------------------------------------------------------------------------------
 Flavor Catp
 ------------------------------------------------------------------------------
 "
 
-theming_dependencies_global
+brbinstall_theming_dependencies_global
 
-theming_gtk_catppuccin
+brbinstall_theming_gtk_catppuccin
 
-flavoring_catp_de
+brbinstall_flavoring_catp_de
 
-theming_icon_papirus
+brbinstall_theming_icon_papirus
 
-theming_wallpaper_evening
+brbinstall_theming_wallpaper_evening
 
-theming_terminal_ps1
+brbinstall_theming_terminal_ps1
 
 }
 
-flavoring_catp_de(){
+brbinstall_flavoring_catp_de(){
   if check_command plasmashell; then
-    theming_konsole_all
+    brbinstall_theming_konsole_all
   elif check_command gnome-terminal; then
-    theming_gterminal_set_catppuccin
+    brbinstall_theming_gterminal_set_catppuccin
   fi
 
 }

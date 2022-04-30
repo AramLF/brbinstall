@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theming_dependencies_global () {
+brbinstall_theming_dependencies_global () {
 echo -ne "
 ------------------------------------------------------------------------------
 Some dependencies for theming

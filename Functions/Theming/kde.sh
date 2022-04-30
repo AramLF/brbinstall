@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theming_kde_vimix () {
+brbinstall_theming_kde_vimix () {
 echo -ne "
 ------------------------------------------------------------------------------
 Vimix-kde installation
@@ -12,7 +12,7 @@ cd $initialPlacement/vimix-kde
 #sudo to install theme as root
 }
 
-theming_kde_materia () {
+brbinstall_theming_kde_materia () {
 echo -ne "
 ------------------------------------------------------------------------------
 Materia-kde installation
@@ -21,7 +21,7 @@ Materia-kde installation
 sudo wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/materia-kde/master/install.sh | sh
 }
 
-theming_kde_fluent () {
+brbinstall_theming_kde_fluent () {
 echo -ne "
 ------------------------------------------------------------------------------
 Fluent-kde installation
@@ -33,7 +33,7 @@ cd $initialPlacement/Fluent-kde
 #sudo to install theme as root
 }
 
-theming_kde_colloid () {
+brbinstall_theming_kde_colloid () {
 echo -ne "
 ------------------------------------------------------------------------------
 Colloid-kde installation
@@ -45,7 +45,7 @@ cd $initialPlacement/Colloid-kde
 #sudo to install theme as root
 }
 
-theming_kde_catppuccin () {
+brbinstall_theming_kde_catppuccin () {
 echo -ne "
 ------------------------------------------------------------------------------
 Catppuccin-kde installation

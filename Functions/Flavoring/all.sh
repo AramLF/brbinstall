@@ -1,6 +1,6 @@
 #!/bin/bash
 
-flavoring_all_choice() {
+brbinstall_flavoring_all_choice() {
 echo -ne "
 ------------------------------------------------------------------------------
 Flavoring choice
@@ -19,25 +19,25 @@ read -r -p "Press the number then press Enter : " flavChoice
 
 if [ $flavChoice = "1" ]
 then
-  flavoring_catp_script
+  brbinstall_flavoring_catp_script
 elif [ $flavChoice = "2" ]
 then
-  flavoring_coll_script
+  brbinstall_flavoring_coll_script
 elif [ $flavChoice = "3" ]
 then
-  flavoring_flue_script
+  brbinstall_flavoring_flue_script
 elif [ $flavChoice = "4" ]
 then
-  flavoring_grey_script
+  brbinstall_flavoring_grey_script
 elif [ $flavChoice = "5" ]
 then
-  flavoring_matte_script
+  brbinstall_flavoring_matte_script
 elif [ $flavChoice = "6" ]
 then
-  flavoring_roll_script
+  brbinstall_flavoring_roll_script
 elif [ $flavChoice = "7" ]
 then
-  flavoring_vimi_script
+  brbinstall_flavoring_vimi_script
 else
   echo "exiting please choose something in the list";
   exit 1;

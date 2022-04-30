@@ -43,7 +43,7 @@ initialPath=$(pwd)
 initialPlaceHolder=$initialPath/placeholder
 initialPlacement=$initialPath/..
 
-distrib_package_manager
+brbinstall_distrib_package_manager
 
 superUser='sudo' #not used for now
 

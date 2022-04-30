@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theming_gtk_qogir () {
+brbinstall_theming_gtk_qogir () {
 echo -ne "
 ------------------------------------------------------------------------------
 Qogir installation
@@ -12,7 +12,7 @@ sudo ./install.sh
 #sudo to install theme as root
 }
 
-theming_gtk_vimix () {
+brbinstall_theming_gtk_vimix () {
 echo -ne "
 ------------------------------------------------------------------------------
 Vimix installation
@@ -24,7 +24,7 @@ sudo ./install.sh -c dark -s compact --all
 #sudo to install theme as root
 }
 
-theming_gtk_orchis () {
+brbinstall_theming_gtk_orchis () {
 echo -ne "
 ------------------------------------------------------------------------------
 Orchis installation
@@ -36,7 +36,7 @@ sudo ./install.sh --theme all --color dark
 #sudo to install theme as root
 }
 
-theming_gtk_graphite () {
+brbinstall_theming_gtk_graphite () {
 echo -ne "
 ------------------------------------------------------------------------------
 Graphite installation
@@ -48,7 +48,7 @@ sudo ./install.sh --theme all --tweaks rimless --size compact --color dark
 #sudo to install theme as root
 }
 
-theming_gtk_matcha () {
+brbinstall_theming_gtk_matcha () {
 echo -ne "
 ------------------------------------------------------------------------------
 Matcha installation
@@ -60,7 +60,7 @@ sudo ./install.sh --color dark
 #sudo to install theme as root
 }
 
-theming_gtk_colloid () {
+brbinstall_theming_gtk_colloid () {
 echo -ne "
 ------------------------------------------------------------------------------
 Colloid installation
@@ -72,7 +72,7 @@ sudo ./install.sh --color dark --size compact
 #sudo to install theme as root
 }
 
-theming_gtk_fluent () {
+brbinstall_theming_gtk_fluent () {
 echo -ne "
 ------------------------------------------------------------------------------
 Fluent installation
@@ -84,7 +84,7 @@ sudo ./install.sh --tweaks round
 #sudo to install theme as root
 }
 
-theming_gtk_catppuccin () {
+brbinstall_theming_gtk_catppuccin () {
 echo -ne "
 ------------------------------------------------------------------------------
 Catppuccin-gtk-theme installation

@@ -10,4 +10,4 @@
 #need to be in this directory
 source ./scriptSource.sh
 
-template_tp1_title
+brbinstall_template_tp1_title

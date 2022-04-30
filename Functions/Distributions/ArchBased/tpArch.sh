@@ -1,6 +1,6 @@
 #!/bin/bash
 
-distrib_arch_dependencies () {
+brbinstall_distrib_arch_dependencies () {
 echo -ne "
 ------------------------------------------------------------------------------
 Arch dependencies installation
@@ -9,7 +9,7 @@ Arch dependencies installation
 sudo $auto_pkg_installer --needed git base-devel
 }
 
-distrib_arch_yay (){
+brbinstall_distrib_arch_yay (){
 echo -ne "
 ------------------------------------------------------------------------------
 yay installation
@@ -25,7 +25,7 @@ else
 fi
 }
 
-distrib_arch_gdm-tools () {
+brbinstall_distrib_arch_gdm-tools () {
 echo -ne "
 ------------------------------------------------------------------------------
 gdm-tools installation
@@ -35,7 +35,7 @@ yay -S gdm-tools-git --noconfirm
 set-gdm-theme -s
 }
 
-distrib_arch_gnome-extensions (){
+brbinstall_distrib_arch_gnome-extensions (){
 echo -ne "
 ------------------------------------------------------------------------------
 gnome-extensions installation

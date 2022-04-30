@@ -1,6 +1,6 @@
 #!/bin/bash
 
-de_cinnamon_mod(){
+brbinstall_de_cinnamon_mod(){
 echo -ne "
 ------------------------------------------------------------------------------
 Cinnamon mod
@@ -9,7 +9,7 @@ Cinnamon mod
 #moding it later
 }
 
-de_cinnamon_sound(){
+brbinstall_de_cinnamon_sound(){
 echo -ne "
 ------------------------------------------------------------------------------
 Cinnamon sound settings
@@ -24,7 +24,7 @@ gsettings set org.cinnamon.sounds switch-enabled false
 gsettings set org.cinnamon.sounds tile-enabled false
 }
 
-de_cinnamon_set_background(){
+brbinstall_de_cinnamon_set_background(){
 echo -ne "
 ------------------------------------------------------------------------------
 Cinnamon set background
@@ -35,7 +35,7 @@ Cinnamon set background
 
 }
 
-de_cinnamon_set_desktop_theme(){
+brbinstall_de_cinnamon_set_desktop_theme(){
 echo -ne "
 ------------------------------------------------------------------------------
 Cinnamon set gtk theme
@@ -45,7 +45,7 @@ Cinnamon set gtk theme
 gsettings set org.cinnamon.theme name $1
 }
 
-de_cinnamon_set_gtk_theme(){
+brbinstall_de_cinnamon_set_gtk_theme(){
 echo -ne "
 ------------------------------------------------------------------------------
 Cinnamon set wm theme
@@ -55,7 +55,7 @@ Cinnamon set wm theme
   gsettings set org.cinnamon.desktop.interface gtk-theme $1
 }
 
-de_cinnamon_set_wm_theme(){
+brbinstall_de_cinnamon_set_wm_theme(){
 echo -ne "
 ------------------------------------------------------------------------------
 Cinnamon set wm theme
@@ -66,7 +66,7 @@ Cinnamon set wm theme
 
 }
 
-de_cinnamon_set_icon_theme(){
+brbinstall_de_cinnamon_set_icon_theme(){
 echo -ne "
 ------------------------------------------------------------------------------
 Cinnamon set icon theme
