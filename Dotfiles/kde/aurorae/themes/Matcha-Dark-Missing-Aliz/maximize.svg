@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="22"
+   height="22"
+   enable-background="new"
+   version="1.1"
+   id="svg57"
+   sodipodi:docname="maximize.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs61" />
+  <sodipodi:namedview
+     id="namedview59"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="7.8522727"
+     inkscape:cx="4.9030391"
+     inkscape:cy="38.141823"
+     inkscape:window-width="1704"
+     inkscape:window-height="864"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg57" />
+  <use
+     transform="translate(28.476)"
+     width="100%"
+     height="100%"
+     xlink:href="#g1000"
+     id="use2" />
+  <g
+     id="active-center"
+     opacity=".7">
+    <rect
+       x="9.5367e-7"
+       y="9.5367e-7"
+       width="22"
+       height="22"
+       rx="0"
+       ry="0"
+       opacity="0"
+       stroke-width="3"
+       style="paint-order:fill markers stroke"
+       id="rect4" />
+    <g
+       transform="translate(-613 188.64)"
+       opacity=".8"
+       style=""
+       id="g12">
+      <g
+         transform="translate(-781 -432.64)"
+         opacity="1"
+         style=""
+         id="g8">
+        <path
+           d="m1403.8 252h3.3818c0.4503 0 0.8162 0.36847 0.8187 0.8188v3.3817zm2.4074 6.0069h-3.395c-0.4504 0-0.8188-0.36842-0.8188-0.81875v-3.3951l4.2138 4.2138"
+           fill="#b9bcc2"
+           fill-rule="evenodd"
+           opacity="1"
+           id="path6" />
+      </g>
+      <rect
+         x="616"
+         y="-185.64"
+         width="16"
+         height="16"
+         fill="none"
+         opacity="1"
+         style=""
+         id="rect10" />
+    </g>
+  </g>
+  <g
+     id="hover-center"
+     transform="matrix(1.375 0 0 1.375 -704.3 282.83)"
+     stroke-width=".99174">
+    <g
+       transform="translate(-781 -432.64)"
+       stroke-width=".99174"
+       id="g23">
+      <path
+         d="m1302 248c-3.866 0-7 3.134-7 7s3.134 7 7 7 7-3.134 7-7-3.134-7-7-7z"
+         fill="#5f7d7c"
+         opacity=".45"
+         id="path15"
+         style="fill:#5e5e5e;fill-opacity:1" />
+      <g
+         transform="translate(1294,247)"
+         fill="#c0e3ff"
+         stroke-width=".99174"
+         id="g21">
+        <g
+           transform="translate(-81 -967)"
+           fill="#c0e3ff"
+           stroke-width=".99174"
+           id="g19">
+          <path
+             d="m87.8 972h3.3817c0.4503 0 0.81623 0.36847 0.81876 0.8188v3.3817zm2.4074 6.0069h-3.3951c-0.45035 0-0.81876-0.36842-0.81876-0.81875v-3.3951l4.2138 4.2138"
+             fill="#96aaa9"
+             fill-rule="evenodd"
+             id="path17" />
+        </g>
+      </g>
+    </g>
+    <rect
+       x="513"
+       y="-185.64"
+       width="16"
+       height="16"
+       fill="none"
+       id="rect25" />
+  </g>
+  <g
+     id="pressed-center"
+     transform="matrix(1.375 0 0 1.375 -564.9 311.81)"
+     stroke-width=".99174">
+    <g
+       transform="translate(-882 -432.64)"
+       stroke-width=".99174"
+       id="g34">
+      <g
+         transform="translate(-132)"
+         id="g32">
+        <g
+           transform="translate(58)"
+           stroke-width=".99174"
+           id="g30">
+          <path
+             transform="matrix(.73333 0 0 .73333 1257.1 162.99)"
+             d="m162.18 115.92a9.5455 9.5455 0 0 0-9.5449 9.5449 9.5455 9.5455 0 0 0 9.5449 9.5449 9.5455 9.5455 0 0 0 9.5449-9.5449 9.5455 9.5455 0 0 0-9.5449-9.5449zm-1.6367 5.4551h4.6113c0.61404 0 1.1137 0.50115 1.1172 1.1152v4.6113zm-2.4629 2.4453 5.7461 5.7461h-4.6308c-0.61411 0-1.1152-0.5031-1.1152-1.1172z"
+             fill="#2eb398"
+             id="path28"
+             style="fill:#717171;fill-opacity:1" />
+        </g>
+      </g>
+    </g>
+    <rect
+       x="412"
+       y="-185.64"
+       width="16"
+       height="16"
+       fill="none"
+       id="rect36" />
+  </g>
+  <g
+     id="inactive-center"
+     opacity=".4">
+    <rect
+       x="30.102"
+       y=".791"
+       width="22"
+       height="22"
+       rx="0"
+       ry="0"
+       opacity="0"
+       stroke-width="3"
+       style="paint-order:fill markers stroke"
+       id="rect39" />
+    <g
+       transform="translate(-1363.9,-243.21)"
+       opacity="1"
+       id="g43">
+      <path
+         d="m1403.8 252h3.3818c0.4503 0 0.8162 0.36847 0.8187 0.8188v3.3817zm2.4074 6.0069h-3.395c-0.4504 0-0.8188-0.36842-0.8188-0.81875v-3.3951l4.2138 4.2138"
+         fill="#b9bcc2"
+         fill-rule="evenodd"
+         opacity="1"
+         id="path41" />
+    </g>
+    <rect
+       x="33.1"
+       y="3.79"
+       width="16"
+       height="16"
+       fill="none"
+       opacity=".45"
+       id="rect45" />
+  </g>
+  <g
+     id="deactivated-center"
+     transform="translate(-1.0547 25.708)"
+     opacity=".4">
+    <rect
+       x="30.102"
+       y=".791"
+       width="22"
+       height="22"
+       rx="0"
+       ry="0"
+       opacity="0"
+       stroke-width="3"
+       style="paint-order:fill markers stroke"
+       id="rect48" />
+    <g
+       transform="translate(-1363.9,-243.21)"
+       opacity="1"
+       id="g52">
+      <path
+         d="m1403.8 252h3.3818c0.4503 0 0.8162 0.36847 0.8187 0.8188v3.3817zm2.4074 6.0069h-3.395c-0.4504 0-0.8188-0.36842-0.8188-0.81875v-3.3951l4.2138 4.2138"
+         fill="#b9bcc2"
+         fill-rule="evenodd"
+         opacity="1"
+         id="path50" />
+    </g>
+    <rect
+       x="33.1"
+       y="3.79"
+       width="16"
+       height="16"
+       fill="none"
+       opacity=".45"
+       id="rect54" />
+  </g>
+</svg>
