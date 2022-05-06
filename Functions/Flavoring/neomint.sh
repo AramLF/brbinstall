@@ -9,18 +9,6 @@ LM
 #none for now
 }
 
-brbinstall_flavoring_neomint_fluent_local () {
-echo -ne "
-------------------------------------------------------------------------------
-Fluent theme in local
-------------------------------------------------------------------------------
-"
-#flue flavor should be installed first
-cd $initialCacheFolder/Fluent-gtk-theme
-./install.sh --tweaks round
-}
-
-
 brbinstall_flavoring_neomint_neomint () {
 echo -ne "
 ------------------------------------------------------------------------------
@@ -35,7 +23,7 @@ Linux Mint neo flavor
 
   brbinstall_flavoring_flue_script
 
-  brbinstall_flavoring_neomint_fluent_local
+  brbinstall_theming_gtk_fluent "--tweaks round"
 
   brbinstall_de_cinnamon_set_desktop_theme "Fluent-round-dark-compact"
 
