@@ -15,5 +15,5 @@ echo -ne "
 Color schemes ColloidDark24 installation
 ------------------------------------------------------------------------------
 "
-cp $initialPath/Dotfiles/color-schemes/ColloidDark24.colors ~/.local/share/color-schemes/ColloidDark24.colors -v
+cp $initialPath/Dotfiles/kde/color-schemes/ColloidDark24.colors ~/.local/share/color-schemes/ColloidDark24.colors -v
 }
