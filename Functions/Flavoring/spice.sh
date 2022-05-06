@@ -13,8 +13,6 @@ brbinstall_theming_gtk_matcha
 
 brbinstall_flavoring_spice_de
 
-#brbinstall_theming_icon_numix_both
-
 brbinstall_theming_icon_fluent "red"
 
 brbinstall_theming_wallpaper_spacemars-modified
@@ -29,11 +27,11 @@ brbinstall_flavoring_spice_de(){
 
     brbinstall_theming_kde_catppuccin
 
-    brbinstall_theming_kde_fluent
+    brbinstall_theming_kde-misc_color-schemes_all
 
-    brbinstall_theming_color-schemes_all
+    brbinstall_theming_kde-misc_konsole_all
 
-    brbinstall_theming_konsole_all
+    brbinstall_theming_kde-misc_aurorae_all
   fi
 
 }

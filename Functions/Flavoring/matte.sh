@@ -29,7 +29,7 @@ brbinstall_flavoring_matte_de(){
 
     brbinstall_theming_kde_catppuccin
 
-    brbinstall_theming_konsole_all
+    brbinstall_theming_kde-misc_konsole_all
   fi
 
 }

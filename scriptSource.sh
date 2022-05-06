@@ -9,9 +9,8 @@ source ./Functions/Theming/kde.sh
 source ./Functions/Theming/icon.sh
 source ./Functions/Theming/wallpaper.sh
 source ./Functions/Theming/gterminal.sh
-source ./Functions/Theming/konsole.sh
 source ./Functions/Theming/terminal.sh
-source ./Functions/Theming/color-schemes.sh
+source ./Functions/Theming/kde-misc.sh
 source ./Functions/Theming/xfce4-terminal.sh
 
 source ./Functions/DesktopEnvironments/cinnamon.sh

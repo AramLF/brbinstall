@@ -33,7 +33,7 @@ brbinstall_flavoring_grey_de(){
 
     #brbinstall_theming_kde_materia
 
-    brbinstall_theming_konsole_all
+    brbinstall_theming_kde-misc_konsole_all
   fi
 
 }
