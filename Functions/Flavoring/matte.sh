@@ -15,7 +15,7 @@ brbinstall_flavoring_matte_de
 
 brbinstall_theming_icon_numix_both
 
-brbinstall_theming_wallpaper_spacenord
+brbinstall_theming_wallpaper_all
 
 brbinstall_theming_terminal_ps1
 

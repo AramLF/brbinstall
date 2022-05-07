@@ -12,7 +12,7 @@ brbinstall_distrib_debian-based_dependencies
 
 brbinstall_theming_icon_papirus
 
-brbinstall_theming_wallpaper_evening
+brbinstall_theming_wallpaper_all
 
 brbinstall_theming_gtk_catppuccin
 

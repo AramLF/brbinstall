@@ -17,7 +17,7 @@ brbinstall_theming_icon_tela
 
 brbinstall_theming_icon_tela_circle
 
-brbinstall_theming_wallpaper_graphite
+brbinstall_theming_wallpaper_all
 
 brbinstall_theming_terminal_ps1
 

@@ -15,7 +15,7 @@ brbinstall_flavoring_spice_de
 
 brbinstall_theming_icon_fluent "red"
 
-brbinstall_theming_wallpaper_spacemars-modified
+brbinstall_theming_wallpaper_all
 
 brbinstall_theming_terminal_ps1
 
@@ -24,8 +24,6 @@ brbinstall_theming_terminal_ps1
 brbinstall_flavoring_spice_de(){
   if check_command plasmashell; then
     brbinstall_theming_kde_materia
-
-    brbinstall_theming_kde_catppuccin
 
     brbinstall_theming_kde-misc_color-schemes_all
 

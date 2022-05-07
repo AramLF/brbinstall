@@ -19,7 +19,7 @@ brbinstall_theming_icon_papirus
 
 brbinstall_theming_icon_numix_both
 
-brbinstall_theming_wallpaper_graphite
+brbinstall_theming_wallpaper_all
 
 brbinstall_theming_terminal_ps1
 
