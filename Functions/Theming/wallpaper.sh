@@ -12,6 +12,7 @@ brbinstall_theming_wallpaper_dot
 
 brbinstall_theming_wallpaper_evening
 brbinstall_theming_wallpaper_graphite
+brbinstall_theming_wallpaper_materia
 }
 
 brbinstall_theming_wallpaper_dot () {
@@ -50,5 +51,17 @@ sudo wget https://raw.githubusercontent.com/vinceliuice/Graphite-gtk-theme/main/
 sudo wget https://raw.githubusercontent.com/vinceliuice/Graphite-gtk-theme/main/wallpaper/Graphite-normal/wave-dark-fedora.png
 sudo wget https://raw.githubusercontent.com/vinceliuice/Graphite-gtk-theme/main/wallpaper/Graphite-normal/wave-dark-manjaro.png
 sudo wget https://raw.githubusercontent.com/vinceliuice/Graphite-gtk-theme/main/wallpaper/Graphite-normal/wave-dark-ubuntu.png
+
+}
+
+brbinstall_theming_wallpaper_materia () {
+echo -ne "
+------------------------------------------------------------------------------
+materia wallpaper download
+------------------------------------------------------------------------------
+"
+sudo mkdir -p /usr/share/backgrounds/walls/
+cd /usr/share/backgrounds/walls/
+sudo wget https://raw.githubusercontent.com/PapirusDevelopmentTeam/materia-kde/master/wallpapers/Materia-Dark/contents/images/3840x2160.png
 
 }
