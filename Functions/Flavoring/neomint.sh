@@ -9,12 +9,24 @@ LM
 #none for now
 }
 
+brbinstall_flavoring_neomint_wifi_prevention () {
+echo -ne "
+------------------------------------------------------------------------------
+Prevention fix for potential wifi problem on Linux Mint
+------------------------------------------------------------------------------
+"
+#prevention of potenital wifi trouble
+sudo sed -i 's/wifi.powersave = 3/wifi.powersave = 2/g' /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+}
+
 brbinstall_flavoring_neomint_neomint () {
 echo -ne "
 ------------------------------------------------------------------------------
-Linux Mint neo flavor
+Linux Mint Neomint flavor
 ------------------------------------------------------------------------------
 "
+  brbinstall_flavoring_neomint_wifi_prevention
+
   brbinstall_setup_start_basic_apps
 
   brbinstall_distrib_ubuntu-based_more

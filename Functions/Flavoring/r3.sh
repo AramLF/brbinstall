@@ -9,3 +9,13 @@ r3 for i3
 ls -l
 
 }
+
+brbinstall_flavoring_r3_not_yet () {
+echo -ne "
+------------------------------------------------------------------------------
+r3 for i3 not rdy yet
+------------------------------------------------------------------------------
+"
+#none for now
+echo 'for_window [class=".*"] border pixel 0'
+}
