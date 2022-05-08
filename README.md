@@ -16,10 +16,10 @@ And execute the install.sh (it is important to be in the current directory of th
 ```
 ### Flavors
 - [ArchBased](https://github.com/AramLF/brbinstall/tree/main/Flavor/ArchBased) (Only set yay for now)
-- [Debian](https://github.com/AramLF/brbinstall/tree/main/Flavor/Debian) (Does some theming and set it with more user friendliness)
-- [VoidLinux](https://github.com/AramLF/brbinstall/tree/main/Flavor/VoidLinux) (A post install script to set up everything like the services the DE & more)  
-- [Neomint](https://github.com/AramLF/brbinstall/tree/main/Flavor/Neomint) (Tweak Linux Mint Cinnamon 20.3 with some theming and set a few things up)  
-- [Flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/Flavoring) (Contain a script to install some theming)  
+- [Debian](https://github.com/AramLF/brbinstall/tree/main/Flavor/Debian) (Does some theming and set it with more user friendliness) - Deprecated
+- [VoidLinux](https://github.com/AramLF/brbinstall/tree/main/Flavor/VoidLinux) (A post install script to set up everything like the services, the DE & more)  
+- [Neomint](https://github.com/AramLF/brbinstall/tree/main/Flavor/Neomint) (Tweaks Linux Mint Cinnamon 20.3 with some theming and set a few things up)  
+- [Flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/Flavoring) (Contains a script to install some theming)  
 
 ### Use Commands Independently
 If you want to use the commands directly you can also do this (you need to be in this directory) :
@@ -46,3 +46,5 @@ And then use the commands starting with "brbinstall_" (it will only be available
 - Rearrange the whole structure
 - add comments & maybe better naming
 - add pics
+- some blocks of code could be functions (avoid repetitions)
+- huge improvement over some awfully made functions

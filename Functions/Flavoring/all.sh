@@ -7,7 +7,8 @@ Flavoring choice
 ------------------------------------------------------------------------------
 "
 
-echo "What flavor do you want ?"
+#terrible way of doing things (need to be changed seriously)
+echo "Choose the flavor to install :"
 echo "1) catp"
 echo "2) coll"
 echo "3) flue"
@@ -16,8 +17,10 @@ echo "5) matte"
 echo "6) roll"
 echo "7) spice"
 echo "8) vimi"
-read -r -p "Press the number then press Enter : " flavChoice
+echo " "
+read -r -p "Select the flavor with the number, [Enter] to validate : " flavChoice 
 
+#another terrible way of doing things :
 if [ $flavChoice = "1" ]
 then
   brbinstall_flavoring_catp_script
