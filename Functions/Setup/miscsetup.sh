@@ -50,3 +50,14 @@ sudo $auto_pkg_installer wget
 sudo wget https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -O /usr/local/bin/unimatrix
 sudo chmod a+rx /usr/local/bin/unimatrix
 }
+
+brbinstall_setup_miscsetup_cava () {
+echo -ne "
+------------------------------------------------------------------------------
+Getting cava
+------------------------------------------------------------------------------
+"
+#maybe more idk
+sudo $auto_pkg_installer cava
+
+}

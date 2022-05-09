@@ -29,6 +29,7 @@ source ./scriptSource.sh
 And then use the commands starting with "brbinstall_" (it will only be available during the current terminal session).
 
 ### Folder Tree
+```
 ├─ **cachefolder** (that's where goes every downloaded files)  
 ├─ **Dotfiles** (few dotfiles, most of the files needed are downloaded during the scripts)  
 ├─ **Flavor** (executable flavor)  
@@ -40,6 +41,7 @@ And then use the commands starting with "brbinstall_" (it will only be available
 │ ├─ Templates (display the informations during the script)  
 │ └─ Theming (allow to theme almost everything : terminal, colors, gtk, kde, icons etc.)  
 └─ **mixed** (misc folder mostly for test purpose)   
+```
 
 ## Potential improvements
 - The script could be executed from the main directory  
