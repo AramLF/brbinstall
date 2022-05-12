@@ -2,9 +2,9 @@
 
 brbinstall_theming_gterminal_set_catppuccin () {
 echo -ne "
-------------------------------------------------------------------------------
+==============================================================================
 Catppuccin-gnome-terminal installation
-------------------------------------------------------------------------------
+==============================================================================
 "
 echo -ne "
 If you want a personnal theme for gnome-terminal, create a new profile named

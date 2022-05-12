@@ -2,18 +2,18 @@
 
 brbinstall_distrib_fedora-based_dependencies () {
 echo -ne "
-------------------------------------------------------------------------------
+==============================================================================
 Dependencies Fedora installation
-------------------------------------------------------------------------------
+==============================================================================
 "
 #none for now
 }
 
 brbinstall_distrib_fedora-based_dnf_tweaks () {
 echo -ne "
-------------------------------------------------------------------------------
+==============================================================================
 dnf.conf tweaks
-------------------------------------------------------------------------------
+==============================================================================
 "
 #[main]
 #gpgcheck=1
@@ -31,9 +31,9 @@ cat /etc/dnf/dnf.conf
 
 brbinstall_distrib_fedora-based_rpm_fusion () {
 echo -ne "
-------------------------------------------------------------------------------
+==============================================================================
 enable rpm fusion free & nonfree
-------------------------------------------------------------------------------
+==============================================================================
 "
 sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -45,9 +45,9 @@ sudo dnf install -y rpmfusion-nonfree-appstream-data
 
 brbinstall_distrib_fedora-based_codecs () {
 echo -ne "
-------------------------------------------------------------------------------
+==============================================================================
 enable rpm media codecs
-------------------------------------------------------------------------------
+==============================================================================
 "
 sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
 sudo dnf install -y lame\* --exclude=lame-devel
@@ -56,9 +56,9 @@ sudo dnf group upgrade -y --with-optional Multimedia
 
 brbinstall_distrib_fedora-based_raw () {
 echo -ne "
-------------------------------------------------------------------------------
+==============================================================================
 rawhide
-------------------------------------------------------------------------------
+==============================================================================
 "
 #use with care
 #to fedora rawhide
