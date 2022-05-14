@@ -39,7 +39,7 @@ read -r -p "Press Enter " response
 git clone https://github.com/catppuccin/gnome-terminal $initialCacheFolder/gnome-terminal-ende
 cd $initialCacheFolder/gnome-terminal-ende
 
-echo "['#08052B', '#FF7F7F', '#47B35D', '#CC3980', '#7FBAFF', '#7F3FBF', '#7F7FFF', '#CBCCBD', '#7FBAFF', '#FF7F7F', '#9999CC', '#FF7F7F', '#7F7FFF', '#7F3FBF', '#7F7FFF', '#E3E3EA']" > palette
+echo "['#08052B', '#FF7F7F', '#47B35D', '#CC3980', '#7FBAFF', '#7F3FBF', '#7F7FFF', '#CDCCDB', '#7FBAFF', '#FF7F7F', '#9999CC', '#FF7F7F', '#7F7FFF', '#7F3FBF', '#7F7FFF', '#E3E3EA']" > palette
 sed -i 's#D7DAE0#E3E3EA#g' install.sh
 sed -i '0,/1E1E2E/s//08052B/' install.sh
 sed -i 's#1E1E2E#E3E3EA#g' install.sh
