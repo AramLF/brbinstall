@@ -1,5 +1,19 @@
 #!/bin/bash
 
+brbinstall_theming_gtk_unlock-libadwaita () {
+echo -ne "
+==============================================================================
+Unlock libadwaita
+==============================================================================
+"
+#should be improved 
+#can't work on python below 3.10 (it could work by changing "case" by "if")
+git clone https://github.com/odziom91/libadwaita-theme-changer $initialCacheFolder/libadwaita-theme-changer
+cd $initialCacheFolder/libadwaita-theme-changer/
+./install.sh
+}
+
+
 brbinstall_theming_gtk_qogir () {
 echo -ne "
 ==============================================================================

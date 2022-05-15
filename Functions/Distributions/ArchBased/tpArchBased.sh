@@ -25,16 +25,56 @@ else
 fi
 }
 
+brbinstall_distrib_arch-based_locales () {
+echo -ne "
+==============================================================================
+Arch generating locales
+==============================================================================
+"
+#locale -a
+#fr_FR.UTF-8 UTF-8
+#en_US.UTF-8 UTF-8
+
+sudo sh -c 'echo "# Added locales: " >> /etc/locale.gen'
+sudo sh -c 'echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen'
+
+sudo locale-gen
+}
+
+brbinstall_distrib_arch-based_vmtools () {
+echo -ne "
+==============================================================================
+Arch vmtoolsd
+==============================================================================
+"
+#specific use case it should be improved
+systemctl enable vmtoolsd.service
+}
+
+brbinstall_distrib_arch-based_repos () {
+echo -ne "
+==============================================================================
+Arch repos
+==============================================================================
+"
+#should be enabled
+#core extra community multilib
+}
+
 brbinstall_distrib_arch-based_lil-script () {
 echo -ne "
 ==============================================================================
 Arch lil script installation
 ==============================================================================
 "
-#might change later
+#can change later
 
 brbinstall_distrib_arch-based_dependencies
 
 brbinstall_distrib_arch-based_yay
+
+brbinstall_distrib_arch-based_locales
+
+brbinstall_distrib_arch-based_vmtools
 
 }
