@@ -47,3 +47,51 @@ sed -i 's#F5E0DC#FF7F7F#g' install.sh
 
 echo YES |./install.sh "ende"
 }
+
+brbinstall_theming_gterminal_set_pop () {
+echo -ne "
+==============================================================================
+Pop color-schemes gnome-terminal installation
+==============================================================================
+"
+echo -ne "
+If you want a personnal theme for gnome-terminal, create a new profile named
+'pop' and then press enter
+"
+read -r -p "Press Enter " response
+
+git clone https://github.com/catppuccin/gnome-terminal $initialCacheFolder/gnome-terminal-pop
+cd $initialCacheFolder/gnome-terminal-pop
+
+echo "['#333333', '#CC0000', '#4E9A06', '#C4A000', '#3565A4', '#75507B', '#06989A', '#D3D7CF', '#887F7C', '#F15D22', '#73C48E', '#FFCE51', '#48B9C7', '#AC7FA8', '#34E2E2', '#EEEEEC']" > palette
+sed -i 's#D7DAE0#EEEEEC#g' install.sh
+sed -i '0,/1E1E2E/s//333333/' install.sh
+sed -i 's#1E1E2E#EEEEEC#g' install.sh
+sed -i 's#F5E0DC#48B9C7#g' install.sh
+
+echo YES |./install.sh "pop"
+}
+
+brbinstall_theming_gterminal_set_flue () {
+echo -ne "
+==============================================================================
+Flue color-schemes gnome-terminal installation
+==============================================================================
+"
+echo -ne "
+If you want a personnal theme for gnome-terminal, create a new profile named
+'flue' and then press enter
+"
+read -r -p "Press Enter " response
+
+git clone https://github.com/catppuccin/gnome-terminal $initialCacheFolder/gnome-terminal-flue
+cd $initialCacheFolder/gnome-terminal-flue
+
+echo "['#333333', '#CC0000', '#4E9A06', '#C4A000', '#3565A4', '#75507B', '#06989A', '#D3D7CF', '#887F7C', '#F15D22', '#73C48E', '#FFCE51', '#48B9C7', '#AC7FA8', '#34E2E2', '#EEEEEC']" > palette
+sed -i 's#D7DAE0#EEEEEC#g' install.sh
+sed -i '0,/1E1E2E/s//333333/' install.sh
+sed -i 's#1E1E2E#EEEEEC#g' install.sh
+sed -i 's#F5E0DC#48B9C7#g' install.sh
+
+echo YES |./install.sh "flue"
+}
