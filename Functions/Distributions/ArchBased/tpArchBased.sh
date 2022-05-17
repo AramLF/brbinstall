@@ -48,17 +48,19 @@ Arch vmtoolsd
 ==============================================================================
 "
 #specific use case it should be improved
+sudo $auto_pkg_installer open-vm-tools
 systemctl enable vmtoolsd.service
 }
 
-brbinstall_distrib_arch-based_repos () {
+brbinstall_distrib_arch-based_pacman () {
 echo -ne "
 ==============================================================================
-Arch repos
+Arch pacman
 ==============================================================================
 "
-#should be enabled
+#should be enabled in /etc/pacman.conf
 #core extra community multilib
+#Color ILoveCandy CheckSpace VerbosePkgLists ParallelDownloads = 5
 }
 
 brbinstall_distrib_arch-based_lil-script () {
@@ -68,6 +70,8 @@ Arch lil script installation
 ==============================================================================
 "
 #can change later
+
+#brbinstall_distrib_arch-based_pacman
 
 brbinstall_distrib_arch-based_dependencies
 
