@@ -16,6 +16,16 @@ makepkg -si
 sudo paccache -r
 yay -Sc
 ```
+```
+git clone "aurpkg" #do not use sudo it will create it as a root folder instead of the user folder
+cd "aurpkg"
+makepkg -si #or pacman -U $pkname.tar.xz
+```
+
+Random aur
+```
+yay pamac-all bauh chaotic-aur
+```
 
 ## Remaining Installation
 
