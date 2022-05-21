@@ -61,6 +61,8 @@ Arch pacman
 #should be enabled in /etc/pacman.conf
 #core extra community multilib
 #Color ILoveCandy CheckSpace VerbosePkgLists ParallelDownloads = 5
+
+#sudo sed -i 's/.*D7DAE0.*/EEEEEC/g' /etc/pacman.conf
 }
 
 brbinstall_distrib_arch-based_lil-script () {
