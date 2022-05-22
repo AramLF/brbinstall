@@ -35,7 +35,7 @@ Linux Mint Neomint flavor
 
   brbinstall_flavoring_flue_script
 
-  brbinstall_theming_gtk_fluent "--tweaks round"
+  brbinstall_theming_gtk_fluent "--tweaks round --dest $HOME/.themes"
 
   brbinstall_de_cinnamon_set_desktop_theme "Fluent-round-dark-compact"
 
