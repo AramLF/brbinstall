@@ -8,21 +8,37 @@ every wallpapers download
 "
 sudo mkdir -p /usr/share/backgrounds/walls/
 
-brbinstall_theming_wallpaper_dot
+brbinstall_theming_wallpaper_rands-walls
 
 brbinstall_theming_wallpaper_evening
 brbinstall_theming_wallpaper_graphite
 brbinstall_theming_wallpaper_materia
 }
 
-brbinstall_theming_wallpaper_dot () {
+brbinstall_theming_wallpaper_rands-walls () {
 echo -ne "
 ==============================================================================
-every wallpapers from dot
+every wallpapers from rands-walls
 ==============================================================================
 "
+git clone https://github.com/AramLF/rands $initialCacheFolder/rands
+
 sudo mkdir -p /usr/share/backgrounds/walls/
-sudo cp -vr $initialPath/Dotfiles/walls/* /usr/share/backgrounds/walls/
+
+sudo cp -vr $initialCacheFolder/rands/walls/* /usr/share/backgrounds/walls/
+}
+
+brbinstall_theming_wallpaper_rands-walls-spe () {
+echo -ne "
+==============================================================================
+spe wall from rands-walls
+==============================================================================
+"
+git clone https://github.com/AramLF/rands $initialCacheFolder/rands
+
+sudo mkdir -p /usr/share/backgrounds/walls/
+
+sudo cp -vr $initialCacheFolder/rands/walls/aholmes_moraine_lake-lmuna.jpg /usr/share/backgrounds/walls/aholmes_moraine_lake-lmuna.jpg
 }
 
 brbinstall_theming_wallpaper_evening () {

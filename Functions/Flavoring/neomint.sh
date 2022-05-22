@@ -45,7 +45,9 @@ Linux Mint Neomint flavor
 
   brbinstall_de_cinnamon_set_icon_theme "Fluent-dark"
 
-  brbinstall_de_cinnamon_set_background "file:////usr/share/backgrounds/linuxmint-una/aholmes_moraine_lake.jpg"
+  brbinstall_theming_wallpaper_rands-walls-spe
+
+  brbinstall_de_cinnamon_set_background "file:////usr/share/backgrounds/walls/aholmes_moraine_lake-lmuna.jpg"
 
   brbinstall_setup_miscsetup_flatpak_override
 
