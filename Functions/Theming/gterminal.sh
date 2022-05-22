@@ -87,7 +87,7 @@ read -r -p "Press Enter " response
 git clone https://github.com/catppuccin/gnome-terminal $initialCacheFolder/gnome-terminal-flue
 cd $initialCacheFolder/gnome-terminal-flue
 
-echo "['#2C2C2C', '#CC0000', '#4E9A06', '#C4A000', '#3565A4', '#75507B', '#06989A', '#D3D7CF', '#887F7C', '#F15D22', '#73C48E', '#FFCE51', '#48B9C7', '#AC7FA8', '#34E2E2', '#EEEEEC']" > palette
+echo "['#2C2C2C', '#CC0000', '#4E9A06', '#C4A000', '#3565A4', '#75507B', '#06989A', '#D3D7CF', '#555753', '#EF2929', '#8AE234', '#FCE94F', '#729FCF', '#AD7FA8', '#34E2E2', '#EEEEEC']" > palette
 sed -i 's#D7DAE0#EEEEEC#g' install.sh
 sed -i '0,/1E1E2E/s//2C2C2C/' install.sh
 sed -i 's#1E1E2E#2C2C2C#g' install.sh
