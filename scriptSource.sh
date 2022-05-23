@@ -37,6 +37,7 @@ source ./Functions/Distributions/VoidLinux/tpVoidLinux.sh
 source ./Functions/Distributions/UbuntuBased/tpUbuntuBased.sh
 source ./Functions/Distributions/packages.sh
 
+source ./Functions/Setup/kitty.sh
 source ./Functions/Setup/miscsetup.sh
 source ./Functions/Setup/start.sh
 
