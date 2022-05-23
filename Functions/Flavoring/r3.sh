@@ -10,6 +10,23 @@ ls -l
 
 }
 
+brbinstall_flavoring_r3_pad () {
+echo -ne "
+==============================================================================
+r3 pad
+==============================================================================
+"
+#xinput
+#xinput list-props "SynPS/2 Synaptics TouchPad"
+#xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+
+#echo "" >> ~/.config/i3/config
+echo -ne "
+exec xinput set-prop \"SynPS/2 Synaptics TouchPad\" \"libinput Tapping Enabled\" 1
+"
+
+}
+
 brbinstall_flavoring_r3_not_yet () {
 echo -ne "
 ==============================================================================
