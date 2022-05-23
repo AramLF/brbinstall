@@ -18,6 +18,7 @@ Kitty personal conf
 #https://github.com/kovidgoyal/kitty/issues/628
 #generate kitty.conf in cli ?
 mkdir -p ~/.config/kitty/
+cd ~/.config/kitty/
 
 #cp -vr /usr/share/doc/examples/kitty.conf ~/.config/kitty/kitty.conf
 
