@@ -32,7 +32,7 @@ And then use the commands starting with "brbinstall_" (it will only be available
 ```
 ├─ cachefolder (that's where goes every downloaded files)  
 ├─ Dotfiles (few dotfiles, most of the files needed are downloaded during the scripts)  
-├─ **Flavor** (executable flavor)  
+├─ Flavor (executable flavor)  
 ├─ **Functions** (location off all functions that can be used)  
 │ ├─ DesktopEnvironments (related to DE functions : applying theme etc.)  
 │ ├─ Distributions (related to Distribs oddness : setting up dnf, setting up Arch or Void etc.)  
