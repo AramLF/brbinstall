@@ -25,6 +25,25 @@ echo -ne "
 exec xinput set-prop \"SynPS/2 Synaptics TouchPad\" \"libinput Tapping Enabled\" 1
 "
 
+#sudo zypper install xf86-input-synaptic
+
+}
+
+brbinstall_flavoring_r3_gaps () {
+echo -ne "
+==============================================================================
+r3 for i3
+==============================================================================
+"
+echo -ne "
+for_window [class=\".*\"] border pixel 2
+
+gaps inner 10
+gaps outer 10
+
+smart_gaps on
+" >> ~/.config/i3/config
+
 }
 
 brbinstall_flavoring_r3_not_yet () {
@@ -35,6 +54,7 @@ r3 for i3 not rdy yet
 "
 #none for now
 echo -ne "
+
 gaps inner 10
 gaps outer 10
 
