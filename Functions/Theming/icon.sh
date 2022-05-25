@@ -120,3 +120,20 @@ git clone https://github.com/zayronxio/Zafiro-icons $initialCacheFolder/Zafiro-i
 cd $initialCacheFolder
 sudo cp -r Zafiro-icons/ /usr/share/icons/Zafiro-icons/
 }
+
+brbinstall_theming_icon_nordzy () {
+echo -ne "
+==============================================================================
+nordzy-icon-theme installation
+==============================================================================
+"
+if [ "$1" = "" ]
+then
+  optionUsed=""
+else
+  optionUsed=$1
+fi
+git clone https://github.com/alvatip/Nordzy-icon $initialCacheFolder/Nordzy-icon
+cd $initialCacheFolder/Nordzy-icon
+sudo ./install.sh $optionUsed
+}

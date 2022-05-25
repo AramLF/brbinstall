@@ -33,6 +33,7 @@ Kitty auto theming term
 "
 cd ~/.config/kitty/
 
-sed -i 's/.*D7DAE0.*/EEEEEC/g' kitty.conf
+sed -i "s/.*D7DAE0.*/EEEEEC/g" kitty.conf
+sed -i "s/.*color0.*/color0 #$1/g" kitty.conf
 
 }
