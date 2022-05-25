@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brbinstall_distrib_rpm-based_dependencies () {
+brbinstall_distrib_rpm-based_misc_dependencies () {
 echo -ne "
 ==============================================================================
 RPM based
@@ -9,7 +9,7 @@ RPM based
 #none for now
 }
 
-brbinstall_distrib_rpm-based_dnf-tweaks () {
+brbinstall_distrib_rpm-based_misc_dnf-tweaks () {
 echo -ne "
 ==============================================================================
 dnf.conf tweaks

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brbinstall_distrib_fedora-based_dependencies () {
+brbinstall_distrib_rpm-based_fedora-based_dependencies () {
 echo -ne "
 ==============================================================================
 Dependencies Fedora installation
@@ -9,7 +9,7 @@ Dependencies Fedora installation
 #none for now
 }
 
-brbinstall_distrib_fedora-based_rpm-fusion () {
+brbinstall_distrib_rpm-based_fedora-based_rpm-fusion () {
 echo -ne "
 ==============================================================================
 enable rpm fusion free & nonfree
@@ -21,7 +21,7 @@ sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-rel
 sudo dnf groupupdate -y core
 }
 
-brbinstall_distrib_fedora-based_codecs () {
+brbinstall_distrib_rpm-based_fedora-based_codecs () {
 echo -ne "
 ==============================================================================
 enable rpm media codecs
@@ -37,7 +37,7 @@ sudo dnf groupupdate -y sound-and-video
 #sudo dnf group upgrade -y --with-optional Multimedia
 }
 
-brbinstall_distrib_fedora-based_audio-pls () {
+brbinstall_distrib_rpm-based_fedora-based_audio-pls () {
 echo -ne "
 ==============================================================================
 audio could now work on vm
@@ -50,7 +50,7 @@ sudo dnf swap -y pipewire-pulseaudio pulseaudio --allowerasing
 sudo dnf install -y pulseaudio-utils
 }
 
-brbinstall_distrib_fedora-based_raw () {
+brbinstall_distrib_rpm-based_fedora-based_raw () {
 echo -ne "
 ==============================================================================
 rawhide
@@ -67,13 +67,13 @@ sudo dnf system-upgrade reboot
 cat /etc/os-release
 }
 
-brbinstall_distrib_fedora-based_run () {
+brbinstall_distrib_rpm-based_fedora-based_run () {
 
-  brbinstall_distrib_rpm-based_dnf-tweaks
+  brbinstall_distrib_rpm-based_misc_dnf-tweaks
 
-  brbinstall_distrib_fedora-based_rpm-fusion
+  brbinstall_distrib_rpm-based_fedora-based_rpm-fusion
 
-  brbinstall_distrib_fedora-based_codecs
+  brbinstall_distrib_rpm-based_fedora-based_codecs
 
   brbinstall_setup_miscsetup_flathub
 }

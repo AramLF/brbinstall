@@ -24,16 +24,12 @@ r3 pad
 echo -ne "
 exec xinput set-prop \"SynPS/2 Synaptics TouchPad\" \"libinput Tapping Enabled\" 1
 "
-
-#sudo zypper install xf86-input-synaptic
-#wayland back after 2nd reboot
-#make rpmbased
 }
 
 brbinstall_flavoring_r3_gaps () {
 echo -ne "
 ==============================================================================
-r3 for i3
+r3 creating gaps configuration
 ==============================================================================
 "
 echo -ne "
@@ -43,6 +39,20 @@ gaps inner 10
 gaps outer 10
 
 smart_gaps on
+" >> ~/.config/i3/config
+
+}
+
+brbinstall_flavoring_r3_feh-wall () {
+echo -ne "
+==============================================================================
+r3 feh and wallpaper
+==============================================================================
+"
+sudo $auto_pkg_installer feh
+
+echo -ne "
+exec_always feh --bg-scale $1
 " >> ~/.config/i3/config
 
 }
