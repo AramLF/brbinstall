@@ -9,7 +9,7 @@ RPM based
 #none for now
 }
 
-brbinstall_distrib_rpm-based_dnf_tweaks () {
+brbinstall_distrib_rpm-based_dnf-tweaks () {
 echo -ne "
 ==============================================================================
 dnf.conf tweaks

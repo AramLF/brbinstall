@@ -17,7 +17,7 @@ fi
 echo 'PS1 will be displayed in new terminals...'
 }
 
-brbinstall_theming_terminal_ps1_test(){
+brbinstall_theming_terminal_ps1-test(){
   if grep 'PS1' ~/.bashrc > /dev/null; then
     echo 'already there'
   else

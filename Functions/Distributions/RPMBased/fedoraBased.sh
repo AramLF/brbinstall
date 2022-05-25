@@ -9,7 +9,7 @@ Dependencies Fedora installation
 #none for now
 }
 
-brbinstall_distrib_fedora-based_rpm_fusion () {
+brbinstall_distrib_fedora-based_rpm-fusion () {
 echo -ne "
 ==============================================================================
 enable rpm fusion free & nonfree
@@ -69,9 +69,9 @@ cat /etc/os-release
 
 brbinstall_distrib_fedora-based_run () {
 
-  brbinstall_distrib_rpm-based_dnf_tweaks
+  brbinstall_distrib_rpm-based_dnf-tweaks
 
-  brbinstall_distrib_fedora-based_rpm_fusion
+  brbinstall_distrib_fedora-based_rpm-fusion
 
   brbinstall_distrib_fedora-based_codecs
 

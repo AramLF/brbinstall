@@ -23,6 +23,6 @@ brbinstall_flavoring_flue_de(){
   if check_command plasmashell; then
     brbinstall_theming_kde_fluent
 
-    brbinstall_theming_kde-misc_konsole_all
+    brbinstall_theming_kde-misc_konsole-all
   fi
 }

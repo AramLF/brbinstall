@@ -50,9 +50,9 @@ Debian running script
 "
 brbinstall_distrib_debian-based_dependencies
 
-brbinstall_de_gnome_del_gnome_software_startup
+brbinstall_de_gnome_del-gnome-software-startup
 
-brbinstall_de_gnome_set_gdm_tools
+brbinstall_de_gnome_set-gdm-tools
 
 brbinstall_distrib_debian-based_prompt
 

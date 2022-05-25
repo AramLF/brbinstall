@@ -27,7 +27,7 @@ Linux Mint Neomint flavor
 "
   brbinstall_flavoring_neomint_wifi_prevention
 
-  brbinstall_setup_start_basic_apps
+  brbinstall_setup_start_basic-apps
 
   brbinstall_distrib_ubuntu-based_more
 
@@ -37,19 +37,19 @@ Linux Mint Neomint flavor
 
   brbinstall_theming_gtk_fluent "--tweaks round --dest $HOME/.themes"
 
-  brbinstall_de_cinnamon_set_desktop_theme "Fluent-round-dark-compact"
+  brbinstall_de_cinnamon_set-desktop-theme "Fluent-round-dark-compact"
 
-  brbinstall_de_cinnamon_set_gtk_theme "Fluent-round-dark-compact"
+  brbinstall_de_cinnamon_set-gtk-theme "Fluent-round-dark-compact"
 
-  brbinstall_de_cinnamon_set_wm_theme "Fluent-round-dark"
+  brbinstall_de_cinnamon_set-wm-theme "Fluent-round-dark"
 
-  brbinstall_de_cinnamon_set_icon_theme "Fluent-dark"
+  brbinstall_de_cinnamon_set-icon-theme "Fluent-dark"
 
   brbinstall_theming_wallpaper_rands-walls-spe
 
-  brbinstall_de_cinnamon_set_background "file:////usr/share/backgrounds/walls/aholmes_moraine_lake-lmuna.jpg"
+  brbinstall_de_cinnamon_set-background "file:////usr/share/backgrounds/walls/aholmes_moraine_lake-lmuna.jpg"
 
-  brbinstall_setup_miscsetup_flatpak_override
+  brbinstall_setup_miscsetup_flatpak-override
 
 }
 

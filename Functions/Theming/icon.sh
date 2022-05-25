@@ -27,7 +27,7 @@ cd $initialCacheFolder/Tela-icon-theme
 sudo ./install.sh $optionUsed
 }
 
-brbinstall_theming_icon_tela_circle () {
+brbinstall_theming_icon_tela-circle () {
 echo -ne "
 ==============================================================================
 tela-circle-icon-theme installation
@@ -44,7 +44,7 @@ cd $initialCacheFolder/Tela-circle-icon-theme
 sudo ./install.sh $optionUsed
 }
 
-brbinstall_theming_icon_numix_both () {
+brbinstall_theming_icon_numix-both () {
 echo -ne "
 ==============================================================================
 numix-icon-theme & circle installation

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brbinstall_de_gnome_add_dependencies(){
+brbinstall_de_gnome_add-dependencies(){
 echo -ne "
 ==============================================================================
 Add dependencies for gnomed
@@ -9,7 +9,7 @@ Add dependencies for gnomed
 sudo $auto_pkg_installer gnome-tweaks
 }
 
-brbinstall_de_gnome_del_gnome_software_startup () {
+brbinstall_de_gnome_del-gnome-software-startup () {
 echo -ne "
 ==============================================================================
 Removing gnome-software at startup
@@ -23,7 +23,7 @@ dconf write /org/gnome/software/download-updates false
 #allow-updates
 }
 
-brbinstall_de_gnome_set_gdm_tools () {
+brbinstall_de_gnome_set-gdm-tools () {
 echo -ne "
 ==============================================================================
 gdm-tools installation
@@ -39,7 +39,7 @@ echo 'Set theme for gdm with set-gdm-theme '
 set-gdm-theme -l
 }
 
-brbinstall_de_gnome_set_gtk_theme () {
+brbinstall_de_gnome_set-gtk-theme () {
 echo -ne "
 ==============================================================================
 Changing gtk-theme
@@ -56,7 +56,7 @@ gsettings set org.gnome.desktop.wm.preferences theme $1
 gsettings set org.gnome.shell.extensions.user-theme name $1
 }
 
-brbinstall_de_gnome_set_icon_theme () {
+brbinstall_de_gnome_set-icon-theme () {
 echo -ne "
 ==============================================================================
 Changing icons-theme
@@ -66,7 +66,7 @@ Changing icons-theme
 gsettings set org.gnome.desktop.interface icon-theme $1
 }
 
-brbinstall_de_gnome_set_wallpaper () {
+brbinstall_de_gnome_set-wallpaper () {
 echo -ne "
 ==============================================================================
 Changing wallpaper
@@ -75,7 +75,7 @@ Changing wallpaper
 gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/evening-sky.png
 }
 
-brbinstall_de_gnome_gnomeover_ubuntu(){
+brbinstall_de_gnome_gnomeover-ubuntu(){
 echo -ne "
 ==============================================================================
 Gnome-over installation

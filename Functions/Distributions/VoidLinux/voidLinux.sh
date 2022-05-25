@@ -113,7 +113,7 @@ Void xfce installation
   brbinstall_distrib_void-linux_set-x-key-layout
 }
 
-brbinstall_distrib_void-linux_enable_services(){
+brbinstall_distrib_void-linux_enable-services(){
 echo -ne "
 ==============================================================================
 Void enabling services
@@ -155,7 +155,7 @@ Void choices
 
 }
 
-brbinstall_distrib_void-linux_de_choice(){
+brbinstall_distrib_void-linux_de-choice(){
   if [ $voidDE = "1" ]
   then
     brbinstall_distrib_void-linux_kde;
@@ -181,8 +181,8 @@ brbinstall_distrib_void-linux_flavor(){
 
   brbinstall_distrib_void-linux_more
 
-  brbinstall_distrib_void-linux_de_choice
+  brbinstall_distrib_void-linux_de-choice
 
-  brbinstall_distrib_void-linux_enable_services
+  brbinstall_distrib_void-linux_enable-services
 
 }

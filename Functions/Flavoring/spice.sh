@@ -25,11 +25,11 @@ brbinstall_flavoring_spice_de(){
   if check_command plasmashell; then
     brbinstall_theming_kde_materia
 
-    brbinstall_theming_kde-misc_color-schemes_all
+    brbinstall_theming_kde-misc_color-schemes-all
 
-    brbinstall_theming_kde-misc_konsole_all
+    brbinstall_theming_kde-misc_konsole-all
 
-    brbinstall_theming_kde-misc_aurorae_all
+    brbinstall_theming_kde-misc_aurorae-all
   fi
 
 }

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brbinstall_de_xfce_add_dependencies(){
+brbinstall_de_xfce_add-dependencies(){
 echo -ne "
 ==============================================================================
 Add dependencies for xfced
@@ -9,7 +9,7 @@ Add dependencies for xfced
 #none for now
 }
 
-brbinstall_de_xfce_panel_size(){
+brbinstall_de_xfce_panel-size(){
 echo -ne "
 ==============================================================================
 Change panel size
@@ -29,7 +29,7 @@ sudo apt update
 sudo apt install -y xfce4-docklike-plugin
 }
 
-brbinstall_de_xfce_restart_panel(){
+brbinstall_de_xfce_panel-restart(){
 echo -ne "
 ==============================================================================
 restart xfce panel
@@ -38,7 +38,7 @@ restart xfce panel
 xfce4-panel --restart
 }
 
-brbinstall_de_xfce_set_gtk_theme(){
+brbinstall_de_xfce_set-gtk-theme(){
 echo -ne "
 ==============================================================================
 Changing gtk-theme
@@ -50,7 +50,7 @@ xfconf-query -c xsettings -p /Net/ThemeName -s $1
 xfconf-query -c xfwm4 -p /general/theme -s $1
 }
 
-brbinstall_de_xfce_set_icon_theme(){
+brbinstall_de_xfce_set-icon-theme(){
 echo -ne "
 ==============================================================================
 Changing icon theme

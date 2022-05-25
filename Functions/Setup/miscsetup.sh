@@ -9,7 +9,7 @@ Set flathub
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 }
 
-brbinstall_setup_miscsetup_flatpak_override () {
+brbinstall_setup_miscsetup_flatpak-override () {
 echo -ne "
 ==============================================================================
 Flatpak override filesystem theme
@@ -27,7 +27,7 @@ Set nixpkg
 #later
 }
 
-brbinstall_setup_miscsetup_libadwaita_script () {
+brbinstall_setup_miscsetup_libadwaita-script () {
 echo -ne "
 ==============================================================================
 Script for theming libadwaita

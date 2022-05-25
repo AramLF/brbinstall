@@ -23,9 +23,9 @@ brbinstall_flavoring_coll_de(){
   if check_command plasmashell; then
     brbinstall_theming_kde_colloid
 
-    brbinstall_theming_kde-misc_color-schemes_all
+    brbinstall_theming_kde-misc_color-schemes-all
 
-    brbinstall_theming_kde-misc_konsole_all
+    brbinstall_theming_kde-misc_konsole-all
   fi
 
 }

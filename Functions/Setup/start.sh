@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brbinstall_setup_start_basic_apps () {
+brbinstall_setup_start_basic-apps () {
 echo -ne "
 ==============================================================================
 Add basic apps

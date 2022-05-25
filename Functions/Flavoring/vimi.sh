@@ -15,7 +15,7 @@ brbinstall_flavoring_vimi_de
 
 brbinstall_theming_icon_tela
 
-brbinstall_theming_icon_tela_circle
+brbinstall_theming_icon_tela-circle
 
 brbinstall_theming_wallpaper_all
 
@@ -29,7 +29,7 @@ brbinstall_flavoring_vimi_de(){
 
     brbinstall_theming_kde_materia
 
-    brbinstall_theming_kde-misc_konsole_all
+    brbinstall_theming_kde-misc_konsole-all
   fi
 
 }

@@ -17,7 +17,7 @@ brbinstall_flavoring_grey_de
 
 brbinstall_theming_icon_papirus
 
-brbinstall_theming_icon_numix_both
+brbinstall_theming_icon_numix-both
 
 brbinstall_theming_wallpaper_all
 
@@ -33,7 +33,7 @@ brbinstall_flavoring_grey_de(){
 
     #brbinstall_theming_kde_materia
 
-    brbinstall_theming_kde-misc_konsole_all
+    brbinstall_theming_kde-misc_konsole-all
   fi
 
 }

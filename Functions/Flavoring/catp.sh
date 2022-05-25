@@ -23,9 +23,9 @@ brbinstall_theming_terminal_ps1
 
 brbinstall_flavoring_catp_de(){
   if check_command plasmashell; then
-    brbinstall_theming_kde-misc_konsole_all
+    brbinstall_theming_kde-misc_konsole-all
   elif check_command gnome-terminal; then
-    brbinstall_theming_gterminal_set_catppuccin
+    brbinstall_theming_gterminal_set-catppuccin
   fi
 
 }

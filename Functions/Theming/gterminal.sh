@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brbinstall_theming_gterminal_set_catppuccin () {
+brbinstall_theming_gterminal_set-catppuccin () {
 echo -ne "
 ==============================================================================
 Catppuccin-gnome-terminal installation
@@ -24,7 +24,7 @@ cd $initialCacheFolder/gnome-terminal
 echo YES |./install.sh "catppuccin"
 }
 
-brbinstall_theming_gterminal_set_ende () {
+brbinstall_theming_gterminal_set-ende () {
 echo -ne "
 ==============================================================================
 EndeavourOS color-schemes gnome-terminal installation
@@ -48,7 +48,7 @@ sed -i 's#F5E0DC#FF7F7F#g' install.sh
 echo YES |./install.sh "ende"
 }
 
-brbinstall_theming_gterminal_set_pop () {
+brbinstall_theming_gterminal_set-pop () {
 echo -ne "
 ==============================================================================
 Pop color-schemes gnome-terminal installation
@@ -72,7 +72,7 @@ sed -i 's#F5E0DC#48B9C7#g' install.sh
 echo YES |./install.sh "pop"
 }
 
-brbinstall_theming_gterminal_set_flue () {
+brbinstall_theming_gterminal_set-flue () {
 echo -ne "
 ==============================================================================
 Flue color-schemes gnome-terminal installation

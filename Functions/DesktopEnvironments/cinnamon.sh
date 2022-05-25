@@ -24,7 +24,7 @@ gsettings set org.cinnamon.sounds switch-enabled false
 gsettings set org.cinnamon.sounds tile-enabled false
 }
 
-brbinstall_de_cinnamon_set_background(){
+brbinstall_de_cinnamon_set-background(){
 echo -ne "
 ==============================================================================
 Cinnamon set background
@@ -35,7 +35,7 @@ Cinnamon set background
 
 }
 
-brbinstall_de_cinnamon_set_desktop_theme(){
+brbinstall_de_cinnamon_set-desktop-theme(){
 echo -ne "
 ==============================================================================
 Cinnamon set gtk theme
@@ -45,7 +45,7 @@ Cinnamon set gtk theme
 gsettings set org.cinnamon.theme name $1
 }
 
-brbinstall_de_cinnamon_set_gtk_theme(){
+brbinstall_de_cinnamon_set-gtk-theme(){
 echo -ne "
 ==============================================================================
 Cinnamon set wm theme
@@ -55,7 +55,7 @@ Cinnamon set wm theme
   gsettings set org.cinnamon.desktop.interface gtk-theme $1
 }
 
-brbinstall_de_cinnamon_set_wm_theme(){
+brbinstall_de_cinnamon_set-wm-theme(){
 echo -ne "
 ==============================================================================
 Cinnamon set wm theme
@@ -66,7 +66,7 @@ Cinnamon set wm theme
 
 }
 
-brbinstall_de_cinnamon_set_icon_theme(){
+brbinstall_de_cinnamon_set-icon-theme(){
 echo -ne "
 ==============================================================================
 Cinnamon set icon theme
