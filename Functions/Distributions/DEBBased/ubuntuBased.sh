@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brbinstall_distrib_ubuntu-based_more () {
+brbinstall_distrib_deb-based_ubuntu-based_more () {
 echo -ne "
 ==============================================================================
 Ubuntu Based pkgs

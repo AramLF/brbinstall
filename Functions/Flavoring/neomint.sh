@@ -29,7 +29,7 @@ Linux Mint Neomint flavor
 
   brbinstall_setup_start_basic-apps
 
-  brbinstall_distrib_ubuntu-based_more
+  brbinstall_distrib_deb-based_ubuntu-based_more
 
   brbinstall_de_cinnamon_sound
 
