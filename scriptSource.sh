@@ -33,6 +33,7 @@ source ./Functions/Flavoring/neomint.sh
 source ./Functions/Distributions/DebianBased/debianBased.sh
 source ./Functions/Distributions/RPMBased/fedoraBased.sh
 source ./Functions/Distributions/RPMBased/miscBased.sh
+source ./Functions/Distributions/RPMBased/openSuseBased.sh
 source ./Functions/Distributions/ArchBased/archBased.sh
 source ./Functions/Distributions/VoidLinux/voidLinux.sh
 source ./Functions/Distributions/UbuntuBased/ubuntuBased.sh
