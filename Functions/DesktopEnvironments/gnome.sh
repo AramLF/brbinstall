@@ -72,20 +72,17 @@ echo -ne "
 Changing wallpaper
 ==============================================================================
 "
-gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/evening-sky.png
+gsettings set org.gnome.desktop.background picture-uri $1
 }
 
-brbinstall_de_gnome_gnomeover-ubuntu(){
+brbinstall_de_gnome_gnomeover(){
 echo -ne "
 ==============================================================================
 Gnome-over installation
 ==============================================================================
 "
+#for deb based ?
 sudo $auto_pkg_installer gnome-shell gnome-control-center gnome-session
 sudo $auto_pkg_installer gnome-disk-utility gnome-power-manager gnome-shell-extensions gnome-software gnome-terminal
 sudo $auto_pkg_installer gnome-themes-extra network-manager-gnome chrome-gnome-shell gnome-tweaks gnome-shell-extensions
-}
-
-brbinstall_de_gnome_gnomeover(){
-  ls -l
 }

@@ -15,7 +15,7 @@ echo -ne "
 Change panel size
 ==============================================================================
 "
-xfconf-query --channel 'xfce4-panel' --property '/panels/panel-1/size' --type int --set 44
+xfconf-query --channel 'xfce4-panel' --property '/panels/panel-1/size' --type int --set $1
 }
 
 brbinstall_de_xfce_dockbarlike(){
