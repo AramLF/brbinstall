@@ -30,11 +30,11 @@ source ./Functions/Flavoring/spice.sh
 source ./Functions/Flavoring/r3.sh
 source ./Functions/Flavoring/neomint.sh
 
-source ./Functions/Distributions/DebianBased/tpDebianBased.sh
-source ./Functions/Distributions/FedoraBased/tpFedoraBased.sh
-source ./Functions/Distributions/ArchBased/tpArchBased.sh
-source ./Functions/Distributions/VoidLinux/tpVoidLinux.sh
-source ./Functions/Distributions/UbuntuBased/tpUbuntuBased.sh
+source ./Functions/Distributions/DebianBased/debianBased.sh
+source ./Functions/Distributions/RPMBased/fedoraBased.sh
+source ./Functions/Distributions/ArchBased/archBased.sh
+source ./Functions/Distributions/VoidLinux/voidLinux.sh
+source ./Functions/Distributions/UbuntuBased/ubuntuBased.sh
 source ./Functions/Distributions/packages.sh
 
 source ./Functions/Setup/kitty.sh
