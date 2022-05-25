@@ -26,7 +26,8 @@ exec xinput set-prop \"SynPS/2 Synaptics TouchPad\" \"libinput Tapping Enabled\"
 "
 
 #sudo zypper install xf86-input-synaptic
-
+#wayland back after 2nd reboot
+#make rpmbased
 }
 
 brbinstall_flavoring_r3_gaps () {
