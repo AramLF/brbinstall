@@ -42,13 +42,13 @@ sed -i "s/.*color5 .*/color5  #$6/g" kitty.conf
 sed -i "s/.*color6 .*/color6  #$7/g" kitty.conf
 sed -i "s/.*color7 .*/color7  #$8/g" kitty.conf
 sed -i "s/.*color8 .*/color8 #$9/g" kitty.conf
-sed -i "s/.*color9 .*/color9 #$10/g" kitty.conf
-sed -i "s/.*color10 .*/color10 #$11/g" kitty.conf
-sed -i "s/.*color11 .*/color11 #$12/g" kitty.conf
-sed -i "s/.*color12 .*/color12 #$13/g" kitty.conf
-sed -i "s/.*color13 .*/color13 #$14/g" kitty.conf
-sed -i "s/.*color14 .*/color14 #$15/g" kitty.conf
-sed -i "s/.*color15 .*/color15 #$16/g" kitty.conf
+sed -i "s/.*color9 .*/color9 #${10}/g" kitty.conf
+sed -i "s/.*color10 .*/color10 #${11}/g" kitty.conf
+sed -i "s/.*color11 .*/color11 #${12}/g" kitty.conf
+sed -i "s/.*color12 .*/color12 #${13}/g" kitty.conf
+sed -i "s/.*color13 .*/color13 #${14}/g" kitty.conf
+sed -i "s/.*color14 .*/color14 #${15}/g" kitty.conf
+sed -i "s/.*color15 .*/color15 #${16}/g" kitty.conf
 
 # color0 #000000
 # color8 #767676
