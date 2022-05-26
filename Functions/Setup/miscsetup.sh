@@ -24,7 +24,21 @@ echo -ne "
 Set nixpkg
 ==============================================================================
 "
-#later
+#nix pkg manager on other distribs
+#https://ariya.io/2020/05/nix-package-manager-on-ubuntu-or-debian
+#https://doc.ubuntu-fr.org/nix
+#https://search.nixos.org/packages
+#sudo mkdir /nix
+#sudo chown user /nix
+sh <(curl -L https://nixos.org/nix/install) --no-daemon
+#echo ". $HOME/.nix-profile/etc/profile.d/nix.sh" >> ~/.bashrc
+#source ~/.bashrc
+#nix-channel --add https://nixos.org/channels/nixos-21.05 nixpkgs
+#nix-channel --update
+#nix-env -i hello
+#nix-env -iA nixpkgs.geany
+#echo 'export XDG_DATA_DIRS=$HOME/.nix-profile/share:$HOME/.share:$XDG_DATA_DIRS' >> /etc/profile.d/nix.sh
+#nix search gcompris #doesnt work
 }
 
 brbinstall_setup_miscsetup_path () {

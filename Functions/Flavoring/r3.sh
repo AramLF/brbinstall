@@ -57,6 +57,21 @@ exec_always feh --bg-scale $1
 
 }
 
+brbinstall_flavoring_r3_picomed () {
+echo -ne "
+==============================================================================
+r3 picom
+==============================================================================
+"
+sudo $auto_pkg_installer picom
+#not complete
+echo -ne "
+exec_always picom -f
+" >> ~/.config/i3/config
+#--config ~/.config/picom/picom.conf
+#--blur-background
+}
+
 brbinstall_flavoring_r3_not_yet () {
 echo -ne "
 ==============================================================================
