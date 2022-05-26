@@ -50,28 +50,12 @@ sed -i "s/.*color13 .*/color13 #${14}/g" kitty.conf
 sed -i "s/.*color14 .*/color14 #${15}/g" kitty.conf
 sed -i "s/.*color15 .*/color15 #${16}/g" kitty.conf
 
-# color0 #000000
-# color8 #767676
+sed -i "s/.* background #.*/background #${17}/g" kitty.conf
+sed -i "s/.* foreground #.*/foreground #${18}/g" kitty.conf
 
-# color1 #cc0403
-# color9 #f2201f
+sed -i "s/.* selection_background #.*/selection_background none/g" kitty.conf
+sed -i "s/.* selection_foreground #.*/selection_foreground none/g" kitty.conf
 
-# color2  #19cb00
-# color10 #23fd00
 
-# color3  #cecb00
-# color11 #fffd00
-
-# color4  #0d73cc
-# color12 #1a8fff
-
-# color5  #cb1ed1
-# color13 #fd28ff
-
-# color6  #0dcdcd
-# color14 #14ffff
-
-# color7  #dddddd
-# color15 #ffffff
 
 }
