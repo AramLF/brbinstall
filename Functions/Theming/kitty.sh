@@ -26,3 +26,12 @@ kitty catppuccin theme installation
 "
 brbinstall_setup_kitty_auto-theming-term 6E6C7C F28FAD ABE9B3 FAE3B0 96CDFB DDB6F2 F5C2E7 D9E0EE 988BA2 F28FAD ABE9B3 FAE3B0 96CDFB DDB6F2 F5C2E7 D9E0EE 1E1E2E D9E0EE "none" "none" "none" "background"
 }
+
+brbinstall_theming_kitty_set-spice () {
+echo -ne "
+==============================================================================
+kitty spice theme installation
+==============================================================================
+"
+brbinstall_setup_kitty_auto-theming-term 454040 F0544C 98AE66 D89C6A 92B0BD B294BB 8ABEB7 EEDEE4 454040 F0544C 98AE66 D89C6A 92B0BD B294BB 8ABEB7 EEDEE4 262626 EEDEE4 "none" "none" "none" "background"
+}
