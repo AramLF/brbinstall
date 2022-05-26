@@ -3,7 +3,7 @@
 brbinstall_setup_polybar_start() {
 echo -ne "
 ==============================================================================
-Kitty
+Polybar
 ==============================================================================
 "
 sudo $auto_pkg_installer polybar
@@ -12,12 +12,14 @@ sudo $auto_pkg_installer polybar
 brbinstall_setup_polybar_personal-conf() {
 echo -ne "
 ==============================================================================
-Kitty personal conf
+Polybar personal conf
 ==============================================================================
 "
 
 mkdir -p ~/.config/polybar/
 cd ~/.config/polybar/
+
+#config.ini too
 
 echo -ne "
 #!/usr/bin/env bash
