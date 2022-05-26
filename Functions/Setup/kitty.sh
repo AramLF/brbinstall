@@ -53,8 +53,11 @@ sed -i "s/.*color15 .*/color15 #${16}/g" kitty.conf
 sed -i "s/.* background #.*/background #${17}/g" kitty.conf
 sed -i "s/.* foreground #.*/foreground #${18}/g" kitty.conf
 
-sed -i "s/.* selection_background #.*/selection_background none/g" kitty.conf
-sed -i "s/.* selection_foreground #.*/selection_foreground none/g" kitty.conf
+sed -i "s/.* selection_background #.*/selection_background ${19}/g" kitty.conf
+sed -i "s/.* selection_foreground #.*/selection_foreground ${20}/g" kitty.conf
+
+sed -i "s/.* cursor #.*/cursor ${21}/g" kitty.conf
+sed -i "s/.* cursor_text_color #.*/cursor_text_color ${22}/g" kitty.conf
 
 
 
