@@ -6,6 +6,7 @@ source ./Functions/Templates/tpRandom.sh
 source ./Functions/Theming/dependencies.sh
 source ./Functions/Theming/gtk.sh
 source ./Functions/Theming/kde.sh
+source ./Functions/Theming/kitty.sh
 source ./Functions/Theming/icon.sh
 source ./Functions/Theming/wallpaper.sh
 source ./Functions/Theming/gterminal.sh
