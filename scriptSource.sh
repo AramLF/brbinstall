@@ -42,6 +42,7 @@ source ./Functions/Distributions/packages.sh
 
 source ./Functions/Setup/kitty.sh
 source ./Functions/Setup/miscsetup.sh
+source ./Functions/Setup/polybar.sh
 source ./Functions/Setup/start.sh
 
 #var
