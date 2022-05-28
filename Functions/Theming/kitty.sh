@@ -34,5 +34,5 @@ kitty spice theme installation
 ==============================================================================
 "
 #EBD8DF #EEDEE4
-brbinstall_setup_kitty_auto-theming-term 262626 F0544C 98AE66 D89C6A 92B0BD B294BB 8ABEB7 EEDEE4 454040 F0544C 98AE66 D89C6A 92B0BD B294BB 8ABEB7 EBD8DF 262626 EBD8DF "none" "none" "none" "background"
+brbinstall_setup_kitty_auto-theming-term 262626 C84440 7E9942 C4814B 6A90A1 947C9C 6F9993 CABDC2 454040 F0544C 98AE66 D89C6A 92B0BD B294BB 8ABEB7 EBD8DF 262626 EBD8DF "none" "none" "none" "background"
 }
