@@ -8,76 +8,76 @@ Color=38,38,38
 Color=38,38,38
 
 [Color0]
-Color=69,64,64
+Color=38,38,38
 
 [Color0Faint]
-Color=69,64,64
+Color=38,38,38
 
 [Color0Intense]
 Color=69,64,64
 
 [Color1]
-Color=240,84,76
+Color=200,68,64
 
 [Color1Faint]
-Color=240,84,76
+Color=200,68,64
 
 [Color1Intense]
 Color=240,84,76
 
 [Color2]
-Color=152,174,102
+Color=126,153,66
 
 [Color2Faint]
-Color=152,174,102
+Color=126,153,66
 
 [Color2Intense]
 Color=152,174,102
 
 [Color3]
-Color=216,156,106
+Color=196,129,75
 
 [Color3Faint]
-Color=216,156,106
+Color=196,129,75
 
 [Color3Intense]
 Color=216,156,106
 
 [Color4]
-Color=146,176,189
+Color=106,144,161
 
 [Color4Faint]
-Color=146,176,189
+Color=106,144,161
 
 [Color4Intense]
 Color=146,176,189
 
 [Color5]
-Color=178,148,187
+Color=148,124,156
 
 [Color5Faint]
-Color=178,148,187
+Color=148,124,156
 
 [Color5Intense]
 Color=178,148,187
 
 [Color6]
-Color=138,190,183
+Color=111,153,147
 
 [Color6Faint]
-Color=138,190,183
+Color=111,153,147
 
 [Color6Intense]
 Color=138,190,183
 
 [Color7]
-Color=238,222,228
+Color=202,189,194
 
 [Color7Faint]
-Color=238,222,228
+Color=202,189,194
 
 [Color7Intense]
-Color=238,222,228
+Color=235,216,223
 
 [Foreground]
 Color=235,216,223
@@ -91,6 +91,6 @@ Color=235,216,223
 [General]
 Blur=false
 ColorRandomization=false
-Description=OceanDarkMissingAliz
+Description=OceanSpice
 Opacity=1
 Wallpaper=
