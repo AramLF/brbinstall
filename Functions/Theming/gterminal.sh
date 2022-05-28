@@ -117,5 +117,5 @@ sed -i '0,/1E1E2E/s//262626/' install.sh
 sed -i 's#1E1E2E#262626#g' install.sh
 sed -i 's#F5E0DC#EBD8DF#g' install.sh
 
-echo YES |./install.sh "flue"
+echo YES |./install.sh "spice"
 }
