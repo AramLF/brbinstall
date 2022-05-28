@@ -95,3 +95,27 @@ sed -i 's#F5E0DC#EEEEEC#g' install.sh
 
 echo YES |./install.sh "flue"
 }
+
+brbinstall_theming_gterminal_set-spice () {
+echo -ne "
+==============================================================================
+Spice color-schemes gnome-terminal installation
+==============================================================================
+"
+echo -ne "
+If you want a personnal theme for gnome-terminal, create a new profile named
+'spice' and then press enter
+"
+read -r -p "Press Enter " response
+
+git clone https://github.com/catppuccin/gnome-terminal $initialCacheFolder/gnome-terminal-spice
+cd $initialCacheFolder/gnome-terminal-spice
+
+echo "['#262626', '#C84440', '#7E9942', '#C4814B', '#6A90A1', '#947C9C', '#6F9993', '#CABDC2', '#454040', '#F0544C', '#98AE66', '#D89C6A', '#92B0BD', '#B294BB', '#8ABEB7', '#EBD8DF']" > palette
+sed -i 's#D7DAE0#EBD8DF#g' install.sh
+sed -i '0,/1E1E2E/s//262626/' install.sh
+sed -i 's#1E1E2E#262626#g' install.sh
+sed -i 's#F5E0DC#EBD8DF#g' install.sh
+
+echo YES |./install.sh "flue"
+}
