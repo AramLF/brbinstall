@@ -58,11 +58,13 @@ PATH variable
 #if [ -d "$HOME/.local/bin" ] ; then
 #    PATH="$HOME/.local/bin:$PATH"
 #fi
-#Ubuntu
+#Ubuntu/LinuxMint
+echo "PATH on Linux Mint"
 echo "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 
 #openSuse
-echo "/home/usr/bin:/usr/local/bin:/usr/bin:/bin"
+echo "PATH on OpenSuse"
+echo "/home/$USER/bin:/usr/local/bin:/usr/bin:/bin"
 }
 
 brbinstall_setup_miscsetup_libadwaita-script () {
