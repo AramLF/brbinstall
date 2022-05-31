@@ -58,13 +58,40 @@ PATH variable
 #if [ -d "$HOME/.local/bin" ] ; then
 #    PATH="$HOME/.local/bin:$PATH"
 #fi
+#Debian
+echo "\$PATH on Debian"
+echo "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+echo ""
 #Ubuntu/LinuxMint
-echo "PATH on Linux Mint"
+echo "\$PATH on Linux Mint"
 echo "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
-
+echo ""
+#Ubuntu/KDENeon
+echo "\$PATH on KDENeon"
+echo "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+echo ""
 #openSuse
-echo "PATH on OpenSuse"
+echo "\$PATH on OpenSuse"
 echo "/home/$USER/bin:/usr/local/bin:/usr/bin:/bin"
+echo ""
+#Arch ? unsure
+echo "\$PATH on Arch ?"
+echo "/usr/local/sbin:/usr/local/bin:/usr/bin"
+echo ""
+#Mageia
+echo "\$PATH on Mageia"
+echo "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/sbin:/usr/sbin:/usr/lib64/qt5/bin:/home/$USER/.local/bin:/home/$USER/bin"
+echo ""
+#VoidLinux
+echo "\$PATH on VoidLinux"
+echo "/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+echo ""
+#Fedora
+echo "\$PATH on Fedora"
+echo "/home/$USER/.local/bin:/home/$USER/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin"
+echo ""
+
+
 }
 
 brbinstall_setup_miscsetup_libadwaita-script () {
