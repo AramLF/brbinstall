@@ -94,6 +94,25 @@ echo ""
 
 }
 
+brbinstall_setup_miscsetup_tar-opt-install () {
+echo -ne "
+==============================================================================
+tar.gz opt install
+==============================================================================
+"
+echo -ne "
+#install discord with a tar.gz for example
+#https://itsfoss.com/install-discord-linux/
+sudo tar -xvzf discord-0.0.10.tar.gz -C /opt
+sudo ln -sf /opt/Discord/Discord /usr/bin/Discord
+sudo nano /opt/Discord/discord.desktop
+#Exec=/usr/bin/Discord
+#Icon=/opt/Discord/discord.png #not necessary
+sudo cp -r /opt/Discord/discord.desktop /usr/share/applications
+"
+
+}
+
 brbinstall_setup_miscsetup_libadwaita-script () {
 echo -ne "
 ==============================================================================

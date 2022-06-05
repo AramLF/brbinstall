@@ -51,3 +51,4 @@ brbinstall/
 - add pics
 - some blocks of code could be functions (avoid repetitions)
 - huge improvement over some awfully made functions
+- folders in lowercase
