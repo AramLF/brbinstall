@@ -122,7 +122,7 @@ r3 setting polybar
 "
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 echo -ne "
-#polybar
+# Polybar Launch Script
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 " >> ~/.config/i3/config
 
