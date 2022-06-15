@@ -36,10 +36,10 @@ echo -ne "
 #gaps with i3-gaps
 for_window [class=\".*\"] border pixel 2
 
-gaps inner 10
-gaps outer 10
+gaps inner 5
+gaps outer 5
 
-smart_gaps on
+#smart_gaps on
 smart_borders on
 " >> ~/.config/i3/config
 
