@@ -31,14 +31,14 @@ source ./functions/flavoring/spice.sh
 source ./functions/flavoring/r3.sh
 source ./functions/flavoring/neomint.sh
 
-source ./functions/Distributions/ArchBased/archBased.sh
-source ./functions/Distributions/DEBBased/debianBased.sh
-source ./functions/Distributions/DEBBased/ubuntuBased.sh
-source ./functions/Distributions/RPMBased/fedoraBased.sh
-source ./functions/Distributions/RPMBased/miscBased.sh
-source ./functions/Distributions/RPMBased/openSuseBased.sh
-source ./functions/Distributions/VoidLinux/voidLinux.sh
-source ./functions/Distributions/packages.sh
+source ./functions/distributions/ArchBased/archBased.sh
+source ./functions/distributions/DEBBased/debianBased.sh
+source ./functions/distributions/DEBBased/ubuntuBased.sh
+source ./functions/distributions/RPMBased/fedoraBased.sh
+source ./functions/distributions/RPMBased/miscBased.sh
+source ./functions/distributions/RPMBased/openSuseBased.sh
+source ./functions/distributions/VoidLinux/voidLinux.sh
+source ./functions/distributions/packages.sh
 
 source ./functions/setup/kitty.sh
 source ./functions/setup/miscsetup.sh
