@@ -14,10 +14,10 @@ source ./functions/theming/terminal.sh
 source ./functions/theming/kde-misc.sh
 source ./functions/theming/xfce4-terminal.sh
 
-source ./functions/DesktopEnvironments/cinnamon.sh
-source ./functions/DesktopEnvironments/gnome.sh
-source ./functions/DesktopEnvironments/kde.sh
-source ./functions/DesktopEnvironments/xfce.sh
+source ./functions/desktopenvironments/cinnamon.sh
+source ./functions/desktopenvironments/gnome.sh
+source ./functions/desktopenvironments/kde.sh
+source ./functions/desktopenvironments/xfce.sh
 
 source ./functions/flavoring/all.sh
 source ./functions/flavoring/matte.sh
