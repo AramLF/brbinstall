@@ -32,8 +32,8 @@ source ./functions/flavoring/r3.sh
 source ./functions/flavoring/neomint.sh
 
 source ./functions/distributions/arch-based/archBased.sh
-source ./functions/distributions/DEBBased/debianBased.sh
-source ./functions/distributions/DEBBased/ubuntuBased.sh
+source ./functions/distributions/deb-based/debianBased.sh
+source ./functions/distributions/deb-based/ubuntuBased.sh
 source ./functions/distributions/RPMBased/fedoraBased.sh
 source ./functions/distributions/RPMBased/miscBased.sh
 source ./functions/distributions/RPMBased/openSuseBased.sh
