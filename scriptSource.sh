@@ -3,16 +3,16 @@
 source ./functions/Templates/tp1.sh
 source ./functions/Templates/tpRandom.sh
 
-source ./functions/Theming/dependencies.sh
-source ./functions/Theming/gtk.sh
-source ./functions/Theming/kde.sh
-source ./functions/Theming/kitty.sh
-source ./functions/Theming/icon.sh
-source ./functions/Theming/wallpaper.sh
-source ./functions/Theming/gterminal.sh
-source ./functions/Theming/terminal.sh
-source ./functions/Theming/kde-misc.sh
-source ./functions/Theming/xfce4-terminal.sh
+source ./functions/theming/dependencies.sh
+source ./functions/theming/gtk.sh
+source ./functions/theming/kde.sh
+source ./functions/theming/kitty.sh
+source ./functions/theming/icon.sh
+source ./functions/theming/wallpaper.sh
+source ./functions/theming/gterminal.sh
+source ./functions/theming/terminal.sh
+source ./functions/theming/kde-misc.sh
+source ./functions/theming/xfce4-terminal.sh
 
 source ./functions/DesktopEnvironments/cinnamon.sh
 source ./functions/DesktopEnvironments/gnome.sh

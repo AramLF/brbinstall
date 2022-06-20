@@ -1,2 +1,2 @@
-# Theming
+# theming
 For theming  
