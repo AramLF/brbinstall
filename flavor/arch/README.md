@@ -1,5 +1,5 @@
-# brbinstall ArchBased
-ArchBased
+# brbinstall arch-based
+arch-based
 
 ## Needs
 
