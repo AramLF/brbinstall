@@ -15,11 +15,11 @@ And execute the install.sh (it is important to be in the current directory of th
 ./install.sh
 ```
 ### Flavors
-- [ArchBased](https://github.com/AramLF/brbinstall/tree/main/Flavor/ArchBased) (Only set a few things after an archintall)
-- [Debian](https://github.com/AramLF/brbinstall/tree/main/Flavor/Debian) (Does some theming and set it with more user friendliness) - Deprecated
-- [VoidLinux](https://github.com/AramLF/brbinstall/tree/main/Flavor/VoidLinux) (A post install script to set up everything like the services, the DE & more)  
-- [Neomint](https://github.com/AramLF/brbinstall/tree/main/Flavor/Neomint) (Tweaks Linux Mint Cinnamon 20.3 with some theming and set a few things up)  
-- [Flavoring](https://github.com/AramLF/brbinstall/tree/main/Flavor/Flavoring) (Contains a script to install some theming)  
+- [arch](https://github.com/AramLF/brbinstall/tree/main/flavor/arch) (Only set a few things after an archintall)
+- [Debian](https://github.com/AramLF/brbinstall/tree/main/flavor/debian) (Does some theming and set it with more user friendliness) - Deprecated
+- [voidlinux](https://github.com/AramLF/brbinstall/tree/main/flavor/voidlinux) (A post install script to set up everything like the services, the DE & more)  
+- [neomint](https://github.com/AramLF/brbinstall/tree/main/flavor/neomint) (Tweaks Linux Mint Cinnamon 20.3 with some theming and set a few things up)  
+- [flavoring](https://github.com/AramLF/brbinstall/tree/main/flavor/flavoring) (Contains a script to install some theming)  
 
 ### Use Commands Independently
 If you want to use the commands directly you can also do this (you need to be in this directory) :
@@ -33,7 +33,7 @@ And then use the commands starting with "brbinstall_" (it will only be available
 brbinstall/
 ├── cachefolder (that's where goes every downloaded files)  
 ├── Dotfiles (few dotfiles, most of the files needed are downloaded during the scripts)
-├── Flavor (executable flavor)
+├── flavor (executable flavor)
 ├── Functions (location off all functions that can be used)
 │   ├── DesktopEnvironments (related to DE functions : applying theme etc.)  
 │   ├── Distributions (related to Distribs oddness : setting up dnf, setting up Arch or Void etc.)
