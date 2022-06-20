@@ -37,7 +37,7 @@ source ./functions/distributions/DEBBased/ubuntuBased.sh
 source ./functions/distributions/RPMBased/fedoraBased.sh
 source ./functions/distributions/RPMBased/miscBased.sh
 source ./functions/distributions/RPMBased/openSuseBased.sh
-source ./functions/distributions/VoidLinux/voidLinux.sh
+source ./functions/distributions/void-linux/voidLinux.sh
 source ./functions/distributions/packages.sh
 
 source ./functions/setup/kitty.sh
