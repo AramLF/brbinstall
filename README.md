@@ -38,7 +38,7 @@ brbinstall/
 │   ├── DesktopEnvironments (related to DE functions : applying theme etc.)  
 │   ├── Distributions (related to Distribs oddness : setting up dnf, setting up Arch or Void etc.)
 │   ├── Flavoring (related to unique running script : setting up special theme, flavor etc.)
-│   ├── Setup (allow to set up scripts and programs quickly)
+│   ├── setup (allow to set up scripts and programs quickly)
 │   ├── templates (display the informations during the script)
 │   └── theming (allow to theme almost everything : terminal, colors, gtk, kde, icons etc.)
 └── mixed (misc folder mostly for test purpose)

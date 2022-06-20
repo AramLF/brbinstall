@@ -1,2 +1,2 @@
-# Setup
+# setup
 Setting things up

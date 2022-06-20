@@ -40,10 +40,10 @@ source ./functions/Distributions/RPMBased/openSuseBased.sh
 source ./functions/Distributions/VoidLinux/voidLinux.sh
 source ./functions/Distributions/packages.sh
 
-source ./functions/Setup/kitty.sh
-source ./functions/Setup/miscsetup.sh
-source ./functions/Setup/polybar.sh
-source ./functions/Setup/start.sh
+source ./functions/setup/kitty.sh
+source ./functions/setup/miscsetup.sh
+source ./functions/setup/polybar.sh
+source ./functions/setup/start.sh
 
 #var
 initialPath=$(pwd)
