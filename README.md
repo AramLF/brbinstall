@@ -34,7 +34,7 @@ brbinstall/
 ├── cachefolder (that's where goes every downloaded files)  
 ├── dotfiles (few dotfiles, most of the files needed are downloaded during the scripts)
 ├── flavor (executable flavor)
-├── Functions (location off all functions that can be used)
+├── functions (location off all functions that can be used)
 │   ├── DesktopEnvironments (related to DE functions : applying theme etc.)  
 │   ├── Distributions (related to Distribs oddness : setting up dnf, setting up Arch or Void etc.)
 │   ├── Flavoring (related to unique running script : setting up special theme, flavor etc.)
