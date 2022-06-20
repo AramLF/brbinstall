@@ -7,7 +7,7 @@ All color schemes installation
 ==============================================================================
 "
 mkdir -p ~/.local/share/color-schemes/
-cp -vr $initialPath/Dotfiles/kde/color-schemes/* ~/.local/share/color-schemes/
+cp -vr $initialPath/dotfiles/kde/color-schemes/* ~/.local/share/color-schemes/
 }
 
 brbinstall_theming_kde-misc_aurorae-all () {
@@ -17,7 +17,7 @@ Aurorae kde installation
 ==============================================================================
 "
 mkdir -p ~/.local/share/aurorae/themes/
-cp -vr $initialPath/Dotfiles/kde/aurorae/themes/* ~/.local/share/aurorae/themes/
+cp -vr $initialPath/dotfiles/kde/aurorae/themes/* ~/.local/share/aurorae/themes/
 }
 
 brbinstall_theming_kde-misc_konsole-all (){
@@ -27,5 +27,5 @@ All konsole appearances installation
 ==============================================================================
 "
 mkdir -p ~/.local/share/konsole/
-cp -vr $initialPath/Dotfiles/kde/konsole/* ~/.local/share/konsole/
+cp -vr $initialPath/dotfiles/kde/konsole/* ~/.local/share/konsole/
 }

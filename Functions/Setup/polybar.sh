@@ -21,7 +21,7 @@ cd ~/.config/polybar/
 
 #config.ini too
 
-cp -vr $initialPath/Dotfiles/polybar/config.ini config
+cp -vr $initialPath/dotfiles/polybar/config.ini config
 
 #original launch.sh in dotfiles
 echo -ne "

@@ -64,7 +64,7 @@ Void Set keyboard layout for Display Manager using xorg
 #https://forums.archlinux.fr/viewtopic.php?t=21445
 #lightdm sddm lxdm
 sudo mkdir -p /usr/share/X11/xorg.conf.d/ -v
-sudo cp $initialPath/Dotfiles/void/00-keyboard.conf /usr/share/X11/xorg.conf.d/00-keyboard.conf -v
+sudo cp $initialPath/dotfiles/void/00-keyboard.conf /usr/share/X11/xorg.conf.d/00-keyboard.conf -v
 }
 
 brbinstall_distrib_void-linux_gnome(){

@@ -20,7 +20,7 @@ echo $PWD
 
 echo $initialPath
 echo $initialCacheFolder
-echo $initialPath/Dotfiles/kde/konsole/OceanWaves.colorscheme
+echo $initialPath/dotfiles/kde/konsole/OceanWaves.colorscheme
 echo $initialCacheFolder
 
 echo $auto_pkg_installer
