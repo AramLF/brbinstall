@@ -19,17 +19,17 @@ source ./functions/DesktopEnvironments/gnome.sh
 source ./functions/DesktopEnvironments/kde.sh
 source ./functions/DesktopEnvironments/xfce.sh
 
-source ./functions/Flavoring/all.sh
-source ./functions/Flavoring/matte.sh
-source ./functions/Flavoring/vimi.sh
-source ./functions/Flavoring/flue.sh
-source ./functions/Flavoring/roll.sh
-source ./functions/Flavoring/coll.sh
-source ./functions/Flavoring/grey.sh
-source ./functions/Flavoring/catp.sh
-source ./functions/Flavoring/spice.sh
-source ./functions/Flavoring/r3.sh
-source ./functions/Flavoring/neomint.sh
+source ./functions/flavoring/all.sh
+source ./functions/flavoring/matte.sh
+source ./functions/flavoring/vimi.sh
+source ./functions/flavoring/flue.sh
+source ./functions/flavoring/roll.sh
+source ./functions/flavoring/coll.sh
+source ./functions/flavoring/grey.sh
+source ./functions/flavoring/catp.sh
+source ./functions/flavoring/spice.sh
+source ./functions/flavoring/r3.sh
+source ./functions/flavoring/neomint.sh
 
 source ./functions/Distributions/ArchBased/archBased.sh
 source ./functions/Distributions/DEBBased/debianBased.sh

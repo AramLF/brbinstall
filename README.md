@@ -8,7 +8,7 @@ git clone https://github.com/AramLF/brbinstall
 ```
 Then change to the folder corresponding to the flavor (flavoring for example)  
 ```
-cd brbinstall/Flavor/Flavoring/
+cd brbinstall/Flavor/flavoring/
 ```
 And execute the install.sh (it is important to be in the current directory of the flavor, do not execute if from somewhere else and do not execute it as a superuser)  
 ```
@@ -37,7 +37,7 @@ brbinstall/
 ├── functions (location off all functions that can be used)
 │   ├── DesktopEnvironments (related to DE functions : applying theme etc.)  
 │   ├── Distributions (related to Distribs oddness : setting up dnf, setting up Arch or Void etc.)
-│   ├── Flavoring (related to unique running script : setting up special theme, flavor etc.)
+│   ├── flavoring (related to unique running script : setting up special theme, flavor etc.)
 │   ├── setup (allow to set up scripts and programs quickly)
 │   ├── templates (display the informations during the script)
 │   └── theming (allow to theme almost everything : terminal, colors, gtk, kde, icons etc.)
