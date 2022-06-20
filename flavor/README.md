@@ -1,4 +1,4 @@
-# brbinstall Flavor
-Flavors
+# brbinstall flavor
+flavors
 
 ## Under construction

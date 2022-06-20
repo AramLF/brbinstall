@@ -8,13 +8,13 @@ git clone https://github.com/AramLF/brbinstall
 ```
 Then change to the folder corresponding to the flavor (flavoring for example)  
 ```
-cd brbinstall/Flavor/flavoring/
+cd brbinstall/flavor/flavoring/
 ```
 And execute the install.sh (it is important to be in the current directory of the flavor, do not execute if from somewhere else and do not execute it as a superuser)  
 ```
 ./install.sh
 ```
-### Flavors
+### flavors
 - [arch](https://github.com/AramLF/brbinstall/tree/main/flavor/arch) (Only set a few things after an archintall)
 - [debian](https://github.com/AramLF/brbinstall/tree/main/flavor/debian) (Does some theming and set it with more user friendliness) - Deprecated
 - [voidlinux](https://github.com/AramLF/brbinstall/tree/main/flavor/voidlinux) (A post install script to set up everything like the services, the DE & more)  
