@@ -1,7 +1,7 @@
 #!/bin/bash
 #need to be in this directory
-source ./functions/Templates/tp1.sh
-source ./functions/Templates/tpRandom.sh
+source ./functions/templates/tp1.sh
+source ./functions/templates/tpRandom.sh
 
 source ./functions/theming/dependencies.sh
 source ./functions/theming/gtk.sh

@@ -39,7 +39,7 @@ brbinstall/
 │   ├── Distributions (related to Distribs oddness : setting up dnf, setting up Arch or Void etc.)
 │   ├── Flavoring (related to unique running script : setting up special theme, flavor etc.)
 │   ├── Setup (allow to set up scripts and programs quickly)
-│   ├── Templates (display the informations during the script)
+│   ├── templates (display the informations during the script)
 │   └── theming (allow to theme almost everything : terminal, colors, gtk, kde, icons etc.)
 └── mixed (misc folder mostly for test purpose)
 ```
