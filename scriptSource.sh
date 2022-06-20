@@ -34,9 +34,9 @@ source ./functions/flavoring/neomint.sh
 source ./functions/distributions/arch-based/archBased.sh
 source ./functions/distributions/deb-based/debianBased.sh
 source ./functions/distributions/deb-based/ubuntuBased.sh
-source ./functions/distributions/RPMBased/fedoraBased.sh
-source ./functions/distributions/RPMBased/miscBased.sh
-source ./functions/distributions/RPMBased/openSuseBased.sh
+source ./functions/distributions/rpm-based/fedoraBased.sh
+source ./functions/distributions/rpm-based/miscBased.sh
+source ./functions/distributions/rpm-based/openSuseBased.sh
 source ./functions/distributions/void-linux/voidLinux.sh
 source ./functions/distributions/packages.sh
 
