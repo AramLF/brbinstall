@@ -1,49 +1,49 @@
 #!/bin/bash
 #need to be in this directory
-source ./Functions/Templates/tp1.sh
-source ./Functions/Templates/tpRandom.sh
+source ./functions/Templates/tp1.sh
+source ./functions/Templates/tpRandom.sh
 
-source ./Functions/Theming/dependencies.sh
-source ./Functions/Theming/gtk.sh
-source ./Functions/Theming/kde.sh
-source ./Functions/Theming/kitty.sh
-source ./Functions/Theming/icon.sh
-source ./Functions/Theming/wallpaper.sh
-source ./Functions/Theming/gterminal.sh
-source ./Functions/Theming/terminal.sh
-source ./Functions/Theming/kde-misc.sh
-source ./Functions/Theming/xfce4-terminal.sh
+source ./functions/Theming/dependencies.sh
+source ./functions/Theming/gtk.sh
+source ./functions/Theming/kde.sh
+source ./functions/Theming/kitty.sh
+source ./functions/Theming/icon.sh
+source ./functions/Theming/wallpaper.sh
+source ./functions/Theming/gterminal.sh
+source ./functions/Theming/terminal.sh
+source ./functions/Theming/kde-misc.sh
+source ./functions/Theming/xfce4-terminal.sh
 
-source ./Functions/DesktopEnvironments/cinnamon.sh
-source ./Functions/DesktopEnvironments/gnome.sh
-source ./Functions/DesktopEnvironments/kde.sh
-source ./Functions/DesktopEnvironments/xfce.sh
+source ./functions/DesktopEnvironments/cinnamon.sh
+source ./functions/DesktopEnvironments/gnome.sh
+source ./functions/DesktopEnvironments/kde.sh
+source ./functions/DesktopEnvironments/xfce.sh
 
-source ./Functions/Flavoring/all.sh
-source ./Functions/Flavoring/matte.sh
-source ./Functions/Flavoring/vimi.sh
-source ./Functions/Flavoring/flue.sh
-source ./Functions/Flavoring/roll.sh
-source ./Functions/Flavoring/coll.sh
-source ./Functions/Flavoring/grey.sh
-source ./Functions/Flavoring/catp.sh
-source ./Functions/Flavoring/spice.sh
-source ./Functions/Flavoring/r3.sh
-source ./Functions/Flavoring/neomint.sh
+source ./functions/Flavoring/all.sh
+source ./functions/Flavoring/matte.sh
+source ./functions/Flavoring/vimi.sh
+source ./functions/Flavoring/flue.sh
+source ./functions/Flavoring/roll.sh
+source ./functions/Flavoring/coll.sh
+source ./functions/Flavoring/grey.sh
+source ./functions/Flavoring/catp.sh
+source ./functions/Flavoring/spice.sh
+source ./functions/Flavoring/r3.sh
+source ./functions/Flavoring/neomint.sh
 
-source ./Functions/Distributions/ArchBased/archBased.sh
-source ./Functions/Distributions/DEBBased/debianBased.sh
-source ./Functions/Distributions/DEBBased/ubuntuBased.sh
-source ./Functions/Distributions/RPMBased/fedoraBased.sh
-source ./Functions/Distributions/RPMBased/miscBased.sh
-source ./Functions/Distributions/RPMBased/openSuseBased.sh
-source ./Functions/Distributions/VoidLinux/voidLinux.sh
-source ./Functions/Distributions/packages.sh
+source ./functions/Distributions/ArchBased/archBased.sh
+source ./functions/Distributions/DEBBased/debianBased.sh
+source ./functions/Distributions/DEBBased/ubuntuBased.sh
+source ./functions/Distributions/RPMBased/fedoraBased.sh
+source ./functions/Distributions/RPMBased/miscBased.sh
+source ./functions/Distributions/RPMBased/openSuseBased.sh
+source ./functions/Distributions/VoidLinux/voidLinux.sh
+source ./functions/Distributions/packages.sh
 
-source ./Functions/Setup/kitty.sh
-source ./Functions/Setup/miscsetup.sh
-source ./Functions/Setup/polybar.sh
-source ./Functions/Setup/start.sh
+source ./functions/Setup/kitty.sh
+source ./functions/Setup/miscsetup.sh
+source ./functions/Setup/polybar.sh
+source ./functions/Setup/start.sh
 
 #var
 initialPath=$(pwd)

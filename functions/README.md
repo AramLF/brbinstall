@@ -1,2 +1,2 @@
-# Functions
-Functions in shell
+# functions
+functions in shell
