@@ -10,7 +10,7 @@ brbinstall_distrib_package_manager() {
   elif check_command dnf; then
     auto_pkg_installer='dnf install -y'
   elif check_command zypper; then
-    auto_pkg_installer='zypper install -y'
+    auto_pkg_installer='zypper install -y --no-recommends'
   elif check_command pacman; then
     auto_pkg_installer='pacman -Sy --noconfirm'
   elif check_command xbps-install; then
