@@ -125,6 +125,22 @@ cd $initialCacheFolder/libadwaita-theme-changer
 ./libadwaita-tc.py
 }
 
+
+
+brbinstall_setup_miscsetup_vmtools () {
+echo -ne "
+==============================================================================
+Getting and setup open vm tools
+==============================================================================
+"
+#specific use case it should be improved
+sudo $auto_pkg_installer open-vm-tools
+
+systemctl enable vmtoolsd.service
+#rc-update add <service> <runlevel>
+
+}
+
 brbinstall_setup_miscsetup_unimatrix () {
 echo -ne "
 ==============================================================================

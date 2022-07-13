@@ -41,17 +41,6 @@ sudo sh -c 'echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen'
 sudo locale-gen
 }
 
-brbinstall_distrib_arch-based_vmtools () {
-echo -ne "
-==============================================================================
-Arch vmtoolsd
-==============================================================================
-"
-#specific use case it should be improved
-sudo $auto_pkg_installer open-vm-tools
-systemctl enable vmtoolsd.service
-}
-
 brbinstall_distrib_arch-based_pacman () {
 echo -ne "
 ==============================================================================
@@ -81,6 +70,6 @@ brbinstall_distrib_arch-based_yay
 
 brbinstall_distrib_arch-based_locales
 
-brbinstall_distrib_arch-based_vmtools
+brbinstall_setup_miscsetup_vmtools
 
 }
