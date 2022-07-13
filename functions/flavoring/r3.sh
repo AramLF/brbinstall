@@ -66,7 +66,7 @@ echo -ne "
 r3 picom
 ==============================================================================
 "
-sudo $auto_pkg_installer picom
+#to change in setup : sudo $auto_pkg_installer picom
 #not complete
 #compton for an old picom
 echo -ne "
