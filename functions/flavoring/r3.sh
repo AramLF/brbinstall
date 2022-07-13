@@ -71,7 +71,7 @@ sudo $auto_pkg_installer picom
 #compton for an old picom
 echo -ne "
 #transparancy
-exec_always picom -f
+exec_always picom -f --config ~/.config/picom/picom.conf
 " >> ~/.config/i3/config
 #--config ~/.config/picom/picom.conf
 #--blur-background
