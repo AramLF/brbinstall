@@ -90,3 +90,16 @@ sed -i "s/.*map cmd+minus             change_font_size all -2.0.*/map cmd+minus 
 sed -i "s/.*map shift+cmd+minus       change_font_size all -2.0.*/map shift+cmd+minus       change_font_size all -1.0/g" kitty.conf
 
 }
+
+brbinstall_setup_kitty_background-opacity() {
+echo -ne "
+==============================================================================
+Kitty background opacity
+==============================================================================
+"
+cd ~/.config/kitty/
+
+sed -i "s/.*# background_opacity 1.0.*/background_opacity $1/g" kitty.conf
+
+
+}
