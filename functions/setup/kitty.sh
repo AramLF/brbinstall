@@ -73,8 +73,20 @@ cd ~/.config/kitty/
 
 sed -i "s/.*# font_size.*/font_size 10.0/g" kitty.conf
 
-sed -i "s/change_font_size all +2.0.*/change_font_size all +1.0/g" kitty.conf
+#sed -i "s/change_font_size all +2.0.*/change_font_size all +1.0/g" kitty.conf
 
-sed -i "s/change_font_size all -2.0.*/change_font_size all -1.0/g" kitty.conf
+#sed -i "s/change_font_size all -2.0.*/change_font_size all -1.0/g" kitty.conf
+
+sed -i "s/.*map kitty_mod+equal  change_font_size all +2.0.*/map kitty_mod+equal  change_font_size all +1.0/g" kitty.conf
+sed -i "s/.*map kitty_mod+plus   change_font_size all +2.0.*/map kitty_mod+plus   change_font_size all +1.0/g" kitty.conf
+sed -i "s/.*map kitty_mod+kp_add change_font_size all +2.0.*/map kitty_mod+kp_add change_font_size all +1.0/g" kitty.conf
+sed -i "s/.*map cmd+plus         change_font_size all +2.0.*/map cmd+plus         change_font_size all +1.0/g" kitty.conf
+sed -i "s/.*map cmd+equal        change_font_size all +2.0.*/map cmd+equal        change_font_size all +1.0/g" kitty.conf
+sed -i "s/.*map shift+cmd+equal  change_font_size all +2.0.*/map shift+cmd+equal  change_font_size all +1.0/g" kitty.conf
+
+sed -i "s/.*map kitty_mod+minus       change_font_size all -2.0.*/map kitty_mod+minus       change_font_size all -1.0/g" kitty.conf
+sed -i "s/.*map kitty_mod+kp_subtract change_font_size all -2.0.*/map kitty_mod+kp_subtract change_font_size all -1.0/g" kitty.conf
+sed -i "s/.*map cmd+minus             change_font_size all -2.0.*/map cmd+minus             change_font_size all -1.0/g" kitty.conf
+sed -i "s/.*map shift+cmd+minus       change_font_size all -2.0.*/map shift+cmd+minus       change_font_size all -1.0/g" kitty.conf
 
 }
