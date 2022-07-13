@@ -62,3 +62,19 @@ sed -i "s/.* cursor_text_color #.*/cursor_text_color ${22}/g" kitty.conf
 
 
 }
+
+brbinstall_setup_kitty_px() {
+echo -ne "
+==============================================================================
+Kitty px
+==============================================================================
+"
+cd ~/.config/kitty/
+
+sed -i "s/.*# font_size.*/font_size 10.0/g" kitty.conf
+
+sed -i "s/change_font_size all +2.0.*/change_font_size all +1.0/g" kitty.conf
+
+sed -i "s/change_font_size all -2.0.*/change_font_size all -1.0/g" kitty.conf
+
+}
