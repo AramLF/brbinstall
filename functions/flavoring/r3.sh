@@ -148,9 +148,24 @@ echo -ne "
 r3 rofi
 ==============================================================================
 "
+#bindsym $mod+x exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
 echo -ne "
 #rofi
-bindsym \$mod+x exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity \"85\" -bw 0 -bc \"\$bg-color\" -bg \"\$bg-color\" -fg \"\$text-color\" -hlbg \"\$bg-color\" -hlfg \"#9575cd\" -font \"System San Francisco Display 18\"
+bindsym \$mod+x exec rofi -show run
+" >> ~/.config/i3/config
+
+}
+
+brbinstall_flavoring_r3_i3-lock () {
+echo -ne "
+==============================================================================
+r3 rofi
+==============================================================================
+"
+#bindsym $mod+shift+x exec i3lock --color "$bg-color"
+echo -ne "
+#i3-lock
+bindsym \$mod+shift+x exec i3lock
 " >> ~/.config/i3/config
 
 }

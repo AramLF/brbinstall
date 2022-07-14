@@ -44,6 +44,7 @@ source ./functions/setup/kitty.sh
 source ./functions/setup/miscsetup.sh
 source ./functions/setup/polybar.sh
 source ./functions/setup/picom.sh
+source ./functions/setup/rofi.sh
 source ./functions/setup/start.sh
 
 #var
