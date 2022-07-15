@@ -6,6 +6,7 @@ echo -ne "
 Polybar installation
 ==============================================================================
 "
+#https://github.com/polybar/polybar
 sudo $auto_pkg_installer polybar
 }
 
