@@ -22,9 +22,9 @@ cd ~/.config/polybar/
 
 #config.ini too
 
-cp -vr $initialPath/dotfiles/polybar/config.ini config
+cp -vr $initialPath/dotfiles/polybar/config.ini config.ini
 
-sed -i "s/example/main1/g" config
+sed -i "s/example/main1/g" config.ini
 
 #original launch.sh in dotfiles
 echo -ne "
@@ -36,11 +36,9 @@ polybar-msg cmd quit
 # Otherwise you can use the nuclear option:
 killall -q polybar
 
-# Launch bar1 and bar2
+# Launch main1
 echo \"---\" | tee -a /tmp/polybar1.log /tmp/polybar2.log
 polybar main1 2>&1 | tee -a /tmp/polybar1.log & disown
-#polybar bar1 2>&1 | tee -a /tmp/polybar1.log & disown
-#polybar bar2 2>&1 | tee -a /tmp/polybar2.log & disown
 
 echo \"Bar.s launched...\"
 " >> launch.sh
@@ -57,7 +55,7 @@ Polybar modified
 "
 cd ~/.config/polybar/
 
-mv -v config config-old
+mv -v config.ini config-old.ini
 
-cp -vr $initialPath/dotfiles/polybar/myconfig.ini config
+cp -vr $initialPath/dotfiles/polybar/myconfig.ini config.ini
 }
