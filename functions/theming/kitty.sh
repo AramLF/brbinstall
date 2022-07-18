@@ -46,7 +46,7 @@ kitty vimi theme installation
 brbinstall_setup_kitty_auto-theming-term 363636 FF5370 C3E88d FFCB6B 82AAFF C792EA 89DDFF FCFCFC 363636 FF5370 C3E88D FFCB6B 82AAFF C792EA 89DDFF FCFCFC 363636 FCFCFC
 }
 
-brbinstall_setup_kitty_auto-theming-highlight () {
+brbinstall_theming_kitty_theming-highlight () {
 echo -ne "
 ==============================================================================
 kitty highlight theming
