@@ -52,5 +52,5 @@ echo -ne "
 kitty highlight theming
 ==============================================================================
 "
-brbinstall_setup_kitty_auto-theming-term "none" "none" "none" "background"
+brbinstall_setup_kitty_auto-theming-highlight "none" "none" "none" "background"
 }
