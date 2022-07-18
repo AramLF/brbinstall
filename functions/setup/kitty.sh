@@ -50,8 +50,8 @@ sed -i "s/.*color13 .*/color13 #${14}/g" kitty.conf
 sed -i "s/.*color14 .*/color14 #${15}/g" kitty.conf
 sed -i "s/.*color15 .*/color15 #${16}/g" kitty.conf
 
-sed -i "s/.* background #.*/background #${17}/g" kitty.conf
-sed -i "s/.* foreground #.*/foreground #${18}/g" kitty.conf
+sed -i "s/.* background #.*/ background #${17}/g" kitty.conf
+sed -i "s/.* foreground #.*/ foreground #${18}/g" kitty.conf
 
 }
 
