@@ -169,3 +169,18 @@ bindsym \$mod+shift+x exec i3lock
 " >> ~/.config/i3/config
 
 }
+
+brbinstall_flavoring_r3_keyboard-layout () {
+echo -ne "
+==============================================================================
+r3 keyboard layout fr and us
+==============================================================================
+"
+#exec_always --no-startup-id "setxkbmap -model pc105 -layout us,ru -variant ,phonetic_winkeys -option grp:alt_shift_toggle,compose:ralt"
+#exec "setxkbmap -option 'grp:alt_shift_toggle' -layout us,cz -variant ,qwerty"
+echo -ne "
+#Keyboard layout fr and us with alt shift
+exec \"setxkbmap -option 'grp:alt_shift_toggle' -layout fr,us\"
+" >> ~/.config/i3/config
+
+}
