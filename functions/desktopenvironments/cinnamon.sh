@@ -7,6 +7,7 @@ Cinnamon mod
 ==============================================================================
 "
 #moding it later
+#gsettings list-recursively | grep icon
 }
 
 brbinstall_de_cinnamon_sound(){
@@ -74,5 +75,33 @@ Cinnamon set icon theme
 "
   #gsettings set org.cinnamon.desktop.interface icon-theme Fluent-dark
   gsettings set org.cinnamon.desktop.interface icon-theme $1
+
+}
+
+brbinstall_de_cinnamon_set-monospace-font(){
+echo -ne "
+==============================================================================
+Cinnamon set monospace font name
+==============================================================================
+"
+  #gsettings set org.gnome.desktop.interface monospace-font-name "Ubuntu Mono 12"
+  gsettings set org.gnome.desktop.interface monospace-font-name $1
+
+}
+
+brbinstall_de_cinnamon_set-displayed-icons(){
+echo -ne "
+==============================================================================
+Cinnamon set displayed icons
+==============================================================================
+"
+  #gsettings set org.gnome.desktop.interface monospace-font-name "Ubuntu Mono 12"
+  gsettings set org.nemo.desktop network-icon-visible false
+  gsettings set org.nemo.desktop computer-icon-visible true
+  gsettings set org.nemo.desktop show-desktop-icons true
+  gsettings set org.nemo.desktop home-icon-visible true
+  gsettings set org.nemo.desktop show-orphaned-desktop-icons true
+  gsettings set org.nemo.desktop trash-icon-visible true
+
 
 }
