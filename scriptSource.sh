@@ -7,6 +7,7 @@ source ./functions/theming/dependencies.sh
 source ./functions/theming/gtk.sh
 source ./functions/theming/kde.sh
 source ./functions/theming/kitty.sh
+source ./functions/theming/polybar.sh
 source ./functions/theming/icon.sh
 source ./functions/theming/wallpaper.sh
 source ./functions/theming/gterminal.sh
