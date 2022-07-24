@@ -68,23 +68,23 @@ Polybar auto theming
 "
 cd ~/.config/polybar/
 
-sed -i "s/.*background = .*/background = #$1/g" config.ini
-sed -i "s/.*red1 = .*/red1 = #$2/g" config.ini
-sed -i "s/.*green1 = .*/green1 = #$3/g" config.ini
-sed -i "s/.*yellow1 = .*/yellow1 = #$4/g" config.ini
-sed -i "s/.*blue1 = .*/blue1 = #$5/g" config.ini
-sed -i "s/.*purple1 = .*/purple1 = #$6/g" config.ini
-sed -i "s/.*lightBlue1 = .*/lightBlue1 = #$7/g" config.ini
-sed -i "s/.*foreground = .*/foreground = #$8/g" config.ini
+sed -i "s/.*background = #.*/background = #$1/g" config.ini
+sed -i "s/.*red1 = #.*/red1 = #$2/g" config.ini
+sed -i "s/.*green1 = #.*/green1 = #$3/g" config.ini
+sed -i "s/.*yellow1 = #.*/yellow1 = #$4/g" config.ini
+sed -i "s/.*blue1 = #.*/blue1 = #$5/g" config.ini
+sed -i "s/.*purple1 = #.*/purple1 = #$6/g" config.ini
+sed -i "s/.*lightBlue1 = #.*/lightBlue1 = #$7/g" config.ini
+sed -i "s/.*foreground = #.*/foreground = #$8/g" config.ini
 
-sed -i "s/.*background-alt = .*/background-alt = #$9/g" config.ini
-sed -i "s/.*red2 = .*/red2 = #${10}/g" config.ini
-sed -i "s/.*green2 = .*/green2 = #${11}/g" config.ini
-sed -i "s/.*yellow2 = .*/yellow2 = #${12}/g" config.ini
-sed -i "s/.*blue2 = .*/blue2 = #${13}/g" config.ini
-sed -i "s/.*purple2 = .*/purple2 = #${14}/g" config.ini
-sed -i "s/.*lightBlue2 = .*/lightBlue2 = #${15}/g" config.ini
-sed -i "s/.*foreground-alt = .*/foreground-alt = #${16}/g" config.ini
+sed -i "s/.*background-alt = #.*/background-alt = #$9/g" config.ini
+sed -i "s/.*red2 = #.*/red2 = #${10}/g" config.ini
+sed -i "s/.*green2 = #.*/green2 = #${11}/g" config.ini
+sed -i "s/.*yellow2 = #.*/yellow2 = #${12}/g" config.ini
+sed -i "s/.*blue2 = #.*/blue2 = #${13}/g" config.ini
+sed -i "s/.*purple2 = #.*/purple2 = #${14}/g" config.ini
+sed -i "s/.*lightBlue2 = #.*/lightBlue2 = #${15}/g" config.ini
+sed -i "s/.*foreground-alt = #.*/foreground-alt = #${16}/g" config.ini
 
 
 }
