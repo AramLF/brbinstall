@@ -39,11 +39,11 @@ Linux Mint Neomint flavor
 
   brbinstall_theming_gtk_fluent "--tweaks round --dest $HOME/.themes"
 
-  brbinstall_de_cinnamon_set-desktop-theme "Fluent-round-dark-compact"
+  brbinstall_de_cinnamon_set-desktop-theme "Fluent-round-Dark-compact"
 
-  brbinstall_de_cinnamon_set-gtk-theme "Fluent-round-dark-compact"
+  brbinstall_de_cinnamon_set-gtk-theme "Fluent-round-Dark-compact"
 
-  brbinstall_de_cinnamon_set-wm-theme "Fluent-round-dark"
+  brbinstall_de_cinnamon_set-wm-theme "Fluent-round-Dark"
 
   brbinstall_de_cinnamon_set-icon-theme "Fluent-dark"
 
@@ -51,7 +51,7 @@ Linux Mint Neomint flavor
 
   brbinstall_de_cinnamon_set-background "file:////usr/share/backgrounds/walls/aholmes_moraine_lake-lmuna.jpg"
 
-  brbinstall_de_cinnamon_set-monospace-font "Ubuntu Mono 12"
+  brbinstall_de_cinnamon_set-monospace-font '"Ubuntu Mono 12"'
 
   brbinstall_setup_miscsetup_flathub
 
