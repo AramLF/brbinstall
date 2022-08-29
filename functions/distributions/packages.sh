@@ -7,6 +7,9 @@ brbinstall_distrib_package_manager() {
   #sudo $auto_pkg_installer htop
   if check_command apt-get; then
     auto_pkg_installer='apt-get install -y'
+    if check_command nala; then
+      auto_pkg_installer='nala install -y'
+    fi
   elif check_command dnf; then
     auto_pkg_installer='dnf install -y'
   elif check_command zypper; then
