@@ -6,6 +6,7 @@ echo -ne "
 Ubuntu Based pkgs
 ==============================================================================
 "
-#mostly for 20.04
+#mostly for 22.04
+sudo $auto_pkg_installer nala
 sudo $auto_pkg_installer libc6-dev
 }

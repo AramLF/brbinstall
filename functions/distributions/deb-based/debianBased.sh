@@ -6,7 +6,7 @@ echo -ne "
 Dependencies Debian installation
 ==============================================================================
 "
-sudo $auto_pkg_installer htop neofetch ncdu git gcc synaptic wget curl unzip command-not-found
+sudo $auto_pkg_installer htop neofetch ncdu git gcc synaptic wget curl unzip command-not-found ranger
 sudo $auto_pkg_installer plymouth
 #maybe add plymouth-themes
 }

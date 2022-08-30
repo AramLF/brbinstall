@@ -7,5 +7,5 @@ Cinnamon, flatpak and flathub and (not tottaly required) being based on Debian/U
 
 ### Remaining Installation
 Params, remove firefox title bar, delete script & remove some files  
-change favorites apps, change icons & desktop icon place, change clock format
-change defaults apps, add onlyoffice
+change favorites apps, change icons & desktop icon place, change clock format  
+change defaults apps, add onlyoffice  
