@@ -51,7 +51,7 @@ Linux Mint Neomint flavor
 
   brbinstall_de_cinnamon_set-background "file:////usr/share/backgrounds/walls/aholmes_moraine_lake-lmuna.jpg"
 
-  brbinstall_de_cinnamon_set-monospace-font '"Ubuntu Mono 12"'
+  brbinstall_de_cinnamon_set-monospace-font "Ubuntu Mono 12"
 
   brbinstall_setup_miscsetup_flathub
 
