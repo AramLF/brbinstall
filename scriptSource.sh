@@ -42,6 +42,7 @@ source ./functions/distributions/void-linux/voidLinux.sh
 source ./functions/distributions/packages.sh
 
 source ./functions/setup/kitty.sh
+source ./functions/setup/maintenance.sh
 source ./functions/setup/miscsetup.sh
 source ./functions/setup/polybar.sh
 source ./functions/setup/picom.sh
