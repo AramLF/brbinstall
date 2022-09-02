@@ -19,6 +19,29 @@ Prevention fix for potential wifi problem on Linux Mint
 sudo sed -i 's/wifi.powersave = 3/wifi.powersave = 2/g' /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
 }
 
+brbinstall_flavoring_neomint_remaining () {
+echo -ne "
+==============================================================================
+Remaining things to change and/or add
+==============================================================================
+"
+echo -ne "
+# Download more apps, onlyoffice flatseal (boop ?) :
+flatpak install flathub org.onlyoffice.desktopeditors
+flatpak install flathub com.github.tchx84.Flatseal
+
+# Desktop icons : RootFolder HomeFolder Trash
+# Bar icons : Params Softwares Firefox Folder OnlyOffice
+
+# Remove the title bar for firefox
+# Change the default apps (Documents to OnlyOffice)
+# Change the clock format to : %H:%M %d/%m/%Y
+
+# Remove scripts and used folders when finished
+"
+
+}
+
 brbinstall_flavoring_neomint_neomint () {
 echo -ne "
 ==============================================================================
@@ -56,6 +79,8 @@ Linux Mint Neomint flavor
   brbinstall_setup_miscsetup_flathub
 
   brbinstall_setup_miscsetup_flatpak-override
+
+  brbinstall_flavoring_neomint_remaining
 
 }
 
