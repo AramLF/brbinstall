@@ -6,6 +6,4 @@ Change some theming
 Cinnamon, flatpak and flathub and (not tottaly required) being based on Debian/Ubuntu/LinuxMint
 
 ### Remaining Installation
-Params, remove firefox title bar, delete script & remove some files  
-change favorites apps, change icons & desktop icon place, change clock format  
-change defaults apps, add onlyoffice  
+Will be displayed at the end of the script

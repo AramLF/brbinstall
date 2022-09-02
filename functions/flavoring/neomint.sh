@@ -26,7 +26,7 @@ Remaining things to change and/or add
 ==============================================================================
 "
 echo -ne "
-# Download more apps, onlyoffice flatseal (boop ?) :
+# Download more apps, onlyoffice flatseal (crhomium, boop ?) :
 flatpak install flathub org.onlyoffice.desktopeditors
 flatpak install flathub com.github.tchx84.Flatseal
 
@@ -36,6 +36,9 @@ flatpak install flathub com.github.tchx84.Flatseal
 # Remove the title bar for firefox
 # Change the default apps (Documents to OnlyOffice)
 # Change the clock format to : %H:%M %d/%m/%Y
+# Change the middle click on the bar to \"Open a new window\"
+
+# Change the param in mintupdate to remove old kernel automatically
 
 # Remove scripts and used folders when finished
 "
