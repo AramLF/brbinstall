@@ -28,9 +28,11 @@ chroot a partition
 "
 echo -ne "
 !!!Use this command with caution!!!
+
 "
 ls /dev/sda*
 read -r -p "Select the number, [Enter] to validate : " chrootChoice
+sudo umount -R /mnt
 sudo mount /dev/sda$chrootChoice /mnt
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo chroot /mnt

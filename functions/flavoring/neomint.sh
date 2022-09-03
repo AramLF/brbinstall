@@ -40,6 +40,8 @@ flatpak install flathub com.github.tchx84.Flatseal
 
 # Change the param in mintupdate to remove old kernel automatically
 
+# Add and configure Anydesk in order to help
+
 # Remove scripts and used folders when finished
 "
 
