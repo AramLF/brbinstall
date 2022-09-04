@@ -75,6 +75,15 @@ Changing wallpaper
 gsettings set org.gnome.desktop.background picture-uri $1
 }
 
+brbinstall_de_gnome_template-nemo-nautilus () {
+echo -ne "
+==============================================================================
+Adding template files in the Template folder
+==============================================================================
+"
+cp -vr $initialPath/dotfiles/examples/templates/* $(xdg-user-dir TEMPLATES)/
+}
+
 brbinstall_de_gnome_gnomeover(){
 echo -ne "
 ==============================================================================
