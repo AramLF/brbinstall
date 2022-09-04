@@ -85,6 +85,8 @@ Linux Mint Neomint flavor
 
   brbinstall_setup_miscsetup_flatpak-override
 
+  brbinstall_de_gnome_template-nemo-nautilus
+
   brbinstall_flavoring_neomint_remaining
 
 }
