@@ -1,5 +1,14 @@
 #!/bin/bash
 
+brbinstall_setup_miscsetup_flatpak-installation () {
+echo -ne "
+==============================================================================
+Set flatpak (need to be in the distro repos)
+==============================================================================
+"
+sudo $auto_pkg_installer flatpak
+}
+
 brbinstall_setup_miscsetup_flathub () {
 echo -ne "
 ==============================================================================

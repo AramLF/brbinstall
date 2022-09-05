@@ -29,11 +29,12 @@ echo -ne "
 # Download more apps, onlyoffice flatseal (crhomium, boop ?) :
 flatpak install flathub org.onlyoffice.desktopeditors
 flatpak install flathub com.github.tchx84.Flatseal
+flatpak install flathub com.usebottles.bottles
 
 # Desktop icons : RootFolder HomeFolder Trash
 # Bar icons : Params Softwares Firefox Folder OnlyOffice
 
-# Remove the title bar in firefox and add an addblocker
+# Remove the title bar in firefox (add addblocker for every web browser)
 # Change the default apps (Documents to OnlyOffice)
 # Change the clock format to : %H:%M %d/%m/%Y
 # Change the middle click on the bar to \"Open a new window\"
@@ -47,12 +48,26 @@ flatpak install flathub com.github.tchx84.Flatseal
 
 }
 
+brbinstall_flavoring_neomint_required-start () {
+echo -ne "
+==============================================================================
+README.md for neomint
+==============================================================================
+"
+cat $initialPath/flavor/neomint/README.md
+
+read -r -p "[Enter] to continue or [Ctrl+C] to stop here : " idkidk
+
+}
+
 brbinstall_flavoring_neomint_neomint () {
 echo -ne "
 ==============================================================================
 Linux Mint Neomint flavor
 ==============================================================================
 "
+  brbinstall_flavoring_neomint_required-start
+
   brbinstall_flavoring_neomint_wifi_prevention
 
   brbinstall_setup_start_basic-apps
@@ -80,6 +95,8 @@ Linux Mint Neomint flavor
   brbinstall_de_cinnamon_set-background "file:////usr/share/backgrounds/walls/aholmes_moraine_lake-lmuna.jpg"
 
   brbinstall_de_cinnamon_set-monospace-font "Ubuntu Mono 12"
+
+  brbinstall_setup_miscsetup_flatpak-installation
 
   brbinstall_setup_miscsetup_flathub
 
