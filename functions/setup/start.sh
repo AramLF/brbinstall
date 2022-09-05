@@ -6,5 +6,5 @@ echo -ne "
 Add basic apps
 ==============================================================================
 "
-sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip ranger
+sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip ranger tree
 }

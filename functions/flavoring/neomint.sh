@@ -19,6 +19,15 @@ Prevention fix for potential wifi problem on Linux Mint
 sudo sed -i 's/wifi.powersave = 3/wifi.powersave = 2/g' /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
 }
 
+brbinstall_flavoring_neomint_chromium-installation () {
+echo -ne "
+==============================================================================
+Linux Mint - Chromium installation
+==============================================================================
+"
+sudo $auto_pkg_installer chromium
+}
+
 brbinstall_flavoring_neomint_remaining () {
 echo -ne "
 ==============================================================================
@@ -44,6 +53,9 @@ flatpak install flathub com.usebottles.bottles
 # Add and configure Anydesk in order to help (remove at startup)
 
 # Remove scripts and used folders when finished
+
+# Chromium (change search engine, remove title bar, addblocker)
+# Search Engine : Google google.com {google:baseURL}search?q=%s
 "
 
 }
@@ -55,7 +67,8 @@ README.md for neomint
 ==============================================================================
 "
 cat $initialPath/flavor/neomint/README.md
-
+echo -ne "
+"
 read -r -p "[Enter] to continue or [Ctrl+C] to stop here : " idkidk
 
 }
@@ -73,6 +86,8 @@ Linux Mint Neomint flavor
   brbinstall_setup_start_basic-apps
 
   brbinstall_distrib_deb-based_ubuntu-based_more
+
+  brbinstall_flavoring_neomint_chromium-installation
 
   brbinstall_de_cinnamon_sound
 
