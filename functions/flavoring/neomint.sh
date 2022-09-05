@@ -33,14 +33,14 @@ flatpak install flathub com.github.tchx84.Flatseal
 # Desktop icons : RootFolder HomeFolder Trash
 # Bar icons : Params Softwares Firefox Folder OnlyOffice
 
-# Remove the title bar for firefox
+# Remove the title bar in firefox and add an addblocker
 # Change the default apps (Documents to OnlyOffice)
 # Change the clock format to : %H:%M %d/%m/%Y
 # Change the middle click on the bar to \"Open a new window\"
 
 # Change the param in mintupdate to remove old kernel automatically
 
-# Add and configure Anydesk in order to help
+# Add and configure Anydesk in order to help (remove at startup)
 
 # Remove scripts and used folders when finished
 "

@@ -45,10 +45,4 @@ brbinstall/
 ```
 
 ## Potential improvements
-- The script could be executed from the main directory  
-- Rearrange the whole structure
-- add comments & maybe better naming
-- add pics
-- some blocks of code could be functions (avoid repetitions)
-- huge improvement over some awfully made functions
-- folders in lowercase
+- Check [TODO.md](https://github.com/AramLF/brbinstall/blob/main/TODO.md)

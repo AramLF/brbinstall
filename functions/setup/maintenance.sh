@@ -32,9 +32,9 @@ echo -ne "
 "
 ls /dev/sda*
 read -r -p "Select the number, [Enter] to validate : " chrootChoice
-sudo umount -R /mnt
-sudo mount /dev/sda$chrootChoice /mnt
-for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
+sudo umount -Rv /mnt
+sudo mount -v /dev/sda$chrootChoice /mnt
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -vB $i /mnt$i; done
 sudo chroot /mnt
-sudo umount -R /mnt
+sudo umount -Rv /mnt
 }
