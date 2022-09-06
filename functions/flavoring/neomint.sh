@@ -7,6 +7,7 @@ LM
 ==============================================================================
 "
 #none for now
+#README.md in flavor
 }
 
 brbinstall_flavoring_neomint_wifi_prevention () {
@@ -19,13 +20,14 @@ Prevention fix for potential wifi problem on Linux Mint
 sudo sed -i 's/wifi.powersave = 3/wifi.powersave = 2/g' /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
 }
 
-brbinstall_flavoring_neomint_chromium-installation () {
+brbinstall_flavoring_neomint_more-pkgs () {
 echo -ne "
 ==============================================================================
 Linux Mint - Chromium installation
 ==============================================================================
 "
 sudo $auto_pkg_installer chromium
+sudo $auto_pkg_installer numlockx
 }
 
 brbinstall_flavoring_neomint_remaining () {
@@ -34,6 +36,7 @@ echo -ne "
 Remaining things to change and/or add
 ==============================================================================
 "
+#
 echo -ne "
 # Download more apps, onlyoffice flatseal (crhomium, boop ?) :
 flatpak install flathub org.onlyoffice.desktopeditors
@@ -44,18 +47,21 @@ flatpak install flathub com.usebottles.bottles
 # Bar icons : Params Softwares Firefox Folder OnlyOffice
 
 # Remove the title bar in firefox (add addblocker for every web browser)
-# Change the default apps (Documents to OnlyOffice)
+# Chromium (change search engine, remove title bar, addblocker)
+# Search Engine : Google google.com {google:baseURL}search?q=%s
+
+# Change the default apps (Documents to OnlyOffice and music Rhythmbox)
+# Add manually xlsx with OnlyOffice (pptx can stay on LibreOffice)
 # Change the clock format to : %H:%M %d/%m/%Y
 # Change the middle click on the bar to \"Open a new window\"
+# Add 'us' keyboard layout
+# Add numlock at startup (lightdm)
 
 # Change the param in mintupdate to remove old kernel automatically
 
 # Add and configure Anydesk in order to help (remove at startup)
 
 # Remove scripts and used folders when finished
-
-# Chromium (change search engine, remove title bar, addblocker)
-# Search Engine : Google google.com {google:baseURL}search?q=%s
 "
 
 }
@@ -87,7 +93,7 @@ Linux Mint Neomint flavor
 
   brbinstall_distrib_deb-based_ubuntu-based_more
 
-  brbinstall_flavoring_neomint_chromium-installation
+  brbinstall_flavoring_neomint_more-pkgs
 
   brbinstall_de_cinnamon_sound
 
@@ -109,9 +115,17 @@ Linux Mint Neomint flavor
 
   brbinstall_de_cinnamon_set-background "file:////usr/share/backgrounds/walls/aholmes_moraine_lake-lmuna.jpg"
 
+  echo yes |brbinstall_theming_gterminal_set-flue
+
   brbinstall_de_cinnamon_set-monospace-font "Ubuntu Mono 12"
 
+  brbinstall_de_cinnamon_set-tap-to-click
+
+  brbinstall_de_cinnamon_set-flags-keyboard-layout
+
   brbinstall_setup_miscsetup_flatpak-installation
+
+  brbinstall_de_cinnamon_set-links-in-nemo
 
   brbinstall_setup_miscsetup_flathub
 

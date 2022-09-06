@@ -15,4 +15,7 @@
 ## neomint
 * The middle click on cinnamon bar could be auto with json in this file : ~/.cinnamon/configs/grouped-window-list@cinnamon.org/2.json  
 * Cleaning old kernel in mintupdate could be done automatically with a link (probably won't be done)
-* Update the script so it could work on any de (any distro without flatpak for example, so it can add it)
+* Update the script so it could work on any de, any distro, without flatpak, etc...
+* Change default apps with mime ? (cat ~/.config/mimeapps.list)
+* Default numlock with gsettings
+* More detailed README (displayed at the beginning of the script)

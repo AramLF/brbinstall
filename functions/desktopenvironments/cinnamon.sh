@@ -7,7 +7,8 @@ Cinnamon mod
 ==============================================================================
 "
 #moding it later
-#gsettings list-recursively | grep icon
+#gsettings list-recursively |grep icon
+#gsettings list-schemas |grep touchpad
 }
 
 brbinstall_de_cinnamon_sound(){
@@ -103,5 +104,37 @@ Cinnamon set displayed icons
   gsettings set org.nemo.desktop show-orphaned-desktop-icons true
   gsettings set org.nemo.desktop trash-icon-visible true
 
+
+}
+
+brbinstall_de_cinnamon_set-tap-to-click(){
+echo -ne "
+==============================================================================
+Cinnamon set true tap-to-click
+==============================================================================
+"
+  #gsettings set org.cinnamon.desktop.peripherals.touchpad tap-to-click true
+  gsettings set org.cinnamon.desktop.peripherals.touchpad tap-to-click true
+
+}
+
+brbinstall_de_cinnamon_set-flags-keyboard-layout(){
+echo -ne "
+==============================================================================
+Cinnamon set false to layout flags
+==============================================================================
+"
+  #gsettings set org.cinnamon.desktop.interface keyboard-layout-show-flags false
+  gsettings set org.cinnamon.desktop.interface keyboard-layout-show-flags false
+
+}
+
+brbinstall_de_cinnamon_set-links-in-nemo(){
+echo -ne "
+==============================================================================
+Cinnamon set true to create links in nemo
+==============================================================================
+"
+  gsettings set org.nemo.preferences.menu-config selection-menu-make-link true
 
 }
