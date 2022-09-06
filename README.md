@@ -16,15 +16,15 @@ And execute the install.sh (it is important to be in the current directory of th
 ```
 ### flavors
 - [arch](https://github.com/AramLF/brbinstall/tree/main/flavor/arch) (Only set a few things after an archinstall)
-- [debian](https://github.com/AramLF/brbinstall/tree/main/flavor/debian) (Does some theming and set it with more user friendliness) - Deprecated
+- [debian](https://github.com/AramLF/brbinstall/tree/main/flavor/debian) (Add some user friendliness)
 - [voidlinux](https://github.com/AramLF/brbinstall/tree/main/flavor/voidlinux) (A post install script to set up everything like the services, the DE & more)  
-- [neomint](https://github.com/AramLF/brbinstall/tree/main/flavor/neomint) (Tweaks Linux Mint Cinnamon 20.3 with some theming and set a few things up)  
-- [flavoring](https://github.com/AramLF/brbinstall/tree/main/flavor/flavoring) (Contains a script to install some theming)  
+- [neomint](https://github.com/AramLF/brbinstall/tree/main/flavor/neomint) (Tweaks Linux Mint Cinnamon 21 with some theming and set a few things up)  
+- [flavoring](https://github.com/AramLF/brbinstall/tree/main/flavor/flavoring) (Contains a script to install different themes)  
 
 ### Use Commands Independently
 If you want to use the commands directly you can also do this (you need to be in this directory) :
 ```
-source ./scriptSource.sh
+source scriptSource.sh
 ```
 And then use the commands starting with "brbinstall_" (it will only be available during the current terminal session).
 
