@@ -50,7 +50,7 @@ gsettings set org.cinnamon.theme name $1
 brbinstall_de_cinnamon_set-gtk-theme(){
 echo -ne "
 ==============================================================================
-Cinnamon set wm theme
+Cinnamon set gtk theme
 ==============================================================================
 "
   #gsettings set org.cinnamon.desktop.interface gtk-theme Fluent-round-dark-compact
