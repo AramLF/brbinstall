@@ -40,7 +40,7 @@ Cinnamon set background
 brbinstall_de_cinnamon_set-desktop-theme(){
 echo -ne "
 ==============================================================================
-Cinnamon set gtk theme
+Cinnamon set desktop theme
 ==============================================================================
 "
 #gsettings set org.cinnamon.theme name Fluent-round-dark-compact

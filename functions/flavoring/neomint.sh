@@ -23,7 +23,7 @@ sudo sed -i 's/wifi.powersave = 3/wifi.powersave = 2/g' /etc/NetworkManager/conf
 brbinstall_flavoring_neomint_more-pkgs () {
 echo -ne "
 ==============================================================================
-Linux Mint - Chromium installation
+Linux Mint - more packages
 ==============================================================================
 "
 sudo $auto_pkg_installer chromium
@@ -48,20 +48,21 @@ flatpak install flathub com.usebottles.bottles
 
 # Remove the title bar in firefox (add addblocker for every web browser)
 # Chromium (change search engine, remove title bar, addblocker)
-# Search Engine : Google google.com {google:baseURL}search?q=%s
+# Search Engine : Google google.com {google:baseURL}search?q=%s (remove favs)
 
 # Change the default apps (Documents to OnlyOffice and music Rhythmbox)
-# Add manually xlsx with OnlyOffice (pptx can stay on LibreOffice)
+# Add manually xlsx with OnlyOffice (pptx can stay on LibreOffice (tabs))
 # Change the clock format to : %H:%M %d/%m/%Y
 # Change the middle click on the bar to \"Open a new window\"
 # Add 'us' keyboard layout
-# Add numlock at startup (lightdm)
+# Add numlock at startup (lightdm and press it)
+# Remove notification of connection
 
 # Change the param in mintupdate to remove old kernel automatically
 
 # Add and configure Anydesk in order to help (remove at startup)
 
-# Remove scripts and used folders when finished
+# Tests medias, remove scripts and used folders when finished (bash_history ?)
 "
 
 }

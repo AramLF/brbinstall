@@ -6,7 +6,8 @@ Change some theming
 Cinnamon, flatpak and flathub and (not tottaly required) being based on Debian/Ubuntu/LinuxMint
 
 ### Technical Requirements
-gnome-terminal with 'flue' profile
+gnome-terminal with 'flue' profile  
+Set the mirrors beforehand (and all welcome's setup)
 
 ### Remaining Installation
 Will be displayed at the end of the script
