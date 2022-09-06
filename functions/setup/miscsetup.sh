@@ -48,6 +48,21 @@ sh <(curl -L https://nixos.org/nix/install) --no-daemon
 #nix-env -iA nixpkgs.geany
 #echo 'export XDG_DATA_DIRS=$HOME/.nix-profile/share:$HOME/.share:$XDG_DATA_DIRS' >> /etc/profile.d/nix.sh
 #nix search gcompris #doesnt work
+#. /home/user/.nix-profile/etc/profile.d/nix.sh
+}
+
+brbinstall_setup_miscsetup_nix-wrapper-opengl () {
+echo -ne "
+==============================================================================
+Add wrapper for nix opengl
+==============================================================================
+"
+#https://github.com/guibou/nixGL
+nix-channel --add https://github.com/guibou/nixGL/archive/main.tar.gz nixgl && nix-channel --update
+nix-env -iA nixgl.auto.nixGLDefault   # or replace `nixGLDefault` with your desired wrapper
+echo -ne "
+example : nixGL kitty
+"
 }
 
 brbinstall_setup_miscsetup_path () {
