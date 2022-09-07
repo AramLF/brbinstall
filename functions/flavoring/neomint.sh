@@ -126,6 +126,8 @@ Linux Mint Neomint flavor
 
   brbinstall_setup_miscsetup_flatpak-installation
 
+  brbinstall_de_cinnamon_set-icon-view-nemo
+
   brbinstall_de_cinnamon_set-links-in-nemo
 
   brbinstall_setup_miscsetup_flathub

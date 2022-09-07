@@ -138,3 +138,14 @@ Cinnamon set true to create links in nemo
   gsettings set org.nemo.preferences.menu-config selection-menu-make-link true
 
 }
+
+brbinstall_de_cinnamon_set-icon-view-nemo(){
+echo -ne "
+==============================================================================
+Cinnamon set small size in nemo
+==============================================================================
+"
+  #gsettings set org.nemo.icon-view default-zoom-level "standard"
+  gsettings set org.nemo.icon-view default-zoom-level "small"
+
+}
