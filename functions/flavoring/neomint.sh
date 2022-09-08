@@ -47,7 +47,7 @@ flatpak install flathub fyi.zoey.TeX-Match
 # Alternate theming with yaru :
 cd $initialPath/
 source scriptSource.sh
-brbinstall_flavoring_neomint_alternate
+brbinstall_flavoring_neomint_alternate-theming
 
 # Desktop icons : RootFolder HomeFolder Trash
 # Bar icons : Params Softwares Firefox Folder OnlyOffice
