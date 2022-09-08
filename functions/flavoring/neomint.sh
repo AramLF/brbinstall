@@ -42,6 +42,7 @@ echo -ne "
 flatpak install flathub org.onlyoffice.desktopeditors
 flatpak install flathub com.github.tchx84.Flatseal
 flatpak install flathub com.usebottles.bottles
+flatpak install flathub fyi.zoey.TeX-Match
 
 # Desktop icons : RootFolder HomeFolder Trash
 # Bar icons : Params Softwares Firefox Folder OnlyOffice
@@ -92,6 +93,32 @@ sudo cp -v $initialPath/dotfiles/icons/mintinstall_using_software-store_from_pap
 
 }
 
+brbinstall_flavoring_neomint_alternate-theming () {
+echo -ne "
+==============================================================================
+Alternate theming for neomint with yaru
+==============================================================================
+"
+  #Neomint flavor shoud be executed beforehand
+
+  brbinstall_theming_aio_yaru-whole-installation
+
+  brbinstall_flavoring_neomint_mintinstall-icon
+
+  brbinstall_theming_gtk_themes-system-to-user
+
+  brbinstall_de_cinnamon_set-desktop-theme "Yaru-dark"
+
+  brbinstall_de_cinnamon_set-gtk-theme "Yaru-dark"
+
+  #brbinstall_de_cinnamon_set-wm-theme 
+
+  brbinstall_de_cinnamon_set-icon-theme "Yaru-dark"
+
+  brbinstall_de_cinnamon_set-background "file:////usr/share/backgrounds/walls/pexels-krivec-ales-552789-1920x1080-jpg.jpg"
+
+}
+
 brbinstall_flavoring_neomint_neomint () {
 echo -ne "
 ==============================================================================
@@ -132,8 +159,6 @@ Linux Mint Neomint flavor
   echo yes |brbinstall_theming_gterminal_set-flue
 
   brbinstall_de_cinnamon_set-monospace-font "Ubuntu Mono 12"
-
-  brbinstall_flavoring_neomint_mintinstall-icon
 
   brbinstall_de_cinnamon_set-tap-to-click
 
