@@ -19,6 +19,7 @@ echo -ne "
 Put every system themes in the user themes folder
 ==============================================================================
 "
+mkdir -p /home/$USER/.themes
 cp -r /usr/share/themes/* /home/$USER/.themes/
 ls /home/$USER/.themes/
 }
