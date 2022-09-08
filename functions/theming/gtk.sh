@@ -6,11 +6,21 @@ echo -ne "
 Unlock libadwaita
 ==============================================================================
 "
-#should be improved 
+#should be improved
 #can't work on python below 3.10 (it could work by changing "case" by "if")
 git clone https://github.com/odziom91/libadwaita-theme-changer $initialCacheFolder/libadwaita-theme-changer
 cd $initialCacheFolder/libadwaita-theme-changer/
 ./install.sh
+}
+
+brbinstall_theming_gtk_themes-system-to-user () {
+echo -ne "
+==============================================================================
+Put every system themes in the user themes folder
+==============================================================================
+"
+cp -r /usr/share/themes/* /home/$USER/.themes/
+ls /home/$USER/.themes/
 }
 
 

@@ -114,7 +114,8 @@ Linux Mint Neomint flavor
 
   brbinstall_flavoring_flue_script
 
-  brbinstall_theming_gtk_fluent "--tweaks round --dest $HOME/.themes"
+  #Not used anymore since all themes are copied now in it
+  #brbinstall_theming_gtk_fluent "--tweaks round --dest $HOME/.themes"
 
   brbinstall_de_cinnamon_set-desktop-theme "Fluent-round-Dark-compact"
 
@@ -145,6 +146,8 @@ Linux Mint Neomint flavor
   brbinstall_de_cinnamon_set-links-in-nemo
 
   brbinstall_setup_miscsetup_flathub
+
+  brbinstall_theming_gtk_themes-system-to-user
 
   brbinstall_setup_miscsetup_flatpak-override
 
