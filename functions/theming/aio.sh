@@ -1,21 +1,21 @@
 #!/bin/bash
 
 brbinstall_theming_aio_yaru-clone () {
-  echo -ne "
-  ==============================================================================
-  Ubuntu Yaru cloning
-  ==============================================================================
-  "
+echo -ne "
+==============================================================================
+Ubuntu Yaru cloning
+==============================================================================
+"
   git clone https://github.com/ubuntu/yaru $initialCacheFolder/yaru
   cd $initialCacheFolder/yaru/
 }
 
 brbinstall_theming_aio_yaru-install () {
-  echo -ne "
-  ==============================================================================
-  Ubuntu Yaru complete installation
-  ==============================================================================
-  "
+echo -ne "
+==============================================================================
+Ubuntu Yaru complete installation
+==============================================================================
+"
   #need to add themes in the user folder too
   brbinstall_theming_dependencies_global
   brbinstall_theming_dependencies_compiling
