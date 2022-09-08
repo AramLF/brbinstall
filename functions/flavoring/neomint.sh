@@ -80,6 +80,18 @@ read -r -p "[Enter] to continue or [Ctrl+C] to stop here : " idkidk
 
 }
 
+brbinstall_flavoring_neomint_mintinstall-icon () {
+echo -ne "
+==============================================================================
+Changing mintinstall icon
+==============================================================================
+"
+cd /usr/share/icons/hicolor/scalable/apps/
+sudo mv -v mintinstall.svg mintinstall-old.svg
+sudo cp -v $initialPath/dotfiles/icons/mintinstall_using_software-store_from_papirus.svg mintinstall.svg
+
+}
+
 brbinstall_flavoring_neomint_neomint () {
 echo -ne "
 ==============================================================================
@@ -119,6 +131,8 @@ Linux Mint Neomint flavor
   echo yes |brbinstall_theming_gterminal_set-flue
 
   brbinstall_de_cinnamon_set-monospace-font "Ubuntu Mono 12"
+
+  brbinstall_flavoring_neomint_mintinstall-icon
 
   brbinstall_de_cinnamon_set-tap-to-click
 

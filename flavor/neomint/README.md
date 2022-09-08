@@ -7,7 +7,7 @@ Cinnamon, flatpak and flathub and (not tottaly required) being based on Debian/U
 
 ### Technical Requirements
 gnome-terminal with 'flue' profile  
-Set the mirrors beforehand (and all welcome's setup)
+Set the mirrors beforehand, all welcome's setups and first basic setups
 
 ### Remaining Installation
 Will be displayed at the end of the script
