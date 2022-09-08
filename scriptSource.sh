@@ -3,6 +3,7 @@
 source ./functions/templates/tp1.sh
 source ./functions/templates/tpRandom.sh
 
+source ./functions/theming/aio.sh
 source ./functions/theming/dependencies.sh
 source ./functions/theming/gtk.sh
 source ./functions/theming/kde.sh
