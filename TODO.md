@@ -20,5 +20,6 @@
 * Default numlock with gsettings
 * More detailed README (displayed at the beginning of the script)
 
-## brbinstall
+## theming
 * Update aio and yaru (delete old files, use only icons or cinnamon-shell, etc...)
+* Update of flavoring to be in theming instead

@@ -22,9 +22,11 @@ sudo rm -rf build/
 git restore .
 git pull
 cp -v $initialPath/dotfiles/custom/meson-custom-yaru.build meson.build
-meson "build" --prefix=/usr > $initialCacheFolder/aio-yaru-1.txt
-sudo ninja -C "build" install > $initialCacheFolder/aio-yaru-2.txt
 echo -ne "
+Installing...
 Logs can be found in $initialCacheFolder/aio-yaru-*.txt
 "
+meson "build" --prefix=/usr > $initialCacheFolder/aio-yaru-1.txt
+sudo ninja -C "build" install > $initialCacheFolder/aio-yaru-2.txt
+
 }
