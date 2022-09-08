@@ -1,6 +1,6 @@
 # brbinstall Neomint
 Add some packages  
-Change some theming
+Change some theming (alternate theming available with yaru)
 
 ### Basic Requirements
 Cinnamon, flatpak and flathub and (not tottaly required) being based on Debian/Ubuntu/LinuxMint

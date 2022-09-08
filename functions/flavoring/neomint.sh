@@ -44,6 +44,11 @@ flatpak install flathub com.github.tchx84.Flatseal
 flatpak install flathub com.usebottles.bottles
 flatpak install flathub fyi.zoey.TeX-Match
 
+# Alternate theming with yaru :
+cd $initialPath/
+source scriptSource.sh
+brbinstall_flavoring_neomint_alternate
+
 # Desktop icons : RootFolder HomeFolder Trash
 # Bar icons : Params Softwares Firefox Folder OnlyOffice
 
@@ -111,7 +116,7 @@ Alternate theming for neomint with yaru
 
   brbinstall_de_cinnamon_set-gtk-theme "Yaru-dark"
 
-  #brbinstall_de_cinnamon_set-wm-theme 
+  #brbinstall_de_cinnamon_set-wm-theme
 
   brbinstall_de_cinnamon_set-icon-theme "Yaru-dark"
 
