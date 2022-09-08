@@ -16,5 +16,6 @@ echo -ne "
 Dependencies compiling for theming
 ==============================================================================
 "
+#libglib2.0-dev
 sudo $auto_pkg_installer meson
 }
