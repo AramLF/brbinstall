@@ -19,3 +19,6 @@
 * Change default apps with mime ? (cat ~/.config/mimeapps.list)
 * Default numlock with gsettings
 * More detailed README (displayed at the beginning of the script)
+
+## brbinstall
+* Update aio and yaru (delete old files, use only icons or cinnamon-shell, etc...)
