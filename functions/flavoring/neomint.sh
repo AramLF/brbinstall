@@ -39,10 +39,11 @@ Remaining things to change and/or add
 #
 echo -ne "
 # Download more apps, onlyoffice flatseal (crhomium, boop ?) :
-flatpak install flathub org.onlyoffice.desktopeditors
-flatpak install flathub com.github.tchx84.Flatseal
-flatpak install flathub com.usebottles.bottles
-flatpak install flathub fyi.zoey.TeX-Match
+flatpak install -y flathub org.onlyoffice.desktopeditors
+flatpak install -y flathub com.github.tchx84.Flatseal
+flatpak install -y flathub com.rafaelmardojai.Blanket
+flatpak install -y flathub com.usebottles.bottles
+flatpak install -y flathub fyi.zoey.TeX-Match
 
 # Alternate theming with yaru :
 cd $initialPath/
