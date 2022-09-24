@@ -151,6 +151,24 @@ sudo cp -r /opt/Discord/discord.desktop /usr/share/applications
 
 }
 
+brbinstall_setup_miscsetup_check-wifi-card () {
+echo -ne "
+==============================================================================
+check the wifi card
+==============================================================================
+"
+#check for example https://doc.ubuntu-fr.org/wifi_broadcom_bcm43xx
+#ifconfig
+#lspci -nn |grep Network
+#sudo dpkg -i broadcom-sta-dkms*
+#sudo modprobe wl
+echo -ne "
+ifconfig
+lspci -nn |grep Network
+"
+
+}
+
 brbinstall_setup_miscsetup_libadwaita-script () {
 echo -ne "
 ==============================================================================
