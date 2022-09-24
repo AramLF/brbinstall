@@ -50,6 +50,8 @@ cd $initialPath/
 source scriptSource.sh
 brbinstall_flavoring_neomint_alternate-theming
 
+# And check brbinstall_flavoring_neomint_introduce-it
+
 # Desktop icons : RootFolder HomeFolder Trash
 # Bar icons : Params Softwares Firefox Folder OnlyOffice
 
@@ -72,6 +74,21 @@ brbinstall_flavoring_neomint_alternate-theming
 # Tests medias, remove scripts and used folders when finished (bash_history ?)
 "
 
+}
+
+brbinstall_flavoring_neomint_introduce-it () {
+echo -ne "
+==============================================================================
+Introduce neomint
+==============================================================================
+"
+echo -ne "
+# Show boot with grub (show disk usage)
+# Show parameters, mintinstall, firefox and chromium (with the addblocker)
+# Show onlyoffice
+# Show mintupdate
+# Show similarities to windows (wallpapers?)
+"
 }
 
 brbinstall_flavoring_neomint_required-start () {
