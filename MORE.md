@@ -22,4 +22,4 @@
 <code style="color:#2C2C2C">#2C2C2C █</code>  
 <code style="color:#EEEEEC">#EEEEEC █</code>  
 
-<p style="color:green">idkidk</p>
+<span style="color: green"> idk idk </span>
