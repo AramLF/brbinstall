@@ -46,3 +46,6 @@ brbinstall/
 
 ## Potential improvements
 - Check [TODO.md](https://github.com/AramLF/brbinstall/blob/main/TODO.md)
+
+## See some colors
+- Check [MORE.md](https://github.com/AramLF/brbinstall/blob/main/MORE.md)
