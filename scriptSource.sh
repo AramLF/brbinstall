@@ -42,6 +42,7 @@ source ./functions/distributions/rpm-based/openSuseBased.sh
 source ./functions/distributions/void-linux/voidLinux.sh
 source ./functions/distributions/packages.sh
 
+source ./functions/setup/commands.sh
 source ./functions/setup/kitty.sh
 source ./functions/setup/maintenance.sh
 source ./functions/setup/miscsetup.sh

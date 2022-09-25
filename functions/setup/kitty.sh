@@ -6,6 +6,7 @@ echo -ne "
 Kitty
 ==============================================================================
 "
+#https://sw.kovidgoyal.net/kitty/binary/
 sudo $auto_pkg_installer kitty
 }
 
