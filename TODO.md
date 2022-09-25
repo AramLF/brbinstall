@@ -38,7 +38,11 @@
 * Update it (finish auto-pacman setup)
 
 ## Debian
-* Update the scripts and add testing/sid scripts, do a sort of neomint ?, check spirallinux
+* Update the scripts and add a testing/sid switch script
+* bedge (neomint for debian) using testing/bookworm + nala (a compromise between stable and testing)
+  * check spirallinux
+* Debian with wayland ? (plasma-workspace-wayland)
+* Debian with i3-gaps (already setup with synaptic, etc...)
 
 ## Misc
 * redact a validation test for distributions
