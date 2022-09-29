@@ -83,11 +83,12 @@ Introduce neomint
 ==============================================================================
 "
 echo -ne "
-# Show boot with grub (show disk usage)
+# Show boot with grub (show disk usage), and give the password
 # Show parameters, mintinstall, firefox and chromium (with the addblocker)
 # Show onlyoffice
 # Show mintupdate
 # Show similarities to windows (wallpapers?)
+# Talk about the maintenance
 "
 }
 
