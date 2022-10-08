@@ -7,6 +7,7 @@
   * huge improvement over some awfully made functions
     * functions adding pkgs (add a new function checking if the package is already there)
 * add comments & maybe better naming
+* *Add depth to git clone*
 
 ## README
 * A better README with imgs (to show flavor for example)
@@ -24,7 +25,7 @@
 * Full yaru theming with a flavor ? (plasma too ?)
 * Update of flavoring to be in theming instead
 * Add cursor theming ? (captain ?)
-* Add font theming ? (ubuntu, spline, font-awesome, nerd-fonts, hack, Source code pro, etc...)
+* Add fonts : ubuntu, spline, font-awesome, nerd-fonts, hack, Source code pro, etc...
 * redo gterminal.sh
 * synchronize themes again (color-schemes and all, update flavors, etc...)
 * superhot theme on i3? terminal(cool retro term) & all + opensuse theme opensus amogos + i3-gaps similar to one dwm theme
