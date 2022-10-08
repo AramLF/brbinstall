@@ -75,6 +75,8 @@ wget https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip
 unzip 0cef8205-ubuntu-font-family-0.83.zip -d ubuntu-font-family
 cd ubuntu-font-family/ubuntu-font-family-0.83/
 
+chmod 755 *.ttf *.TTF *.otf *.OTF
+
 sudo cp -vr *.ttf *.TTF /usr/share/fonts/truetype/
 sudo cp -vr *.otf *.OTF /usr/share/fonts/opentype/
 
