@@ -219,3 +219,16 @@ Getting cava
 sudo $auto_pkg_installer cava
 
 }
+
+brbinstall_setup_miscsetup_bottom-deb () {
+echo -ne "
+==============================================================================
+Getting bottom
+==============================================================================
+"
+#only deb for now
+cd $initialCacheFolder/
+curl -LO https://github.com/ClementTsang/bottom/releases/download/0.6.8/bottom_0.6.8_amd64.deb
+sudo dpkg -i bottom_0.6.8_amd64.deb
+
+}
