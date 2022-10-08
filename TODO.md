@@ -24,7 +24,7 @@
 * Full yaru theming with a flavor ? (plasma too ?)
 * Update of flavoring to be in theming instead
 * Add cursor theming ? (captain ?)
-* Add font theming ? (ubuntu, spline, font-awesome, nerd-fonts, hack, fira, Source code pro, etc...) [help](https://www.linux.com/topic/desktop/how-manage-fonts-linux/)
+* Add font theming ? (ubuntu, spline, font-awesome, nerd-fonts, hack, Source code pro, etc...)
 * redo gterminal.sh
 * synchronize themes again (color-schemes and all, update flavors, etc...)
 * superhot theme on i3? terminal(cool retro term) & all + opensuse theme opensus amogos + i3-gaps similar to one dwm theme
