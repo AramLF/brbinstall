@@ -72,7 +72,7 @@ sudo mkdir -p /usr/share/fonts/opentype/
 cd $initialCacheFolder/
 
 wget https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip
-unzip -d 0cef8205-ubuntu-font-family-0.83.zip ubuntu-font-family
+unzip 0cef8205-ubuntu-font-family-0.83.zip -d ubuntu-font-family
 cd ubuntu-font-family/ubuntu-font-family-0.83/
 
 sudo cp -vr *.ttf *.TTF /usr/share/fonts/truetype/
