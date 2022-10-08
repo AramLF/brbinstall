@@ -81,3 +81,19 @@ sudo cp -vr *.ttf *.TTF /usr/share/fonts/truetype/
 sudo cp -vr *.otf *.OTF /usr/share/fonts/opentype/
 
 }
+
+brbinstall_theming_fonts_font-awesome-all (){
+echo -ne "
+==============================================================================
+Font-Awesome fonts installation
+==============================================================================
+"
+sudo mkdir -p /usr/share/fonts/truetype/
+sudo mkdir -p /usr/share/fonts/opentype/
+
+git clone --depth=1 https://github.com/FortAwesome/Font-Awesome $initialCacheFolder/Font-Awesome
+
+cd $initialCacheFolder/Font-Awesome/otfs/
+sudo cp -vr *.otf *.OTF /usr/share/fonts/opentype/
+
+}
