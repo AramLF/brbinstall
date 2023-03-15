@@ -45,20 +45,20 @@ Spline Sans & Mono fonts installation
 sudo mkdir -p /usr/share/fonts/truetype/
 sudo mkdir -p /usr/share/fonts/opentype/
 
-git clone --depth=1 https://github.com/SorkinType/SplineSans $initialCacheFolder/SpineSans
+git clone --depth=1 https://github.com/SorkinType/SplineSans $initialCacheFolder/SplineSans
 
-cd $initialCacheFolder/SpineSans/fonts/ttf/
+cd $initialCacheFolder/SplineSans/fonts/ttf/
 sudo cp -vr *.ttf *.TTF /usr/share/fonts/truetype/
 
-cd $initialCacheFolder/SpineSans/fonts/otf/
+cd $initialCacheFolder/SplineSans/fonts/otf/
 sudo cp -vr *.otf *.OTF /usr/share/fonts/opentype/
 
-git clone --depth=1 https://github.com/SorkinType/SplineSansMono $initialCacheFolder/SpineSansMono
+git clone --depth=1 https://github.com/SorkinType/SplineSansMono $initialCacheFolder/SplineSansMono
 
-cd $initialCacheFolder/SpineSansMono/fonts/ttf/
+cd $initialCacheFolder/SplineSansMono/fonts/ttf/
 sudo cp -vr *.ttf *.TTF /usr/share/fonts/truetype/
 
-cd $initialCacheFolder/SpineSansMono/fonts/otf/
+cd $initialCacheFolder/SplineSansMono/fonts/otf/
 sudo cp -vr *.otf *.OTF /usr/share/fonts/opentype/
 }
 
@@ -98,4 +98,22 @@ git clone --depth=1 https://github.com/FortAwesome/Font-Awesome $initialCacheFol
 cd $initialCacheFolder/Font-Awesome/otfs/
 sudo cp -vr *.otf *.OTF /usr/share/fonts/opentype/
 
+}
+
+brbinstall_theming_fonts_work-sans-all (){
+echo -ne "
+==============================================================================
+Work-Sans fonts installation
+==============================================================================
+"
+sudo mkdir -p /usr/share/fonts/truetype/
+sudo mkdir -p /usr/share/fonts/opentype/
+
+git clone --depth=1 https://github.com/weiweihuanghuang/Work-Sans $initialCacheFolder/Work-Sans
+
+cd $initialCacheFolder/Work-Sans/fonts/ttf/
+sudo cp -vr *.ttf *.TTF /usr/share/fonts/truetype/
+
+cd $initialCacheFolder/Work-Sans/fonts/otf/
+sudo cp -vr *.otf *.OTF /usr/share/fonts/opentype/
 }
