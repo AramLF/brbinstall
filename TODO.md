@@ -44,6 +44,7 @@
   * check spirallinux
 * Debian with wayland ? (plasma-workspace-wayland)
 * Debian with i3-gaps (already setup with synaptic, etc...)
+* creating a debian flavor server that can transform to workstation
 
 ## Misc
 * redact a validation test for distributions
