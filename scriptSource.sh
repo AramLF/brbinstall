@@ -32,6 +32,7 @@ source ./functions/flavoring/grey.sh
 source ./functions/flavoring/catp.sh
 source ./functions/flavoring/spice.sh
 source ./functions/flavoring/r3.sh
+source ./functions/flavoring/neobian.sh
 source ./functions/flavoring/neomint.sh
 
 source ./functions/distributions/arch-based/archBased.sh
