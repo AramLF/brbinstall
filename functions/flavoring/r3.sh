@@ -171,7 +171,7 @@ r3 rofi
 #bindsym $mod+x exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
 echo -ne "
 #rofi
-bindsym \$mod+x exec rofi -show run
+bindsym \$mod+x exec rofi -show drun
 " >> ~/.config/i3/config
 
 }
