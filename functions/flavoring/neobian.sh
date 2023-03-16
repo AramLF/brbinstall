@@ -56,6 +56,11 @@ sudo systemctl enable cockpit
 
 #/etc/sddm.conf
 
+
+brbinstall_theming_gtk_adw-gtk3
+
+
+
 }
 
 brbinstall_flavoring_neobian_neobian () {

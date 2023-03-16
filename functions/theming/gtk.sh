@@ -40,6 +40,7 @@ wget https://github.com/lassekongo83/adw-gtk3/releases/download/v4.3/adw-gtk3v4-
 
 sudo tar -xvf adw-gtk3v4-3.tar.xz -C /usr/share/themes/
 
+sudo cp -vr $initialPath/dotfiles/xfce/xfw4 /usr/share/themes/adw-gtk3-dark/
 
 }
 
