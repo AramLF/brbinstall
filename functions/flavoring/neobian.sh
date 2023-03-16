@@ -63,6 +63,7 @@ brbinstall_theming_gtk_adw-gtk3
 
 #all the flatpaks
 
+#check startjobs from systemd https://github.com/Antynea/grub-btrfs
 
 
 }
