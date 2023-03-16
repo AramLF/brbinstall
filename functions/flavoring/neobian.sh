@@ -48,7 +48,7 @@ sudo $auto_pkg_installer firefox pavucontrol ?
 sudo $auto_pkg_installer cockpit
 sudo systemctl enable cockpit
 
-
+#!!! need to add the xfw4 light one
 
 
 #other
