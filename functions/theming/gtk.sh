@@ -42,7 +42,7 @@ sudo tar -xvf adw-gtk3v4-3.tar.xz -C /usr/share/themes/
 
 #mkdir -p /usr/share/themes/adwaitacross-dark/
 
-sudo cp -vr $initialPath/dotfiles/xfce/adwaitacross-dark/xfw4 /usr/share/themes/adw-gtk3-dark/
+sudo cp -vr $initialPath/dotfiles/xfce/adwaitacross-dark/xfwm4 /usr/share/themes/adw-gtk3-dark/
 
 }
 
