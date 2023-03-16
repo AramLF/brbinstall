@@ -24,6 +24,25 @@ cp -r /usr/share/themes/* /home/$USER/.themes/
 ls /home/$USER/.themes/
 }
 
+brbinstall_theming_gtk_adw-gtk3 () {
+echo -ne "
+==============================================================================
+adw-gtk3 installation
+==============================================================================
+"
+
+#git clone --depth=1 https://github.com/lassekongo83/adw-gtk3 $initialCacheFolder/adw-gtk3
+#cd $initialCacheFolder/adw-gtk3/
+
+cd $initialCacheFolder/
+
+wget https://github.com/lassekongo83/adw-gtk3/releases/download/v4.3/adw-gtk3v4-3.tar.xz
+
+sudo tar -xvf adw-gtk3v4-3.tar.xz -C /usr/share/themes/
+
+
+}
+
 
 brbinstall_theming_gtk_qogir () {
 echo -ne "

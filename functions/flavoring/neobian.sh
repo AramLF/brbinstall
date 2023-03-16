@@ -30,6 +30,7 @@ sudo $auto_pkg_installer xfce4?
 
 
 #xfce4
+#xfce4-goodies(term and nm tray and everything in it ?)<--(maybe avoid it ?) xfce4-whiskermenu-plugin
 sudo $auto_pkg_installer mousepad
 sudo $auto_pkg_installer nm-applet nm-tray
 sudo $auto_pkg_installer lightdm-gtk-greeter-settings
@@ -48,8 +49,12 @@ sudo $auto_pkg_installer cockpit
 sudo systemctl enable cockpit
 
 
+
+
 #other
 #wallpaper, icons, menuIcon(whiskermenu), systray icons, change time display, original font
+
+#/etc/sddm.conf
 
 }
 
