@@ -45,9 +45,10 @@ sudo $auto_pkg_installer firefox pavucontrol ?
 
 
 #server
-sudo $auto_pkg_installer cockpit
+sudo $auto_pkg_installer cockpit openssh-server
 sudo systemctl enable cockpit
-
+sudo systemctl status ssh
+#ssh wvm@192.168.0.37
 #!!! need to add the xfw4 light one
 
 
@@ -58,6 +59,9 @@ sudo systemctl enable cockpit
 
 
 brbinstall_theming_gtk_adw-gtk3
+
+
+#all the flatpaks
 
 
 

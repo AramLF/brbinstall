@@ -16,6 +16,8 @@ brbinstall_theming_fonts_spline-sans-all
 brbinstall_theming_fonts_ubuntu-all
 
 brbinstall_theming_fonts_font-awesome-all
+
+brbinstall_theming_fonts_work-sans-all
 }
 
 brbinstall_theming_fonts_fira-mozilla-all (){

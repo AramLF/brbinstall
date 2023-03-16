@@ -32,3 +32,18 @@ cd ~/.config/picom/
 sed -i "s/.*vsync = false.*/vsync = false;/g" picom.conf
 sed -i "s/.*vsync = true.*/# vsync = true/g" picom.conf
 }
+
+brbinstall_setup_picom_setting-up() {
+echo -ne "
+==============================================================================
+Picom setting-up
+==============================================================================
+"
+
+brbinstall_setup_picom_start
+
+brbinstall_setup_picom_personal-conf
+
+brbinstall_setup_picom_vsync-false
+
+}

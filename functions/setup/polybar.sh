@@ -88,3 +88,22 @@ sed -i "s/.*foreground-alt = #.*/foreground-alt = #${16}/g" config.ini
 
 
 }
+
+
+brbinstall_setup_polybar_setting-up() {
+echo -ne "
+==============================================================================
+Polybar setting-up
+==============================================================================
+"
+brbinstall_setup_polybar_installation
+
+brbinstall_setup_polybar_create-original-conf
+
+brbinstall_setup_polybar_modified-original-conf
+
+echo -ne "
+The theme you want :
+brbinstall_theming_polybar_set-*
+"
+}

@@ -111,3 +111,25 @@ sed -i "s/.*# background_opacity 1.0.*/background_opacity $1/g" kitty.conf
 
 
 }
+
+brbinstall_setup_kitty_setting-up() {
+echo -ne "
+==============================================================================
+Kitty setting-up
+==============================================================================
+"
+
+brbinstall_setup_kitty_start #might need a more recent one depending on what distro
+
+brbinstall_setup_kitty_personal-conf
+
+brbinstall_setup_kitty_px
+
+brbinstall_setup_kitty_background-opacity 0.75
+
+echo -ne "
+The theme you want
+brbinstall_theming_kitty_set-*
+"
+
+}

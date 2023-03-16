@@ -10,6 +10,16 @@ ls -l
 
 }
 
+brbinstall_flavoring_r3_other-programs () {
+echo -ne "
+==============================================================================
+r3 utilities
+==============================================================================
+"
+sudo $auto_pkg_installer pavucontrol lxappearance
+
+}
+
 brbinstall_flavoring_r3_pad () {
 echo -ne "
 ==============================================================================
@@ -142,6 +152,16 @@ sed -i "s/bar {
 
 }
 
+brbinstall_flavoring_r3_replace-term () {
+echo -ne "
+==============================================================================
+r3 replace the terminal
+==============================================================================
+"
+sed -i "s/i3-sensible-terminal/$1/g" ~/.config/i3/config
+
+}
+
 brbinstall_flavoring_r3_rofi () {
 echo -ne "
 ==============================================================================
@@ -183,4 +203,62 @@ echo -ne "
 exec \"setxkbmap -option 'grp:alt_shift_toggle' -layout fr,us\"
 " >> ~/.config/i3/config
 
+}
+
+brbinstall_flavoring_r3_setting-up () {
+echo -ne "
+==============================================================================
+r3 setting-up everything ?
+==============================================================================
+"
+#install i3-gaps and this flavor is far from being finished
+
+brbinstall_flavoring_r3_other-programs
+
+brbinstall_flavoring_r3_gaps
+
+brbinstall_flavoring_r3_pad
+
+brbinstall_flavoring_r3_keyboard-layout
+
+brbinstall_setup_kitty_setting-up
+
+brbinstall_flavoring_r3_replace-term "kitty"
+
+brbinstall_setup_polybar_setting-up
+
+brbinstall_flavoring_r3_polybar
+
+brbinstall_setup_picom_setting-up
+
+brbinstall_flavoring_r3_picomed
+
+brbinstall_setup_rofi_start
+
+brbinstall_flavoring_r3_rofi
+
+brbinstall_theming_fonts_all
+
+brbinstall_theming_wallpaper_all
+
+echo -ne "
+#Remaining :
+
+#The kitty theme :
+brbinstall_theming_kitty_set-*
+#The kitty font in ~/.config/kitty/
+#Fira Mono Medium
+
+#The polybar theme :
+brbinstall_theming_polybar_set-*
+#The polybar font in ~/.config/polybar/
+#Fira Mono Medium
+
+#Do not forget to remove i3bar
+
+#The wallpaper with this command :
+brbinstall_flavoring_r3_feh-wall \"/usr/share/backgrounds/walls/\"
+
+#Might restart or use Super+Alt+r
+"
 }
