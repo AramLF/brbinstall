@@ -178,7 +178,7 @@ Linux Mint Neomint flavor
 
   brbinstall_theming_wallpaper_rands-walls-spe
 
-  brbinstall_de_cinnamon_set-background "file:////usr/share/backgrounds/walls/aholmes_moraine_lake-lmuna.jpg"
+  brbinstall_de_cinnamon_set-background "file:////usr/share/backgrounds/walls/andy-holmes-4xn0ycUZyYo-unsplash.jpg"
 
   echo yes |brbinstall_theming_gterminal_set-flue
 

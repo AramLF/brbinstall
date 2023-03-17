@@ -32,7 +32,7 @@ echo -ne "
 Cinnamon set background
 ==============================================================================
 "
-  #gsettings set org.cinnamon.desktop.background picture-uri "file:////usr/share/backgrounds/linuxmint-una/aholmes_moraine_lake.jpg"
+  #gsettings set org.cinnamon.desktop.background picture-uri "file:////usr/share/backgrounds/linuxmint-una/example.jpg"
   gsettings set org.cinnamon.desktop.background picture-uri $1
 
 }

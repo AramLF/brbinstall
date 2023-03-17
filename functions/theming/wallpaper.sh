@@ -38,7 +38,7 @@ git clone https://github.com/AramLF/rands $initialCacheFolder/rands
 
 sudo mkdir -p /usr/share/backgrounds/walls/
 
-sudo cp -vr $initialCacheFolder/rands/walls/aholmes_moraine_lake-lmuna.jpg /usr/share/backgrounds/walls/aholmes_moraine_lake-lmuna.jpg
+sudo cp -vr $initialCacheFolder/rands/walls/andy-holmes-4xn0ycUZyYo-unsplash.jpg /usr/share/backgrounds/walls/andy-holmes-4xn0ycUZyYo-unsplash.jpg
 sudo cp -vr $initialCacheFolder/rands/walls/pexels-krivec-ales-552789-1920x1080-jpg.jpg /usr/share/backgrounds/walls/pexels-krivec-ales-552789-1920x1080-jpg.jpg
 }
 
