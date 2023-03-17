@@ -38,3 +38,15 @@ for i in /dev /dev/pts /proc /sys /run; do sudo mount -vB $i /mnt$i; done
 sudo chroot /mnt
 sudo umount -Rv /mnt
 }
+
+brbinstall_setup_maintenance_grub-echo-os-prober () {
+echo -ne "
+==============================================================================
+Echo the os-prober var
+==============================================================================
+"
+echo -ne "
+#GRUB_DISABLE_OS_PROBER=false
+#in /etc/default/grub
+"
+}

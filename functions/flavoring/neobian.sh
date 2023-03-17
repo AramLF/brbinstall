@@ -23,7 +23,7 @@ sudo $auto_pkg_installer lightdm
 
 sudo systemctl enable lightdm
 
-#sudo systemctl set-default graphical.target
+sudo systemctl set-default graphical.target
 
 sudo $auto_pkg_installer xfce4?
 
@@ -57,13 +57,37 @@ sudo systemctl status ssh
 
 #/etc/sddm.conf
 
+#add a new plymouth?
+#https://askubuntu.com/questions/2007/how-do-i-change-the-plymouth-bootscreen
+#https://wiki.ubuntu.com/Plymouth
+#https://wiki.debian.org/fr/plymouth
+
+#sudo plymouthd ; sudo plymouth --show-splash ; sleep 5 ; sudo plymouth --quit
+
+
+#ubuntu
+#sudo update-alternatives --config default.plymouth
+#debian
+#sudo plymouth-set-default-theme -l
+#sudo plymouth-set-default-theme -R THEME
+sudo update-initramfs -u
+
+
+#i3
+#https://github.com/maestrogerardo/i3-gaps-deb
+#https://askubuntu.com/questions/18654/how-to-prevent-updating-of-a-specific-package
+
 
 brbinstall_theming_gtk_adw-gtk3
 
 
 #all the flatpaks
 
-#check startjobs from systemd https://github.com/Antynea/grub-btrfs
+#check startjobs from systemd
+
+
+#https://github.com/Antynea/grub-btrfs
+#check os-prober
 
 
 }
