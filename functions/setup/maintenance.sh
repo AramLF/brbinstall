@@ -17,6 +17,9 @@ sudo grub-install /dev/sda
 sudo update-grub
 #or update-grub do the grub-mkconfig
 grub-mkconfig -o /boot/grub/grub.cfg
+#example with grub2
+sudo grub2-install /dev/sda
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 "
 }
 
