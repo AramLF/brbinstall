@@ -64,6 +64,7 @@ sudo systemctl status ssh
 
 #sudo plymouthd ; sudo plymouth --show-splash ; sleep 5 ; sudo plymouth --quit
 
+#plymouth from tempo but check nobaravm
 
 #ubuntu
 #sudo update-alternatives --config default.plymouth
@@ -82,12 +83,40 @@ brbinstall_theming_gtk_adw-gtk3
 
 
 #all the flatpaks
+echo -ne "
+flatpak install -y flathub org.onlyoffice.desktopeditors
+flatpak install -y flathub com.github.tchx84.Flatseal
+flatpak install -y flathub com.rafaelmardojai.Blanket
+flatpak install -y flathub de.haeckerfelix.Shortwave
+flatpak install -y flathub com.usebottles.bottles
+flatpak install -y flathub fyi.zoey.TeX-Match
+
+"
+
+#songrec mousai videotrimmer
+
+#all the flatpaks
+echo -ne "
+other program pkgs ?
+discord steam anydesk(remove from startup and do the security) atom (grub-customizer) firefox chromium obs-sudio vivaldi
+
+alacritty kitty cool-retro-term
+gparted
+ghostwritter
+
+"
+
 
 #check startjobs from systemd
 
 
 #https://github.com/Antynea/grub-btrfs
 #check os-prober
+
+
+#is there a way to see output in the terminal and put it in a log too ?
+#yes using script
+
 
 
 }
