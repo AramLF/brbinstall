@@ -57,26 +57,9 @@ sudo systemctl status ssh
 
 #/etc/sddm.conf
 
-#add a new plymouth?
-#https://askubuntu.com/questions/2007/how-do-i-change-the-plymouth-bootscreen
-#https://wiki.ubuntu.com/Plymouth
-#https://wiki.debian.org/fr/plymouth
+brbinstall_theming_plymouth_spinner-lin
 
-#sudo plymouthd ; sudo plymouth --show-splash ; sleep 5 ; sudo plymouth --quit
-
-#sudo update-initramfs -u
-# fedora : sudo dracut
-
-#plymouth from tempo but check nobaravm
-
-#ubuntu
-#sudo update-alternatives --config default.plymouth
-#debian
-#/usr/share/plymouth/themes/
-#sudo plymouth-set-default-theme -l
-#sudo plymouth-set-default-theme -R THEME
-sudo update-initramfs -u
-
+brbinstall_theming_plymouth_set "spinner-lin"
 
 #i3
 #https://github.com/maestrogerardo/i3-gaps-deb
@@ -124,6 +107,8 @@ ghostwritter
 
 
 }
+
+
 
 brbinstall_flavoring_neobian_neobian () {
 echo -ne "

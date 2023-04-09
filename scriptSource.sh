@@ -15,6 +15,7 @@ source ./functions/theming/wallpaper.sh
 source ./functions/theming/gterminal.sh
 source ./functions/theming/terminal.sh
 source ./functions/theming/kde-misc.sh
+source ./functions/theming/plymouth.sh
 source ./functions/theming/xfce4-terminal.sh
 
 source ./functions/desktopenvironments/cinnamon.sh
