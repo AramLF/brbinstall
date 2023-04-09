@@ -72,6 +72,7 @@ brbinstall_theming_gtk_adw-gtk3
 
 
 #all the flatpaks
+#shortwave radioparadise
 echo -ne "
 flatpak install -y flathub org.onlyoffice.desktopeditors
 flatpak install -y flathub com.github.tchx84.Flatseal
