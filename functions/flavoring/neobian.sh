@@ -57,6 +57,8 @@ sudo systemctl status ssh
 
 #/etc/sddm.conf
 
+brbinstall_theming_plymouth_prepare
+
 brbinstall_theming_plymouth_spinner-lin
 
 brbinstall_theming_plymouth_set "spinner-lin"

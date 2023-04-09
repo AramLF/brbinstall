@@ -17,6 +17,15 @@ echo -ne "
 
 }
 
+brbinstall_theming_plymouth_prepare () {
+echo -ne "
+==============================================================================
+Plymouth prepare
+==============================================================================
+"
+sudo $auto_pkg_installer plymouth-themes
+}
+
 brbinstall_theming_plymouth_spinner-lin () {
 echo -ne "
 ==============================================================================
