@@ -47,8 +47,8 @@ Set plymouth
 #sudo plymouth-set-default-theme -l
 #sudo plymouth-set-default-theme -R THEME
 
-sudo plymouth-set-default-theme "$1"
+sudo plymouth-set-default-theme -R "$1"
 
-sudo update-initramfs -u
+#sudo update-initramfs -u
 # fedora : sudo dracut
 }
