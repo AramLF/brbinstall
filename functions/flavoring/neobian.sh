@@ -64,11 +64,15 @@ sudo systemctl status ssh
 
 #sudo plymouthd ; sudo plymouth --show-splash ; sleep 5 ; sudo plymouth --quit
 
+#sudo update-initramfs -u
+# fedora : sudo dracut
+
 #plymouth from tempo but check nobaravm
 
 #ubuntu
 #sudo update-alternatives --config default.plymouth
 #debian
+#/usr/share/plymouth/themes/
 #sudo plymouth-set-default-theme -l
 #sudo plymouth-set-default-theme -R THEME
 sudo update-initramfs -u

@@ -18,6 +18,8 @@ brbinstall_theming_fonts_ubuntu-all
 brbinstall_theming_fonts_font-awesome-all
 
 brbinstall_theming_fonts_work-sans-all
+
+brbinstall_theming_fonts_caskdaydia-cove-all
 }
 
 brbinstall_theming_fonts_fira-mozilla-all (){
@@ -117,5 +119,23 @@ cd $initialCacheFolder/Work-Sans/fonts/ttf/
 sudo cp -vr *.ttf *.TTF /usr/share/fonts/truetype/
 
 cd $initialCacheFolder/Work-Sans/fonts/otf/
+sudo cp -vr *.otf *.OTF /usr/share/fonts/opentype/
+}
+
+brbinstall_theming_fonts_caskdaydia-cove-all (){
+echo -ne "
+==============================================================================
+Caskaydia Cove fonts installation
+==============================================================================
+"
+sudo mkdir -p /usr/share/fonts/truetype/
+sudo mkdir -p /usr/share/fonts/opentype/
+
+git clone --depth=1 https://github.com/eliheuer/caskaydia-cove $initialCacheFolder/caskaydia-cove
+
+cd $initialCacheFolder/caskaydia-cove/fonts/ttf/
+sudo cp -vr *.ttf *.TTF /usr/share/fonts/truetype/
+
+cd $initialCacheFolder/caskaydia-cove/fonts/otf/
 sudo cp -vr *.otf *.OTF /usr/share/fonts/opentype/
 }
