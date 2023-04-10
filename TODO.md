@@ -19,6 +19,7 @@
 * Change default apps with mime ? (cat ~/.config/mimeapps.list)
 * Default numlock with gsettings
 * More detailed README (displayed at the beginning of the script)
+* cmdcheck service on mint ? --> delete it  
 
 ## theming
 * Update aio and yaru (delete old files, use only icons or cinnamon-shell, etc...)

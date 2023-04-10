@@ -85,6 +85,9 @@ flatpak install -y flathub fyi.zoey.TeX-Match
 
 #songrec mousai videotrimmer
 
+#amazing
+#flatpak install flathub com.github.flxzt.rnote
+
 #all the flatpaks
 echo -ne "
 other program pkgs ?
