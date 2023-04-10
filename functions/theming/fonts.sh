@@ -20,6 +20,8 @@ brbinstall_theming_fonts_font-awesome-all
 brbinstall_theming_fonts_work-sans-all
 
 brbinstall_theming_fonts_caskdaydia-cove-all
+
+brbinstall_theming_fonts_cascadia-all
 }
 
 brbinstall_theming_fonts_fira-mozilla-all (){
@@ -138,4 +140,26 @@ sudo cp -vr *.ttf *.TTF /usr/share/fonts/truetype/
 
 cd $initialCacheFolder/caskaydia-cove/fonts/otf/
 sudo cp -vr *.otf *.OTF /usr/share/fonts/opentype/
+}
+
+brbinstall_theming_fonts_cascadia-all (){
+echo -ne "
+==============================================================================
+Cascadia Code/Mono all fonts installation
+==============================================================================
+"
+sudo mkdir -p /usr/share/fonts/truetype/
+sudo mkdir -p /usr/share/fonts/opentype/
+
+cd $initialCacheFolder/
+
+wget https://github.com/microsoft/cascadia-code/releases/download/v2111.01/CascadiaCode-2111.01.zip
+unzip CascadiaCode-2111.01.zip -d Cascadia-2111
+
+cd $initialCacheFolder/Cascadia-2111/ttf/static/
+sudo cp -vr *.ttf *.TTF /usr/share/fonts/truetype/
+
+cd $initialCacheFolder/Cascadia-2111/otf/static/
+sudo cp -vr *.otf *.OTF /usr/share/fonts/opentype/
+
 }
