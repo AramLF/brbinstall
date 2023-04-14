@@ -47,7 +47,7 @@ sudo ./install.sh $optionUsed
 brbinstall_theming_icon_numix-both () {
 echo -ne "
 ==============================================================================
-numix-icon-theme & circle installation
+numix-icon-theme square & circle installation
 ==============================================================================
 "
 #sudo $auto_pkg_installer numix-icon-theme
@@ -62,6 +62,11 @@ git clone https://github.com/numixproject/numix-icon-theme-circle $initialCacheF
 cd $initialCacheFolder/numix-icon-theme-circle
 sudo cp -r Numix-Circle/ /usr/share/icons/Numix-Circle/
 sudo cp -r Numix-Circle-Light/ /usr/share/icons/Numix-Circle-Light/
+
+git clone https://github.com/numixproject/numix-icon-theme-square $initialCacheFolder/numix-icon-theme-square
+cd $initialCacheFolder/numix-icon-theme-square
+sudo cp -r Numix-Square/ /usr/share/icons/Numix-Square/
+sudo cp -r Numix-Square-Light/ /usr/share/icons/Numix-Square-Light/
 }
 
 brbinstall_theming_icon_colloid () {
