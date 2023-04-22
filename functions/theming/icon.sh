@@ -142,3 +142,15 @@ git clone https://github.com/alvatip/Nordzy-icon $initialCacheFolder/Nordzy-icon
 cd $initialCacheFolder/Nordzy-icon
 sudo ./install.sh $optionUsed
 }
+
+brbinstall_theming_icon_pop () {
+echo -ne "
+==============================================================================
+pop icons installation
+==============================================================================
+"
+git clone https://github.com/pop-os/icon-theme $initialCacheFolder/pop-icon-theme
+cd $initialCacheFolder/pop-icon-theme
+sudo cp -r Pop/ /usr/share/icons/Pop/
+sudo cp -r Pop-Dark/ /usr/share/icons/Pop-Dark/
+}
