@@ -143,14 +143,27 @@ cd $initialCacheFolder/Nordzy-icon
 sudo ./install.sh $optionUsed
 }
 
-brbinstall_theming_icon_pop () {
+brbinstall_theming_icon_pop-original () {
 echo -ne "
 ==============================================================================
-pop icons installation
+pop original icons installation
 ==============================================================================
 "
 git clone https://github.com/pop-os/icon-theme $initialCacheFolder/pop-icon-theme
 cd $initialCacheFolder/pop-icon-theme
 sudo cp -r Pop/ /usr/share/icons/Pop/
 sudo cp -r Pop-Dark/ /usr/share/icons/Pop-Dark/
+}
+
+brbinstall_theming_icon_pop-extended () {
+echo -ne "
+==============================================================================
+pop extended icons installation
+==============================================================================
+"
+git clone https://github.com/kuroehanako/Pop-Extended $initialCacheFolder/Pop-Extended
+cd $initialCacheFolder/Pop-Extended 
+sudo cp -r Pop-Extended/ /usr/share/icons/Pop-Extended/
+sudo cp -r Pop-Extended-dark/ /usr/share/icons/Pop-Extended-dark/
+sudo cp -r Pop-Extended-light/ /usr/share/icons/Pop-Extended-light/
 }
