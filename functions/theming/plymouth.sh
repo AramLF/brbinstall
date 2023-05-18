@@ -12,8 +12,7 @@ Plymouth
 echo -ne "
 #sudo plymouthd ; sudo plymouth --show-splash ; sleep 5 ; sudo plymouth --quit
 "
-#ubuntu
-#sudo update-alternatives --config default.plymouth
+
 
 }
 
@@ -44,6 +43,7 @@ Set plymouth
 "
 #can change between distros
 
+#debian and others
 #sudo plymouth-set-default-theme -l
 #sudo plymouth-set-default-theme -R THEME
 
@@ -51,4 +51,17 @@ sudo plymouth-set-default-theme -R "$1"
 
 #sudo update-initramfs -u
 # fedora : sudo dracut
+}
+
+brbinstall_theming_plymouth_set_ubuntu () {
+echo -ne "
+==============================================================================
+Set plymouth for ubuntu and maybe others too
+==============================================================================
+"
+#ubuntu
+#sudo update-alternatives --config default.plymouth
+sudo ln -sfv /usr/share/plymouth/themes/"$1"/"$1".plymouth /etc/alternatives/default.plymouth
+sudo update-initramfs -u
+
 }

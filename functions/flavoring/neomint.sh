@@ -184,6 +184,12 @@ Linux Mint Neomint flavor
 
   brbinstall_de_cinnamon_set-monospace-font "Ubuntu Mono 12"
 
+  #brbinstall_theming_plymouth_prepare
+
+  #brbinstall_theming_plymouth_spinner-lin "spinner-lin"
+
+  #brbinstall_theming_plymouth_set_ubuntu "spinner-lin"
+
   brbinstall_de_cinnamon_set-tap-to-click
 
   brbinstall_de_cinnamon_set-flags-keyboard-layout
