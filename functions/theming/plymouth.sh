@@ -53,7 +53,7 @@ sudo plymouth-set-default-theme -R "$1"
 # fedora : sudo dracut
 }
 
-brbinstall_theming_plymouth_set_ubuntu () {
+brbinstall_theming_plymouth_set-ubuntu () {
 echo -ne "
 ==============================================================================
 Set plymouth for ubuntu and maybe others too

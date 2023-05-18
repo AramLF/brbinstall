@@ -188,7 +188,7 @@ Linux Mint Neomint flavor
 
   #brbinstall_theming_plymouth_spinner-lin "spinner-lin"
 
-  #brbinstall_theming_plymouth_set_ubuntu "spinner-lin"
+  #brbinstall_theming_plymouth_set-ubuntu "spinner-lin"
 
   brbinstall_de_cinnamon_set-tap-to-click
 
