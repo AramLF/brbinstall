@@ -16,6 +16,48 @@ echo -ne "
 Prevention
 ==============================================================================
 "
+
+#server
+
+#choisir utilitaires usuels du système
+
+
+
+#Connexion wifi for debian server
+#https://www.linuxtricks.fr/wiki/systemd-le-reseau-avec-systemd-networkd
+#https://linuxhint.com/3-ways-to-connect-to-wifi-from-the-command-line-on-debian/
+sudo systemctl enable systemd-networkd.service
+sudo systemctl start systemd-networkd.service
+sudo nano /etc/systemd/network/wlp3s0-wireless.network
+echo -ne "
+[Match]
+Name=enp0s3
+[Network]
+DHCP=ipv4
+"
+systemctl restart systemd-networkd
+sudo iwconfig
+ip address
+sudo iwlist wlp3s0 scan | grep ESSID
+wpa_passphrase LinuxHint morochita | sudo tee /etc/wpa_supplicant.conf
+sudo wpa_supplicant -c /etc/wpa_supplicant.conf -i wlp3s0 &
+sudo iwconfig
+sudo dhclient wlp3s0
+
+# ??? sudo $auto_pkg_installer network-manager
+# sudo nmtui ???
+
+#server
+sudo $auto_pkg_installer cockpit openssh-server
+#sudo systemctl enable cockpit
+#sudo systemctl status ssh
+#ssh wvm@192.168.0.37
+
+# add the close lid part
+
+#server end
+
+
 #prevention
 ls
 
@@ -28,7 +70,7 @@ sudo systemctl set-default graphical.target
 sudo $auto_pkg_installer xfce4?
 
 
-
+#!!! need to add the xfw4 light one
 #xfce4
 #xfce4-goodies(term and nm tray and everything in it ?)<--(maybe avoid it ?) xfce4-whiskermenu-plugin
 sudo $auto_pkg_installer mousepad
@@ -41,15 +83,7 @@ sudo $auto_pkg_installer firefox pavucontrol ?
 
 #check les services
 
-#mix papirus and yaru ?
-
-
-#server
-sudo $auto_pkg_installer cockpit openssh-server
-sudo systemctl enable cockpit
-sudo systemctl status ssh
-#ssh wvm@192.168.0.37
-#!!! need to add the xfw4 light one
+#mix papirus and yaru ? pop-extended omg ?
 
 
 #other
