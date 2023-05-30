@@ -162,8 +162,19 @@ pop extended icons installation
 ==============================================================================
 "
 git clone https://github.com/kuroehanako/Pop-Extended $initialCacheFolder/Pop-Extended
-cd $initialCacheFolder/Pop-Extended 
+cd $initialCacheFolder/Pop-Extended
 sudo cp -r Pop-Extended/ /usr/share/icons/Pop-Extended/
 sudo cp -r Pop-Extended-dark/ /usr/share/icons/Pop-Extended-dark/
 sudo cp -r Pop-Extended-light/ /usr/share/icons/Pop-Extended-light/
+}
+
+brbinstall_theming_icon_taru-yaru () {
+echo -ne "
+==============================================================================
+Taru icons (like yaru but with svg and for others DE) installation
+==============================================================================
+"
+git clone https://github.com/kuroehanako/Taru-icons $initialCacheFolder/Taru-icons
+cd $initialCacheFolder/Taru-icons
+sudo cp -r Taru*/ /usr/share/icons/Taru*/
 }
