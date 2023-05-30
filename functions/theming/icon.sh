@@ -176,5 +176,5 @@ Taru icons (like yaru but with svg and for others DE) installation
 "
 git clone https://github.com/kuroehanako/Taru-icons $initialCacheFolder/Taru-icons
 cd $initialCacheFolder/Taru-icons
-sudo cp -r Taru*/ /usr/share/icons/Taru*/
+sudo cp -r Taru* /usr/share/icons/
 }
