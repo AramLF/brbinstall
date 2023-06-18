@@ -102,9 +102,21 @@ brbinstall_theming_plymouth_set "spinner-lin"
 #https://github.com/maestrogerardo/i3-gaps-deb
 #https://askubuntu.com/questions/18654/how-to-prevent-updating-of-a-specific-package
 
+
+
+#theming ?
+brbinstall_theming_gtk_adw-gtk3
+
+brbinstall_de_xfce_set-xfwm4-theme "adw-gtk3-dark-small"
+
+brbinstall_de_xfce_set-gtk-theme "adw-gtk3-dark"
+
 brbinstall_theming_icon_taru-yaru
 
-brbinstall_theming_gtk_adw-gtk3
+brbinstall_de_xfce_set-icon-theme "Taru-Breeze-dark"
+
+
+
 
 
 #all the flatpaks
