@@ -104,7 +104,7 @@ brbinstall_theming_plymouth_set "spinner-lin"
 
 
 
-#theming ?
+#theming
 brbinstall_theming_gtk_adw-gtk3
 
 brbinstall_de_xfce_set-xfwm4-theme "adw-gtk3-dark-small"
@@ -114,6 +114,18 @@ brbinstall_de_xfce_set-gtk-theme "adw-gtk3-dark"
 brbinstall_theming_icon_taru-yaru
 
 brbinstall_de_xfce_set-icon-theme "Taru-Breeze-dark"
+
+brbinstall_theming_fonts_work-sans-all
+
+brbinstall_theming_fonts_cascadia-all
+
+brbinstall_de_xfce_set-font-gtk-theme "Work Sans 10"
+
+brbinstall_de_xfce_set-xfwm4-font-theme "Work Sans 10"
+
+brbinstall_de_xfce_set-font-monospace-gtk-theme "Cascadia Mono Regular 10"
+
+brbinstall_theming_wallpaper_rands-walls-spe
 
 
 

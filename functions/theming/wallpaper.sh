@@ -40,6 +40,7 @@ sudo mkdir -p /usr/share/backgrounds/walls/
 
 sudo cp -vr $initialCacheFolder/rands/walls/andy-holmes-4xn0ycUZyYo-unsplash.jpg /usr/share/backgrounds/walls/andy-holmes-4xn0ycUZyYo-unsplash.jpg
 sudo cp -vr $initialCacheFolder/rands/walls/pexels-krivec-ales-552789-1920x1080-jpg.jpg /usr/share/backgrounds/walls/pexels-krivec-ales-552789-1920x1080-jpg.jpg
+sudo cp -vr $initialCacheFolder/rands/walls/spencer-watson-p0Yupww_SNM-unsplash.jpg /usr/share/backgrounds/walls/spencer-watson-p0Yupww_SNM-unsplash.jpg
 }
 
 brbinstall_theming_wallpaper_evening () {
