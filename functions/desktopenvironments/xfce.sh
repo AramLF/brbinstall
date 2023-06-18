@@ -38,6 +38,27 @@ restart xfce panel
 xfce4-panel --restart
 }
 
+brbinstall_de_xfce_set-background(){
+echo -ne "
+==============================================================================
+xfce set background
+==============================================================================
+"
+xfconf-query -c xfce4-desktop -m
+#change wallpaper then
+xfconf-query -c xfce4-desktop -p property_goes_here -s path/to/imagefile.jpg
+}
+
+brbinstall_de_xfce_set-xfwm4-theme(){
+echo -ne "
+==============================================================================
+xfce set xfwm4 theme
+==============================================================================
+"
+#xfconf-query -c xfwm4 -p /general/theme -s Mint-Y-Dark-Blue
+xfconf-query -c xfwm4 -p /general/theme -s $1
+}
+
 brbinstall_de_xfce_set-gtk-theme(){
 echo -ne "
 ==============================================================================
@@ -45,9 +66,7 @@ Changing gtk-theme
 ==============================================================================
 "
 #xfconf-query -c xsettings -p /Net/ThemeName -s "Mint-Y-Dark-Blue"
-#xfconf-query -c xfwm4 -p /general/theme -s Mint-Y-Dark-Blue
 xfconf-query -c xsettings -p /Net/ThemeName -s $1
-xfconf-query -c xfwm4 -p /general/theme -s $1
 }
 
 brbinstall_de_xfce_set-icon-theme(){

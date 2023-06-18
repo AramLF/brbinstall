@@ -66,6 +66,8 @@ sudo systemctl enable lightdm
 
 sudo systemctl set-default graphical.target
 
+#other
+brbinstall_setup_server_start-with-display
 
 
 
