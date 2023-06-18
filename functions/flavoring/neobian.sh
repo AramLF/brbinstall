@@ -87,7 +87,7 @@ sudo $auto_pkg_installer firefox pavucontrol ?
 
 #check les services
 
-#mix papirus and yaru ? pop-extended omg ?
+#mix papirus and yaru ? pop-extended omg ? --> taru icons and adw3 theme
 
 
 #other
@@ -105,6 +105,7 @@ brbinstall_theming_plymouth_set "spinner-lin"
 #https://github.com/maestrogerardo/i3-gaps-deb
 #https://askubuntu.com/questions/18654/how-to-prevent-updating-of-a-specific-package
 
+brbinstall_theming_icon_taru-yaru
 
 brbinstall_theming_gtk_adw-gtk3
 

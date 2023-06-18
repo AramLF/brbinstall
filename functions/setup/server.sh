@@ -45,3 +45,31 @@ sudo chmod +x /etc/systemd/system/numlock.service
 sudo systemctl enable numlock.service
 
 }
+
+brbinstall_setup_server_allow-closed-laptop-lid() {
+echo -ne "
+==============================================================================
+Let the laptop lid closed
+==============================================================================
+"
+sudo sed -i "s/.*HandleSuspendKey.*/HandleSuspendKey=ignore/g" /etc/systemd/logind.conf
+sudo sed -i "s/.*HandleLidSwitch.*/HandleLidSwitch=ignore/g" /etc/systemd/logind.conf
+sudo sed -i "s/.*HandleLidSwitchDocked.*/HandleLidSwitchDocked=ignore/g" /etc/systemd/logind.conf
+
+sudo systemctl restart systemd-logind.service
+
+}
+
+brbinstall_setup_server_disallow-closed-laptop-lid() {
+echo -ne "
+==============================================================================
+The laptop lid need to be open
+==============================================================================
+"
+sudo sed -i "s/.*HandleSuspendKey.*/#HandleSuspendKey=suspend/g" /etc/systemd/logind.conf
+sudo sed -i "s/.*HandleLidSwitch.*/#HandleLidSwitch=suspend/g" /etc/systemd/logind.conf
+sudo sed -i "s/.*HandleLidSwitchDocked.*/#HandleLidSwitchDocked=ignore/g" /etc/systemd/logind.conf
+
+sudo systemctl restart systemd-logind.service
+
+}
