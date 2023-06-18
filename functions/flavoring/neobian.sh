@@ -48,24 +48,19 @@ sudo dhclient wlp3s0
 # sudo nmtui ???
 
 #server
-sudo $auto_pkg_installer cockpit openssh-server
-#sudo systemctl enable cockpit
-#sudo systemctl status ssh
-#ssh wvm@192.168.0.37
+brbinstall_setup_server_distance
 
-# add the close lid part
+brbinstall_setup_server_allow-closed-laptop-lid
 
 brbinstall_setup_server_numlock-for-tty
-
 #server end
 
 
 sudo $auto_pkg_installer xfce4
 #gnome-core
 
-#sudo systemctl disable lightdm
-
 sudo $auto_pkg_installer lightdm
+#sudo systemctl disable lightdm
 
 sudo systemctl enable lightdm
 

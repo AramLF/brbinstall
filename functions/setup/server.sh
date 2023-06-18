@@ -10,6 +10,18 @@ Server stuff
 ls
 }
 
+brbinstall_setup_server_distance() {
+echo -ne "
+==============================================================================
+Log with some distance (cockpit and ssh)
+==============================================================================
+"
+sudo $auto_pkg_installer cockpit openssh-server
+#sudo systemctl enable cockpit
+#sudo systemctl status ssh
+#ssh wvm@192.168.0.37
+}
+
 brbinstall_setup_server_numlock-for-tty() {
 echo -ne "
 ==============================================================================
