@@ -128,7 +128,42 @@ brbinstall_de_xfce_set-font-monospace-gtk-theme "Cascadia Mono Regular 10"
 brbinstall_theming_wallpaper_rands-walls-spe
 
 
+#remove xfce bottom panel check https://forum.xfce.org/viewtopic.php?id=13717
+#recolor top panel with #242424
 
+#whiskermenu & remove the other one
+sudo $auto_pkg_installer xfce4-whiskermenu-plugin xfce4-xkb-plugin xfce4-pulseaudio-plugin
+#Afficher sous forme d'arborescence, petite plus petite, Positionner (les catégories, le champ), icône et texte (Applications), catégories au survol
+
+#workspace 2 lignes
+#barre d'état(ajuster la taille, symboliques)
+#greffon pulseaudio(with pavucontrol) disposition-clavier(système) Horloge Notification Afficher-bureau
+
+#change le temps avec heure puis date
+
+sudo $auto_pkg_installer plank
+#plank au start d'xfce
+#zoom sur icône : 130
+#Paramètres Logiciels Navigateur Dossier Terminal
+
+
+
+sudo $auto_pkg_installer lightdm-gtk-greeter-settings
+#%H:%M %A %d/%m/%Y adw-gtk3-dark Taru-Breeze-dark Work-Sans-Regular-10 background
+
+#list users
+#/etc/lightdm/lightdm.conf
+#greeter-hide-users=false #???? ça marche ap ?
+
+
+#synaptic firefox
+
+#peaufinage des fenêtres : placement --> grande au max
+
+
+sudo $auto_pkg_installer network-manager-gnome blueman
+
+#enlever les icônes sur le bureau (clic droit param)
 
 
 #all the flatpaks
