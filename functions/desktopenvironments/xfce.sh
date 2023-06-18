@@ -86,7 +86,7 @@ Changing font of the gtk theme
 ==============================================================================
 "
 #xfconf-query -c xsettings -p /Gtk/FontName -s "Work Sans 10"
-xfconf-query -c xsettings -p /Gtk/FontName -s $1
+xfconf-query -c xsettings -p /Gtk/FontName -s "$1"
 }
 
 brbinstall_de_xfce_set-font-monospace-gtk-theme(){
@@ -96,7 +96,7 @@ Changing font of the gtk theme
 ==============================================================================
 "
 #xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Cascadia Mono Regular 10"
-xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s $1
+xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "$1"
 }
 
 brbinstall_de_xfce_set-xfwm4-font-theme(){
@@ -106,5 +106,5 @@ xfce set xfwm4 font theme
 ==============================================================================
 "
 #xfconf-query -c xfwm4 -p /general/title_font -s "Work Sans 10"
-xfconf-query -c xfwm4 -p /general/title_font -s $1
+xfconf-query -c xfwm4 -p /general/title_font -s "$1"
 }
