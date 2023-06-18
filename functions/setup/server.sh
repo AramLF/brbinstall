@@ -22,6 +22,16 @@ sudo $auto_pkg_installer cockpit openssh-server
 #ssh wvm@192.168.0.37
 }
 
+brbinstall_setup_server_start-with-display() {
+echo -ne "
+==============================================================================
+Start the display for any reason
+==============================================================================
+"
+#might change from all the dm
+sudo systemctl enable lightdm
+}
+
 brbinstall_setup_server_numlock-for-tty() {
 echo -ne "
 ==============================================================================
