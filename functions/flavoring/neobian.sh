@@ -132,12 +132,12 @@ brbinstall_theming_wallpaper_rands-walls-spe
 #recolor top panel with #242424
 
 #whiskermenu & remove the other one
-sudo $auto_pkg_installer xfce4-whiskermenu-plugin xfce4-xkb-plugin xfce4-pulseaudio-plugin
+sudo $auto_pkg_installer xfce4-whiskermenu-plugin xfce4-xkb-plugin xfce4-pulseaudio-plugin xfce4-power-manager
 #Afficher sous forme d'arborescence, petite plus petite, Positionner (les catégories, le champ), icône et texte (Applications), catégories au survol
 
 #workspace 2 lignes
 #barre d'état(ajuster la taille, symboliques)
-#greffon pulseaudio(with pavucontrol) disposition-clavier(système) Horloge Notification Afficher-bureau
+#greffon pulseaudio(with pavucontrol) power-manager disposition-clavier(système) Horloge Notification Afficher-bureau
 
 #change le temps avec heure puis date
 
