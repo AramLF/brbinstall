@@ -33,6 +33,30 @@ sudo sed -i "s/non-free-firmware//g" /etc/apt/sources.list
 sudo sed -i "s/main.*/main contrib non-free non-free-firmware/g" /etc/apt/sources.list
 }
 
+brbinstall_distrib_deb-based_debian-based_switch-ver () {
+echo -ne "
+==============================================================================
+Debian switch ver
+==============================================================================
+"
+sudo sed -i "s/$1/$2/g" /etc/apt/sources.list
+}
+
+brbinstall_distrib_deb-based_debian-based_add-backports () {
+echo -ne "
+==============================================================================
+Debian add backports
+==============================================================================
+"
+#might need to use main-and-more and switch-ver after this function
+#https://wiki.debian.org/fr/Backports
+sudo sh -c 'echo "deb http://deb.debian.org/debian bullseye-backports main" >> /etc/apt/sources.list'
+echo -ne "
+sudo apt -t bullseye-backports install cockpit
+pkg-query -W | grep '~bpo'
+"
+}
+
 brbinstall_distrib_deb-based_debian-based_plymouth () {
 echo -ne "
 ==============================================================================

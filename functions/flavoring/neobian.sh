@@ -179,10 +179,11 @@ brbinstall_flavoring_neobian_theming-xfce
 sudo $auto_pkg_installer firefox pavucontrol synaptic gparted
 sudo $auto_pkg_installer kitty alacritty
 
-# add firmware etc sources
-# add stable testing sed sources etc...
+brbinstall_distrib_deb-based_debian-based_main-and-more
 
-#sudo sed -i "s///g" /etc/apt
+#brbinstall_distrib_deb-based_debian-based_switch-ver "bookworm" "trixie"
+
+#brbinstall_distrib_deb-based_debian-based_add-backports
 
 
 
