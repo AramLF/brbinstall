@@ -27,6 +27,19 @@ Flatpak override filesystem theme
 sudo flatpak override --filesystem=~/.themes
 }
 
+brbinstall_setup_miscsetup_setup-flatpak () {
+echo -ne "
+==============================================================================
+Flatpak setup (run)
+==============================================================================
+"
+brbinstall_setup_miscsetup_flatpak-installation
+
+brbinstall_setup_miscsetup_flathub
+
+brbinstall_setup_miscsetup_flatpak-override
+}
+
 brbinstall_setup_miscsetup_nixpkg () {
 echo -ne "
 ==============================================================================

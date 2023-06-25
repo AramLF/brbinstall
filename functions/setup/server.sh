@@ -16,7 +16,8 @@ echo -ne "
 Log with some distance (cockpit and ssh)
 ==============================================================================
 "
-sudo $auto_pkg_installer cockpit openssh-server
+sudo $auto_pkg_installer cockpit
+sudo $auto_pkg_installer openssh-server
 #sudo systemctl enable cockpit
 #sudo systemctl status ssh
 #ssh wvm@192.168.0.37

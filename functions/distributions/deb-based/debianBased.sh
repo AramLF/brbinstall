@@ -11,14 +11,14 @@ sudo $auto_pkg_installer plymouth
 #maybe add plymouth-themes
 }
 
-brbinstall_distrib_deb-based_debian-based_steam () {
+brbinstall_distrib_deb-based_debian-based_add-i386 () {
 echo -ne "
 ==============================================================================
-Debian steam
+Debian i386 arch
 ==============================================================================
 "
 sudo dpkg --add-architecture i386
-sudo $auto_pkg_installer steam
+#sudo $auto_pkg_installer steam
 }
 
 brbinstall_distrib_deb-based_debian-based_main-and-more () {
@@ -89,6 +89,10 @@ brbinstall_distrib_deb-based_debian-based_dependencies
 brbinstall_distrib_deb-based_debian-based_plymouth
 
 brbinstall_distrib_deb-based_debian-based_cnf
+
+brbinstall_distrib_deb-based_debian-based_add-i386
+
+brbinstall_distrib_deb-based_debian-based_main-and-more
 
 }
 

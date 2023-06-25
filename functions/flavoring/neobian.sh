@@ -129,6 +129,7 @@ echo -ne "
 Theming xfce neobian
 ==============================================================================
 "
+#adwaitacross need to be a standalone flavoring
 brbinstall_theming_gtk_adw-gtk3
 
 brbinstall_theming_icon_taru-yaru
@@ -174,21 +175,28 @@ brbinstall_flavoring_neobian_setup-xfce
 
 brbinstall_flavoring_neobian_theming-xfce
 
-
-
-sudo $auto_pkg_installer firefox pavucontrol synaptic gparted
-sudo $auto_pkg_installer kitty alacritty
-
-brbinstall_distrib_deb-based_debian-based_main-and-more
-
 #brbinstall_distrib_deb-based_debian-based_switch-ver "bookworm" "trixie"
 
 #brbinstall_distrib_deb-based_debian-based_add-backports
 
 
 
-#all the flatpaks
-#shortwave radioparadise
+
+#other program with pkgs
+echo -ne "
+sudo $auto_pkg_installer firefox pavucontrol synaptic gparted
+sudo $auto_pkg_installer chromium obs-sudio steam
+sudo $auto_pkg_installer kitty alacritty cool-retro-term
+sudo $auto_pkg_installer grub-customizer
+
+#discord vivaldi teamspeak
+#wezterm
+
+anydesk(remove from startup and do the security)
+atom ghostwritter bottom
+"
+
+#other program with flatpak
 echo -ne "
 flatpak install -y flathub org.onlyoffice.desktopeditors
 flatpak install -y flathub com.github.tchx84.Flatseal
@@ -198,27 +206,11 @@ flatpak install -y flathub com.usebottles.bottles
 flatpak install -y flathub com.github.flxzt.rnote
 flatpak install -y flathub fyi.zoey.TeX-Match
 
-"
-echo -ne "
+#other
 flatpak install -y flathub org.gnome.gitlab.YaLTeR.VideoTrimmer
 flatpak install -y flathub com.github.marinm.songrec
 flatpak install -y flathub io.github.seadve.Mousai
 "
-
-
-echo -ne "
-other program pkgs ?
-discord steam anydesk(remove from startup and do the security) atom (grub-customizer) firefox chromium obs-sudio vivaldi
-
-brbinstall_distrib_deb-based_debian-based_steam
-
-alacritty kitty cool-retro-term #wezterm
-gparted
-ghostwritter
-
-"
-
-
 
 }
 
