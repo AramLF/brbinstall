@@ -20,7 +20,7 @@ Setup debian net live
 
 #choisir utilitaires usuels du système
 
-#Connexion wifi for debian server
+#Connexion wifi for a debian server
 #https://www.linuxtricks.fr/wiki/systemd-le-reseau-avec-systemd-networkd
 #https://linuxhint.com/3-ways-to-connect-to-wifi-from-the-command-line-on-debian/
 echo -ne '
@@ -43,7 +43,11 @@ sudo iwconfig
 sudo dhclient wlp3s0
 '
 
+sudo $auto_pkg_installer network-manager
+
 #sudo nmtui
+
+
 }
 
 brbinstall_flavoring_neobian_setup-server () {
