@@ -188,8 +188,12 @@ sudo $auto_pkg_installer firefox pavucontrol synaptic gparted
 sudo $auto_pkg_installer chromium obs-sudio steam
 sudo $auto_pkg_installer kitty alacritty cool-retro-term
 sudo $auto_pkg_installer grub-customizer
+sudo $auto_pkg_installer flatpak
 
 #discord vivaldi teamspeak
+brbinstall_setup_miscsetup_tar-opt-install
+brbinstall_setup_miscsetup_bottom-deb
+brbinstall_setup_miscsetup_vmtools
 #wezterm
 
 anydesk(remove from startup and do the security)
