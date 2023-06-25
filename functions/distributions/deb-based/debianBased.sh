@@ -60,10 +60,20 @@ pkg-query -W | grep '~bpo'
 brbinstall_distrib_deb-based_debian-based_plymouth () {
 echo -ne "
 ==============================================================================
-Adding plymouth
+Show plymouth
 ==============================================================================
 "
 sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/g' /etc/default/grub
+sudo update-grub
+}
+
+brbinstall_distrib_deb-based_debian-based_plymouth-unshow () {
+echo -ne "
+==============================================================================
+Unshow plymouth
+==============================================================================
+"
+sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/g' /etc/default/grub
 sudo update-grub
 }
 

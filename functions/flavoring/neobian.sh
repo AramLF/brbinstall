@@ -165,6 +165,8 @@ brbinstall_flavoring_neobian_setup-server
 
 brbinstall_distrib_deb-based_debian-based_run-script
 
+#brbinstall_distrib_deb-based_debian-based_plymouth-unshow
+
 brbinstall_theming_plymouth_prepare
 
 brbinstall_theming_plymouth_spinner-lin
