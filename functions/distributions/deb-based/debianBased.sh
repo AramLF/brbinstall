@@ -27,6 +27,9 @@ echo -ne "
 Debian add basic repos main contrib non-free non-free-firmware
 ==============================================================================
 "
+sudo sed -i "s/contrib//g" /etc/apt/sources.list
+sudo sed -i "s/non-free//g" /etc/apt/sources.list
+sudo sed -i "s/non-free-firmware//g" /etc/apt/sources.list
 sudo sed -i "s/main.*/main contrib non-free non-free-firmware/g" /etc/apt/sources.list
 }
 
