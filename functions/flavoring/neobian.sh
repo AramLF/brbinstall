@@ -10,22 +10,20 @@ Debian
 #README.md in flavor
 }
 
-brbinstall_flavoring_neobian_prevention () {
+brbinstall_flavoring_neobian_debian-net () {
 echo -ne "
 ==============================================================================
-Prevention
+Setup debian net live
 ==============================================================================
 "
-
-#server
+#setup debian net live
 
 #choisir utilitaires usuels du système
-
-
 
 #Connexion wifi for debian server
 #https://www.linuxtricks.fr/wiki/systemd-le-reseau-avec-systemd-networkd
 #https://linuxhint.com/3-ways-to-connect-to-wifi-from-the-command-line-on-debian/
+echo -ne '
 sudo systemctl enable systemd-networkd.service
 sudo systemctl start systemd-networkd.service
 sudo nano /etc/systemd/network/wlp3s0-wireless.network
@@ -43,96 +41,58 @@ wpa_passphrase LinuxHint morochita | sudo tee /etc/wpa_supplicant.conf
 sudo wpa_supplicant -c /etc/wpa_supplicant.conf -i wlp3s0 &
 sudo iwconfig
 sudo dhclient wlp3s0
+'
 
-# ??? sudo $auto_pkg_installer network-manager
-# sudo nmtui ???
+#sudo nmtui
+}
 
-#server
+brbinstall_flavoring_neobian_setup-server () {
+echo -ne "
+==============================================================================
+Neobian setup server
+==============================================================================
+"
 brbinstall_setup_server_distance
 
 brbinstall_setup_server_allow-closed-laptop-lid
 
 brbinstall_setup_server_numlock-for-tty
-#server end
 
+
+}
+
+brbinstall_flavoring_neobian_setup-xfce () {
+echo -ne "
+==============================================================================
+Neobian xfce
+==============================================================================
+"
 
 sudo $auto_pkg_installer xfce4
-#gnome-core
+
 
 sudo $auto_pkg_installer lightdm
+sudo $auto_pkg_installer lightdm-gtk-greeter-settings
 #sudo systemctl disable lightdm
-
-sudo systemctl enable lightdm
-
-sudo systemctl set-default graphical.target
+#sudo systemctl enable lightdm
+#sudo systemctl set-default graphical.target
 
 #other
 brbinstall_setup_server_start-with-display
 
 
 
-#!!! need to add the xfw4 light one
-#xfce4
-#xfce4-goodies(term and nm tray and everything in it ?)<--(maybe avoid it ?) xfce4-whiskermenu-plugin
-sudo $auto_pkg_installer mousepad
-sudo $auto_pkg_installer nm-applet nm-tray
-sudo $auto_pkg_installer lightdm-gtk-greeter-settings
-
-
-sudo $auto_pkg_installer firefox pavucontrol ?
-
-
-#check les services
-
-#mix papirus and yaru ? pop-extended omg ? --> taru icons and adw3 theme
-
-
 #other
 #wallpaper, icons, menuIcon(whiskermenu), systray icons, change time display, original font
-
-#/etc/sddm.conf
-
-brbinstall_theming_plymouth_prepare
-
-brbinstall_theming_plymouth_spinner-lin
-
-brbinstall_theming_plymouth_set "spinner-lin"
-
-#i3
-#https://github.com/maestrogerardo/i3-gaps-deb
-#https://askubuntu.com/questions/18654/how-to-prevent-updating-of-a-specific-package
-
-
-
-#theming
-brbinstall_theming_gtk_adw-gtk3
-
-brbinstall_de_xfce_set-xfwm4-theme "adw-gtk3-dark-small"
-
-brbinstall_de_xfce_set-gtk-theme "adw-gtk3-dark"
-
-brbinstall_theming_icon_taru-yaru
-
-brbinstall_de_xfce_set-icon-theme "Taru-Breeze-dark"
-
-brbinstall_theming_fonts_work-sans-all
-
-brbinstall_theming_fonts_cascadia-all
-
-brbinstall_de_xfce_set-font-gtk-theme "Work Sans 10"
-
-brbinstall_de_xfce_set-xfwm4-font-theme "Work Sans 10"
-
-brbinstall_de_xfce_set-font-monospace-gtk-theme "Cascadia Mono Regular 10"
-
-brbinstall_theming_wallpaper_rands-walls-spe
 
 
 #remove xfce bottom panel check https://forum.xfce.org/viewtopic.php?id=13717
 #recolor top panel with #242424
 
 #whiskermenu & remove the other one
+# nm-applet nm-tray xfce4-goodies(term and nm tray and everything in it ?)<--(maybe avoid it ?)
 sudo $auto_pkg_installer xfce4-whiskermenu-plugin xfce4-xkb-plugin xfce4-pulseaudio-plugin xfce4-power-manager
+sudo $auto_pkg_installer network-manager-gnome blueman
 #Afficher sous forme d'arborescence, petite plus petite, Positionner (les catégories, le champ), icône et texte (Applications), catégories au survol
 
 #workspace 2 lignes
@@ -141,14 +101,18 @@ sudo $auto_pkg_installer xfce4-whiskermenu-plugin xfce4-xkb-plugin xfce4-pulseau
 
 #change le temps avec heure puis date
 
+#peaufinage des fenêtres : placement --> grande au max
+
+#enlever les icônes sur le bureau (clic droit param)
+
 sudo $auto_pkg_installer plank
 #plank au start d'xfce
 #zoom sur icône : 130
 #Paramètres Logiciels Navigateur Dossier Terminal
 
+sudo $auto_pkg_installer mousepad xfce4-terminal
 
-
-sudo $auto_pkg_installer lightdm-gtk-greeter-settings
+#lightdm-gtk-greeter-settings
 #%H:%M %A %d/%m/%Y adw-gtk3-dark Taru-Breeze-dark Work-Sans-Regular-10 background
 
 #list users
@@ -156,14 +120,70 @@ sudo $auto_pkg_installer lightdm-gtk-greeter-settings
 #greeter-hide-users=false #???? ça marche ap ?
 
 
-#synaptic firefox
 
-#peaufinage des fenêtres : placement --> grande au max
+}
+
+brbinstall_flavoring_neobian_theming-xfce () {
+echo -ne "
+==============================================================================
+Theming xfce neobian
+==============================================================================
+"
+brbinstall_theming_gtk_adw-gtk3
+
+brbinstall_theming_icon_taru-yaru
+
+brbinstall_theming_fonts_work-sans-all
+
+brbinstall_theming_fonts_cascadia-all
+
+brbinstall_theming_wallpaper_rands-walls-spe
+
+brbinstall_de_xfce_set-xfwm4-theme "adw-gtk3-dark-small"
+
+brbinstall_de_xfce_set-gtk-theme "adw-gtk3-dark"
+
+brbinstall_de_xfce_set-icon-theme "Taru-Breeze-dark"
+
+brbinstall_de_xfce_set-font-gtk-theme "Work Sans 10"
+
+brbinstall_de_xfce_set-xfwm4-font-theme "Work Sans 10"
+
+brbinstall_de_xfce_set-font-monospace-gtk-theme "Cascadia Mono Regular 10"
+
+}
+
+brbinstall_flavoring_neobian_prevention () {
+echo -ne "
+==============================================================================
+Prevention
+==============================================================================
+"
+
+brbinstall_flavoring_neobian_setup-server
+
+brbinstall_distrib_deb-based_debian-based_run-script
+
+brbinstall_theming_plymouth_prepare
+
+brbinstall_theming_plymouth_spinner-lin
+
+brbinstall_theming_plymouth_set "spinner-lin"
+
+brbinstall_flavoring_neobian_setup-xfce
+
+brbinstall_flavoring_neobian_theming-xfce
 
 
-sudo $auto_pkg_installer network-manager-gnome blueman
 
-#enlever les icônes sur le bureau (clic droit param)
+sudo $auto_pkg_installer firefox pavucontrol synaptic gparted
+sudo $auto_pkg_installer kitty alacritty
+
+# add firmware etc sources
+# add stable testing sed sources etc...
+
+#sudo sed -i "s///g" /etc/apt
+
 
 
 #all the flatpaks
@@ -174,37 +194,53 @@ flatpak install -y flathub com.github.tchx84.Flatseal
 flatpak install -y flathub com.rafaelmardojai.Blanket
 flatpak install -y flathub de.haeckerfelix.Shortwave
 flatpak install -y flathub com.usebottles.bottles
+flatpak install -y flathub com.github.flxzt.rnote
 flatpak install -y flathub fyi.zoey.TeX-Match
 
 "
+echo -ne "
+flatpak install -y flathub org.gnome.gitlab.YaLTeR.VideoTrimmer
+flatpak install -y flathub com.github.marinm.songrec
+flatpak install -y flathub io.github.seadve.Mousai
+"
 
-#songrec mousai videotrimmer
 
-#amazing
-#flatpak install flathub com.github.flxzt.rnote
-
-#all the flatpaks
 echo -ne "
 other program pkgs ?
 discord steam anydesk(remove from startup and do the security) atom (grub-customizer) firefox chromium obs-sudio vivaldi
 
-alacritty kitty cool-retro-term
+brbinstall_distrib_deb-based_debian-based_steam
+
+alacritty kitty cool-retro-term #wezterm
 gparted
 ghostwritter
 
 "
 
 
-#check startjobs from systemd
 
+}
+
+brbinstall_flavoring_neobian_things-to-check () {
+echo -ne "
+==============================================================================
+not checked
+==============================================================================
+"
+#for the other one gnome-core
+
+#check startjobs from systemd
+#check les services
 
 #https://github.com/Antynea/grub-btrfs
 #check os-prober
 
-
 #is there a way to see output in the terminal and put it in a log too ?
 #yes using script
 
+#i3
+#https://github.com/maestrogerardo/i3-gaps-deb
+#https://askubuntu.com/questions/18654/how-to-prevent-updating-of-a-specific-package
 
 
 }

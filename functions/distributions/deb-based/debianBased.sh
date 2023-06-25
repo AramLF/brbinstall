@@ -11,6 +11,25 @@ sudo $auto_pkg_installer plymouth
 #maybe add plymouth-themes
 }
 
+brbinstall_distrib_deb-based_debian-based_steam () {
+echo -ne "
+==============================================================================
+Debian steam
+==============================================================================
+"
+sudo dpkg --add-architecture i386
+sudo $auto_pkg_installer steam
+}
+
+brbinstall_distrib_deb-based_debian-based_main-and-more () {
+echo -ne "
+==============================================================================
+Debian add basic repos main contrib non-free non-free-firmware
+==============================================================================
+"
+sudo sed -i "s/main.*/main contrib non-free non-free-firmware/g" /etc/apt/sources.list
+}
+
 brbinstall_distrib_deb-based_debian-based_plymouth () {
 echo -ne "
 ==============================================================================
