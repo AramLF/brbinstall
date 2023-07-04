@@ -113,6 +113,7 @@ sudo $auto_pkg_installer plank
 #plank au start d'xfce
 #zoom sur icône : 130
 #Paramètres Logiciels Navigateur Dossier Terminal
+#Suppr les ombres dock (peaufinage des fenêtres xfce)
 
 sudo $auto_pkg_installer mousepad xfce4-terminal thunar
 #thunar : display up bar as buttons
@@ -205,7 +206,7 @@ brbinstall_setup_miscsetup_vmtools
 #wezterm
 
 anydesk(remove from startup and do the security)
-atom ghostwritter bottom
+atom ghostwritter bottom caffeine(if it works ?)
 "
 
 #other program with flatpak
