@@ -18,12 +18,14 @@ echo -ne "
 Remove brbinstall cache
 ==============================================================================
 "
+cacheStorage=$(du -sh $initialCacheFolder)
 echo -ne "
 ! this command will be performed ! :
 sudo rm -rf $initialCacheFolder/!(README.md)
+It will remove $cacheStorage 
 Ctrl+C to opt out
 Enter opt in
 "
-read 
+read
 sudo rm -rf $initialCacheFolder/!(README.md)
 }
