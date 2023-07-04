@@ -20,7 +20,7 @@ Setup debian net live
 
 #choisir utilitaires usuels du système
 
-#Connexion wifi for a debian server
+#Wifi connection for debian server
 #https://www.linuxtricks.fr/wiki/systemd-le-reseau-avec-systemd-networkd
 #https://linuxhint.com/3-ways-to-connect-to-wifi-from-the-command-line-on-debian/
 echo -ne '
@@ -103,7 +103,7 @@ sudo $auto_pkg_installer network-manager-gnome blueman
 #barre d'état(ajuster la taille, symboliques)
 #greffon pulseaudio(with pavucontrol) power-manager disposition-clavier(système) Horloge Notification Afficher-bureau
 
-#change le temps avec heure puis date
+#change le temps avec heure puis date (et format de date avec des /)
 
 #peaufinage des fenêtres : placement --> grande au max
 
@@ -114,7 +114,8 @@ sudo $auto_pkg_installer plank
 #zoom sur icône : 130
 #Paramètres Logiciels Navigateur Dossier Terminal
 
-sudo $auto_pkg_installer mousepad xfce4-terminal
+sudo $auto_pkg_installer mousepad xfce4-terminal thunar
+#thunar : display up bar as buttons
 
 #lightdm-gtk-greeter-settings
 #%H:%M %A %d/%m/%Y adw-gtk3-dark Taru-Breeze-dark Work-Sans-Regular-10 background
@@ -122,6 +123,7 @@ sudo $auto_pkg_installer mousepad xfce4-terminal
 #list users
 #/etc/lightdm/lightdm.conf
 #greeter-hide-users=false #???? ça marche ap ?
+
 
 
 
