@@ -114,6 +114,20 @@ sudo $auto_pkg_installer plank
 #zoom sur icône : 130
 #Paramètres Logiciels Navigateur Dossier Terminal
 #Suppr les ombres dock (peaufinage des fenêtres xfce)
+mkdir -p ~/.config/autostart
+echo -ne '[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=planked
+Comment=
+Exec=plank
+OnlyShowIn=XFCE;
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
+' | tee ~/.config/autostart/planked.desktop >/dev/null
 
 sudo $auto_pkg_installer mousepad xfce4-terminal thunar
 #thunar : display up bar as buttons
@@ -126,7 +140,7 @@ sudo $auto_pkg_installer mousepad xfce4-terminal thunar
 #greeter-hide-users=false #???? ça marche ap ?
 
 
-
+cp -r $initialPath/dotfiles/xfce/xfce4 ~/.config/xfce4
 
 }
 

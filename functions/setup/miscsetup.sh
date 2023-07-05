@@ -204,6 +204,7 @@ Getting and setup open vm tools
 "
 #specific use case it should be improved
 sudo $auto_pkg_installer open-vm-tools
+sudo $auto_pkg_installer open-vm-tools-desktop
 
 systemctl enable vmtoolsd.service
 #rc-update add <service> <runlevel>
