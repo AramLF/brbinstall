@@ -139,8 +139,10 @@ sudo $auto_pkg_installer mousepad xfce4-terminal thunar
 #/etc/lightdm/lightdm.conf
 #greeter-hide-users=false #???? ça marche ap ?
 
+#change default applications in mimes
 
-cp -r $initialPath/dotfiles/xfce/xfce4 ~/.config/xfce4
+
+cp -vr $initialPath/dotfiles/xfce/xfce4 ~/.config/
 
 }
 
@@ -203,14 +205,14 @@ brbinstall_flavoring_neobian_theming-xfce
 #brbinstall_distrib_deb-based_debian-based_add-backports
 
 
-
+#maybe start script at the begining
 
 #other program with pkgs
 echo -ne "
-sudo $auto_pkg_installer firefox pavucontrol synaptic gparted
+sudo $auto_pkg_installer firefox-esr pavucontrol synaptic gparted
 sudo $auto_pkg_installer chromium obs-sudio steam
 sudo $auto_pkg_installer kitty alacritty cool-retro-term
-sudo $auto_pkg_installer grub-customizer
+#sudo $auto_pkg_installer grub-customizer
 sudo $auto_pkg_installer flatpak
 
 #discord vivaldi teamspeak
@@ -219,8 +221,19 @@ brbinstall_setup_miscsetup_bottom-deb
 brbinstall_setup_miscsetup_vmtools
 #wezterm
 
+#compile iced https://github.com/iced-rs/iced
+#compile bazaar https://github.com/hojjatabdollahi/bazaar
+
 anydesk(remove from startup and do the security)
-atom ghostwritter bottom caffeine(if it works ?)
+atom(replace with kate maybe) ghostwritter goverlay(MangoHud) bottom caffeine(if it works ?)
+Unigine heaven to try the gpu
+
+#Exe : DragonRaja Notepad++ Kara Kate scan-app
+
+metadatacleaner obsidian boop-gtk
+gtk theme used in flatpak
+
+i3-gaps-deb https://github.com/maestrogerardo/i3-gaps-deb
 "
 
 #other program with flatpak
