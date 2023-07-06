@@ -184,6 +184,9 @@ Prevention
 ==============================================================================
 "
 
+#maybe start script at the begining
+script $initialCacheFolder/scriptedTypescript
+
 brbinstall_flavoring_neobian_setup-server
 
 brbinstall_distrib_deb-based_debian-based_run-script
@@ -205,8 +208,16 @@ brbinstall_flavoring_neobian_theming-xfce
 #brbinstall_distrib_deb-based_debian-based_add-backports
 
 
-#maybe start script at the begining
 
+
+}
+
+brbinstall_flavoring_neobian_remaining () {
+echo -ne "
+==============================================================================
+Neobian remaining
+==============================================================================
+"
 #other program with pkgs
 echo -ne "
 sudo $auto_pkg_installer firefox-esr pavucontrol synaptic gparted
@@ -251,7 +262,6 @@ flatpak install -y flathub org.gnome.gitlab.YaLTeR.VideoTrimmer
 flatpak install -y flathub com.github.marinm.songrec
 flatpak install -y flathub io.github.seadve.Mousai
 "
-
 }
 
 brbinstall_flavoring_neobian_things-to-check () {
