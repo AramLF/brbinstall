@@ -49,7 +49,6 @@ then
   brbinstall_flavoring_all_vimi_script
 else
   echo "exiting please choose something in the list";
-  exit 1;
 fi
 
 }
