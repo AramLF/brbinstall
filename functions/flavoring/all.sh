@@ -7,52 +7,42 @@ flavoring choice
 ==============================================================================
 "
 
-#terrible way of doing things (need to be changed seriously)
-echo "Choose the flavor to install :"
-echo "1) catp"
-echo "2) coll"
-echo "3) flue"
-echo "4) grey"
-echo "5) matte"
-echo "6) roll"
-echo "7) spice"
-echo "8) vimi"
-echo " "
-read -r -p "Select the flavor with the number, [Enter] to validate : " flavChoice
+#a new way of doing things (could be improved)
+echo -ne "Choose the flavor to install :
+across
+catp
+coll
+flue
+grey
+matte
+roll
+spice
+vimi
+"
+read -r -p "Select the flavor by typing it, [Enter] to validate : " flavChoice
 
-#a new way ?
 brbinstall_flavoring_all_$flavChoice\_script
-#another terrible way of doing things :
-if [ $flavChoice = "1" ]
-then
-  brbinstall_flavoring_all_catp_script
-elif [ $flavChoice = "2" ]
-then
-  brbinstall_flavoring_all_coll_script
-elif [ $flavChoice = "3" ]
-then
-  brbinstall_flavoring_all_flue_script
-elif [ $flavChoice = "4" ]
-then
-  brbinstall_flavoring_all_grey_script
-elif [ $flavChoice = "5" ]
-then
-  brbinstall_flavoring_all_matte_script
-elif [ $flavChoice = "6" ]
-then
-  brbinstall_flavoring_all_roll_script
-elif [ $flavChoice = "7" ]
-then
-  brbinstall_flavoring_all_spice_script
-elif [ $flavChoice = "8" ]
-then
-  brbinstall_flavoring_all_vimi_script
-else
-  echo "exiting please choose something in the list";
-fi
 
 }
 
+brbinstall_flavoring_all_across_script () {
+echo -ne "
+==============================================================================
+flavor adwaitacross
+==============================================================================
+"
+
+brbinstall_theming_dependencies_global
+
+brbinstall_theming_gtk_adw-gtk3
+
+brbinstall_theming_gtk_orchis
+
+brbinstall_theming_icon_taru-yaru
+
+brbinstall_theming_terminal_ps1
+
+}
 
 brbinstall_flavoring_all_catp_script () {
 echo -ne "
