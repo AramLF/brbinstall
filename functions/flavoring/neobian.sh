@@ -168,41 +168,6 @@ brbinstall_de_xfce_set-font-monospace-gtk-theme "Cascadia Mono Regular 10"
 
 }
 
-brbinstall_flavoring_neobian_prevention () {
-echo -ne "
-==============================================================================
-Prevention
-==============================================================================
-"
-
-#maybe start script at the begining
-script $initialCacheFolder/scriptedTypescript
-
-brbinstall_flavoring_neobian_setup-server
-
-brbinstall_distrib_deb-based_debian-based_run-script
-
-#brbinstall_distrib_deb-based_debian-based_plymouth-unshow
-
-brbinstall_theming_plymouth_prepare
-
-brbinstall_theming_plymouth_spinner-lin
-
-brbinstall_theming_plymouth_set "spinner-lin"
-
-brbinstall_flavoring_neobian_setup-xfce
-
-brbinstall_flavoring_neobian_theming-xfce
-
-#brbinstall_distrib_deb-based_debian-based_switch-ver "bookworm" "trixie"
-
-#brbinstall_distrib_deb-based_debian-based_add-backports
-
-
-
-
-}
-
 brbinstall_flavoring_neobian_remaining () {
 echo -ne "
 ==============================================================================
@@ -287,7 +252,27 @@ echo -ne "
 Running neobian
 ==============================================================================
 "
-ls
+brbinstall_setup_commands_script-typescript
+
+brbinstall_flavoring_neobian_setup-server
+
+brbinstall_distrib_deb-based_debian-based_run-script
+
+#brbinstall_distrib_deb-based_debian-based_plymouth-unshow
+
+brbinstall_theming_plymouth_prepare
+
+brbinstall_theming_plymouth_spinner-lin
+
+brbinstall_theming_plymouth_set "spinner-lin"
+
+brbinstall_flavoring_neobian_setup-xfce
+
+brbinstall_flavoring_neobian_theming-xfce
+
+#brbinstall_distrib_deb-based_debian-based_switch-ver "bookworm" "trixie"
+
+#brbinstall_distrib_deb-based_debian-based_add-backports
 }
 
 

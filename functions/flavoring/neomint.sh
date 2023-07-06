@@ -149,6 +149,8 @@ echo -ne "
 Linux Mint Neomint flavor
 ==============================================================================
 "
+  brbinstall_setup_commands_script-typescript
+
   brbinstall_flavoring_neomint_required-start
 
   brbinstall_flavoring_neomint_wifi_prevention
@@ -184,7 +186,7 @@ Linux Mint Neomint flavor
   #gterminal #242424
 
   brbinstall_de_cinnamon_set-monospace-font "Cascadia Mono Regular 10"
-  #Work Sans Regular 10 x3 | Work Sans Medium 10 
+  #Work Sans Regular 10 x3 | Work Sans Medium 10
 
   #brbinstall_theming_plymouth_prepare
 
