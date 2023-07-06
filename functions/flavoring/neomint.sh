@@ -163,26 +163,28 @@ Linux Mint Neomint flavor
 
   brbinstall_de_cinnamon_set-displayed-icons
 
-  brbinstall_flavoring_all_flue_script
+  brbinstall_flavoring_all_across_script
 
   #Not used anymore since all themes are copied now in it
   #brbinstall_theming_gtk_fluent "--tweaks round --dest $HOME/.themes"
 
-  brbinstall_de_cinnamon_set-desktop-theme "Fluent-round-Dark-compact"
+  brbinstall_de_cinnamon_set-desktop-theme "Orchis-Dark"
 
-  brbinstall_de_cinnamon_set-gtk-theme "Fluent-round-Dark-compact"
+  brbinstall_de_cinnamon_set-gtk-theme "adw-gtk3-dark"
 
-  brbinstall_de_cinnamon_set-wm-theme "Fluent-round-Dark"
+  #brbinstall_de_cinnamon_set-wm-theme ""
 
-  brbinstall_de_cinnamon_set-icon-theme "Fluent-dark"
+  brbinstall_de_cinnamon_set-icon-theme "Taru-Breeze-dark"
 
   brbinstall_theming_wallpaper_rands-walls-spe
 
-  brbinstall_de_cinnamon_set-background "file:////usr/share/backgrounds/walls/andy-holmes-4xn0ycUZyYo-unsplash.jpg"
+  brbinstall_de_cinnamon_set-background "file:////usr/share/backgrounds/walls/spencer-watson-p0Yupww_SNM-unsplash.jpg"
 
-  echo yes |brbinstall_theming_gterminal_set-flue
+  #echo yes |brbinstall_theming_gterminal_set-flue
+  #gterminal #242424
 
-  brbinstall_de_cinnamon_set-monospace-font "Ubuntu Mono 12"
+  brbinstall_de_cinnamon_set-monospace-font "Cascadia Mono Regular 10"
+  #Work Sans Regular 10 x3 | Work Sans Medium 10 
 
   #brbinstall_theming_plymouth_prepare
 

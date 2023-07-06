@@ -152,16 +152,7 @@ echo -ne "
 Theming xfce neobian
 ==============================================================================
 "
-#adwaitacross need to be a standalone flavoring
-brbinstall_theming_gtk_adw-gtk3
-
-brbinstall_theming_icon_taru-yaru
-
-brbinstall_theming_fonts_work-sans-all
-
-brbinstall_theming_fonts_cascadia-all
-
-brbinstall_theming_wallpaper_rands-walls-spe
+brbinstall_flavoring_all_across_script
 
 brbinstall_de_xfce_set-xfwm4-theme "adw-gtk3-dark-small"
 

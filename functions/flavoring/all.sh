@@ -42,6 +42,12 @@ brbinstall_theming_icon_taru-yaru
 
 brbinstall_theming_terminal_ps1
 
+brbinstall_theming_fonts_work-sans-all
+
+brbinstall_theming_fonts_cascadia-all
+
+brbinstall_theming_wallpaper_rands-walls-spe
+
 }
 
 brbinstall_flavoring_all_catp_script () {
