@@ -163,7 +163,7 @@ Linux Mint Neomint flavor
 
   brbinstall_de_cinnamon_set-displayed-icons
 
-  brbinstall_flavoring_flue_script
+  brbinstall_flavoring_all_flue_script
 
   #Not used anymore since all themes are copied now in it
   #brbinstall_theming_gtk_fluent "--tweaks round --dest $HOME/.themes"

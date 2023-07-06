@@ -20,31 +20,33 @@ echo "8) vimi"
 echo " "
 read -r -p "Select the flavor with the number, [Enter] to validate : " flavChoice
 
+#a new way ?
+brbinstall_flavoring_all_$flavChoice\_script
 #another terrible way of doing things :
 if [ $flavChoice = "1" ]
 then
-  brbinstall_flavoring_catp_script
+  brbinstall_flavoring_all_catp_script
 elif [ $flavChoice = "2" ]
 then
-  brbinstall_flavoring_coll_script
+  brbinstall_flavoring_all_coll_script
 elif [ $flavChoice = "3" ]
 then
-  brbinstall_flavoring_flue_script
+  brbinstall_flavoring_all_flue_script
 elif [ $flavChoice = "4" ]
 then
-  brbinstall_flavoring_grey_script
+  brbinstall_flavoring_all_grey_script
 elif [ $flavChoice = "5" ]
 then
-  brbinstall_flavoring_matte_script
+  brbinstall_flavoring_all_matte_script
 elif [ $flavChoice = "6" ]
 then
-  brbinstall_flavoring_roll_script
+  brbinstall_flavoring_all_roll_script
 elif [ $flavChoice = "7" ]
 then
-  brbinstall_flavoring_spice_script
+  brbinstall_flavoring_all_spice_script
 elif [ $flavChoice = "8" ]
 then
-  brbinstall_flavoring_vimi_script
+  brbinstall_flavoring_all_vimi_script
 else
   echo "exiting please choose something in the list";
   exit 1;
@@ -53,7 +55,7 @@ fi
 }
 
 
-brbinstall_flavoring_catp_script () {
+brbinstall_flavoring_all_catp_script () {
 echo -ne "
 ==============================================================================
 flavor Catp
@@ -78,7 +80,7 @@ brbinstall_theming_terminal_ps1
 
 }
 
-brbinstall_flavoring_coll_script () {
+brbinstall_flavoring_all_coll_script () {
 echo -ne "
 ==============================================================================
 flavor Coll
@@ -103,7 +105,7 @@ brbinstall_theming_terminal_ps1
 
 }
 
-brbinstall_flavoring_flue_script () {
+brbinstall_flavoring_all_flue_script () {
 echo -ne "
 ==============================================================================
 flavor Flue
@@ -126,7 +128,7 @@ brbinstall_theming_terminal_ps1
 
 }
 
-brbinstall_flavoring_grey_script () {
+brbinstall_flavoring_all_grey_script () {
 echo -ne "
 ==============================================================================
 flavor Grey
@@ -159,7 +161,7 @@ brbinstall_theming_terminal_ps1
 
 }
 
-brbinstall_flavoring_matte_script () {
+brbinstall_flavoring_all_matte_script () {
 echo -ne "
 ==============================================================================
 flavor Matte
@@ -190,7 +192,7 @@ brbinstall_theming_terminal_ps1
 
 }
 
-brbinstall_flavoring_roll_script () {
+brbinstall_flavoring_all_roll_script () {
 echo -ne "
 ==============================================================================
 flavor roll
@@ -215,7 +217,7 @@ brbinstall_theming_terminal_ps1
 
 }
 
-brbinstall_flavoring_spice_script () {
+brbinstall_flavoring_all_spice_script () {
 echo -ne "
 ==============================================================================
 flavor Spice
@@ -244,7 +246,7 @@ brbinstall_theming_terminal_ps1
 
 }
 
-brbinstall_flavoring_vimi_script () {
+brbinstall_flavoring_all_vimi_script () {
 echo -ne "
 ==============================================================================
 flavor Vimi
