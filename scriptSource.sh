@@ -24,14 +24,6 @@ source ./functions/desktopenvironments/kde.sh
 source ./functions/desktopenvironments/xfce.sh
 
 source ./functions/flavoring/all.sh
-source ./functions/flavoring/matte.sh
-source ./functions/flavoring/vimi.sh
-source ./functions/flavoring/flue.sh
-source ./functions/flavoring/roll.sh
-source ./functions/flavoring/coll.sh
-source ./functions/flavoring/grey.sh
-source ./functions/flavoring/catp.sh
-source ./functions/flavoring/spice.sh
 source ./functions/flavoring/r3.sh
 source ./functions/flavoring/neobian.sh
 source ./functions/flavoring/neomint.sh
