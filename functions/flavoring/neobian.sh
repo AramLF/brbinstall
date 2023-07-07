@@ -50,21 +50,6 @@ sudo $auto_pkg_installer network-manager
 
 }
 
-brbinstall_flavoring_neobian_setup-server () {
-echo -ne "
-==============================================================================
-Neobian setup server
-==============================================================================
-"
-brbinstall_setup_server_distance
-
-brbinstall_setup_server_allow-closed-laptop-lid
-
-brbinstall_setup_server_numlock-for-tty
-
-
-}
-
 brbinstall_flavoring_neobian_setup-xfce () {
 echo -ne "
 ==============================================================================
@@ -172,6 +157,7 @@ echo -ne "
 sudo $auto_pkg_installer firefox-esr pavucontrol synaptic gparted
 sudo $auto_pkg_installer chromium obs-sudio steam
 sudo $auto_pkg_installer kitty alacritty cool-retro-term
+sudo $auto_pkg_installer kate
 #sudo $auto_pkg_installer grub-customizer
 sudo $auto_pkg_installer flatpak
 
@@ -247,11 +233,16 @@ Running neobian
 "
 brbinstall_setup_commands_script-typescript
 
-brbinstall_flavoring_neobian_setup-server
-
 brbinstall_distrib_deb-based_debian-based_run-script
 
+brbinstall_setup_server_distance
+
+brbinstall_setup_server_allow-closed-laptop-lid
+
+brbinstall_setup_server_numlock-for-tty
+
 #brbinstall_distrib_deb-based_debian-based_plymouth-unshow
+#sudo systemctl disable lightdm
 
 brbinstall_theming_plymouth_prepare
 

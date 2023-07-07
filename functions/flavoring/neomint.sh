@@ -45,10 +45,9 @@ flatpak install -y flathub com.rafaelmardojai.Blanket
 flatpak install -y flathub com.usebottles.bottles
 flatpak install -y flathub fyi.zoey.TeX-Match
 
-# Alternate theming with yaru :
+# Sourcing for other functions :
 cd $initialPath/
 source scriptSource.sh
-brbinstall_flavoring_neomint_alternate-theming
 
 # And check brbinstall_flavoring_neomint_introduce-it
 
