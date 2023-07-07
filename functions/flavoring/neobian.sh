@@ -82,13 +82,7 @@ sudo $auto_pkg_installer lightdm-gtk-greeter-settings
 #sudo systemctl set-default graphical.target
 
 #other
-brbinstall_setup_server_start-with-display
-
-
-
-#other
 #wallpaper, icons, menuIcon(whiskermenu), systray icons, change time display, original font
-
 
 #remove xfce bottom panel check https://forum.xfce.org/viewtopic.php?id=13717
 #recolor top panel with #242424
@@ -140,7 +134,6 @@ sudo $auto_pkg_installer mousepad xfce4-terminal thunar
 #greeter-hide-users=false #???? ça marche ap ?
 
 #change default applications in mimes
-
 
 cp -vr $initialPath/dotfiles/xfce/xfce4 ~/.config/
 
@@ -267,6 +260,8 @@ brbinstall_theming_plymouth_spinner-lin
 brbinstall_theming_plymouth_set "spinner-lin"
 
 brbinstall_flavoring_neobian_setup-xfce
+
+brbinstall_setup_server_start-with-display
 
 brbinstall_flavoring_neobian_theming-xfce
 
