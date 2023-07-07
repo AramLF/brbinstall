@@ -264,7 +264,7 @@ brbinstall_flavoring_neobian_theming-xfce
 brbinstall_flavoring_neobian_serverd () {
 echo -ne "
 ==============================================================================
-Running neobian
+Running neobian for server
 ==============================================================================
 "
 echo -ne '
