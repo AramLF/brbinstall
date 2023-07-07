@@ -176,7 +176,7 @@ Unigine heaven to try the gpu
 
 #Exe : DragonRaja Notepad++ Kara Kate scan-app
 
-metadatacleaner obsidian boop-gtk
+metadatacleaner obsidian(try logseq ?) boop-gtk
 gtk theme used in flatpak
 
 i3-gaps-deb https://github.com/maestrogerardo/i3-gaps-deb
@@ -259,6 +259,20 @@ brbinstall_flavoring_neobian_theming-xfce
 #brbinstall_distrib_deb-based_debian-based_switch-ver "bookworm" "trixie"
 
 #brbinstall_distrib_deb-based_debian-based_add-backports
+}
+
+brbinstall_flavoring_neobian_serverd () {
+echo -ne "
+==============================================================================
+Running neobian
+==============================================================================
+"
+echo -ne '
+brbinstall_flavoring_neobian_neobian
+brbinstall_distrib_deb-based_debian-based_plymouth-unshow
+brbinstall_setup_server_allow-closed-laptop-lid
+sudo systemctl disable lightdm
+'
 }
 
 
