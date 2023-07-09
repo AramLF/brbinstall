@@ -124,6 +124,19 @@ cp -vr $initialPath/dotfiles/xfce/xfce4 ~/.config/
 
 }
 
+brbinstall_flavoring_neobian_setup-plasma () {
+echo -ne "
+==============================================================================
+Neobian plasma
+==============================================================================
+"
+#not finished
+
+sudo $auto_pkg_installer plasma-desktop konsole dolphin
+
+
+}
+
 brbinstall_flavoring_neobian_theming-xfce () {
 echo -ne "
 ==============================================================================
@@ -172,6 +185,7 @@ brbinstall_setup_miscsetup_vmtools
 
 anydesk(remove from startup and do the security)
 atom(replace with kate maybe) ghostwritter goverlay(MangoHud) bottom caffeine(if it works ?)
+3d-ascii-viewer-c
 Unigine heaven to try the gpu
 
 #Exe : DragonRaja Notepad++ Kara Kate scan-app
@@ -179,7 +193,11 @@ Unigine heaven to try the gpu
 metadatacleaner obsidian(try logseq ?) boop-gtk
 gtk theme used in flatpak
 
-i3-gaps-deb https://github.com/maestrogerardo/i3-gaps-deb
+add plasma-setup r3 and Hyprland(compiled if possible)
+
+check (for the swap) fstab (blkid fsck) --> neomint too (systemd slow otherwise)
+
+setup all the functionning git for deb brb Bo misc etc...
 "
 
 #other program with flatpak
@@ -205,6 +223,8 @@ echo -ne "
 not checked
 ==============================================================================
 "
+#finish plasma setup
+
 #for the other one gnome-core
 
 #check startjobs from systemd
@@ -216,8 +236,9 @@ not checked
 #is there a way to see output in the terminal and put it in a log too ?
 #yes using script
 
-#i3
+#i3 --> r3 theming
 #https://github.com/maestrogerardo/i3-gaps-deb
+#sudo apt-mark hold i3 i3-wm
 #https://askubuntu.com/questions/18654/how-to-prevent-updating-of-a-specific-package
 
 
