@@ -86,7 +86,7 @@ sudo $auto_pkg_installer network-manager-gnome blueman
 
 #peaufinage des fenêtres : placement --> grande au max
 
-#enlever les icônes sur le bureau (clic droit param)
+#remove icons from desktop
 
 sudo $auto_pkg_installer plank
 #plank au start d'xfce
