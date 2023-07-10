@@ -119,6 +119,7 @@ sudo $auto_pkg_installer mousepad xfce4-terminal thunar
 #greeter-hide-users=false #???? ça marche ap ?
 
 #change default applications in mimes
+#add tap to click 
 
 cp -vr $initialPath/dotfiles/xfce/xfce4 ~/.config/
 

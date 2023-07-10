@@ -1,5 +1,5 @@
 favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop
-recent=org.wezfurlong.wezterm.desktop,cool-retro-term.desktop,nemo.desktop,kitty.desktop,gparted.desktop,xfce4-terminal-emulator.desktop,blueman-manager.desktop,xfce-display-settings.desktop,debian-xterm.desktop,firefox-esr.desktop
+recent=codium.desktop,lightdm-gtk-greeter-settings.desktop,synaptic.desktop,firefox-esr.desktop,xfce4-file-manager.desktop,xfce4-terminal.desktop,xfce4-terminal-emulator.desktop,blueman-manager.desktop,xfce-display-settings.desktop
 button-icon=emblem-debian-white
 button-single-row=false
 show-button-title=true
