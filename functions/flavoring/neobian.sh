@@ -198,7 +198,7 @@ add plasma-setup r3 and Hyprland(compiled if possible)
 
 check (for the swap) fstab (blkid fsck) --> neomint too (systemd slow otherwise) --> check for zram (the md)
 
-setup all the functionning git for deb brb Bo misc etc...
+setup all the functionning git for brb, Bo, misc, etc...
 "
 
 #other program with flatpak
