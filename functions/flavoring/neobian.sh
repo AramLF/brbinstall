@@ -119,7 +119,7 @@ sudo $auto_pkg_installer mousepad xfce4-terminal thunar
 #greeter-hide-users=false #???? ça marche ap ?
 
 #change default applications in mimes
-#add tap to click 
+#add tap to click
 
 cp -vr $initialPath/dotfiles/xfce/xfce4 ~/.config/
 
@@ -185,7 +185,7 @@ brbinstall_setup_miscsetup_vmtools
 #compile bazaar https://github.com/hojjatabdollahi/bazaar
 
 anydesk(remove from startup and do the security)
-atom(replace with kate maybe) ghostwritter goverlay(MangoHud) bottom caffeine(if it works ?)
+atom(kate or vscodium) ghostwritter goverlay(MangoHud) bottom caffeine(if it works ?)
 3d-ascii-viewer-c
 Unigine heaven to try the gpu
 
