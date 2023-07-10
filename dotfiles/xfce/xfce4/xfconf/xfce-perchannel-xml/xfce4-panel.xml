@@ -72,6 +72,7 @@
       <property name="digital-layout" type="uint" value="1"/>
       <property name="digital-date-font" type="string" value="Work Sans Bold 8"/>
       <property name="digital-time-font" type="string" value="Work Sans Bold 8"/>
+      <property name="digital-date-format" type="string" value="%d/%m/%Y"/>
     </property>
     <property name="plugin-7" type="string" value="whiskermenu"/>
     <property name="plugin-9" type="string" value="xkb">
