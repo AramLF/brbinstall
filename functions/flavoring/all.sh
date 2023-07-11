@@ -40,7 +40,7 @@ brbinstall_theming_gtk_orchis
 
 brbinstall_theming_icon_taru-yaru
 
-brbinstall_theming_terminal_ps1
+brbinstall_theming_terminal_ps1-all
 
 brbinstall_theming_fonts_work-sans-all
 
@@ -71,7 +71,7 @@ brbinstall_theming_icon_papirus
 
 brbinstall_theming_wallpaper_all
 
-brbinstall_theming_terminal_ps1
+brbinstall_theming_terminal_ps1-all
 
 }
 
@@ -96,7 +96,7 @@ fi
 
 brbinstall_theming_icon_colloid
 
-brbinstall_theming_terminal_ps1
+brbinstall_theming_terminal_ps1-all
 
 }
 
@@ -119,7 +119,7 @@ fi
 
 brbinstall_theming_icon_fluent
 
-brbinstall_theming_terminal_ps1
+brbinstall_theming_terminal_ps1-all-all
 
 }
 
@@ -152,7 +152,7 @@ brbinstall_theming_icon_numix-both
 
 brbinstall_theming_wallpaper_all
 
-brbinstall_theming_terminal_ps1
+brbinstall_theming_terminal_ps1-all-all
 
 }
 
@@ -183,7 +183,7 @@ brbinstall_theming_icon_numix-both
 
 brbinstall_theming_wallpaper_all
 
-brbinstall_theming_terminal_ps1
+brbinstall_theming_terminal_ps1-all-all
 
 }
 
@@ -208,7 +208,7 @@ fi
 
 brbinstall_theming_icon_fluent
 
-brbinstall_theming_terminal_ps1
+brbinstall_theming_terminal_ps1-all
 
 }
 
@@ -237,7 +237,7 @@ brbinstall_theming_icon_fluent "red"
 
 brbinstall_theming_wallpaper_all
 
-brbinstall_theming_terminal_ps1
+brbinstall_theming_terminal_ps1-all
 
 }
 
@@ -266,6 +266,6 @@ brbinstall_theming_icon_tela-circle
 
 brbinstall_theming_wallpaper_all
 
-brbinstall_theming_terminal_ps1
+brbinstall_theming_terminal_ps1-all
 
 }

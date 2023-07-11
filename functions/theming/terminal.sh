@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brbinstall_theming_terminal_ps1 (){
+brbinstall_theming_terminal_ps1-user (){
 echo -ne "
 ==============================================================================
 Change terminal PS1 in ~/.bashrc
@@ -40,4 +40,15 @@ else
 fi
 sudo sed -i 's#PS1=.*#PS1="\\\[\\033\[01;37m\\]┌─\[\\\[\\033\[01;31m\\]\\u\\\[\\033\[01;37m\\]]-\[\\\[\\033\[01;36m\\]\\h\\\[\\033\[01;37m\\]]-\[\\\[\\033\[01;33m\\]\\w\\\[\\033\[00;37m\\]\\\[\\033\[01;37m\\]]\\n\\\[\\033\[01;37m\\]└─\[\\\[\\033\[01;33m\\]\\\\$\\\[\\033\[00;37m\\]\\\[\\033\[01;37m\\]]\\\[\\033\[00;37m\\] "#g' /root/.bashrc
 echo 'PS1 will be displayed in new terminals...'
+}
+
+brbinstall_theming_terminal_ps1-all (){
+echo -ne "
+==============================================================================
+Change both terminal PS1 | user and root
+==============================================================================
+"
+brbinstall_theming_terminal_ps1-user
+
+brbinstall_theming_terminal_ps1-root
 }
