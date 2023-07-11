@@ -38,6 +38,8 @@ brbinstall_theming_gtk_adw-gtk3
 
 brbinstall_theming_gtk_orchis
 
+brbinstall_theming_cursors_qogir
+
 brbinstall_theming_icon_taru-yaru
 
 brbinstall_theming_terminal_ps1-all
