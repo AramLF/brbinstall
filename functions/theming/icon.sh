@@ -103,6 +103,23 @@ cd $initialCacheFolder/Fluent-icon-theme
 sudo ./install.sh $optionUsed
 }
 
+brbinstall_theming_icon_qogir () {
+echo -ne "
+==============================================================================
+gogir-icon-theme installation
+==============================================================================
+"
+if [ "$1" = "" ]
+then
+  optionUsed=""
+else
+  optionUsed=$1
+fi
+git clone https://github.com/vinceliuice/Qogir-icon-theme $initialCacheFolder/Qogir-icon-theme
+cd $initialCacheFolder/Qogir-icon-theme
+sudo ./install.sh $optionUsed
+}
+
 brbinstall_theming_icon_yarupp () {
 echo -ne "
 ==============================================================================
