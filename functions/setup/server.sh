@@ -29,8 +29,12 @@ echo -ne "
 Start the display for any reason
 ==============================================================================
 "
-#might change from all the dm
+#might change for all the dm
 sudo systemctl enable lightdm
+#will change place maybe (one day)
+sudo sed -i "s/.*greeter-hide-users.*/greeter-hide-users=false/g" /etc/lightdm/lightdm.conf
+sudo $auto_pkg_installer numlockx
+sudo sed -i "s/.*greeter-setup-script.*/greeter-setup-script=/usr/bin/numlockx on/g" /etc/lightdm/lightdm.conf
 }
 
 brbinstall_setup_server_numlock-for-tty() {

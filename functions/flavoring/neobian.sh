@@ -62,6 +62,7 @@ sudo $auto_pkg_installer xfce4
 
 sudo $auto_pkg_installer lightdm
 sudo $auto_pkg_installer lightdm-gtk-greeter-settings
+sudo $auto_pkg_installer numlockx
 #sudo systemctl disable lightdm
 #sudo systemctl enable lightdm
 #sudo systemctl set-default graphical.target
@@ -185,7 +186,8 @@ brbinstall_setup_miscsetup_vmtools
 #compile bazaar https://github.com/hojjatabdollahi/bazaar
 
 anydesk(remove from startup and do the security)
-atom(kate or vscodium) ghostwritter goverlay(MangoHud) bottom caffeine(if it works ?)
+vscodium(fedora gnome colors | git graph) 
+kate ghostwritter goverlay(MangoHud) bottom caffeine(if it works ?)
 3d-ascii-viewer-c
 Unigine heaven to try the gpu
 
@@ -198,6 +200,7 @@ add plasma-setup r3 and Hyprland(compiled if possible)
 
 check (for the swap) fstab (blkid fsck) --> neomint too (systemd slow otherwise) --> check for zram (the md)
 check terminal ps1 
+check numlock just in case : https://wiki.archlinux.org/title/Activating_numlock_on_bootup
 
 setup all the functionning git for brb, Bo, misc, etc...
 "
