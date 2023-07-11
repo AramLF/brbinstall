@@ -7,7 +7,7 @@ Dependencies Debian installation
 ==============================================================================
 "
 sudo $auto_pkg_installer htop neofetch ncdu git gcc synaptic wget curl unzip command-not-found ranger
-sudo $auto_pkg_installer nala 
+sudo $auto_pkg_installer nala micro
 sudo $auto_pkg_installer plymouth
 #maybe add plymouth-themes
 }

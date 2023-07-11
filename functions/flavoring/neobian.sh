@@ -197,6 +197,7 @@ gtk theme used in flatpak
 add plasma-setup r3 and Hyprland(compiled if possible)
 
 check (for the swap) fstab (blkid fsck) --> neomint too (systemd slow otherwise) --> check for zram (the md)
+check terminal ps1 
 
 setup all the functionning git for brb, Bo, misc, etc...
 "
