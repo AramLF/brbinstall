@@ -1,6 +1,16 @@
 #!/bin/bash
 
+brbinstall_theming_cursors_all () {
+echo -ne "
+==============================================================================
+all cursors theme installation
+==============================================================================
+"
+brbinstall_theming_cursors_qogir
 
+brbinstall_theming_cursors_adwaita-cursors
+
+}
 
 brbinstall_theming_cursors_qogir () {
 echo -ne "

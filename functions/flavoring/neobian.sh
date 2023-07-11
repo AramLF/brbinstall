@@ -201,6 +201,7 @@ add plasma-setup r3 and Hyprland(compiled if possible)
 check (for the swap) fstab (blkid fsck) --> neomint too (systemd slow otherwise) --> check for zram (the md)
 check terminal ps1 
 check numlock just in case : https://wiki.archlinux.org/title/Activating_numlock_on_bootup
+check cursors
 
 setup all the functionning git for brb, Bo, misc, etc...
 "
