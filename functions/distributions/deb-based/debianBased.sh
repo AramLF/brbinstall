@@ -7,7 +7,7 @@ Dependencies Debian installation
 ==============================================================================
 "
 sudo $auto_pkg_installer htop neofetch ncdu git gcc synaptic wget curl unzip command-not-found ranger
-sudo $auto_pkg_installer nala micro
+sudo $auto_pkg_installer nala micro tealdeer
 sudo $auto_pkg_installer plymouth
 #maybe add plymouth-themes
 }
@@ -56,6 +56,19 @@ echo -ne "
 sudo apt -t bullseye-backports install cockpit
 pkg-query -W | grep '~bpo'
 "
+}
+
+brbinstall_distrib_deb-based_debian-based_i3-gaps-deb () {
+echo -ne "
+==============================================================================
+Debian add i3-gaps-deb
+==============================================================================
+"
+#https://github.com/maestrogerardo/i3-gaps-deb
+git clone https://github.com/maestrogerardo/i3-gaps-deb $initialCacheFolder/i3-gaps-deb
+cd $initialCacheFolder/i3-gaps-deb
+./i3-gaps-deb
+
 }
 
 brbinstall_distrib_deb-based_debian-based_plymouth () {

@@ -33,6 +33,7 @@ Start the display for any reason
 sudo systemctl enable lightdm
 #will change place maybe (one day)
 sudo sed -i "s#.*greeter-hide-users.*#greeter-hide-users=false#g" /etc/lightdm/lightdm.conf
+#https://wiki.archlinux.org/title/Activating_numlock_on_bootup
 sudo $auto_pkg_installer numlockx
 sudo sed -i "s#.*greeter-setup-script.*#greeter-setup-script=/usr/bin/numlockx on#g" /etc/lightdm/lightdm.conf
 }
