@@ -175,18 +175,22 @@ sudo $auto_pkg_installer kitty alacritty cool-retro-term
 sudo $auto_pkg_installer kate
 #sudo $auto_pkg_installer grub-customizer
 sudo $auto_pkg_installer flatpak
+sudo $auto_pkg_installer laptop-mode-tools
+
+anydesk(remove from startup and do the security)
+vscodium(fedora gnome colors | git graph | Cascadia Mono) 
+setup all the functionning git for brb, Bo, misc, etc...
+brbinstall_setup_miscsetup_bottom-deb
+brbinstall_setup_miscsetup_vmtools
 
 #discord vivaldi teamspeak
 brbinstall_setup_miscsetup_tar-opt-install
-brbinstall_setup_miscsetup_bottom-deb
-brbinstall_setup_miscsetup_vmtools
+
 #wezterm
 
 #compile iced https://github.com/iced-rs/iced
 #compile bazaar https://github.com/hojjatabdollahi/bazaar
 
-anydesk(remove from startup and do the security)
-vscodium(fedora gnome colors | git graph) 
 kate ghostwritter goverlay(MangoHud) bottom caffeine(if it works ?)
 3d-ascii-viewer-c
 Unigine heaven to try the gpu
@@ -203,7 +207,7 @@ check terminal ps1
 check numlock just in case : https://wiki.archlinux.org/title/Activating_numlock_on_bootup
 check cursors
 
-setup all the functionning git for brb, Bo, misc, etc...
+
 "
 
 #other program with flatpak
