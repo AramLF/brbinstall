@@ -90,9 +90,7 @@ sudo $auto_pkg_installer network-manager-gnome blueman
 #remove icons from desktop
 
 sudo $auto_pkg_installer plank
-#plank au start d'xfce
-#zoom sur icône : 130
-#Paramètres Logiciels Navigateur Dossier Terminal
+#plank at xfce start
 #Suppr les ombres dock (peaufinage des fenêtres xfce)
 mkdir -p ~/.config/autostart
 echo -ne '[Desktop Entry]
@@ -112,15 +110,8 @@ Hidden=false
 sudo $auto_pkg_installer mousepad xfce4-terminal thunar
 #thunar : display up bar as buttons
 
-#lightdm-gtk-greeter-settings
-#%H:%M %A %d/%m/%Y adw-gtk3-dark Taru-Breeze-dark Work-Sans-Regular-10 background
-
-#list users
+#list users & numlock in the server function
 #/etc/lightdm/lightdm.conf
-#greeter-hide-users=false #???? ça marche ap ?
-
-#change default applications in mimes
-#add tap to click
 
 cp -vr $initialPath/dotfiles/xfce/xfce4 ~/.config/
 sudo cp -vr $initialPath/dotfiles/gtksourceview/styles/* /usr/share/gtksourceview-4/styles/*
@@ -171,18 +162,29 @@ Neobian remaining
 #other program with pkgs
 echo -ne "
 sudo $auto_pkg_installer firefox-esr pavucontrol synaptic gparted
-sudo $auto_pkg_installer chromium obs-sudio steam
 sudo $auto_pkg_installer kitty alacritty cool-retro-term
+
+
+sudo $auto_pkg_installer chromium obs-sudio steam
 sudo $auto_pkg_installer kate
-#sudo $auto_pkg_installer grub-customizer
 sudo $auto_pkg_installer flatpak
 sudo $auto_pkg_installer laptop-mode-tools
+#maybe avoid sudo $auto_pkg_installer grub-customizer
 
 anydesk(remove from startup and do the security)
 vscodium(fedora gnome colors | git graph | Cascadia Mono) 
 setup all the functionning git for brb, Bo, misc, etc...
 brbinstall_setup_miscsetup_bottom-deb
 brbinstall_setup_miscsetup_vmtools
+
+#plank :
+#zoom sur icône : 130
+#Parameters Softwares Browser Folder Terminal
+
+#xfce remaining : 
+#change default applications in mimes
+#add tap to click
+#lightdm-gtk-greeter-settings : #%H:%M %A %d/%m/%Y adw-gtk3-dark Taru-Breeze-dark Work-Sans-Regular-10 background
 
 #discord vivaldi teamspeak
 brbinstall_setup_miscsetup_tar-opt-install
@@ -204,9 +206,10 @@ gtk theme used in flatpak
 add plasma-setup r3 and Hyprland(compiled if possible)
 
 check (for the swap) fstab (blkid fsck) --> neomint too (systemd slow otherwise) --> check for zram (the md)
-check terminal ps1 
+check terminal ps1 user&root
 check numlock just in case : https://wiki.archlinux.org/title/Activating_numlock_on_bootup
 check cursors
+check mousepad gtksourceview
 
 
 "
