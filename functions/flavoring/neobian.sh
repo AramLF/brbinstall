@@ -123,6 +123,7 @@ sudo $auto_pkg_installer mousepad xfce4-terminal thunar
 #add tap to click
 
 cp -vr $initialPath/dotfiles/xfce/xfce4 ~/.config/
+sudo cp -vr $initialPath/dotfiles/gtksourceview/styles/* /usr/share/gtksourceview-4/styles/*
 
 }
 
