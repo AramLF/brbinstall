@@ -68,7 +68,7 @@ Debian add i3-gaps-deb
 git clone https://github.com/maestrogerardo/i3-gaps-deb $initialCacheFolder/i3-gaps-deb
 cd $initialCacheFolder/i3-gaps-deb
 ./i3-gaps-deb
-
+sudo apt-mark hold i3 i3-wm
 }
 
 brbinstall_distrib_deb-based_debian-based_setup-zram () {
