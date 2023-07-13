@@ -104,6 +104,13 @@ sudo systemctl restart zramswap.service
 #zram with systemd-zram-generator
 sudo $auto_pkg_installer systemd-zram-generator
 cat /etc/systemd/zram-generator.conf #make the changes
+######
+[zram0]
+zram-size = ceil(ram * 50/100)
+compression-algorithm = lz4
+swap-priority = 100
+fs-type = swap
+######
 sudo systemctl daemon-reload
 sudo systemctl start systemd-zram-setup@zram0.service
 
