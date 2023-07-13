@@ -304,7 +304,7 @@ brbinstall_setup_miscsetup_flathub
 
 brbinstall_setup_miscsetup_vmtools
 
-brbinstall_setup_commands_script-typescript 
+brbinstall_setup_commands_script-end
 
 }
 
