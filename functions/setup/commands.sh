@@ -40,7 +40,7 @@ Script typescript
 script $initialCacheFolder/scriptedTypescript
 }
 
-brbinstall_setup_commands_script-typescript () {
+brbinstall_setup_commands_script-end () {
 echo -ne "
 ==============================================================================
 Script typescript ended ?
