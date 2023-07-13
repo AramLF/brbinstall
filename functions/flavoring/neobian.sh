@@ -46,8 +46,6 @@ sudo dhclient wlp3s0
 sudo $auto_pkg_installer network-manager
 
 #sudo nmtui
-
-
 }
 
 brbinstall_flavoring_neobian_setup-xfce () {
@@ -182,7 +180,7 @@ anydesk(remove from startup and do the security)
 vscodium(fedora gnome colors | git graph | Cascadia Mono) 
 setup all the functionning git for brb, Bo, misc, etc...
 
-#xfce remaining : 
+#xfce checks : 
 #change default applications in mimes; add tap to click
 #lightdm-gtk-greeter-settings (check numlock & listusers): #%H:%M %A %d/%m/%Y adw-gtk3-dark Taru-Breeze-dark Work-Sans-Regular-10 background
 #plank : (icon zoom 130) Parameters Softwares Browser Folder Terminal
@@ -190,6 +188,7 @@ setup all the functionning git for brb, Bo, misc, etc...
 #Some checks :
 brbinstall_distrib_deb-based_debian-based_setup-zram
 check terminal ps1 (user & root), cursors, mousepad gtksourceview
+check the typescript in cachefolder
 
 #Neobian all (spice&i3)
 brbinstall_flavoring_neobian_setup-plasma
@@ -202,6 +201,7 @@ brbinstall_distrib_deb-based_debian-based_switch-ver "bookworm" "trixie"
 brbinstall_distrib_deb-based_debian-based_add-backports
 
 #Neobian serv mode :
+brbinstall_flavoring_neobian_serverd
 brbinstall_distrib_deb-based_debian-based_plymouth-unshow
 sudo systemctl disable lightdm
 
@@ -258,26 +258,12 @@ not checked
 ==============================================================================
 "
 #finish plasma setup
-
 #for the other one gnome-core
-
-#check startjobs from systemd
-#check les services
+#check (services) startjobs from systemd
 
 #https://github.com/Antynea/grub-btrfs
 #check os-prober
-
-#is there a way to see output in the terminal and put it in a log too ?
-#yes using script
-
-#i3 --> r3 theming
-#https://github.com/maestrogerardo/i3-gaps-deb
-#sudo apt-mark hold i3 i3-wm
-#https://askubuntu.com/questions/18654/how-to-prevent-updating-of-a-specific-package
-
-
 }
-
 
 
 brbinstall_flavoring_neobian_neobian () {
@@ -318,6 +304,7 @@ brbinstall_setup_miscsetup_flathub
 
 brbinstall_setup_miscsetup_vmtools
 
+brbinstall_setup_commands_script-typescript 
 
 }
 

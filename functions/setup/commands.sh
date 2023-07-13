@@ -39,3 +39,17 @@ Script typescript
 #maybe start script at the begining
 script $initialCacheFolder/scriptedTypescript
 }
+
+brbinstall_setup_commands_script-typescript () {
+echo -ne "
+==============================================================================
+Script typescript ended ?
+==============================================================================
+"
+echo -ne "
+if script is present below (not 'grep script') exit the terminal or use Ctrl+D
+ps aux |grep script
+"
+ps aux |grep script
+
+}
