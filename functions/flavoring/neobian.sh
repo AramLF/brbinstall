@@ -188,8 +188,8 @@ setup all the functionning git for brb, Bo, misc, etc...
 #plank : (icon zoom 130) Parameters Softwares Browser Folder Terminal
 
 #Some checks :
-check (for the swap) fstab (blkid fsck) --> neomint too (systemd slow otherwise) --> check for zram (the md)
-check terminal ps1 user&root, cursors, mousepad gtksourceview
+brbinstall_distrib_deb-based_debian-based_setup-zram
+check terminal ps1 (user & root), cursors, mousepad gtksourceview
 
 #Neobian all (spice&i3)
 brbinstall_flavoring_neobian_setup-plasma

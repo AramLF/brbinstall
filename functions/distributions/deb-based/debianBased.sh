@@ -99,7 +99,7 @@ sudo $auto_pkg_installer zram-tools
 cat /etc/default/zramswap #sourced by /usr/bin/zramswap
 sudo sed -i "s/.*ALGO=.*/ALGO=lz4/g" /etc/default/zramswap
 sudo sed -i "s/.*PERCENT=.*/PERCENT=50/g" /etc/default/zramswap
-systemctl restart zramswap.service
+sudo systemctl restart zramswap.service
 
 #zram with systemd-zram-generator
 sudo $auto_pkg_installer systemd-zram-generator
