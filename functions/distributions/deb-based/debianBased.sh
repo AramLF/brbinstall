@@ -71,6 +71,50 @@ cd $initialCacheFolder/i3-gaps-deb
 
 }
 
+brbinstall_distrib_deb-based_debian-based_setup-zram () {
+echo -ne "
+==============================================================================
+Debian-based setup zram
+==============================================================================
+"
+echo -ne "
+#https://fosspost.org/enable-zram-on-linux-better-system-performance/
+#https://opensource.com/article/22/11/zram-swap-linux
+#https://copyninja.in/blog/zram_memory_overcommit.html
+#https://wiki.archlinux.org/title/Zram 
+#https://wiki.debian.org/ZRam
+
+#Check if a swap is being used (/dev/zram0 for zram) :
+cat /proc/swaps 
+
+#If an other type of swap is being used check :
+#Comment using # if one is being used
+cat /etc/fstab |grep swap
+
+#Turn off the swap :
+sudo swapoff -a 
+
+#zram with zram-tools :
+sudo $auto_pkg_installer zram-tools
+cat /etc/default/zramswap #sourced by /usr/bin/zramswap
+sudo sed -i "s/.*ALGO=.*/ALGO=lz4/g" /etc/default/zramswap
+sudo sed -i "s/.*PERCENT=.*/PERCENT=50/g" /etc/default/zramswap
+systemctl restart zramswap.service
+
+#zram with systemd-zram-generator
+sudo $auto_pkg_installer systemd-zram-generator
+cat /etc/systemd/zram-generator.conf #make the changes
+sudo systemctl daemon-reload
+sudo systemctl start systemd-zram-setup@zram0.service
+
+#check using :
+zramctl
+free -h
+sudo $auto_pkg_installer stress-ng
+"
+
+}
+
 brbinstall_distrib_deb-based_debian-based_plymouth () {
 echo -ne "
 ==============================================================================
