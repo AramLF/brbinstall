@@ -21,14 +21,14 @@ Remove brbinstall cache
 cacheStorage=$(du -sh $initialCacheFolder)
 echo -ne "
 ! this command will be performed ! :
-sudo rm -rf $initialCacheFolder/!(README.md)
+sudo find $initialCacheFolder -mindepth 1  ! -name 'README.md' -exec rm -r {} +
 It will remove $cacheStorage
 Ctrl+C to opt out
 Enter opt in
 "
 read
-shopt -s extglob
-sudo rm -rf $initialCacheFolder/!(README.md)
+#sudo rm -rf $initialCacheFolder/!(README.md)
+sudo find $initialCacheFolder -mindepth 1  ! -name 'README.md' -exec rm -r {} +
 }
 
 brbinstall_setup_commands_script-typescript () {
