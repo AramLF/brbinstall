@@ -142,6 +142,16 @@ sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/GRUB_CMDLINE_LINUX_DEFA
 sudo update-grub
 }
 
+brbinstall_distrib_deb-based_debian-based_os-prober-activated () {
+echo -ne "
+==================================brbinstall==================================
+Activate os-prober
+==============================================================================
+"
+sudo sed -i 's/.*GRUB_DISABLE_OS_PROBER=.*/GRUB_DISABLE_OS_PROBER=false/g' /etc/default/grub
+sudo update-grub
+}
+
 brbinstall_distrib_deb-based_debian-based_cnf (){
 echo -ne "
 ==================================brbinstall==================================
@@ -162,6 +172,8 @@ Debian running script
 brbinstall_distrib_deb-based_debian-based_dependencies
 
 brbinstall_distrib_deb-based_debian-based_plymouth
+
+brbinstall_distrib_deb-based_debian-based_os-prober-activated
 
 brbinstall_distrib_deb-based_debian-based_cnf
 
