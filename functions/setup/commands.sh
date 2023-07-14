@@ -38,7 +38,16 @@ Script typescript
 ==============================================================================
 "
 #maybe start script at the begining
+echo -ne "
+Is script (typescript) being used ? 
+
+If not [Ctrl+c] to exit the current script and write this :
 script $initialCacheFolder/scriptedTypescript
+Then restart this script 
+
+Press [Enter] to continue 
+"
+
 }
 
 brbinstall_setup_commands_script-end () {
