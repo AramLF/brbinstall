@@ -112,7 +112,7 @@ sudo $auto_pkg_installer mousepad xfce4-terminal thunar
 #/etc/lightdm/lightdm.conf
 
 cp -vr $initialPath/dotfiles/xfce/xfce4 ~/.config/
-sudo cp -vr $initialPath/dotfiles/gtksourceview/styles/* /usr/share/gtksourceview-4/styles/*
+sudo cp -vr $initialPath/dotfiles/gtksourceview/styles/* /usr/share/gtksourceview-4/styles/
 
 }
 
