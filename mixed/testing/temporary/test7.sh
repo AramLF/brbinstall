@@ -13,7 +13,7 @@ testing-things-7 (){
 
   brbinstall_template_tp1_version
 
-  brbinstall_setup_commands_script-typescript
+  brbinstall_setup_commands_script-end
 
 }
 
