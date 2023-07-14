@@ -2,7 +2,7 @@
 
 brbinstall_theming_wallpaper_all(){
 echo -ne "
-==============================================================================
+==================================brbinstall==================================
 every wallpapers download
 ==============================================================================
 "
@@ -17,7 +17,7 @@ brbinstall_theming_wallpaper_materia
 
 brbinstall_theming_wallpaper_rands-walls () {
 echo -ne "
-==============================================================================
+==================================brbinstall==================================
 every wallpapers from rands-walls
 ==============================================================================
 "
@@ -30,7 +30,7 @@ sudo cp -vr $initialCacheFolder/rands/walls/* /usr/share/backgrounds/walls/
 
 brbinstall_theming_wallpaper_rands-walls-spe () {
 echo -ne "
-==============================================================================
+==================================brbinstall==================================
 spe wall from rands-walls
 ==============================================================================
 "
@@ -45,7 +45,7 @@ sudo cp -vr $initialCacheFolder/rands/walls/spencer-watson-p0Yupww_SNM-unsplash.
 
 brbinstall_theming_wallpaper_evening () {
 echo -ne "
-==============================================================================
+==================================brbinstall==================================
 evening-sky wallpaper download
 ==============================================================================
 "
@@ -57,7 +57,7 @@ sudo wget https://raw.githubusercontent.com/catppuccin/wallpapers/main/landscape
 
 brbinstall_theming_wallpaper_graphite () {
 echo -ne "
-==============================================================================
+==================================brbinstall==================================
 graphite wallpapers download
 ==============================================================================
 "
@@ -74,7 +74,7 @@ sudo wget https://raw.githubusercontent.com/vinceliuice/Graphite-gtk-theme/main/
 
 brbinstall_theming_wallpaper_materia () {
 echo -ne "
-==============================================================================
+==================================brbinstall==================================
 materia wallpaper download
 ==============================================================================
 "

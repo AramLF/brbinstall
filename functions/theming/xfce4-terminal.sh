@@ -2,7 +2,7 @@
 
 brbinstall_theming_xfce4-terminal_all () {
 echo -ne "
-==============================================================================
+==================================brbinstall==================================
 all colorschemes xfce4-terminal installation
 ==============================================================================
 "
@@ -15,7 +15,7 @@ brbinstall_theming_xfce4-terminal_endeavouros
 
 brbinstall_theming_xfce4-terminal_catppuccin () {
 echo -ne "
-==============================================================================
+==================================brbinstall==================================
 catppuccin colorschemes xfce4-terminal installation
 ==============================================================================
 "
@@ -28,7 +28,7 @@ sudo wget https://raw.githubusercontent.com/catppuccin/xfce4-terminal/master/Cat
 
 brbinstall_theming_xfce4-terminal_endeavouros () {
 echo -ne "
-==============================================================================
+==================================brbinstall==================================
 endeavouros colorschemes xfce4-terminal installation
 ==============================================================================
 "
