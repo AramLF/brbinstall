@@ -91,6 +91,13 @@ cat /proc/swaps
 #Comment using # if one is being used
 cat /etc/fstab |grep swap
 
+#comment using # if there is a resume line here
+cat /etc/initramfs-tools/conf.d/resume
+
+#Update initframfs and grub
+sudo update-initramfs -u
+sudo update-grub
+
 #Turn off the swap :
 sudo swapoff -a 
 
