@@ -27,6 +27,7 @@ Ctrl+C to opt out
 Enter opt in
 "
 read
+shopt -s extglob
 sudo rm -rf $initialCacheFolder/!(README.md)
 }
 
