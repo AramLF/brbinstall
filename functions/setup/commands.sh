@@ -47,6 +47,7 @@ Then restart this script
 
 Press [Enter] to continue 
 "
+read 
 
 }
 
