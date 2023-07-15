@@ -24,6 +24,7 @@ Setup debian net live
 #https://www.linuxtricks.fr/wiki/systemd-le-reseau-avec-systemd-networkd
 #https://linuxhint.com/3-ways-to-connect-to-wifi-from-the-command-line-on-debian/
 echo -ne '
+#check if wifi is not hard blocked (Fn +F2)
 sudo systemctl enable systemd-networkd.service
 sudo systemctl start systemd-networkd.service
 sudo nano /etc/systemd/network/wlp3s0-wireless.network
