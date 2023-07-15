@@ -59,6 +59,7 @@ Neobian xfce
 sudo $auto_pkg_installer xfce4
 
 sudo $auto_pkg_installer xfce4-screenshooter
+#check for other screenshot tools (spectacle ?)
 
 sudo $auto_pkg_installer lightdm
 sudo $auto_pkg_installer lightdm-gtk-greeter-settings
