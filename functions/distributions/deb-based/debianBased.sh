@@ -159,6 +159,21 @@ sudo sed -i 's/.*GRUB_DISABLE_OS_PROBER=.*/GRUB_DISABLE_OS_PROBER=false/g' /etc/
 sudo update-grub
 }
 
+brbinstall_distrib_deb-based_debian-based_grub-save-last-choice () {
+echo -ne "
+==================================brbinstall==================================
+Save last choice grub
+==============================================================================
+"
+#https://askubuntu.com/questions/148662/how-to-get-grub2-to-remember-last-choice
+sudo sh -c 'echo "
+GRUB_DEFAULT=saved
+GRUB_SAVEDEFAULT=true
+" >> /etc/default/grub'
+
+sudo update-grub
+}
+
 brbinstall_distrib_deb-based_debian-based_cnf (){
 echo -ne "
 ==================================brbinstall==================================

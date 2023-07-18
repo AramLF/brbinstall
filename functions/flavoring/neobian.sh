@@ -251,6 +251,7 @@ flatpak install -y flathub org.gnome.gitlab.YaLTeR.VideoTrimmer
 flatpak install -y flathub fr.romainvigier.MetadataCleaner
 flatpak install -y flathub com.github.marinm.songrec
 flatpak install -y flathub io.github.seadve.Mousai
+flatpak install -y flathub com.gitlab.newsflash
 "
 }
 
