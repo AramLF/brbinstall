@@ -20,6 +20,8 @@ Setup debian net live
 
 #choisir utilitaires usuels du système
 
+#/boot dans une partition ext4 à part (~1GB) (si grub avec BTRFS)
+
 #Wifi connection for debian server
 #https://www.linuxtricks.fr/wiki/systemd-le-reseau-avec-systemd-networkd
 #https://linuxhint.com/3-ways-to-connect-to-wifi-from-the-command-line-on-debian/
@@ -191,7 +193,11 @@ setup all the functionning git for brb, Bo, misc, etc...
 #Some checks :
 brbinstall_distrib_deb-based_debian-based_setup-zram
 check terminal ps1 (user & root), cursors, mousepad gtksourceview
-check the typescript in cachefolder
+check the typescript in cachefolder and empty the cachefolder
+
+#is /boot separated ? (in order to save last choice on grub when using BTRFS)
+brbinstall_setup_maintenance_echo-changing-boot-partition
+brbinstall_distrib_deb-based_debian-based_grub-save-last-choice
 
 #Neobian all (spice&i3)
 brbinstall_flavoring_neobian_setup-plasma

@@ -53,3 +53,22 @@ echo -ne "
 #in /etc/default/grub
 "
 }
+
+brbinstall_setup_maintenance_echo-changing-boot-partition () {
+echo -ne "
+==================================brbinstall==================================
+Echo the the changing boot partition
+==============================================================================
+"
+echo -ne "
+#Create a separation ext4 /boot partition (~1GB)
+#create partition, mount temporarily, cp and mv(to save), modify uuid in fstab, update grub
+sudo mkdir /mnt/temp_boot
+sudo mount /dev/sdXY /mnt/temp_boot
+sudo cp -r /boot/* /mnt/temp_boot/
+sudo mv /boot /boot_backup
+sudo blkid /dev/sdXY
+UUID=<UUID_of_the_boot_partition> /boot ext4 defaults 0 2
+sudo update-grub
+"
+}

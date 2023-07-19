@@ -166,6 +166,11 @@ Save last choice grub
 ==============================================================================
 "
 #https://askubuntu.com/questions/148662/how-to-get-grub2-to-remember-last-choice
+
+#Problem on BTRFS (separate partition for /boot ? (on ext4 for exemple ?)):
+#https://forum.endeavouros.com/t/error-sparse-file-not-allowed-press-any-key-to-continue-booting/14409/18
+#brbinstall_setup_maintenance_echo-changing-boot-partition
+
 sudo sh -c 'echo "
 GRUB_DEFAULT=saved
 GRUB_SAVEDEFAULT=true

@@ -213,6 +213,8 @@ Linux Mint Neomint flavor
 
   #sudo systemctl disable casper- ...
 
+  brbinstall_setup_commands_script-end
+
 }
 
 brbinstall_flavoring_neomint_run () {
