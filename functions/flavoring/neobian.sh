@@ -253,11 +253,14 @@ flatpak install -y flathub org.gtk.Gtk3theme.adw-gtk3-dark
 flatpak install -y flathub org.gtk.Gtk3theme.adw-gtk3
 
 #other apps
+
 flatpak install -y flathub org.gnome.gitlab.YaLTeR.VideoTrimmer
 flatpak install -y flathub fr.romainvigier.MetadataCleaner
+flatpak install -y flathub org.gnome.gitlab.cheywood.Iotas
 flatpak install -y flathub com.github.marinm.songrec
 flatpak install -y flathub io.github.seadve.Mousai
 flatpak install -y flathub com.gitlab.newsflash
+flatpak install -y flathub io.posidon.Paper
 "
 }
 
