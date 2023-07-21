@@ -21,6 +21,7 @@ return {
 	-- https://github.com/chriskempson/base16-schemes-source
 	-- https://gogh-co.github.io/Gogh/
 	-- https://terminal.sexy/
+	-- https://themer.dev/
 	-- Color scheme set with individual colors
 	colors = {
   		foreground = 'EEEEEC',
