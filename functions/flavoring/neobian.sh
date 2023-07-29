@@ -228,6 +228,7 @@ obsidian(try logseq ?)
 
 #compile iced https://github.com/iced-rs/iced
 #compile bazaar https://github.com/hojjatabdollahi/bazaar
+sudo $auto_pkg_installer rustc cargo
 
 #Exe : DragonRaja Notepad++ Kara Kate scan-app
 
