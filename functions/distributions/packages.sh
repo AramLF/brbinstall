@@ -18,5 +18,7 @@ brbinstall_distrib_package_manager() {
     auto_pkg_installer='pacman -Sy --noconfirm'
   elif check_command xbps-install; then
     auto_pkg_installer='xbps-install -Sy'
+  elif check_command apk; then
+    auto_pkg_installer='apk add'
   fi
 }
