@@ -64,6 +64,31 @@ sh <(curl -L https://nixos.org/nix/install) --no-daemon
 #. /home/user/.nix-profile/etc/profile.d/nix.sh
 }
 
+brbinstall_setup_miscsetup_nix-echo-install-help () {
+echo -ne "
+==================================brbinstall==================================
+Help for nix install
+==============================================================================
+"
+echo -ne '
+#install curl xz first
+#https://search.nixos.org/
+#https://nixos.org/
+#steamdeck nix : https://www.youtube.com/watch?v=ttOs5iWgNzk&t
+
+sh <(curl -L https://nixos.org/nix/install) --no-daemon
+echo ". $HOME/.nix-profile/etc/profile.d/nix.sh" >> ~/.bashrc
+nix-env -iA nixpkgs.hello
+mkdir $HOME/.local/share/applications
+sudo ln -s $HOME/.nix-profile/usr/share/applications/* $HOME/.local/share/applications/
+#or
+sudo ln -s $HOME/.nix-profile/usr/share/applications/* /usr/share/applications/
+'
+echo -ne "
+sudo sh -c \"echo export 'XDG_DATA_DIRS=\$HOME/.nix-profile/share:\$HOME/.share:\$XDG_DATA_DIRS' >> /etc/profile.d/nix.sh\"
+"
+}
+
 brbinstall_setup_miscsetup_nix-wrapper-opengl () {
 echo -ne "
 ==================================brbinstall==================================
@@ -96,38 +121,50 @@ PATH variable
 #    PATH="$HOME/.local/bin:$PATH"
 #fi
 #Debian
-echo "\$PATH on Debian"
-echo "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
-echo ""
+echo -ne '
+$PATH on Debian
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+'
 #Ubuntu/LinuxMint
-echo "\$PATH on Linux Mint"
-echo "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
-echo ""
+echo -ne '
+$PATH on Linux Mint
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+'
 #Ubuntu/KDENeon
-echo "\$PATH on KDENeon"
-echo "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
-echo ""
+echo -ne '
+$PATH on KDENeon
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+'
 #openSuse
-echo "\$PATH on OpenSuse"
-echo "/home/$USER/bin:/usr/local/bin:/usr/bin:/bin"
-echo ""
+echo -ne '
+$PATH on OpenSuse
+/home/$USER/bin:/usr/local/bin:/usr/bin:/bin
+'
 #Arch ? unsure
-echo "\$PATH on Arch ?"
-echo "/usr/local/sbin:/usr/local/bin:/usr/bin"
-echo ""
+echo -ne '
+PATH on Arch ?
+/usr/local/sbin:/usr/local/bin:/usr/bin
+'
 #Mageia
-echo "\$PATH on Mageia"
-echo "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/sbin:/usr/sbin:/usr/lib64/qt5/bin:/home/$USER/.local/bin:/home/$USER/bin"
-echo ""
+echo -ne '
+$PATH on Mageia
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/sbin:/usr/sbin:/usr/lib64/qt5/bin:/home/$USER/.local/bin:/home/$USER/bin
+'
 #VoidLinux
-echo "\$PATH on VoidLinux"
-echo "/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-echo ""
+echo -ne '
+$PATH on VoidLinux
+/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+'
 #Fedora
-echo "\$PATH on Fedora"
-echo "/home/$USER/.local/bin:/home/$USER/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin"
-echo ""
-
+echo -ne '
+$PATH on Fedora : 
+/home/$USER/.local/bin:/home/$USER/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
+'
+#AlpineLinux
+echo -ne '
+$PATH on Alpine :
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+'
 
 }
 
