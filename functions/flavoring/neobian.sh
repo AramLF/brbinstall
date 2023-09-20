@@ -166,10 +166,7 @@ echo -ne "
 Neobian some apps
 ==============================================================================
 "
-sudo $auto_pkg_installer firefox-esr pavucontrol synaptic gparted
-sudo $auto_pkg_installer kitty alacritty cool-retro-term
-sudo $auto_pkg_installer laptop-mode-tools
-
+#nothing for now
 }
 
 brbinstall_flavoring_neobian_remaining () {
@@ -229,6 +226,9 @@ obsidian(try logseq ?)
 #compile iced https://github.com/iced-rs/iced
 #compile bazaar https://github.com/hojjatabdollahi/bazaar
 sudo $auto_pkg_installer rustc cargo
+
+#more dev stuff
+sudo $auto_pkg_installer libc6-dev libglib2.0-dev
 
 #Exe : DragonRaja Notepad++ Kara Kate scan-app
 
@@ -310,7 +310,9 @@ brbinstall_setup_server_start-with-display
 
 brbinstall_flavoring_neobian_theming-xfce
 
-brbinstall_flavoring_neobian_some-apps
+#brbinstall_flavoring_neobian_some-apps
+
+brbinstall_distrib_deb-based_debian-based_some-gui-apps
 
 brbinstall_setup_miscsetup_flatpak-installation
 

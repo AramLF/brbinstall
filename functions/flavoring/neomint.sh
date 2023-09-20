@@ -26,8 +26,7 @@ echo -ne "
 Linux Mint - more packages
 ==============================================================================
 "
-sudo $auto_pkg_installer chromium
-sudo $auto_pkg_installer numlockx
+
 }
 
 brbinstall_flavoring_neomint_remaining () {
@@ -55,6 +54,7 @@ source scriptSource.sh
 # Bar icons : Params Softwares Firefox Folder OnlyOffice
 
 # Remove the title bar in firefox (add addblocker for every web browser)
+sudo $auto_pkg_installer chromium
 # Chromium (change search engine, remove title bar, addblocker)
 # Search Engine : Google google.com {google:baseURL}search?q=%s (remove favs)
 
@@ -156,9 +156,13 @@ Linux Mint Neomint flavor
 
   brbinstall_setup_start_basic-apps
 
-  brbinstall_distrib_deb-based_ubuntu-based_more
+  brbinstall_distrib_deb-based_debian-based_dependencies
 
-  brbinstall_flavoring_neomint_more-pkgs
+  #brbinstall_distrib_deb-based_ubuntu-based_more
+
+  brbinstall_distrib_deb-based_debian-based_some-gui-apps
+
+  #brbinstall_flavoring_neomint_more-pkgs
 
   brbinstall_de_cinnamon_sound
 

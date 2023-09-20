@@ -6,10 +6,31 @@ echo -ne "
 Dependencies Debian installation
 ==============================================================================
 "
-sudo $auto_pkg_installer htop neofetch ncdu git gcc synaptic wget curl unzip command-not-found ranger
-sudo $auto_pkg_installer nala micro tealdeer
+sudo $auto_pkg_installer nala
+brbinstall_distrib_package_manager
+sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip command-not-found ranger
+sudo $auto_pkg_installer micro 
+sudo $auto_pkg_installer tealdeer
 sudo $auto_pkg_installer plymouth
+sudo $auto_pkg_installer numlockx
+sudo $auto_pkg_installer laptop-mode-tools
 #maybe add plymouth-themes
+}
+
+brbinstall_distrib_deb-based_debian-based_some-gui-apps () {
+echo -ne "
+==================================brbinstall==================================
+Debian-based some apps
+==============================================================================
+"
+sudo $auto_pkg_installer firefox-esr 
+sudo $auto_pkg_installer pavucontrol 
+sudo $auto_pkg_installer synaptic 
+sudo $auto_pkg_installer gparted
+
+sudo $auto_pkg_installer kitty 
+sudo $auto_pkg_installer alacritty 
+sudo $auto_pkg_installer cool-retro-term
 }
 
 brbinstall_distrib_deb-based_debian-based_add-i386 () {
