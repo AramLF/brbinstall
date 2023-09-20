@@ -70,6 +70,8 @@ sudo $auto_pkg_installer chromium
 
 # Add and configure Anydesk in order to help (remove at startup)
 
+# Add tldr (npm or python3-pip or pipx)
+
 # Tests medias, remove scripts and used folders when finished (bash_history ?)
 "
 
@@ -154,15 +156,23 @@ Linux Mint Neomint flavor
 
   brbinstall_flavoring_neomint_wifi_prevention
 
-  brbinstall_setup_start_basic-apps
+  #brbinstall_setup_start_basic-apps #function below
 
   brbinstall_distrib_deb-based_debian-based_dependencies
 
-  #brbinstall_distrib_deb-based_ubuntu-based_more
+  brbinstall_distrib_deb-based_debian-based_os-prober-activated
+
+  brbinstall_setup_miscsetup_bottom-deb
+
+  brbinstall_setup_server_distance
+
+  brbinstall_setup_server_numlock-for-tty
+
+  #brbinstall_distrib_deb-based_ubuntu-based_more #nothing in it
 
   brbinstall_distrib_deb-based_debian-based_some-gui-apps
 
-  #brbinstall_flavoring_neomint_more-pkgs
+  #brbinstall_flavoring_neomint_more-pkgs #nothing in it
 
   brbinstall_de_cinnamon_sound
 
@@ -174,8 +184,7 @@ Linux Mint Neomint flavor
 
   brbinstall_de_cinnamon_set-gtk-theme "adw-gtk3-dark"
 
-  #brbinstall_de_cinnamon_set-wm-theme ""
-  #not needed anymore
+  #brbinstall_de_cinnamon_set-wm-theme "" #not needed anymore
 
   brbinstall_de_cinnamon_set-icon-theme "Taru-Breeze-dark"
 

@@ -8,9 +8,9 @@ Dependencies Debian installation
 "
 sudo $auto_pkg_installer nala
 brbinstall_distrib_package_manager
-sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip command-not-found ranger
+sudo $auto_pkg_installer htop neofetch ncdu git gcc wget curl unzip ranger tree command-not-found
 sudo $auto_pkg_installer micro 
-sudo $auto_pkg_installer tealdeer
+sudo $auto_pkg_installer tealdeer #NotInUbuntu22.04
 sudo $auto_pkg_installer plymouth
 sudo $auto_pkg_installer numlockx
 sudo $auto_pkg_installer laptop-mode-tools
@@ -23,14 +23,15 @@ echo -ne "
 Debian-based some apps
 ==============================================================================
 "
-sudo $auto_pkg_installer firefox-esr 
+sudo $auto_pkg_installer firefox-esr #NotInUbuntu22.04
 sudo $auto_pkg_installer pavucontrol 
 sudo $auto_pkg_installer synaptic 
 sudo $auto_pkg_installer gparted
 
 sudo $auto_pkg_installer kitty 
-sudo $auto_pkg_installer alacritty 
+sudo $auto_pkg_installer alacritty #NotInUbuntu22.04
 sudo $auto_pkg_installer cool-retro-term
+#And add wezterm
 }
 
 brbinstall_distrib_deb-based_debian-based_add-i386 () {

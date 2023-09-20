@@ -310,7 +310,7 @@ brbinstall_setup_server_start-with-display
 
 brbinstall_flavoring_neobian_theming-xfce
 
-#brbinstall_flavoring_neobian_some-apps
+#brbinstall_flavoring_neobian_some-apps #use the function below
 
 brbinstall_distrib_deb-based_debian-based_some-gui-apps
 
