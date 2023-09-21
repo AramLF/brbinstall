@@ -138,6 +138,35 @@ brbinstall_theming_wallpaper_all
 "
 }
 
+brbinstall_flavoring_neobian_setup-gnome () {
+echo -ne "
+==================================brbinstall==================================
+Neobian gnome
+==============================================================================
+"
+#not finished
+#https://www.linuxtricks.fr/wiki/linux-mint-installer-gnome 
+sudo $auto_pkg_installer gnome-shell gnome-tweaks gnome-terminal nautilus gedit
+sudo $auto_pkg_installer gnome-extensions-app gnome-shell-extensions
+sudo $auto_pkg_installer gnome-shell-extension-appindicator gnome-shell-extension-manager
+sudo $auto_pkg_installer gnome-shell-extension-ubuntu-dock
+#to change again dpkg-reconfigure gdm3/lightdm/sddm
+echo -ne "
+#Try this ?
+gsettings set org.gnome.desktop.background show-desktop-icons false
+gsettings set org.nemo.desktop show-desktop-icons true
+gnome-session-properties #add nemo-desktop entry
+xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+
+brbinstall_flavoring_all_choice
+brbinstall_theming_fonts_all
+brbinstall_theming_wallpaper_all
+#check lockscreen, background & gdm3(if present)
+
+#sudo mintupdate #sudo mintreport
+"
+}
+
 brbinstall_flavoring_neobian_theming-xfce () {
 echo -ne "
 ==================================brbinstall==================================
@@ -178,7 +207,7 @@ Neobian remaining
 #other program with pkgs
 echo -ne "
 #Neobian dev & vm : 
-anydesk(remove from startup and do the security)
+anydesk(remove from startup (systemd) and do the security)
 vscodium(fedora gnome colors | git graph | Cascadia Mono) 
 setup all the functionning git for brb, Bo, misc, etc...
 
@@ -215,9 +244,10 @@ sudo systemctl disable lightdm
 sudo $auto_pkg_installer chromium obs-sudio steam
 #already added sudo $auto_pkg_installer flatpak
 #maybe avoid sudo $auto_pkg_installer grub-customizer
+#vivaldi https://vivaldi.com/fr/download/ 
 #discord vivaldi teamspeak
 brbinstall_setup_miscsetup_tar-opt-install
-#wezterm
+#wezterm https://wezfurlong.org/wezterm/install/linux.html
 kate ghostwritter goverlay(MangoHud) bottom caffeine(if it works ?)
 3d-ascii-viewer-c
 Unigine heaven to try the gpu
@@ -253,9 +283,9 @@ flatpak install -y flathub com.github.GradienceTeam.Gradience
 flatpak install -y flathub org.gtk.Gtk3theme.adw-gtk3-dark
 flatpak install -y flathub org.gtk.Gtk3theme.adw-gtk3
 
-#other apps
-
+# Other apps :
 flatpak install -y flathub org.gnome.gitlab.YaLTeR.VideoTrimmer
+flatpak install -y flathub com.mattjakeman.ExtensionManager
 flatpak install -y flathub fr.romainvigier.MetadataCleaner
 flatpak install -y flathub org.gnome.gitlab.cheywood.Iotas
 flatpak install -y flathub com.github.marinm.songrec

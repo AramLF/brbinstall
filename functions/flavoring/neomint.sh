@@ -37,21 +37,17 @@ Remaining things to change and/or add
 "
 #
 echo -ne "
-# Download more apps, onlyoffice flatseal (crhomium, boop ?) :
-flatpak install -y flathub org.onlyoffice.desktopeditors
-flatpak install -y flathub com.github.tchx84.Flatseal
-flatpak install -y flathub com.rafaelmardojai.Blanket
-flatpak install -y flathub com.usebottles.bottles
-flatpak install -y flathub fyi.zoey.TeX-Match
-
 # Sourcing for other functions :
 cd $initialPath/
 source scriptSource.sh
 
+# Download more apps and check flatpaks, and more settings here :
+brbinstall_flavoring_neobian_remaining
+
 # And check brbinstall_flavoring_neomint_introduce-it
 
 # Desktop icons : RootFolder HomeFolder Trash
-# Bar icons : Params Softwares Firefox Folder OnlyOffice
+# Panel icons : Params Softwares Firefox Folder OnlyOffice
 
 # Remove the title bar in firefox (add addblocker for every web browser)
 sudo $auto_pkg_installer chromium
@@ -70,7 +66,15 @@ sudo $auto_pkg_installer chromium
 
 # Add and configure Anydesk in order to help (remove at startup)
 
-# Add tldr (npm or python3-pip or pipx)
+#Minimal ?
+sudo nala remove libreoffice* thunderbird
+
+# Add tldr (npm or python3-pip (for libs) or pipx (for commands))
+sudo $auto_pkg_installer python3-pip pipx
+pipx install tldr
+echo 'PATH=\$PATH:~/.local/bin' >> ~/.bashrc
+source ~/.bashrc
+tldr -u
 
 # Tests medias, remove scripts and used folders when finished (bash_history ?)
 "
@@ -86,7 +90,7 @@ Introduce neomint
 echo -ne "
 # Show boot with grub (show disk usage), and give the password
 # Show parameters, mintinstall, firefox and chromium (with the addblocker)
-# Show onlyoffice
+# Show onlyoffice (and medias, pdf, etc...)
 # Show mintupdate
 # Show similarities to windows (wallpapers?)
 # Talk about the maintenance
