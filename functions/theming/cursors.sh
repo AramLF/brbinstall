@@ -38,7 +38,8 @@ adwaita-cursors-theme installation
 "
 cd $initialCacheFolder/
 wget https://github.com/manu-mannattil/adwaita-cursors/releases/download/v1.2/adwaita-cursors.tar.gz
-tar xvzf adwaita-cursors.tar.gz
+#no using  -xzvf
+tar xzf adwaita-cursors.tar.gz 
 sudo mkdir -p /usr/share/icons/Adwaita-cursors/cursors/
 sudo mv adwaita-cursors/Adwaita/cursors /usr/share/icons/Adwaita-cursors/
 }

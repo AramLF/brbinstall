@@ -41,6 +41,8 @@ echo -ne "
 cd $initialPath/
 source scriptSource.sh
 
+#Change fonts (Cascadia Mono Regular & Work Sans)
+
 # Download more apps and check flatpaks, and more settings here :
 brbinstall_flavoring_neobian_remaining
 
