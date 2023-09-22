@@ -260,7 +260,7 @@ sudo $auto_pkg_installer rustc cargo
 #more dev stuff
 sudo $auto_pkg_installer libc6-dev libglib2.0-dev
 
-#Flutter(master) & Dart 
+#Flutter(master) & Dart (place might change later)
 mkdir $initialTruePlace/development 
 cd $initialTruePlace/development
 git clone https://github.com/flutter/flutter
@@ -268,7 +268,13 @@ git clone https://github.com/flutter/flutter
 # and tar xf flutter_linux_3.13.5-stable.tar.xz
 echo 'export PATH=\"\$PATH:$initialTruePlace/development/flutter/bin\"' >> ~/.bashrc
 source ~/.bashrc  
-#flutter precache
+flutter --version
+flutter channel
+flutter precache
+flutter config --no-analytics
+dart --disable-analytics
+flutter doctor --android-licenses
+sudo $auto_pkg_installer clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
 
 #Exe : DragonRaja Notepad++ Kara Kate scan-app
 
