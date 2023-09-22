@@ -261,12 +261,12 @@ sudo $auto_pkg_installer rustc cargo
 sudo $auto_pkg_installer libc6-dev libglib2.0-dev
 
 #Flutter(master) & Dart 
-mkdir $initialPlacement/development 
-cd $initialPlacement/development     
+mkdir $initialTruePlace/development 
+cd $initialTruePlace/development
 git clone https://github.com/flutter/flutter
 # or wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.13.5-stable.tar.xz
 # and tar xf flutter_linux_3.13.5-stable.tar.xz
-echo 'export PATH=\"\$PATH:$initialPlacement/development/flutter/bin\"' >> ~/.bashrc
+echo 'export PATH=\"\$PATH:$initialTruePlace/development/flutter/bin\"' >> ~/.bashrc
 source ~/.bashrc  
 #flutter precache
 

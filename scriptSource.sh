@@ -52,6 +52,9 @@ source ./functions/setup/start.sh
 initialPath=$(pwd)
 initialCacheFolder=$initialPath/cachefolder
 initialPlacement=$initialPath/..
+cd $initialPlacement 
+initialTruePlace=$(pwd | sed "s|^$HOME|~|")
+cd $initialPath 
 
 brbinstall_distrib_package_manager
 
