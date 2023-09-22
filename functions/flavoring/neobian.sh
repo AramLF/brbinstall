@@ -260,6 +260,16 @@ sudo $auto_pkg_installer rustc cargo
 #more dev stuff
 sudo $auto_pkg_installer libc6-dev libglib2.0-dev
 
+#Flutter(master) & Dart 
+mkdir $initialPlacement/development 
+cd $initialPlacement/development     
+git clone https://github.com/flutter/flutter
+# or wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.13.5-stable.tar.xz
+# and tar xf flutter_linux_3.13.5-stable.tar.xz
+echo 'export PATH=\"\$PATH:$initialPlacement/development/flutter/bin\"' >> ~/.bashrc
+source ~/.bashrc  
+#flutter precache
+
 #Exe : DragonRaja Notepad++ Kara Kate scan-app
 
 #not have to overide gtk theme for flatpak ?

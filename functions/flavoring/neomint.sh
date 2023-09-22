@@ -74,7 +74,7 @@ sudo nala remove libreoffice* thunderbird
 # Add tldr (npm or python3-pip (for libs) or pipx (for commands))
 sudo $auto_pkg_installer python3-pip pipx
 pipx install tldr
-echo 'PATH=\$PATH:~/.local/bin' >> ~/.bashrc
+echo 'PATH=\"\$PATH:~/.local/bin\"' >> ~/.bashrc
 source ~/.bashrc
 tldr -u
 
