@@ -206,9 +206,11 @@ Neobian remaining
 "
 #other program with pkgs
 echo -ne "
+#Check personal modalities in the cloud
+
 #Neobian dev & vm : 
 anydesk(remove from startup (systemd) and do the security)
-vscodium(fedora gnome colors | git graph | Cascadia Mono) 
+vscodium(https://github.com/VSCodium/vscodium/releases) 
 setup all the functionning git for brb, Bo, misc, etc...
 
 #xfce checks : 
@@ -251,7 +253,7 @@ brbinstall_setup_miscsetup_tar-opt-install
 kate ghostwritter goverlay(MangoHud) bottom caffeine(if it works ?)
 3d-ascii-viewer-c
 Unigine heaven to try the gpu
-obsidian(try logseq ?) 
+obsidian(try logseq ?), xournalpp?(compare with rnote)
 
 #compile iced https://github.com/iced-rs/iced
 #compile bazaar https://github.com/hojjatabdollahi/bazaar
@@ -264,15 +266,18 @@ sudo $auto_pkg_installer libc6-dev libglib2.0-dev
 mkdir $initialTruePlace/development 
 cd $initialTruePlace/development
 git clone https://github.com/flutter/flutter
+cd flutter/
+git branch
+git checkout stable
 # or wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.13.5-stable.tar.xz
 # and tar xf flutter_linux_3.13.5-stable.tar.xz
 echo 'export PATH=\"\$PATH:$initialTruePlace/development/flutter/bin\"' >> ~/.bashrc
 source ~/.bashrc  
 flutter --version
-flutter channel
-flutter precache
 flutter config --no-analytics
 dart --disable-analytics
+flutter channel
+flutter precache
 flutter doctor --android-licenses
 sudo $auto_pkg_installer clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
 

@@ -50,3 +50,4 @@
 ## Misc
 * redact a validation test for distributions
 * add kde setup for neomint ? (kde-plasma-desktop, plasma-nm)
+* get inspired by this for pkgs ? https://github.com/DaxGoon/avoidance

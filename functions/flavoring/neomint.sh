@@ -37,16 +37,18 @@ Remaining things to change and/or add
 "
 #
 echo -ne "
+#Check other modalities with neobian remaining
+
 # Sourcing for other functions :
 cd $initialPath/
 source scriptSource.sh
-
-#Change fonts (Cascadia Mono Regular & Work Sans)
 
 # Download more apps and check flatpaks, and more settings here :
 brbinstall_flavoring_neobian_remaining
 
 # And check brbinstall_flavoring_neomint_introduce-it
+
+#Change fonts (Cascadia Mono Regular & Work Sans)
 
 # Desktop icons : RootFolder HomeFolder Trash
 # Panel icons : Params Softwares Firefox Folder OnlyOffice
