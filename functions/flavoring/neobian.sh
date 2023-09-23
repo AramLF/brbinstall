@@ -271,7 +271,7 @@ git branch
 git checkout stable
 # or wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.13.5-stable.tar.xz
 # and tar xf flutter_linux_3.13.5-stable.tar.xz
-echo 'export PATH=\"\$PATH:$initialTruePlace/development/flutter/bin\"' >> ~/.bashrc
+echo 'PATH=\"\$PATH:$initialTruePlace/development/flutter/bin\"' >> ~/.bashrc
 source ~/.bashrc  
 flutter --version
 flutter config --no-analytics
@@ -280,6 +280,24 @@ flutter channel
 flutter precache
 flutter doctor --android-licenses
 sudo $auto_pkg_installer clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
+
+#add aliases & bash completions #TODO
+
+alias ls='ls --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias l.='ls -d .*'
+
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+
+
+#gnome extensions
+
+
+
 
 #Exe : DragonRaja Notepad++ Kara Kate scan-app
 
