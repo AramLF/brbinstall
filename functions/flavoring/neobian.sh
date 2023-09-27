@@ -150,6 +150,7 @@ sudo $auto_pkg_installer gnome-shell gnome-tweaks gnome-terminal nautilus gedit
 sudo $auto_pkg_installer gnome-extensions-app gnome-shell-extensions
 sudo $auto_pkg_installer gnome-shell-extension-appindicator gnome-shell-extension-manager
 sudo $auto_pkg_installer gnome-shell-extension-ubuntu-dock
+sudo $auto_pkg_installer gnome-shell-extension-desktop-icons-ng
 #to change again dpkg-reconfigure gdm3/lightdm/sddm
 echo -ne "
 #Try this ?
@@ -164,6 +165,19 @@ brbinstall_theming_wallpaper_all
 #check lockscreen, background & gdm3(if present)
 
 #sudo mintupdate #sudo mintreport
+
+#gnome extensions
+Arc-Menu Blur-my-shell Dash-to-Panel Rounded-window-corners RunCat Vitals Caffeine User-themes DING(show nothing) (more check nobara)
+Blur : Brightness 0.53 Sigma 10  
+ArcMenu : Redmond Icon-size 26  
+DashToPanel : Thickness 42 ext 0 int 4 DownLineSquare NoOpacity
+
+#Theming gdm3
+sudo apt install libglib2.0-dev dconf-cli git  
+git clone --depth=1 https://github.com/realmazharhussain/gdm-tools
+cd gdm-tools
+./install.sh
+set-gdm-theme -s Yaru-blue-dark 
 "
 }
 
@@ -233,6 +247,9 @@ brbinstall_distrib_deb-based_debian-based_i3-gaps-deb
 brbinstall_flavoring_r3_setting-up
 Try to add Hyprland(compiled if possible)
 
+#Neobian/Neomint on Gnome : 
+brbinstall_flavoring_neobian_setup-gnome
+
 #Debian testing and more :
 brbinstall_distrib_deb-based_debian-based_switch-ver "bookworm" "trixie"
 brbinstall_distrib_deb-based_debian-based_add-backports
@@ -281,23 +298,23 @@ flutter precache
 flutter doctor --android-licenses
 sudo $auto_pkg_installer clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
 
-#add aliases & bash completions #TODO
-
+#check aliases & bash completions (~/.bashrc) #TODO in a script/dotfiles ?
 alias ls='ls --color=auto'
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
 alias l.='ls -d .*'
-
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
 
+#AppImage Support
+https://github.com/TheAssassin/AppImageLauncher 
+https://github.com/prateekmedia/appimagepool 
 
-#gnome extensions
-
-
-
+#ms-fonts support
+https://www.zdnet.com/article/how-to-install-microsoft-fonts-on-linux-for-better-collaboration/ 
+sudo $auto_pkg_installer ttf-mscorefonts-installer
 
 #Exe : DragonRaja Notepad++ Kara Kate scan-app
 

@@ -37,12 +37,11 @@ Remaining things to change and/or add
 "
 #
 echo -ne "
-#Check other modalities with neobian remaining
-
 # Sourcing for other functions :
 cd $initialPath/
 source scriptSource.sh
 
+#Check other modalities with neobian remaining
 # Download more apps and check flatpaks, and more settings here :
 brbinstall_flavoring_neobian_remaining
 
