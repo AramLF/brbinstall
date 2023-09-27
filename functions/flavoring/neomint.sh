@@ -80,6 +80,8 @@ source ~/.bashrc
 tldr -u
 
 # Tests medias, remove scripts and used folders when finished (bash_history ?)
+
+# Check any services that is not properly disabled (ie casper- ...)
 "
 
 }
@@ -223,15 +225,13 @@ Linux Mint Neomint flavor
 
   brbinstall_setup_miscsetup_flathub
 
-  brbinstall_theming_gtk_themes-system-to-user
+  #brbinstall_theming_gtk_themes-system-to-user #maybe not needed
 
-  brbinstall_setup_miscsetup_flatpak-override
+  #brbinstall_setup_miscsetup_flatpak-override #maybe not needed same as the above
 
   brbinstall_de_gnome_template-nemo-nautilus
 
   brbinstall_flavoring_neomint_remaining
-
-  #sudo systemctl disable casper- ...
 
   brbinstall_setup_commands_script-end
 
