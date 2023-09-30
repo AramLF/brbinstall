@@ -52,7 +52,7 @@ brbinstall_flavoring_neobian_remaining
 # Desktop icons : RootFolder HomeFolder Trash
 # Panel icons : Params Softwares Firefox Folder OnlyOffice
 
-# Remove the title bar in firefox (add addblocker for every web browser)
+# Remove the title bar in firefox (add adblocker for every web browser)
 sudo $auto_pkg_installer chromium
 # Chromium (change search engine, remove title bar, addblocker)
 # Search Engine : Google google.com {google:baseURL}search?q=%s (remove favs)

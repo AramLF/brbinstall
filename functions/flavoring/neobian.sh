@@ -153,10 +153,11 @@ sudo $auto_pkg_installer gnome-shell-extension-ubuntu-dock
 sudo $auto_pkg_installer gnome-shell-extension-desktop-icons-ng
 #to change again dpkg-reconfigure gdm3/lightdm/sddm
 echo -ne "
+#maybe put all the texts in the (remainings functions)
 #Try this ?
 gsettings set org.gnome.desktop.background show-desktop-icons false
 gsettings set org.nemo.desktop show-desktop-icons true
-gnome-session-properties #add nemo-desktop entry
+gnome-session-properties #add nemo-desktop entry #or remove the other entries
 xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
 
 brbinstall_flavoring_all_choice
