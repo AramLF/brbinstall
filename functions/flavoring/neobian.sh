@@ -321,6 +321,8 @@ sudo $auto_pkg_installer ttf-mscorefonts-installer
 
 #not have to overide gtk theme for flatpak ?
 
+#check again apps for media and tools (pdf, screenshots, music, etc...)
+
 "
 
 #other program with flatpak
